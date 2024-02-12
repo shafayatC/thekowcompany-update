@@ -1,5 +1,5 @@
 import React from 'react';
-import video from "../../video/production.mp4"
+
 import VideoFullScreen from '../../component/VideoFullScreen/VideoFullScreen';
 
 const Video3D = () => {
@@ -8,8 +8,8 @@ const Video3D = () => {
             <div>
 
            
-            <VideoFullScreen video={'/video/production.mp4'}/>
-                <source src={video} type="video/mp4" />
+            <VideoFullScreen video={'/video/production.webm'}/>
+                <source src={"/video/production.webm"}  />
            
             </div>
         </div>

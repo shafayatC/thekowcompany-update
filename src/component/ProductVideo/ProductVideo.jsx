@@ -1,7 +1,7 @@
 
 import { useState } from "react";
 import play from "/img/play-2.png"
-import video from "../../video/production.mp4"
+// import video from "../../video/production.mp4"
 // import video from "./video/production.mp4";
 // import video from './video/production.mp4';
 
