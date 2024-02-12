@@ -1,6 +1,6 @@
 import { useState } from "react";
 import headphone from "../../assets/headphone.png";
-import video from "../../video/production.mp4";
+
 import BottomPart from "./BottomPart";
 import { Link } from "react-router-dom";
 

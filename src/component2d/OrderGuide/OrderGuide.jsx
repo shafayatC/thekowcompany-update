@@ -1,4 +1,4 @@
-import video from "../../video/production.mp4";
+
 import order1 from "../../images/order1.png";
 import order2 from "../../images/order2.png";
 import order3 from "../../images/order3.png";
@@ -30,7 +30,7 @@ const OrderGuide = () => {
             height="auto"
             playsinline autoPlay muted loop
           >
-            <source src="/video/A4Tech_Headphone_Animation_3.mp4" type="video/mp4" />
+            <source src="/video/A4Tech_Headphone_Animation_3.webm" type="video/mp4" />
           </video>
         </div>
       </div>

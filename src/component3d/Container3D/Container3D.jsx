@@ -16,6 +16,7 @@ import ScrolTop from '../../component/ScrolTop/ScrolTop';
 import ProductVideoLatest from '../../component/ProductVideo/ProductVideoLatest';
 import VisualizationSliderStatic from '../Visualization/VisualizationSliderStatic';
 import GetUpdate3D from '../GetUpdate3D/GetUpdate3D';
+import { ScrollEffect } from '../../component/scrollEffect/ScrollEffect';
 
 
 const Container3D = () => {
@@ -24,23 +25,40 @@ const Container3D = () => {
             <ScrolTop />
             <Navbar3D />
             <ProductVideoLatest
-                videoUrl="/video/3dVideoPresentation.mp4"
+                videoUrl="/video/3dVideoPresentation.webm"
                 loadingImg="/video/3dvideo_loading.png" />
 
             {/* <StartPage /> */}
-            <About3D />
-            <Services3D />
+            <ScrollEffect offset={100}>
+                <About3D />
+            </ScrollEffect>
+            <ScrollEffect offset={100}>
+                <Services3D />
+            </ScrollEffect>
             {/* <Visualization /> */}
             {/* <VisualizationSlider /> */}
-            <VisualizationSliderStatic/>
-            <ProductVisualization />
+            <ScrollEffect offset={100}>
+                <VisualizationSliderStatic />
+            </ScrollEffect>
+            <ScrollEffect offset={100}>
+                <ProductVisualization />
+            </ScrollEffect>
             <dov className="flex flex-col bg-[#f1f4ed] bgImage-2 ">
-                <ProductVisualSlider />
-
-                <Model3D />
-                <Trends3D />
-                <Video3D />
-                <GetUpdate3D/>
+                <ScrollEffect offset={100}>
+                    <ProductVisualSlider />
+                </ScrollEffect>
+                <ScrollEffect offset={100}>
+                    <Model3D />
+                </ScrollEffect>
+                <ScrollEffect offset={100}>
+                    <Trends3D />
+                </ScrollEffect>
+                <ScrollEffect offset={100}>
+                    <Video3D />
+                </ScrollEffect>
+                <ScrollEffect offset={100}>
+                    <GetUpdate3D />
+                </ScrollEffect>
                 {/* <Contact3D /> */}
             </dov>
 

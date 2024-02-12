@@ -1,4 +1,5 @@
 import ScrolTop from "../../component/ScrolTop/ScrolTop";
+import { ScrollEffect } from "../../component/scrollEffect/ScrollEffect";
 import Integrations from "../Apps&Integration/Apps&Integrations";
 import Blog2D from "../Blog2D/Blog2D";
 import ChoosePlan from "../ChoosePlan/ChoosePlan";
@@ -22,15 +23,29 @@ const Container2D = () => {
             <Navbar2D />
             <div className="bg-[#DEE2E2] bgImage">
                 <StartPage />
-                <Record2d />
-                <ImageSlider />
+                <ScrollEffect offset={100}>
+                    <Record2d />
+                </ScrollEffect>
+                <ScrollEffect offset={100}>
+                    <ImageSlider />
+                </ScrollEffect>
                 {/* <VideoSlider /> */}
-                <VideoSliderNew/>
-                <Integrations />
-                <ChoosePlan />
+                <ScrollEffect offset={100}>
+                    <VideoSliderNew />
+                </ScrollEffect>
+                <ScrollEffect offset={100}>
+                    <Integrations />
+                </ScrollEffect>
+                <ScrollEffect offset={100}>
+                    <ChoosePlan />
+                </ScrollEffect>
                 {/* <LetsTalk /> */}
-                <OrderGuide />
-                <Blog2D />
+                <ScrollEffect offset={100}>
+                    <OrderGuide />
+                </ScrollEffect>
+                <ScrollEffect offset={100}>
+                    <Blog2D />
+                </ScrollEffect>
                 <Footer2D />
             </div>
         </>

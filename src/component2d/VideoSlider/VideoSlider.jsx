@@ -2,7 +2,7 @@ import { useEffect, useState, useRef } from 'react'
 import ReactCompareImage from 'react-compare-image'
 import { Carousel } from 'react-div-carousel'
 import 'react-div-carousel/dist/index.css'
-import video from "../../video/production.mp4"
+
 import VideoWithThumb from './VideoWithThumb'
 import Heading2D from '../../component3d/Heading/Heading2D'
 
