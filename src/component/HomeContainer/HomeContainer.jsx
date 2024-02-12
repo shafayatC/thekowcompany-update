@@ -23,6 +23,7 @@ import NavbarHome from '../navber/navbarHome'
 import ProductVisualSlider from '../../component3d/Product/ProductVisualSlider'
 import ProductVideoLatestMother from '../ProductVideo/ProductVideoLatestMother'
 import GetUpdateOld from '../GetUpdate/GetUpdateOld'
+import { ScrollEffect } from '../scrollEffect/ScrollEffect'
 
 function HomeContainer() {
 
@@ -40,21 +41,41 @@ function HomeContainer() {
                     videoUrl="/video/The Kow Company_video.mp4"
                     loadingImg="/video/loading-image.png"
                     tagList={tagList} />
-              
-                <WelcomePage />
-                <ThreeDModelContainer />
-                <DivSliderParrent />
-                <Slider3D />
+
+                <ScrollEffect offset={100}>
+                    <WelcomePage />
+                </ScrollEffect>
+                <ScrollEffect offset={100}>
+                    <ThreeDModelContainer />
+                </ScrollEffect>
+                <ScrollEffect offset={100}>
+                    <DivSliderParrent />
+                </ScrollEffect>
+                <ScrollEffect offset={100}>
+                    <Slider3D />
+                </ScrollEffect>
                 {/* <ProductVisualSlider/> */}
-                <Record />
-                <Retouched />
-                <Integration />
+                <ScrollEffect offset={100}>
+                    <Record />
+                </ScrollEffect>
+                <ScrollEffect offset={100}>
+                    <Retouched />
+                </ScrollEffect>
+                <ScrollEffect offset={100}>
+                    <Integration />
+                </ScrollEffect>
                 {/* <TheSquadSlide /> */}
                 {/* <TheSquad /> */}
-                <BluePrint />
-                <IndustryTrends />
+                <ScrollEffect offset={100}>
+                    <BluePrint />
+                </ScrollEffect>
+                <ScrollEffect offset={100}>
+                    <IndustryTrends />
+                </ScrollEffect>
                 {/* <VirtualTour /> */}
-                <GetUpdate />
+                <ScrollEffect offset={100}>
+                    <GetUpdate />
+                </ScrollEffect>
                 {/* <GetUpdateOld/> */}
             </div>
             <Footer />
