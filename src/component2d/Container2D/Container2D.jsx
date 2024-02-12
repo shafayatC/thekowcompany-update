@@ -26,24 +26,24 @@ const Container2D = () => {
                 <ScrollEffect offset={100}>
                     <Record2d />
                 </ScrollEffect>
-                <ScrollEffect offset={100}>
+                <ScrollEffect id="services" offset={100}>
                     <ImageSlider />
                 </ScrollEffect>
                 {/* <VideoSlider /> */}
                 <ScrollEffect offset={100}>
                     <VideoSliderNew />
                 </ScrollEffect>
-                <ScrollEffect offset={100}>
+                <ScrollEffect id="apps" offset={100}>
                     <Integrations />
                 </ScrollEffect>
-                <ScrollEffect offset={100}>
+                <ScrollEffect id="price" offset={100}>
                     <ChoosePlan />
                 </ScrollEffect>
                 {/* <LetsTalk /> */}
-                <ScrollEffect offset={100}>
+                <ScrollEffect id="order-guide" offset={100}>
                     <OrderGuide />
                 </ScrollEffect>
-                <ScrollEffect offset={100}>
+                <ScrollEffect id="2d-trends" offset={100}>
                     <Blog2D />
                 </ScrollEffect>
                 <Footer2D />

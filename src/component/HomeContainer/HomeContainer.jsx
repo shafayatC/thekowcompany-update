@@ -41,7 +41,6 @@ function HomeContainer() {
                     videoUrl="/video/The Kow Company_video.mp4"
                     loadingImg="/video/loading-image.png"
                     tagList={tagList} />
-
                 <ScrollEffect offset={100}>
                     <WelcomePage />
                 </ScrollEffect>
@@ -58,10 +57,10 @@ function HomeContainer() {
                 <ScrollEffect offset={100}>
                     <Record />
                 </ScrollEffect>
-                <ScrollEffect offset={100}>
+                <ScrollEffect id="ai" offset={100}>
                     <Retouched />
                 </ScrollEffect>
-                <ScrollEffect offset={100}>
+                <ScrollEffect id="integration" offset={100}>
                     <Integration />
                 </ScrollEffect>
                 {/* <TheSquadSlide /> */}
@@ -69,7 +68,7 @@ function HomeContainer() {
                 <ScrollEffect offset={100}>
                     <BluePrint />
                 </ScrollEffect>
-                <ScrollEffect offset={100}>
+                <ScrollEffect id="trends" offset={100}>
                     <IndustryTrends />
                 </ScrollEffect>
                 {/* <VirtualTour /> */}

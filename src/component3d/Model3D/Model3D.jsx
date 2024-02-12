@@ -1,10 +1,11 @@
 
-import { Suspense } from "react";
+import { Suspense, lazy } from "react";
 import Heading from "../Heading/Heading";
 
-import ShoeModel from "../ProductVisualization3d/Furniture/Model/ShoeModel";
+// import ShoeModel from "../ProductVisualization3d/Furniture/Model/ShoeModel";
 
 
+const ShoeModel = lazy(() => import('../ProductVisualization3d/Furniture/Model/ShoeModel'));
 
 const Model3D = () => {
 
