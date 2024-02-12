@@ -50,7 +50,7 @@ const Container3D = () => {
                 <ScrollEffect offset={100}>
                     <Model3D />
                 </ScrollEffect>
-                <ScrollEffect offset={100}>
+                <ScrollEffect id="3d-trends" offset={100}>
                     <Trends3D />
                 </ScrollEffect>
                 <ScrollEffect offset={100}>

@@ -22,8 +22,8 @@ export const ScrollEffect = (props) => {
       setActiveElemn(true);
       animElem.classList.add('active');
     } else if (!animateOut) {
-      setActiveElemn(false);
-      animElem.classList.remove('active');
+      // setActiveElemn(false);
+      // animElem.classList.remove('active');
     }
   };
 
@@ -48,14 +48,17 @@ export const ScrollEffect = (props) => {
         style={{ transition: duration }}
       >
         {
-          activeElem == false && 
+          activeElem == false &&
           <div className='h-screen flex items-center'>
             <p className='mx-auto'>Loading...</p>
           </div>
         }
         {
           activeElem &&
-          <Suspense fallback={'<p>Loading...</p>'}>
+          <Suspense fallback={
+            <div className='h-screen flex items-center'>
+              <p className='mx-auto'>Loading...</p>
+            </div>}>
             {props.children}
           </Suspense>
         }
