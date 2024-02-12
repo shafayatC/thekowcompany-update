@@ -11,7 +11,7 @@ const ProductVisualization = () => {
                     <img className='w-[80%] md:w-[40%]' src='/img/3d/ppv.svg' />
                 </div>
             </div> */}
-            <VideoFullScreen video={'/video/A4Tech_Headphone_Animation_3.mp4'}/>
+            <VideoFullScreen video={'/video/A4Tech_Headphone_Animation_3.webm'}/>
            
         </div>
     );
