@@ -32,7 +32,7 @@ export default function ProductVideoLatest({ videoUrl, loadingImg, tagList = [] 
                                 </svg>
                             </div>
 
-                            <img className="object-cover w-full" src={loadingImg} alt="loading" />
+                            <img loading="lazy" className="object-cover w-full" src={loadingImg} alt="loading" />
                         </div>
                     }>
                         <VideoPlayer loadingImg={loadingImg} videoUrl={videoUrl} />

@@ -54,7 +54,7 @@ const NavbarHome = () => {
         <div className="container mx-auto bg-[#DEE2E2] md:bg-transparent py-1">
           <div className="hidden md:flex items-center justify-between gap-3">
             <Link to={"/"}>
-              <img src={screenLeft ? logo: logoWhite}
+              <img loading="lazy" src={screenLeft ? logo: logoWhite}
                 width={80}
                 height={40}
                 alt="logo" />
@@ -74,7 +74,7 @@ const NavbarHome = () => {
           </div>
           <div className="flex items-center justify-between md:hidden">
             <Link to={"/"}>
-              <img src={logo}
+              <img loading="lazy" src={logo}
                 width={80}
                 height={40}
                 alt="logo" />

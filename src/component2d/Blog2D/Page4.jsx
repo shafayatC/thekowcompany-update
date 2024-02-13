@@ -6,10 +6,10 @@ const Page4 = () => {
             <div className="py-10">
                 <div className="flex flex-col md:flex-row justify-center items-center gap-2">
                     <div>
-                        <img src={blogImg1}/>
+                        <img loading="lazy" src={blogImg1}/>
                     </div>
                     <div>
-                        <img src={blogImg2}/>
+                        <img loading="lazy" src={blogImg2}/>
                     </div>
                 </div>
                 <div className="container mx-auto py-5 px-4 md:px-0">

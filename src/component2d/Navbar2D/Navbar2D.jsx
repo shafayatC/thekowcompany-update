@@ -16,7 +16,7 @@ const Navbar2D = () => {
         <div className="container mx-auto py-1">
           <div className="hidden md:flex items-center justify-between gap-3">
             <Link to={"/"}>
-              <img src={logo}
+              <img loading="lazy" src={logo}
                 width={80}
                 height={40}
                 alt="logo" />
@@ -36,7 +36,7 @@ const Navbar2D = () => {
           </div>
           <div className="flex items-center justify-between md:hidden">
             <Link to={"/"}>
-              <img src={logo}
+              <img loading="lazy" src={logo}
                 width={80}
                 height={40}
                 alt="logo" />

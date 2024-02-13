@@ -11,7 +11,7 @@ const TheSquad = () => {
       <div className="container mx-auto ">
         <div className="flex flex-col md:flex-row  items-center justify-center gap-12 pt-40 pb-7 relative">
           <div className="relative">
-            <img src={avatar1} width={300} alt="trends photo" />
+            <img loading="lazy" src={avatar1} width={300} alt="trends photo" />
 
             <div className="flex flex-col items-center justify-center relative -left-[90px] top-[30px] z-10 gap-3">
               <div className="absolute -top-[80px] bg-[#666666] w-[1px] h-[80px]"></div>
@@ -26,7 +26,7 @@ const TheSquad = () => {
             </div>
           </div>
           <div className="relative">
-            <img src={avatar2} width={295} alt="trends photo" />
+            <img loading="lazy" src={avatar2} width={295} alt="trends photo" />
 
             <div className="flex flex-col items-center justify-center relative -left-[90px] top-[33px] z-10 gap-3">
               <div className="absolute -top-[80px] bg-[#666666] w-[1px] h-[80px]"></div>
@@ -41,7 +41,7 @@ const TheSquad = () => {
             </div>
           </div>
           <div className="relative">
-            <img src={avatar3} width={280} alt="trends photo" />
+            <img loading="lazy" src={avatar3} width={280} alt="trends photo" />
 
             <div className="flex flex-col items-center justify-center relative -left-[90px] top-[30px] z-10 gap-3">
               <div className="absolute -top-[80px] bg-[#666666] w-[1px] h-[80px]"></div>

@@ -89,7 +89,7 @@ const IVPage3 = () => {
               {/* <div className="flex justify-center items-center gap-3 absolute bottom-0 md:bottom-8 left-[15%]">
                
                 <div className="w-8 md:w-16">
-                  <img src={div.imageUrl2} />
+                  <img loading="lazy" src={div.imageUrl2} />
                 </div>
                 <div>
                   <p className="font-semibold text-base md:text-2xl text-black">

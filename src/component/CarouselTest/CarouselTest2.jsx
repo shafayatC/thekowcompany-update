@@ -40,7 +40,7 @@ const CarouselSlideItem = ({ item, isHidden }) => {
     <li className="carousel__slide-item" style={itemStyles}>
       <div className="carousel__slide-item-img-link">
        
-        <img src={item.player.image} alt={item.player.title} />
+        <img loading="lazy" src={item.player.image} alt={item.player.title} />
       </div>
       <div className="carousel-slide-item__body">
         <h4>{item.player.title}</h4>

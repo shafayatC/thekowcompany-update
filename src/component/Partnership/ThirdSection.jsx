@@ -15,7 +15,7 @@ const ThirdSection = () => {
                         <p>{`Together, we're set on charting a new course, poised to reshape the 3D content landscape for the better. Can’t wait for the future which is nothing short of spectacular!`} </p>
                     </div>
                     <div className='third-section-photo-3 px-2 md:px-0'>
-                        <img src={photo3} className='max-w-[570px]' />
+                        <img loading="lazy" src={photo3} className='max-w-[570px]' />
                     </div>
                 </div>
 

@@ -108,9 +108,9 @@ const Image3DViewDrag = ({ imageList = [] }) => {
                 {/* <div ref={viewSliderRef} onTouchMove={handleTouchMove}  onMouseMove={handleTouchMove} onMouseLeave={leaveFromSld} className='w-full h-full bg-[length:100%_100%] relative'> */}
                 {imageList.map((data, index) =>
                         index == 0 ?
-                         <img draggable="false" className="sl3d absolute top-0 left-0 w-full h-full opacity-1" src={data} />
+                         <img loading="lazy" draggable="false" className="sl3d absolute top-0 left-0 w-full h-full opacity-1" src={data} />
                          :
-                         <img draggable="false" className="sl3d absolute top-0 left-0 w-full h-full opacity-0" src={data} />
+                         <img loading="lazy" draggable="false" className="sl3d absolute top-0 left-0 w-full h-full opacity-0" src={data} />
 
                 )}
             </div>
