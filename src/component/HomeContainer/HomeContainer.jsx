@@ -47,32 +47,32 @@ function HomeContainer() {
                 <ScrollEffect offset={100}>
                     <ThreeDModelContainer />
                 </ScrollEffect>
-                <ScrollEffect offset={100}>
+                {/* <ScrollEffect offset={100}> */}
                     <DivSliderParrent />
-                </ScrollEffect>
-                <ScrollEffect offset={100}>
+                {/* </ScrollEffect> */}
+                {/* <ScrollEffect offset={100}> */}
                     <Slider3D />
-                </ScrollEffect>
+                {/* </ScrollEffect> */}
                 {/* <ProductVisualSlider/> */}
-                <ScrollEffect offset={100}>
+                {/* <ScrollEffect offset={100}> */}
                     <Record />
-                </ScrollEffect>
+                {/* </ScrollEffect> */}
                     <Retouched />
-                <ScrollEffect id="integration" offset={100}>
+                {/* <ScrollEffect id="integration" offset={100}> */}
                     <Integration />
-                </ScrollEffect>
+                {/* </ScrollEffect> */}
                 {/* <TheSquadSlide /> */}
                 {/* <TheSquad /> */}
-                <ScrollEffect offset={100}>
+                {/* <ScrollEffect offset={100}> */}
                     <BluePrint />
-                </ScrollEffect>
-                <ScrollEffect id="trends" offset={100}>
+                {/* </ScrollEffect> */}
+                {/* <ScrollEffect id="trends" offset={100}> */}
                     <IndustryTrends />
-                </ScrollEffect>
+                {/* </ScrollEffect> */}
                 {/* <VirtualTour /> */}
-                <ScrollEffect offset={100}>
+                {/* <ScrollEffect offset={100}> */}
                     <GetUpdate />
-                </ScrollEffect>
+                {/* </ScrollEffect> */}
                 {/* <GetUpdateOld/> */}
             </div>
             <Footer />

@@ -23,9 +23,9 @@ const Container2D = () => {
             <Navbar2D />
             <div className="bg-[#DEE2E2] bgImage">
                 <StartPage />
-                <ScrollEffect offset={100}>
+                {/* <ScrollEffect offset={100}> */}
                     <Record2d />
-                </ScrollEffect>
+                {/* </ScrollEffect> */}
                 <ScrollEffect id="services" offset={100}>
                     <ImageSlider />
                 </ScrollEffect>
@@ -33,19 +33,19 @@ const Container2D = () => {
                 <ScrollEffect offset={100}>
                     <VideoSliderNew />
                 </ScrollEffect>
-                <ScrollEffect id="apps" offset={100}>
+                {/* <ScrollEffect id="apps" offset={100}> */}
                     <Integrations />
-                </ScrollEffect>
-                <ScrollEffect id="price" offset={100}>
+                {/* </ScrollEffect> */}
+                {/* <ScrollEffect id="price" offset={100}> */}
                     <ChoosePlan />
-                </ScrollEffect>
+                {/* </ScrollEffect> */}
                 {/* <LetsTalk /> */}
-                <ScrollEffect id="order-guide" offset={100}>
+                {/* <ScrollEffect id="order-guide" offset={100}> */}
                     <OrderGuide />
-                </ScrollEffect>
-                <ScrollEffect id="2d-trends" offset={100}>
+                {/* </ScrollEffect> */}
+                {/* <ScrollEffect id="2d-trends" offset={100}> */}
                     <Blog2D />
-                </ScrollEffect>
+                {/* </ScrollEffect> */}
                 <Footer2D />
             </div>
         </>

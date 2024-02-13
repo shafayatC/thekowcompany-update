@@ -2,6 +2,7 @@ import { useState } from "react";
 import { MdArrowBackIosNew, MdArrowForwardIos } from "react-icons/md";
 import { Link } from "react-router-dom";
 import Heading2D from "../../component3d/Heading/Heading2D";
+import { LazyLoadImage } from "react-lazy-load-image-component";
 
 const Blog2D = () => {
   const [visibleDivs, setVisibleDivs] = useState([

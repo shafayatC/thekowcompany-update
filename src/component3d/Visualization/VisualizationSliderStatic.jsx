@@ -29,28 +29,44 @@ const VisualizationSliderStatic = () => {
           </div>
           </Link>
           <Link to="/exterior-visualization">
-          <div className=" mx-2 cursor-pointer">
-            <div>
-              <img
-                src="/img/3d/slider/EV.webp"
-                className="w-full h-full object-cover "
-              />
-            </div>
-            <div className="w-full flex gap-3  justify-center pt-2 ">
-              <h5 className="text-black font-semibold">
-                EXTERIOR VISUALIZATION
-              </h5>
-              <img className="h-6 z-30" src="/img/3d/slider/view.png" />
+
+            <div className=" mx-2 cursor-pointer">
+              <div>
+                {/* <img
+                  src="/img/3d/slider/EV.webp"
+                  className="w-full h-full object-cover "
+                /> */}
+                <LazyLoadImage
+                  src="/img/3d/slider/EV.webp"
+                  className="w-full h-full object-cover "
+                  effect="blur" />
+              </div>
+              <div className="w-full flex gap-3  justify-center pt-2 ">
+                <h5 className="text-black font-semibold">
+                  EXTERIOR VISUALIZATION
+                </h5>
+                <img loading="lazy" className="h-6 z-30" src="/img/3d/slider/view.png" />
+              </div>
             </div>
           </div>
           </Link>
           <Link to="/interior-visualization">
-          <div className=" mx-2 cursor-pointer">
-            <div>
-              <img
-                src="/img/3d/slider/VR.webp"
-                className="w-full h-full object-cover opacity-90"
-              />
+
+            <div className=" mx-2 cursor-pointer">
+              <div>
+                {/* <img
+                  src="/img/3d/slider/VR.webp"
+                  className="w-full h-full object-cover opacity-90"
+                /> */}
+                <LazyLoadImage
+                  src="/img/3d/slider/VR.webp"
+                  className="w-full h-full object-cover opacity-90"
+                  effect="blur" />
+              </div>
+              <div className="w-full flex gap-3 justify-center pt-2 ">
+                <h5 className="text-black font-semibold">VR RENDERING</h5>
+                <img loading="lazy" className="h-6 z-30" src="/img/3d/slider/view.png" />
+              </div>
             </div>
             <div className="w-full flex gap-3 justify-center pt-2 ">
               <h5 className="text-black font-semibold">VR RENDERING</h5>
