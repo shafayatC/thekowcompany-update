@@ -8,7 +8,7 @@ const EVPage2 = () => {
       id: 1,
       text: "YOUR PROJECT TITLE",
       text2: "01 JAN, 2023",
-      imageUrl: "/img/3d/slider/exterior archviz 4.jpg"
+      imageUrl: "/img/3d/slider/exterior archviz 4.webp"
       ,
       imageUrl2: "/img/3d/slider/view.png",
     },
@@ -16,14 +16,14 @@ const EVPage2 = () => {
       id: 2,
       text: "YOUR PROJECT TITLE",
       text2: "01 JAN, 2023",
-      imageUrl: "/img/3d/slider/exterior archviz 1.jpg",
+      imageUrl: "/img/3d/slider/exterior archviz 1.webp",
       imageUrl2: "/img/3d/slider/view.png",
     },
     {
       id: 3,
       text: "YOUR PROJECT TITLE",
       text2: "01 JAN, 2023",
-      imageUrl: "/img/3d/slider/exterior archviz 2.jpg",
+      imageUrl: "/img/3d/slider/exterior archviz 2.webp",
       imageUrl2: "/img/3d/slider/view.png",
     },
   ]);
