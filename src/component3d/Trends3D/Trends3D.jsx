@@ -3,6 +3,7 @@ import { useState } from "react";
 import { MdArrowBackIosNew, MdArrowForwardIos } from "react-icons/md";
 import { Link } from "react-router-dom";
 import Heading from "../Heading/Heading";
+import { LazyLoadImage } from "react-lazy-load-image-component";
 const Trends3D = () => {
   const [visibleDivs, setVisibleDivs] = useState([
     {
@@ -52,8 +53,8 @@ const Trends3D = () => {
     return window.screen.width <= 641
       ? [visibleDivs[startIndex]]
       : window.screen.width <= 1025
-      ? [visibleDivs[startIndex], visibleDivs[middleIndex]]
-      : [
+        ? [visibleDivs[startIndex], visibleDivs[middleIndex]]
+        : [
           visibleDivs[startIndex],
           visibleDivs[middleIndex],
           visibleDivs[endIndex],
@@ -62,7 +63,7 @@ const Trends3D = () => {
 
   return (
     <div id="3d-trends" className="pt-4">
-     <Heading className="pt-5 pb-12 "  titleClassName="w-[500px]" title="3D TRENDS" />
+      <Heading className="pt-5 pb-12 " titleClassName="w-[500px]" title="3D TRENDS" />
       <div className="container mx-auto">
         <div className="flex justify-center items-center gap-5 ">
           <button onClick={handlePrev}>
@@ -76,11 +77,16 @@ const Trends3D = () => {
                   {/* Wrap the div with Link component */}
                   <div className="flex-col items-center justify-center">
                     <div>
-                      <img
+                      {/* <img
                         className=" w-full"
                         src={div.imageUrl}
                         alt={div.text}
-                      />
+                      /> */}
+                      <LazyLoadImage
+                        className=" w-full"
+                        src={div.imageUrl}
+                        alt={div.text}
+                        effect="blur" />
                     </div>
                     <div className="flex flex-col items-center gap-2 pt-5 pb-10">
                       <div className="flex justify-center items-center gap-2 ">

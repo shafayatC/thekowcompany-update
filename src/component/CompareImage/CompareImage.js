@@ -146,12 +146,12 @@ const CompareImage = ({ topImage, bottomImage }) => {
                         height="100%"
                         width="100%"
                     /> */}
-                    <img src={topImage} className={`mx-auto ${ratio > 1 ? 'w-full' : 'h-full'}`} />
+                    <img loading="lazy" src={topImage} className={`mx-auto ${ratio > 1 ? 'w-full' : 'h-full'}`} />
                 </div>
                 <div
                     onClick={compareOnclick}
                     className="comparison-item">
-                    <img src={bottomImage} className={`mx-auto ${ratio > 1 ? 'w-full' : 'h-full'}`} />
+                    <img loading="lazy" src={bottomImage} className={`mx-auto ${ratio > 1 ? 'w-full' : 'h-full'}`} />
 
                     {/* <LazyLoadImage
                         className="bottomImage"

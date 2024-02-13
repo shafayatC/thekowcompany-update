@@ -17,7 +17,7 @@ const IndustryTrends = () => {
         <div className="flex flex-col md:flex-row items-center justify-center gap-3 pt-10 md:pt-20 ">
           <Link to={"/2d/industry-trends"}>
           <div className="relative">
-            <img src={trends1} width={500} alt="trends photo" />
+            <img loading="lazy" src={trends1} width={500} alt="trends photo" />
             <div className="flex flex-col justify-items-center pt-5 gap-3">
               <div className="flex justify-center items-center gap-3 ">
                 <h1 className="text-xs md:text-base">
@@ -43,7 +43,7 @@ const IndustryTrends = () => {
           </Link>
           <Link to={"/3d/industry-trends"}>
           <div className="relative ">
-            <img src={trends2} width={500} alt="trends photo" />
+            <img loading="lazy" src={trends2} width={500} alt="trends photo" />
 
             <div className="absolute flex gap-2 items-end right-0 bottom-[85px]">
               <h1 className="text-white text-[26px]">3D</h1>

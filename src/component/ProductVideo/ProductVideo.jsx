@@ -27,7 +27,7 @@ const ProductVideo = () => {
               </video>
             </div>
             <div onClick={playVideo} style={{ opacity: playBool ? 0 : 1 }} className="transition-all duration-300 cursor-pointer flex flex-col items-center justify-center relative w-[250px] md:w-[350px] lg:w-[450px]" >
-              <img src={play} alt="play"
+              <img loading="lazy" src={play} alt="play"
                 sizes="100vw"
                 style={{
                   width: '100%',
@@ -52,7 +52,7 @@ const ProductVideo = () => {
               </div>
               :
               <div onClick={() => setPlayBool(true)} className="cursor-pointer flex flex-col items-center justify-center relative max-w-full md:w-[450px]" >
-                <img src={play} alt="play"
+                <img loading="lazy" src={play} alt="play"
                   sizes="100vw"
                   style={{
                     width: '100%',
