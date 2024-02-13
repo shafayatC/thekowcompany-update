@@ -36,10 +36,14 @@ const VisualizationSliderStatic = () => {
           <Link to="/exterior-visualization">
             <div className=" mx-2 cursor-pointer">
               <div>
-                <img
+                {/* <img
                   src="/img/3d/slider/EV.jpg"
                   className="w-full h-full object-cover "
-                />
+                /> */}
+                <LazyLoadImage
+                  src="/img/3d/slider/EV.jpg"
+                  className="w-full h-full object-cover "
+                  effect="blur" />
               </div>
               <div className="w-full flex gap-3  justify-center pt-2 ">
                 <h5 className="text-black font-semibold">
@@ -52,10 +56,14 @@ const VisualizationSliderStatic = () => {
           <Link to="/interior-visualization">
             <div className=" mx-2 cursor-pointer">
               <div>
-                <img
+                {/* <img
                   src="/img/3d/slider/VR.jpg"
                   className="w-full h-full object-cover opacity-90"
-                />
+                /> */}
+                <LazyLoadImage
+                  src="/img/3d/slider/VR.jpg"
+                  className="w-full h-full object-cover opacity-90"
+                  effect="blur" />
               </div>
               <div className="w-full flex gap-3 justify-center pt-2 ">
                 <h5 className="text-black font-semibold">VR RENDERING</h5>

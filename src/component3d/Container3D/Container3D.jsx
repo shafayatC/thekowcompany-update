@@ -29,36 +29,36 @@ const Container3D = () => {
                 loadingImg="/video/3dvideo_loading.png" />
 
             {/* <StartPage /> */}
-            <ScrollEffect offset={100}>
+            {/* <ScrollEffect offset={100}> */}
                 <About3D />
-            </ScrollEffect>
-            <ScrollEffect offset={100}>
+            {/* </ScrollEffect> */}
+            {/* <ScrollEffect offset={100}> */}
                 <Services3D />
-            </ScrollEffect>
+            {/* </ScrollEffect> */}
             {/* <Visualization /> */}
             {/* <VisualizationSlider /> */}
-            <ScrollEffect offset={100}>
+            {/* <ScrollEffect offset={100}> */}
                 <VisualizationSliderStatic />
-            </ScrollEffect>
+            {/* </ScrollEffect> */}
             <ScrollEffect offset={100}>
                 <ProductVisualization />
             </ScrollEffect>
             <dov className="flex flex-col bg-[#f1f4ed] bgImage-2 ">
-                <ScrollEffect offset={100}>
+                {/* <ScrollEffect offset={100}> */}
                     <ProductVisualSlider />
-                </ScrollEffect>
-                <ScrollEffect offset={100}>
+                {/* </ScrollEffect> */}
+                {/* <ScrollEffect offset={100}> */}
                     <Model3D />
-                </ScrollEffect>
-                <ScrollEffect id="3d-trends" offset={100}>
+                {/* </ScrollEffect> */}
+                {/* <ScrollEffect id="3d-trends" offset={100}> */}
                     <Trends3D />
-                </ScrollEffect>
+                {/* </ScrollEffect> */}
                 <ScrollEffect offset={100}>
                     <Video3D />
                 </ScrollEffect>
-                <ScrollEffect offset={100}>
+                {/* <ScrollEffect offset={100}> */}
                     <GetUpdate3D />
-                </ScrollEffect>
+                {/* </ScrollEffect> */}
                 {/* <Contact3D /> */}
             </dov>
 

@@ -2,6 +2,7 @@ import { Suspense, lazy, useState } from "react";
 import { Carousel } from 'react-div-carousel'
 import 'react-div-carousel/dist/index.css'
 import VideoPlayer from "./VideoPlayer.jsx";
+import { LazyLoadImage } from "react-lazy-load-image-component";
 // import video from "./video/production.mp4";
 // import video from './video/production.mp4';
 
@@ -32,7 +33,10 @@ export default function ProductVideoLatest({ videoUrl, loadingImg, tagList = [] 
                                 </svg>
                             </div>
 
-                            <img loading="lazy" className="object-cover w-full" src={loadingImg} alt="loading" />
+                            {/* <img loading="lazy" className="object-cover w-full" src={loadingImg} alt="loading" /> */}
+                            <LazyLoadImage
+                                className="object-cover w-full" src={loadingImg} alt="loading"
+                                effect="blur" />
                         </div>
                     }>
                         <VideoPlayer loadingImg={loadingImg} videoUrl={videoUrl} />
