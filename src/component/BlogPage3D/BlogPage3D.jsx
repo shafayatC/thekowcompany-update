@@ -30,14 +30,14 @@ const BlogPage3D = () => {
 
                     <div className='flex flex-col md:flex-row justify-center items-center gap-3 pt-3'>
                         <div className=''>
-                            <img src={blog1}
+                            <img loading="lazy" src={blog1}
                                 width={350}
                                 alt='trends photo'
                             />
                             <h1 className='text-center pt-3 font-semibold'>INDUSTRY TRENDS ON 2D</h1>
                         </div>
                         <div className=''>
-                            <img src={blog2}
+                            <img loading="lazy" src={blog2}
                                 width={350}
                                 alt='trends photo'
                             />
@@ -45,7 +45,7 @@ const BlogPage3D = () => {
 
                         </div>
                         <div className=''>
-                            <img src={blog3}
+                            <img loading="lazy" src={blog3}
                                 width={350}
                                 alt='trends photo'
                             />

@@ -44,7 +44,7 @@ const SofaModel = () => {
         <div className='container mx-auto flex justify-between'>
           <div className="flex justify-center items-center gap-3">
             <div className="w-8 md:w-16">
-              <img src='/img/3d/slider/view.png' />
+              <img loading="lazy" src='/img/3d/slider/view.png' />
             </div>
             <div>
               <p className="font-semibold text-base md:text-2xl text-black">

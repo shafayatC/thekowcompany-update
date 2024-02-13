@@ -23,11 +23,11 @@ const VideoWithThumb = ({index, video, thumb, label}) => {
         </div>
 
         <div onClick={playVideo} style={{ opacity: playBool ? 0 : 1 }} className='z-10 float-left relative h-full cursor-pointer'>
-            <img className='w-full h-full object-cover' src={thumb} alt="slider" />
+            <img loading="lazy" className='w-full h-full object-cover' src={thumb} alt="slider" />
             <div className='absolute bottom-2 left-0 w-full flex justify-center' style={{ height: 'auto' }}>
                 <div className='text-xl flex gap-3 text-white items-center'>
                     <span>{label}</span>
-                    <img src='/img/video_slider/play-icon.svg' className='w-[20px] h-[20px]' alt="slider" />
+                    <img loading="lazy" src='/img/video_slider/play-icon.svg' className='w-[20px] h-[20px]' alt="slider" />
                 </div>
             </div>
         </div>

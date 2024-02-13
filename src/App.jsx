@@ -26,6 +26,7 @@ import Cosmetics from './component3d/Cosmetics/Cosmetics'
 import TrendsDetails from './component3d/Trends3D/TrendsDetails'
 import BlogPage2D from './component/BlogPage2D/BlogPage2D'
 import BlogPage3D from './component/BlogPage3D/BlogPage3D'
+import 'react-lazy-load-image-component/src/effects/blur.css';
 
 
 

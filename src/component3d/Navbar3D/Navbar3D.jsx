@@ -54,7 +54,7 @@ const Navbar3D = () => {
                     <div className="container mx-auto ">
                         <div className="hidden md:flex items-center justify-between gap-3">
                             <Link to={"/"}>
-                                <img className="w-[80px] h-[45px]" src={logo} alt="logo" />
+                                <img loading="lazy" className="w-[80px] h-[45px]" src={logo} alt="logo" />
                             </Link>
                             {/* --------------------------------------For Large Screen------------------------------------------ */}
                             {/* <div className="hidden md:flex sm:items-center md:gap-1 lg:gap-8 xl:gap-12"> */}
@@ -78,7 +78,7 @@ const Navbar3D = () => {
 
                         <div className={`flex items-center justify-between md:hidden`}>
                             <Link to={"/"}>
-                                <img src={logo}
+                                <img loading="lazy" src={logo}
                                     width={80}
                                     height={40}
                                     alt="logo" />

@@ -15,21 +15,21 @@ const Integration = () => {
             <div className='container mx-auto'>
                 <div className='flex flex-col md:flex-row justify-center items-center gap-2 '>
                     <div>
-                        <img src={integration1}
+                        <img loading="lazy" src={integration1}
                             width={270}
                             alt='integration photo'
                             className='shadow-gray-500 shadow-lg'
                         />
                     </div>
                     <div>
-                        <img src={integration2}
+                        <img loading="lazy" src={integration2}
                             width={300}
                             alt='integration photo'
                             className='shadow-gray-500 shadow-lg'
                         />
                     </div>
                     <div>
-                        <img src={integration3}
+                        <img loading="lazy" src={integration3}
                             width={270}
                             alt='integration photo'
                             className='shadow-gray-500 shadow-lg'

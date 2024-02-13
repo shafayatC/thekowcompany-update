@@ -14,7 +14,7 @@ const MegaNavbar = () => {
         <div className="container mx-auto py-1">
           <div className="flex items-center py-1 gap-16 ml-2">
             {/* <Link to={"/"}>
-              <img src={logo}
+              <img loading="lazy" src={logo}
                 width={60}
                 height={30}
                 alt="logo" />
@@ -28,7 +28,7 @@ const MegaNavbar = () => {
           </div>
           {/* <div className="flex items-center justify-between md:hidden">
             <Link to={"/"}>
-              <img src={logo}
+              <img loading="lazy" src={logo}
                 width={80}
                 height={40}
                 alt="logo" />

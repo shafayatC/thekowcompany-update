@@ -52,8 +52,8 @@ const Blog2D = () => {
     return window.screen.width <= 641
       ? [visibleDivs[startIndex]]
       : window.screen.width <= 1025
-      ? [visibleDivs[startIndex], visibleDivs[middleIndex]]
-      : [
+        ? [visibleDivs[startIndex], visibleDivs[middleIndex]]
+        : [
           visibleDivs[startIndex],
           visibleDivs[middleIndex],
           visibleDivs[endIndex],
@@ -80,11 +80,16 @@ const Blog2D = () => {
                   {/* Wrap the div with Link component */}
                   <div className="flex-col items-center justify-center">
                     <div>
-                      <img
+                      {/* <img
                         className=" w-full"
                         src={div.imageUrl}
                         alt={div.text}
-                      />
+                      /> */}
+                      <LazyLoadImage
+                        className="w-full"
+                        src={div.imageUrl}
+                        alt={div.text}
+                        effect="blur" />
                     </div>
                     <div className="flex flex-col items-center gap-2 pt-5 pb-10">
                       <div className="flex justify-center items-center gap-2 ">
