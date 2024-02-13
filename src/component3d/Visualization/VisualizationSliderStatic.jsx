@@ -2,6 +2,7 @@
 
 import { Link } from "react-router-dom";
 import Heading from "../Heading/Heading";
+import { LazyLoadImage } from "react-lazy-load-image-component";
 const VisualizationSliderStatic = () => {
   return (
     <div className="bg-[#f1f4ed] py-3">
@@ -13,27 +14,30 @@ const VisualizationSliderStatic = () => {
       <div className="2xl:container mx-auto">
         <div className="flex flex-col md:flex-row justify-items-center justify-center ">
           <Link to="/interior-visualization">
-          <div className="  mx-2 cursor-pointer ">
-            <div>
-              <img
-                src="/img/3d/slider/IV.webp"
+            <div className="  mx-2 cursor-pointer ">
+              <div>
+                {/* <img
+                src="/img/3d/slider/IV.jpg"
                 className="w-full h-full object-cover "
-              />
+              /> */}
+                <LazyLoadImage
+                  src="/img/3d/slider/IV.webp"
+                  className="w-full h-full object-cover "
+                  effect="blur" />
+              </div>
+              <div className="w-full flex gap-3 pt-2 justify-center ">
+                <h5 className="text-black font-semibold">
+                  INTERIOR VISUALIZATION
+                </h5>
+                <img loading="lazy" className="h-6 z-30" src="/img/3d/slider/view.png" />
+              </div>
             </div>
-            <div className="w-full flex gap-3 pt-2 justify-center ">
-              <h5 className="text-black font-semibold">
-                INTERIOR VISUALIZATION
-              </h5>
-              <img className="h-6 z-30" src="/img/3d/slider/view.png" />
-            </div>
-          </div>
           </Link>
           <Link to="/exterior-visualization">
-
             <div className=" mx-2 cursor-pointer">
               <div>
                 {/* <img
-                  src="/img/3d/slider/EV.webp"
+                  src="/img/3d/slider/EV.jpg"
                   className="w-full h-full object-cover "
                 /> */}
                 <LazyLoadImage
@@ -48,14 +52,12 @@ const VisualizationSliderStatic = () => {
                 <img loading="lazy" className="h-6 z-30" src="/img/3d/slider/view.png" />
               </div>
             </div>
-          </div>
           </Link>
           <Link to="/interior-visualization">
-
             <div className=" mx-2 cursor-pointer">
               <div>
                 {/* <img
-                  src="/img/3d/slider/VR.webp"
+                  src="/img/3d/slider/VR.jpg"
                   className="w-full h-full object-cover opacity-90"
                 /> */}
                 <LazyLoadImage
@@ -68,15 +70,10 @@ const VisualizationSliderStatic = () => {
                 <img loading="lazy" className="h-6 z-30" src="/img/3d/slider/view.png" />
               </div>
             </div>
-            <div className="w-full flex gap-3 justify-center pt-2 ">
-              <h5 className="text-black font-semibold">VR RENDERING</h5>
-              <img className="h-6 z-30" src="/img/3d/slider/view.png" />
-            </div>
-          </div>
           </Link>
         </div>
       </div>
-      
+
     </div>
   );
 };
