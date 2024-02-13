@@ -16,7 +16,7 @@ import Furniture from './component3d/ProductVisualization3d/Furniture/Furniture'
 import MegaNavbar from './component/MegaNavbar/MegaNavbar'
 import TermsCondition from './component/TermsCondition/TermsCondition'
 import PrivacyPolicy from './component/PrivacyPolicy/PrivacyPolicy'
-import Contact from './component/ContactUs/ContactUs'
+// import Contact from './component/ContactUs/ContactUs'
 import Thankyou from './component/Thankyou/Thankyou'
 import Packaging from './component3d/Packaging/Packaging'
 import FashionAccessories from './component3d/FashionAccessories/FashionAccessories'
@@ -26,6 +26,7 @@ import Cosmetics from './component3d/Cosmetics/Cosmetics'
 import TrendsDetails from './component3d/Trends3D/TrendsDetails'
 import BlogPage2D from './component/BlogPage2D/BlogPage2D'
 import BlogPage3D from './component/BlogPage3D/BlogPage3D'
+import ContactUs from './component/ContactUs/ContactUsUpdate'
 
 
 
@@ -39,7 +40,7 @@ function App() {
 
       <Routes>
       <Route path="/" element={<HomeContainer />} />
-      <Route path="/contact-us" element={<Contact />} />
+      <Route path="/contact-us" element={<ContactUs />} />
         <Route path="/2d/industry-trends" element={<BlogPage2D />} />
         <Route path="/3d/industry-trends" element={<BlogPage3D />} />
         <Route path="/integrations" element={<Partnership />} />
