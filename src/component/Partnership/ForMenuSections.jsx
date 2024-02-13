@@ -12,13 +12,13 @@ const ForMenuSections = () => {
             {/* <div className='banner-div-flex'> */}
             <div className='banner-logo-container'>
                 <div className='banner-logo-container-image1'>
-                    <img src={a} />
+                    <img loading="lazy" src={a} />
                 </div>
                 <div className='banner-logo-container-image2'>
-                    <img src={b} />
+                    <img loading="lazy" src={b} />
                 </div>
                 <div className='banner-logo-container-image3'>
-                    <img src={c} />
+                    <img loading="lazy" src={c} />
                 </div>
             </div>
             {/* <div className="partnership-nav-content"> */}

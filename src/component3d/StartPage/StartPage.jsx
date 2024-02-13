@@ -11,7 +11,7 @@ const StartPage = () => {
                         <div className='flex justify-center'>
                             <button className='bg-[url("/img/3d/button.png")] text-xl md:text-[25px] font-medium text-white justify-self-center py-8 px-[75px] bg-[length:100%_100%] bg-no-repeat'>GET QUOTE</button>
                         </div>
-                        <img className='absolute  -top-[70px] md:-top-[50px] -right-[65px] w-[120px]' src='/img/3d/Green-Ball.png' />
+                        <img loading="lazy" className='absolute  -top-[70px] md:-top-[50px] -right-[65px] w-[120px]' src='/img/3d/Green-Ball.png' />
                     </div>
                 </div>
             </div>

@@ -2,6 +2,7 @@ import React from 'react';
 import { Carousel } from 'react-div-carousel'
 import 'react-div-carousel/dist/index.css'
 import Heading from '../Heading/Heading';
+import { LazyLoadImage } from 'react-lazy-load-image-component';
 
 const ProductVisualSlider = () => {
     const sliderList = [
@@ -9,40 +10,40 @@ const ProductVisualSlider = () => {
             "image": "/img/Fashion Accessories.jpg",
             "label": "Fashion Accessories",
             "link": "#"
-          },
-          {
+        },
+        {
             "image": "/img/Tech Accessories.jpg",
             "label": "Tech Accessories",
             "link": "#"
-          },
-         
-          {
+        },
+
+        {
             "image": "/img/Packaging.jpg",
             "label": "Packaging",
             "link": "#"
-          },
-          {
+        },
+        {
             "image": "/img/Cosmetics-update.jpg",
             "label": "Cosmetics",
             "link": "#"
-          },
-          {
+        },
+        {
             "image": "/img/Furniture.jpg",
             "label": "Furniture",
             "link": "#"
-          },
-          {
+        },
+        {
             "image": "/img/Tech Equipment.jpg",
             "label": "Tech Equipment",
             "link": "#"
-          },
+        },
 
     ]
 
     return (
         <div className=' py-6' >
             <div>
-            <Heading className="pt-12 pb-7 md:pt-12 md:pb-16" titleClassName="w-[1500px]" title="PRODUCT VISUALIZATION" />
+                <Heading className="pt-12 pb-7 md:pt-12 md:pb-16" titleClassName="w-[1500px]" title="PRODUCT VISUALIZATION" />
                 <div className='2xl:container 2xl:mx-auto '>
                     <div className='relative w-full '>
                         <Carousel uniqueId="id_125" delay={5000}
@@ -61,10 +62,13 @@ const ProductVisualSlider = () => {
                             }
                         >
                             {sliderList.map((item, index) => (
-                                // <div className='h-full px-2'><img src={item.image}/></div>
+                                // <div className='h-full px-2'><img loading="lazy" src={item.image}/></div>
                                 <div className='relative flex flex-col md:block mx-2 cursor-pointer'>
                                     <div>
-                                        <img src={item.image} className="w-full object-cover" />
+                                        {/* <img loading="lazy" src={item.image} className="w-full object-cover" /> */}
+                                        <LazyLoadImage
+                                            src={item.image} className="w-full object-cover"
+                                            effect="blur" />
                                     </div>
                                     <div className='w-full flex gap-3 py-4 justify-center'>
                                         <h5 className='text-black font-medium'>{item.label}</h5>
@@ -75,7 +79,7 @@ const ProductVisualSlider = () => {
                     </div>
                 </div>
             </div>
-            
+
 
         </div>
     );

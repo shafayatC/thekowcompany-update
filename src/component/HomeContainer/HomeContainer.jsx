@@ -36,7 +36,7 @@ function HomeContainer() {
             {/* <Navbar /> */}
             <NavbarHome />
             <div className="bg-[#DEE2E2] bgImage pb-3 flex flex-col relative">
-                {/* <img src='/circle-bg.svg' /> */}
+                {/* <img loading="lazy" src='/circle-bg.svg' /> */}
                 <ProductVideoLatestMother
                     videoUrl="/video/The Kow Company_video.mp4"
                     loadingImg="/video/loading-image.png"
@@ -57,9 +57,7 @@ function HomeContainer() {
                 <ScrollEffect offset={100}>
                     <Record />
                 </ScrollEffect>
-                <ScrollEffect id="ai" offset={100}>
                     <Retouched />
-                </ScrollEffect>
                 <ScrollEffect id="integration" offset={100}>
                     <Integration />
                 </ScrollEffect>

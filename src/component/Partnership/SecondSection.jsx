@@ -11,7 +11,7 @@ const SecondSection = () => {
             <div className=''>
                 <div className='second-section-container'>
                     <div className='second-section-photo'>
-                        <img  className='max-w-[360px]' src={photo1} />
+                        <img loading="lazy"  className='max-w-[360px]' src={photo1} />
                     </div>
                     <div className='second-section-text px-2 md:px-0'>
                         <p>The KOW Company is elated to announce its pivotal partnership under the visionary leadership of <a className='text-blue-700' href='https://www.linkedin.com/in/kowser-ahmed-nirob/' target='_blank' rel="noreferrer"><b> Kowser Ahmed</b></a>, a luminary in content post-production, and <a className='text-blue-700' href='https://www.covisionmedialab.com/en' target='_blank' rel="noreferrer"><b>Covision Media</b></a> led by the tech whiz <a className='text-blue-700' href='https://www.linkedin.com/in/franz-tschimben/' target='_blank' rel="noreferrer"><b>Franz Tschimben</b></a> leading the charge in Product 3D scanning </p>

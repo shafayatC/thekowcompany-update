@@ -39,7 +39,7 @@ const Carousel = () => {
       <div className='flex justify-center gap-10'>
         {getVisibleDivs().map((div) => (
           <div className='flex-col items-center justify-center ' key={div.id}>
-            <img className='w-80 h-60' src={div.imageUrl} alt={div.text} />
+            <img loading="lazy" className='w-80 h-60' src={div.imageUrl} alt={div.text} />
             <p>{div.text}</p>
           </div>
         ))}

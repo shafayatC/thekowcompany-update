@@ -15,7 +15,7 @@ const ThreeDModelContainer = () => {
                     <div className='flex lg:flex-row flex-col gap-1 items-center justify-center'>
                         <div className='flex flex-col gap-5 w-full md:w-[400px]'>
                             <div>
-                                <img className='w-[160px] h-[70px]' src='/img/Holosnap-Logo_H_Color.png' />
+                                <img loading="lazy" className='w-[160px] h-[70px]' src='/img/Holosnap-Logo_H_Color.png' />
                             </div>
 
                             <p className='text-black text-justify'>Holosnap is an advanced AI-powered 3D asset creation tool that seamlessly converts 2D images into intricate 3D point clouds. Utilizing cutting-edge artificial intelligence algorithms, it automates the transformation of 2D images into 3D Models. Holosnap excels at analyzing 2D images to extrapolate depth information, facilitating the reconstruction of highly detailed and accurate 3D point clouds by identifying key features, textures, and contours.</p>
@@ -29,7 +29,7 @@ const ThreeDModelContainer = () => {
                         <div className='h-[320px] md:h-[500px] w-full md:w-[570px]'>
                             <Suspense fallback={<div className='flex justify-center  items-center'>
                                 {/* <span className="loader">Load&nbsp;ng</span> */}
-                                <img className='md:mt-16 md:ml-2' src='/img/shoeLogo.png' />
+                                <img loading="lazy" className='md:mt-16 md:ml-2' src='/img/shoeLogo.png' />
                             </div>}>
                                 <ShoeModel />
                             </Suspense>

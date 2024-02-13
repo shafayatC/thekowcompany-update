@@ -10,13 +10,13 @@ const FirstSection = () => {
             <div className='row'>
                 <div className='p-i-container'>
                     <div className='p-i-h-a light-divider'>
-                        <img src={a} />
+                        <img loading="lazy" src={a} />
                     </div>
                     <div className='p-i-h-b light-divider'>
-                        <img src={b} />
+                        <img loading="lazy" src={b} />
                     </div>
                     <div className='p-i-h-c'>
-                        <img src={c} />
+                        <img loading="lazy" src={c} />
                     </div>
                 </div>
 

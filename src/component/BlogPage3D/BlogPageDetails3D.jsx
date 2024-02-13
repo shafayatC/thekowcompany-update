@@ -26,7 +26,7 @@ const BlogPageDetails3D = () => {
                                 </div>
                             </div>
                             <div>
-                                <img src={blog4}
+                                <img loading="lazy" src={blog4}
                                     width={1200}
                                     alt='trends photo'
                                     className='shadow-xl shadow-slate-400'
@@ -36,7 +36,7 @@ const BlogPageDetails3D = () => {
                         <div className='flex flex-col-reverse md:flex-row  justify-center items-end gap-12 px-2 md:px-0'>
 
                             <div>
-                                <img src={blog5}
+                                <img loading="lazy" src={blog5}
                                     width={1200}
                                     alt='trends photo'
                                     className='shadow-xl shadow-slate-400'
@@ -76,7 +76,7 @@ const BlogPageDetails3D = () => {
                                 </div>
                             </div>
                             <div>
-                                <img src={blog6}
+                                <img loading="lazy" src={blog6}
                                     width={1200}
                                     alt='trends photo'
                                     className='shadow-xl shadow-slate-400'

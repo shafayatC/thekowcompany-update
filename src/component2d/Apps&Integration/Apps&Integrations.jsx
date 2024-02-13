@@ -17,22 +17,22 @@ const Integrations = () => {
           <div className="flex flex-col md:flex-row justify-center items-center gap-20 md:gap-12">
             <a href="https://shopify.thekowcompany.com/Account/Login" target="_blank" rel="noreferrer" className="cursor-pointer ">
             <div className="w-[180px]  ">
-              <img src="/img/Apps/shopify_white.png" />
+              <img loading="lazy" src="/img/Apps/shopify_white.png" />
             </div>
             </a>
             <a href="https://app.thekowcompany.com/Identity/Account/Login?ReturnUrl=%2F" className="cursor-pointer " target="_blank" rel="noreferrer">
             <div className="w-[180px] ">
-              <img src="/img/Apps/The-KOW-Company_white.png" />
+              <img loading="lazy" src="/img/Apps/The-KOW-Company_white.png" />
             </div>
             </a>
             <a href="https://www.nureg.de/" className="cursor-pointer " target="_blank" rel="noreferrer">
             <div className="w-[180px] ">
-              <img src="/img/Apps/nureg_white.png" />
+              <img loading="lazy" src="/img/Apps/nureg_white.png" />
             </div>
             </a>
             <a href="https://www.covisionmedialab.com/en" className="cursor-pointer " target="_blank" rel="noreferrer">
             <div className="w-[180px] ">
-              <img src="/img/Apps/covision-lab_white .png" />
+              <img loading="lazy" src="/img/Apps/covision-lab_white .png" />
             </div>
             </a>
           </div>
