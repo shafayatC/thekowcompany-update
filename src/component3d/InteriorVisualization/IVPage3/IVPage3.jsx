@@ -8,7 +8,7 @@ const IVPage3 = () => {
       id: 1,
       text: "YOUR PROJECT TITLE",
       text2: "01 JAN, 2023",
-      imageUrl: "/img/3d/slider/INDUSTRIAL BLACK LUXURIOUS.jpg",
+      imageUrl: "/img/3d/slider/INDUSTRIAL BLACK LUXURIOUS.webp",
      
       imageUrl2: "/img/3d/slider/view.png",
     },
@@ -16,7 +16,7 @@ const IVPage3 = () => {
       id: 2,
       text: "YOUR PROJECT TITLE",
       text2: "01 JAN, 2023",
-      imageUrl: "/img/3d/slider/PERSIAN BLUE COOL SUNRISE COMPACT ECOMMERCE .jpg",
+      imageUrl: "/img/3d/slider/PERSIAN BLUE COOL SUNRISE COMPACT ECOMMERCE .webp",
     
       imageUrl2: "/img/3d/slider/view.png",
     },
@@ -24,7 +24,7 @@ const IVPage3 = () => {
       id: 3,
       text: "YOUR PROJECT TITLE",
       text2: "01 JAN, 2023",
-      imageUrl: "/img/3d/slider/THE MINIMALIST WARM SUNSET LUXRIOUS.jpg",
+      imageUrl: "/img/3d/slider/THE MINIMALIST WARM SUNSET LUXRIOUS.webp",
       imageUrl2: "/img/3d/slider/view.png",
     },
  

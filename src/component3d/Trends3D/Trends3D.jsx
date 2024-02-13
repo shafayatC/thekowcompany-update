@@ -10,21 +10,21 @@ const Trends3D = () => {
       text: "Photography Tips for Beginners",
       text2: "01 JAN, 2023",
       button: "Read More",
-      imageUrl: "/img/3d/3d-blog-1.png",
+      imageUrl: "/img/3d/3d-blog-1.webp",
     },
     {
       id: 2,
       text: "Top 8 Food Photography Tips For Beginners",
       button: "Read More",
       text2: "01 JAN, 2023",
-      imageUrl: "/img/3d/3d-blog-2.png",
+      imageUrl: "/img/3d/3d-blog-2.webp",
     },
     {
       id: 3,
       text: "Easy Product Photography Solutions for Small Business",
       button: "Read More",
       text2: "01 JAN, 2023",
-      imageUrl: "/img/3d/3d-blog-3.png",
+      imageUrl: "/img/3d/3d-blog-3.webp",
     },
   ]);
 

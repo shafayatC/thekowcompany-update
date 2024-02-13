@@ -16,7 +16,7 @@ const VisualizationSliderStatic = () => {
           <div className="  mx-2 cursor-pointer ">
             <div>
               <img
-                src="/img/3d/slider/IV.jpg"
+                src="/img/3d/slider/IV.webp"
                 className="w-full h-full object-cover "
               />
             </div>
@@ -32,7 +32,7 @@ const VisualizationSliderStatic = () => {
           <div className=" mx-2 cursor-pointer">
             <div>
               <img
-                src="/img/3d/slider/EV.jpg"
+                src="/img/3d/slider/EV.webp"
                 className="w-full h-full object-cover "
               />
             </div>
@@ -48,7 +48,7 @@ const VisualizationSliderStatic = () => {
           <div className=" mx-2 cursor-pointer">
             <div>
               <img
-                src="/img/3d/slider/VR.jpg"
+                src="/img/3d/slider/VR.webp"
                 className="w-full h-full object-cover opacity-90"
               />
             </div>
