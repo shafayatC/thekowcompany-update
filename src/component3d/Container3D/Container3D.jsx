@@ -26,7 +26,7 @@ const Container3D = () => {
             <Navbar3D />
             <ProductVideoLatest
                 videoUrl="/video/3dVideoPresentation.webm"
-                loadingImg="/video/3dvideo_loading.png" />
+                loadingImg="/video/3dvideo_loading.webp" />
 
             {/* <StartPage /> */}
             {/* <ScrollEffect offset={100}> */}

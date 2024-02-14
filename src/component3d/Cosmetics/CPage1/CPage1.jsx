@@ -8,7 +8,7 @@ const CPage1 = () => {
       id: 1,
       text: "YOUR PROJECT TITLE",
       text2: "01 JAN, 2023",
-      imageUrl: "/img/Cosmetics-update.jpg",
+      imageUrl: "/img/Cosmetics-update.webp",
       imageUrl2: "/img/3d/slider/view.png",
     },
     // {

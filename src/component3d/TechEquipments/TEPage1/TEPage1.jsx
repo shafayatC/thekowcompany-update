@@ -8,7 +8,7 @@ const TEPage1 = () => {
       id: 1,
       text: "YOUR PROJECT TITLE",
       text2: "01 JAN, 2023",
-      imageUrl: "/img/Tech Equipment.jpg",
+      imageUrl: "/img/Tech Equipment.webp",
       imageUrl2: "/img/3d/slider/view.png",
     },
     // {

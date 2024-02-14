@@ -8,7 +8,7 @@ const FAPage1 = () => {
       id: 1,
       text: "YOUR PROJECT TITLE",
       text2: "01 JAN, 2023",
-      imageUrl: "/img/Fashion Accessories.jpg",
+      imageUrl: "/img/Fashion Accessories.webp",
       imageUrl2: "/img/3d/slider/view.png",
     },
     // {

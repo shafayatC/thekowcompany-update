@@ -1,7 +1,6 @@
 
 import ReactCompareImage from "react-compare-image";
-import model from "../../images/model.png"
-import model2 from "../../images/model-BR.png"
+
 import { Link } from "react-router-dom";
 import { LazyLoadComponent } from "react-lazy-load-image-component";
 
@@ -15,8 +14,8 @@ const Retouched = () => {
                         <div className="h-full overflow-hidden ">
                             <div className="imageCompareWrap">
                                     <ReactCompareImage
-                                        leftImage={model}
-                                        rightImage={model2}
+                                        leftImage={"/img/model.webp"}
+                                        rightImage={"/img/model-BR.webp"}
                                     />
                             </div>
                         </div>
