@@ -71,8 +71,9 @@ const Navbar3D = () => {
                                 <HashLink to="/3d#3d-trends" className="text-gray-800 text-xl lg:text-sm font-medium">3D TRENDS</HashLink>
                                 <Link to="/contact-us" className="text-gray-800 text-xl lg:text-sm font-medium">CONTACT US</Link>
                                 <HashLink to={"/3d#subscribe"} className="text-gray-800 text-xl lg:text-sm border-2 rounded-3xl px-4 py-1 border-[#7C9C30] font-medium" rel="noreferrer">SUBSCRIBE</HashLink>
-                                <Link to="/" className="text-gray-800 text-[26px] lg:text-[32px]font-medium"><GoHomeFill />
-                                </Link>
+                                <Link to="/book-a-call" className="text-gray-800 text-xl lg:text-sm border-2 rounded-3xl px-4 py-1 border-[#7C9C30] font-medium" rel="noreferrer">Book A Call</Link>
+                                {/* <Link to="/" className="text-gray-800 text-[26px] lg:text-[32px]font-medium"><GoHomeFill />
+                                </Link> */}
                             </div>
                         </div>
 

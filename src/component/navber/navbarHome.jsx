@@ -69,8 +69,9 @@ const NavbarHome = () => {
             <HashLink to="/#trends" className={` text-xs lg:text-sm font-semibold ${ screenLeft ? 'text-gray-800 border-[#DEE2E2] border-b-2  hover:border-b-2 hover:border-[#7C9C30] ' : 'text-white hover:text-[#7C9C30]'} `}>INDUSTRY TRENDS</HashLink>
             {/* <HashLink to="/#virtual" className={` text-xs lg:text-sm font-semibold ${ screenLeft ? 'text-gray-800 border-[#DEE2E2] border-b-2  hover:border-b-2 hover:border-[#7C9C30] ' : 'text-white hover:text-[#7C9C30]'} `}>VIRTUAL TOUR</HashLink> */}
             <a href="https://app.cutoutwiz.com/Identity/Account/Login?ReturnUrl=%2F" target="_blank" className={`text-xs lg:text-sm border-2 rounded-3xl px-4 py-1 border-[#7C9C30] font-semibold ${screenLeft ? 'text-gray-800 ':' text-white'}`} rel="noreferrer">SIGN UP</a>
-            <Link to="/" className={`text-[26px] lg:text-[32px]  font-semibold ${ screenLeft ? 'text-gray-800 border-b-2 border-[#DEE2E2] hover:border-[#7C9C30] hover:border-b-2 ' : 'text-white'}`}><GoHomeFill color={`${screenLeft ? 'black' : 'white'}`}/>
-            </Link>
+            <Link to="/book-a-call" className={`text-xs lg:text-sm border-2 rounded-3xl px-4 py-1 border-[#7C9C30] font-semibold ${screenLeft ? 'text-gray-800 ':' text-white'}`} rel="noreferrer">Book A Call</Link>
+            {/* <Link to="/" className={`text-[26px] lg:text-[32px]  font-semibold ${ screenLeft ? 'text-gray-800 border-b-2 border-[#DEE2E2] hover:border-[#7C9C30] hover:border-b-2 ' : 'text-white'}`}><GoHomeFill color={`${screenLeft ? 'black' : 'white'}`}/>
+            </Link> */}
           </div>
           <div className="flex items-center justify-between md:hidden">
             <Link to={"/"}>

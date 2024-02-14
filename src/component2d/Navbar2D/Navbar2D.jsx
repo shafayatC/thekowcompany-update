@@ -31,8 +31,10 @@ const Navbar2D = () => {
             <Link to="/contact-us" className="text-gray-800 text-xs lg:text-sm border-b-2 border-[#DEE2E2] font-semibold hover:border-b-2 hover:border-[#7C9C30]">CONTACT US</Link>
 
             <a href="https://app.cutoutwiz.com/Identity/Account/Login?ReturnUrl=%2F" target="_blank" className="text-gray-800 text-xs lg:text-sm border-2 rounded-3xl px-8 py-1 border-[#7C9C30] font-semibold" rel="noreferrer">SIGN UP</a>
-            <Link to="/" className="text-gray-800 text-[26px] lg:text-[32px] border-b-2 border-[#DEE2E2] font-semibold hover:border-b-2 hover:border-[#7C9C30]"><GoHomeFill />
-            </Link>
+            <Link to="/book-a-call" className="text-gray-800 text-xs lg:text-sm border-2 rounded-3xl px-6 py-1 border-[#7C9C30] font-semibold" rel="noreferrer">Book A Call</Link>
+
+            {/* <Link to="/" className="text-gray-800 text-[26px] lg:text-[32px] border-b-2 border-[#DEE2E2] font-semibold hover:border-b-2 hover:border-[#7C9C30]"><GoHomeFill />
+            </Link> */}
           </div>
           <div className="flex items-center justify-between md:hidden">
             <Link to={"/"}>
