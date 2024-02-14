@@ -1,5 +1,5 @@
 import { useState } from "react";
-import headphone from "../../assets/headphone.png";
+
 
 import BottomPart from "./BottomPart";
 import { Link } from "react-router-dom";
@@ -46,7 +46,7 @@ const StartPage = () => {
                 className=""
               >
                 <img
-                  src={headphone}            
+                  src={"/img/headphone.webp"}            
                   width={500}
                   height={300}
                 />

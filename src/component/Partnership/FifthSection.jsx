@@ -1,7 +1,5 @@
 
-import covision from "./image/COVISION_Image.png";
-import nureg from "./image/NUREG_-Image.png"
-import kow from "./image/KOW-COMPANY_image.png"
+
 import covisionLogo from "./image/Covision-Media-Logo.png";
 import nuregLogo from "./image/Nureg-Logo.png"
 import kowLogo from "./image/The-KOW-Company-Logo.png"
@@ -15,7 +13,7 @@ const FifthSection = () => {
                 <div className='fifth-section-image-container'>
                     <div className=' side-light'>
                         <div className='fifth-section-image-1'>
-                            <img loading="lazy" src={covision} className="max-w-[300px]" />
+                            <img loading="lazy" src={"/img/partnership/COVISION_Image.webp"} className="max-w-[300px]" />
                         </div>
                         <div className='Fifth-section-logo-1'>
                             <img loading="lazy" src={covisionLogo} />
@@ -24,7 +22,7 @@ const FifthSection = () => {
                     </div>
                     <div className=' side-light'>
                         <div className='fifth-section-image-2'>
-                            <img loading="lazy" src={nureg} className="max-w-[300px]" />
+                            <img loading="lazy" src={"/img/partnership/NUREG_-Image.webp"} className="max-w-[300px]" />
                         </div>
                         <div className='Fifth-section-logo-2'>
                             <img loading="lazy" src={nuregLogo} />
@@ -33,7 +31,7 @@ const FifthSection = () => {
 
                     <div className=''>
                         <div className='fifth-section-image-3'>
-                            <img loading="lazy" src={kow} className="max-w-[300px]" />
+                            <img loading="lazy" src={"/img/partnership/KOW-COMPANY_image.webp"} className="max-w-[300px]" />
                         </div>
                         <div className='Fifth-section-logo-3'>
                             <img loading="lazy" src={kowLogo} />

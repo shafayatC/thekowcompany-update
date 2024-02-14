@@ -1,7 +1,5 @@
 
-import a from './image/1.png'
-import b from './image/2.png'
-import c from './image/3.png'
+
 import './style.css'
 
 const FirstSection = () => {
@@ -10,13 +8,13 @@ const FirstSection = () => {
             <div className='row'>
                 <div className='p-i-container'>
                     <div className='p-i-h-a light-divider'>
-                        <img loading="lazy" src={a} />
+                        <img loading="lazy" src={"/img/partnership/1.webp"} />
                     </div>
                     <div className='p-i-h-b light-divider'>
-                        <img loading="lazy" src={b} />
+                        <img loading="lazy" src={"/img/partnership/2.webp"} />
                     </div>
                     <div className='p-i-h-c'>
-                        <img loading="lazy" src={c} />
+                        <img loading="lazy" src={"/img/partnership/3.webp"} />
                     </div>
                 </div>
 

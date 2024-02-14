@@ -31,7 +31,7 @@
 .light-divider::after {
     content: "";
     position: absolute;
-    background-image: url('./image/divide-light-line-Sep.png');
+    background-image: url('./img/partnership/divide-light-line-Sep.webp');
     height: 131%;
     width: 68px;
     background-size: 100% 100%;
@@ -68,7 +68,7 @@
     content: "";
     position: absolute;
     width: 50%;
-    background-image: url('./image/divide-light-line-Sep.png');
+    background-image: url('./img/partnership/divide-light-line-Sep.webp');
     height: 50px;
     left: 50%;
     background-size: 100% 100%;
@@ -364,7 +364,7 @@ margin-left: 70px;
 .side-light::after {
     content: "";
     position: absolute;
-    background-image: url('./image/side-light.png');
+    background-image: url('/img/partnership/side-light.webp');
     height: 140%;
     width: 90px;
     background-size: 100% 100%;
@@ -487,7 +487,7 @@ margin-bottom: 20px;
     .light-divider::after {
         content: "";
         position: absolute;
-        background-image: url('./image/divide-light-line-Sep.png');
+        background-image: url('/img/partnership/divide-light-line-Sep.webp');
         height: 131%;
         width: 68px;
         background-size: 100% 100%;
@@ -515,7 +515,7 @@ margin-bottom: 20px;
     .side-light::after {
         content: "";
         position: absolute;
-        background-image: url('./image/side-light.png');
+        background-image: url('./image/side-light.webp');
         height: 140%;
         width: 90px;
         background-size: 100% 100%;
