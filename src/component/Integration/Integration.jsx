@@ -1,8 +1,5 @@
 
 import { Link } from "react-router-dom";
-import integration1 from "../../images/integration1.png"
-import integration2 from "../../images/integration2.png"
-import integration3 from "../../images/integration3.png"
 import { LazyLoadImage } from "react-lazy-load-image-component";
 
 const Integration = () => {
@@ -22,7 +19,7 @@ const Integration = () => {
                             className='shadow-gray-500 shadow-lg'
                         /> */}
                         <LazyLoadImage
-                            src={integration1}
+                            src={"/img/integration1.webp"}
                             width={270}
                             alt='integration photo'
                             className='shadow-gray-500 shadow-lg'
@@ -36,7 +33,7 @@ const Integration = () => {
                             className='shadow-gray-500 shadow-lg'
                         /> */}
                         <LazyLoadImage
-                            src={integration2}
+                            src={"/img/integration2.webp"}
                             width={300}
                             alt='integration photo'
                             className='shadow-gray-500 shadow-lg'
@@ -50,7 +47,7 @@ const Integration = () => {
                             className='shadow-gray-500 shadow-lg'
                         /> */}
                         <LazyLoadImage
-                            src={integration3}
+                            src={"/img/integration3.webp"}
                             width={270}
                             alt='integration photo'
                             className='shadow-gray-500 shadow-lg'

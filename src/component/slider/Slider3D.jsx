@@ -6,33 +6,33 @@ import { Link } from 'react-router-dom'
 const Slider3D = () => {
   const sliderList = [
     {
-      "image": "/img/Fashion Accessories.jpg",
+      "image": "/img/Fashion Accessories.webp",
       "label": "Fashion Accessories",
       "link": "#"
     },
     {
-      "image": "/img/Tech Accessories.jpg",
+      "image": "/img/Tech Accessories.webp",
       "label": "Tech Accessories",
       "link": "#"
     },
 
     {
-      "image": "/img/Packaging.jpg",
+      "image": "/img/Packaging.webp",
       "label": "Packaging",
       "link": "#"
     },
     {
-      "image": "/img/Cosmetics-update.jpg",
+      "image": "/img/Cosmetics-update.webp",
       "label": "Cosmetics",
       "link": "#"
     },
     {
-      "image": "/img/Furniture.jpg",
+      "image": "/img/Furniture.webp",
       "label": "Furniture",
       "link": "#"
     },
     {
-      "image": "/img/Tech Equipment.jpg",
+      "image": "/img/Tech Equipment.webp",
       "label": "Tech Equipment",
       "link": "#"
     },

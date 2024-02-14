@@ -39,7 +39,7 @@ function HomeContainer() {
                 {/* <img loading="lazy" src='/circle-bg.svg' /> */}
                 <ProductVideoLatestMother
                     videoUrl="/video/The Kow Company_video.mp4"
-                    loadingImg="/video/loading-image.png"
+                    loadingImg="/video/loading-image.webp"
                     tagList={tagList} />
                 <ScrollEffect offset={100}>
                     <WelcomePage />
