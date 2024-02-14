@@ -1,6 +1,6 @@
 
 import { LazyLoadImage } from "react-lazy-load-image-component";
-import tree from "../../images/tree.png"
+
 
 const BluePrint = () => {
     return (
@@ -18,7 +18,7 @@ const BluePrint = () => {
                         alt='integration photo'
                         /> */}
                         <LazyLoadImage
-                            src={tree}
+                            src={"/img/tree.webp"}
                             // width={950}
                             alt='integration photo'
                             className="w-full"

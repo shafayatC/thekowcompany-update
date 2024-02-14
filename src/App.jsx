@@ -1,19 +1,14 @@
 
 import './App.css'
-
 import { Route, Routes } from 'react-router-dom'
 import HomeContainer from './component/HomeContainer/HomeContainer'
-import BlogPage from './component/BlogPage2D/BlogPage2D'
 import Partnership from './component/Partnership/Partnership'
 import Container2D from './component2d/Container2D/Container2D'
-
 import BlogDetails from './component2d/Blog2D/BlogDetails'
 import Container3D from './component3d/Container3D/Container3D'
-import MegaMenu from './component3d/MegaMenu/MegaMenu'
 import ExteriorVisualization from './component3d/ExteriorVisualization/ExteriorVisualization'
 import InteriorVisualization from './component3d/InteriorVisualization/InteriorVisualization'
 import Furniture from './component3d/ProductVisualization3d/Furniture/Furniture'
-import MegaNavbar from './component/MegaNavbar/MegaNavbar'
 import TermsCondition from './component/TermsCondition/TermsCondition'
 import PrivacyPolicy from './component/PrivacyPolicy/PrivacyPolicy'
 // import Contact from './component/ContactUs/ContactUs'
@@ -35,7 +30,6 @@ function App() {
 
   return (
     <>
-
       <Routes>
       <Route path="/" element={<HomeContainer />} />
       <Route path="/contact-us" element={<ContactUs />} />
@@ -59,8 +53,6 @@ function App() {
         <Route path="/privacy-policy" element={<PrivacyPolicy/>} />
         <Route path="/thank-you/*" element={<Thankyou/>} />
         <Route path="/book-a-call" element={<BookACall/>} />
-       
-        
       </Routes>
     </>
   )

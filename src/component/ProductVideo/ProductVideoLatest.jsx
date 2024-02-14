@@ -3,6 +3,7 @@ import { Carousel } from 'react-div-carousel'
 import 'react-div-carousel/dist/index.css'
 import VideoPlayer from "./VideoPlayer.jsx";
 import { LazyLoadImage } from "react-lazy-load-image-component";
+import VideoPlayerLatest from "./VideoPlayerLatest.jsx";
 // import video from "./video/production.mp4";
 // import video from './video/production.mp4';
 
@@ -39,7 +40,9 @@ export default function ProductVideoLatest({ videoUrl, loadingImg, tagList = [] 
                                 effect="blur" />
                         </div>
                     }>
-                        <VideoPlayer loadingImg={loadingImg} videoUrl={videoUrl} />
+                        <VideoPlayerLatest videoName="3d-video" loadingImg={loadingImg} videoUrl={videoUrl}/>
+
+                        {/* <VideoPlayer loadingImg={loadingImg} videoUrl={videoUrl} /> */}
                         {/* <VideoPlay /> */}
                         {/* tag line */}
                         {
