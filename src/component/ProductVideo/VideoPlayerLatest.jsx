@@ -13,6 +13,7 @@ const VideoPlayerLatest = ({ videoUrl, loadingImg, videoName }) => {
 
     const videoPlayer = useMemo(() => (
         <>
+
             <div className="flex justify-center w-full h-full">
                 <video
                     className="object-cover" width="100%" height="auto"
@@ -26,8 +27,14 @@ const VideoPlayerLatest = ({ videoUrl, loadingImg, videoName }) => {
                     <source src={videoUrl} type="video/mp4" />
                 </video>
             </div>
+
+            {isLoading &&
+                <div className="absolute flex justify-center w-full h-full">
+                    <img loading="lazy" className="object-cover w-full" src={loadingImg} alt="loading image" />
+                </div>
+            }
         </>
-    ), [videoName]);
+    ), [videoName, isLoading]);
 
     return videoPlayer;
 };
