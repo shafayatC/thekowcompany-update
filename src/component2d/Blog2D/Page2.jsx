@@ -1,4 +1,4 @@
-import cover1 from "../../../public/img/Blog-Images/coverPhoto1.png"
+import cover1 from "../../../public/img/Blog-Images/coverPhoto1.webp"
 
 const Page2 = () => {
     return (
