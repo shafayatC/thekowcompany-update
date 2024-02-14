@@ -1,5 +1,5 @@
-import blogImg1 from "../../../public/img/Blog-Images/blogPhoto1.png"
-import blogImg2 from "../../../public/img/Blog-Images/blogPhoto2.png"
+import blogImg1 from "../../../public/img/Blog-Images/blogPhoto1.webp"
+import blogImg2 from "../../../public/img/Blog-Images/blogPhoto2.webp"
 const Page4 = () => {
     return (
         <div className="bg-[#DEE2E2]">

@@ -1,5 +1,5 @@
-import blogImg3 from "../../../public/img/Blog-Images/blogPhoto3.png"
-import blogImg4 from "../../../public/img/Blog-Images/blogPhoto4.png"
+import blogImg3 from "../../../public/img/Blog-Images/blogPhoto3.webp"
+import blogImg4 from "../../../public/img/Blog-Images/blogPhoto4.webp"
 
 const Page5 = () => {
     return (

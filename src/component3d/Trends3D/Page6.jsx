@@ -1,4 +1,4 @@
-import coverPhoto2 from "../../../public/img/Blog-Images/coverPhoto2.png"
+import coverPhoto2 from "../../../public/img/Blog-Images/coverPhoto2.webp"
 
 const Page6 = () => {
     return (
