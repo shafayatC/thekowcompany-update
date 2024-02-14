@@ -28,6 +28,7 @@ import BlogPage2D from './component/BlogPage2D/BlogPage2D'
 import BlogPage3D from './component/BlogPage3D/BlogPage3D'
 import ContactUs from './component/ContactUs/ContactUsUpdate'
 import 'react-lazy-load-image-component/src/effects/blur.css';
+import BookACall from './component/Calendly/BookACall'
 
 function App() {
 
@@ -57,6 +58,8 @@ function App() {
         <Route path="/terms-condition" element={<TermsCondition/>} />
         <Route path="/privacy-policy" element={<PrivacyPolicy/>} />
         <Route path="/thank-you/*" element={<Thankyou/>} />
+        <Route path="/book-a-call" element={<BookACall/>} />
+       
         
       </Routes>
     </>

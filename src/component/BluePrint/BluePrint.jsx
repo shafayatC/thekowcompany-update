@@ -19,8 +19,9 @@ const BluePrint = () => {
                         /> */}
                         <LazyLoadImage
                             src={tree}
-                            width={950}
+                            // width={950}
                             alt='integration photo'
+                            className="w-full"
                             effect="blur"
                         />
                     </div>

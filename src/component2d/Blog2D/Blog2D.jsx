@@ -11,21 +11,21 @@ const Blog2D = () => {
       text: "Photography Tips for Beginners",
       text2: "01 JAN, 2023",
       button: "Read More",
-      imageUrl: "/img/blog5.png",
+      imageUrl: "/img/blog5.webp",
     },
     {
       id: 2,
       text: "Top 8 Food Photography Tips For Beginners",
       button: "Read More",
       text2: "01 JAN, 2023",
-      imageUrl: "/img/blog4.png",
+      imageUrl: "/img/blog4.webp",
     },
     {
       id: 3,
       text: "Easy Product Photography Solutions for Small Business",
       button: "Read More",
       text2: "01 JAN, 2023",
-      imageUrl: "/img/blog6.png",
+      imageUrl: "/img/blog6.webp",
     },
   ]);
 

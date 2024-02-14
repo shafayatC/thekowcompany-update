@@ -15,12 +15,10 @@ const Retouched = () => {
                     <div className=" h-[670px] relative z-50 mt-5 lg:mt-0 bg-white sm:ml-20 md:ml-28  ">
                         <div className="h-full overflow-hidden ">
                             <div className="imageCompareWrap">
-                                <LazyLoadComponent effect="blur">
                                     <ReactCompareImage
                                         leftImage={model}
                                         rightImage={model2}
                                     />
-                                </LazyLoadComponent>
                             </div>
                         </div>
                     </div>

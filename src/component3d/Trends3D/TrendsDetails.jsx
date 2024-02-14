@@ -21,7 +21,7 @@ const TrendsDetails = () => {
                 <div className="w-full h-full">
                   <img
                     className="w-4/5 shadow-kow-shadow-sm"
-                    src="/img/blog4.png"
+                    src="/img/blog4.webp"
                     alt=""
                   />
                 </div>
@@ -45,7 +45,7 @@ const TrendsDetails = () => {
             <div
               className="absolute top-0 left-0 w-full h-[90%] opacity-60 bg-no-repeat bg-bottom  bg-[length:130%_170%]"
               style={{
-                backgroundImage: `url('/img/blog4.png')`,
+                backgroundImage: `url('/img/blog4.webp')`,
               }}
             ></div>
           </div>

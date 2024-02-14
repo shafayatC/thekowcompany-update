@@ -176,13 +176,13 @@ html,body{
 
 /* Blog Background Image */
 .blog-bg-img{
-  background-image: url("/public/img/Blog-Images/blog-bangladesh.png");
+  background-image: url("/public/img/Blog-Images/blog-bangladesh.webp");
   background-repeat: no-repeat;
   background-size: 100% 100%;
   height: 80vh;
 }
 .cover-bg-1{
-  background-image: url("/public/img/Blog-Images/coverPhoto1.png");
+  background-image: url("/public/img/Blog-Images/coverPhoto1.webp");
   background-repeat: no-repeat;
   background-size: 100% 100%;
   height: 80vh;

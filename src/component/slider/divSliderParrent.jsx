@@ -10,27 +10,27 @@ const DivSliderParrent = () => {
 
     const sliderList = [
         {
-            "after": "/img/Image_Slider/Background Removal_raw.jpg",
-            "before": "/img/Image_Slider/Background Removal_output.jpg",
+            "after": "/img/Image_Slider/Background Removal_raw.webp",
+            "before": "/img/Image_Slider/Background Removal_output.webp",
             "lebel": "Background removal"
         },
         {
-            "after": "/img/Image_Slider/Ghost Mannequin_raw.jpg",
-            "before": "/img/Image_Slider/Ghost Mannequin_output.jpg",
+            "after": "/img/Image_Slider/Ghost Mannequin_raw.webp",
+            "before": "/img/Image_Slider/Ghost Mannequin_output.webp",
             "lebel": "Ghost Mannequin"
         },
         {
-            "after": "/img/Image_Slider/Manipulation_raw.jpg",
-            "before": "/img/Image_Slider/Manipulation_output.jpg",
+            "after": "/img/Image_Slider/Manipulation_raw.webp",
+            "before": "/img/Image_Slider/Manipulation_output.webp",
             "lebel": "Manipulation"
         }, {
-            "after": "/img/Image_Slider/Photo Recolor_raw.jpg",
-            "before": "/img/Image_Slider/Photo Recolor_output.jpg",
+            "after": "/img/Image_Slider/Photo Recolor_raw.webp",
+            "before": "/img/Image_Slider/Photo Recolor_output.webp",
             "lebel": "Photo Recolor"
         },
         {
-            "after": "/img/Image_Slider/Retouching_raw.jpg",
-            "before": "/img/Image_Slider/Retouching_output.jpg",
+            "after": "/img/Image_Slider/Retouching_raw.webp",
+            "before": "/img/Image_Slider/Retouching_output.webp",
             "lebel": "Retouching"
         }
     ]
