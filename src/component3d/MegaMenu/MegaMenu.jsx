@@ -78,10 +78,10 @@ const MegaMenu = () => {
                       ARCHITECTURAL VISUALIZATION
                     </p>
                     <div className="flex flex-col gap-1 text-xs">
-                      <Link className="hover:text-[#AF8E56] hover:underline">Visualization</Link>
+                      <p className="hover:text-[#AF8E56] hover:underline cursor-default">Visualization</p>
                       <Link className="hover:text-[#AF8E56] hover:underline" to="/exterior-visualization">Exterior Visualization</Link>
                       <Link className="hover:text-[#AF8E56] hover:underline" to="/interior-visualization">Interior Visualization</Link>
-                      <Link className="hover:text-[#AF8E56] hover:underline">VR Rendering</Link>
+                      <p className="hover:text-[#AF8E56] hover:underline cursor-default">VR Rendering</p>
                     </div>
                   </div>
                 </div>

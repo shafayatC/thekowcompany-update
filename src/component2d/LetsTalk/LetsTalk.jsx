@@ -1,4 +1,4 @@
-import illustrator from "../../assets/illustration.png";
+
 import contact from "../../assets/contact-us.png";
 import Heading2D from "../../component3d/Heading/Heading2D";
 
@@ -8,7 +8,7 @@ const LetsTalk = () => {
       <div className="container mx-auto ">
         <div className="flex justify-center py-12">
           <div>
-            <img loading="lazy" className="w-[430px]" src={illustrator} />
+            <img loading="lazy" className="w-[430px]" src={"/img/illustration2.webp"} />
           </div>
           <div className="animate-pulse">
             <img loading="lazy" className="w-[120px]" src={contact} />

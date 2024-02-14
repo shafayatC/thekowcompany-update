@@ -2,6 +2,7 @@ import { Suspense, lazy, useState } from "react";
 import { Carousel } from 'react-div-carousel'
 import 'react-div-carousel/dist/index.css'
 import VideoPlayer from "./VideoPlayer.jsx";
+import VideoPlayerLatest from "./VideoPlayerLatest.jsx";
 // import video from "./video/production.mp4";
 // import video from './video/production.mp4';
 
@@ -35,7 +36,8 @@ export default function ProductVideoLatestMother({ videoUrl, loadingImg, tagList
                             <img loading="lazy" className="object-cover w-full" src={loadingImg} alt="loading" />
                         </div>
                     }>
-                        <VideoPlayer loadingImg={loadingImg} videoUrl={videoUrl} />
+                        <VideoPlayerLatest videoName="home-video" loadingImg={loadingImg} videoUrl={videoUrl}/>
+                        {/* <VideoPlayer loadingImg={loadingImg} videoUrl={videoUrl} /> */}
                         {/* <VideoPlay /> */}
                         {/* tag line */}
                         {

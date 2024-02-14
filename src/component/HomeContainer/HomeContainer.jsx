@@ -33,13 +33,11 @@ function HomeContainer() {
     return (
         <>
             <ScrolTop />
-            {/* <Navbar /> */}
             <NavbarHome />
             <div className="bg-[#DEE2E2] bgImage pb-3 flex flex-col relative">
-                {/* <img loading="lazy" src='/circle-bg.svg' /> */}
                 <ProductVideoLatestMother
                     videoUrl="/video/The Kow Company_video.mp4"
-                    loadingImg="/video/loading-image.png"
+                    loadingImg="/video/loading-image.webp"
                     tagList={tagList} />
                 <ScrollEffect offset={100}>
                     <WelcomePage />
@@ -47,33 +45,14 @@ function HomeContainer() {
                 <ScrollEffect offset={100}>
                     <ThreeDModelContainer />
                 </ScrollEffect>
-                {/* <ScrollEffect offset={100}> */}
-                    <DivSliderParrent />
-                {/* </ScrollEffect> */}
-                {/* <ScrollEffect offset={100}> */}
-                    <Slider3D />
-                {/* </ScrollEffect> */}
-                {/* <ProductVisualSlider/> */}
-                {/* <ScrollEffect offset={100}> */}
-                    <Record />
-                {/* </ScrollEffect> */}
-                    <Retouched />
-                {/* <ScrollEffect id="integration" offset={100}> */}
-                    <Integration />
-                {/* </ScrollEffect> */}
-                {/* <TheSquadSlide /> */}
-                {/* <TheSquad /> */}
-                {/* <ScrollEffect offset={100}> */}
-                    <BluePrint />
-                {/* </ScrollEffect> */}
-                {/* <ScrollEffect id="trends" offset={100}> */}
-                    <IndustryTrends />
-                {/* </ScrollEffect> */}
-                {/* <VirtualTour /> */}
-                {/* <ScrollEffect offset={100}> */}
-                    <GetUpdate />
-                {/* </ScrollEffect> */}
-                {/* <GetUpdateOld/> */}
+                <DivSliderParrent />
+                <Slider3D />
+                <Record />
+                <Retouched />
+                <Integration />
+                <BluePrint />
+                <IndustryTrends />
+                <GetUpdate />
             </div>
             <Footer />
 

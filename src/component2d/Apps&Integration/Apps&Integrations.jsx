@@ -20,7 +20,7 @@ const Integrations = () => {
               <div className="w-[180px]  ">
                 {/* <img loading="lazy" src="/img/Apps/shopify_white.png" /> */}
                 <LazyLoadImage
-                  src="/img/Apps/shopify_white.png"
+                  src="/img/Apps/shopify_white.webp"
                   effect="blur"
                 />
               </div>
@@ -29,7 +29,7 @@ const Integrations = () => {
               <div className="w-[180px] ">
                 {/* <img loading="lazy" src="/img/Apps/The-KOW-Company_white.png" /> */}
                 <LazyLoadImage
-                  src="/img/Apps/The-KOW-Company_white.png" 
+                  src="/img/Apps/The-KOW-Company_white.webp" 
                   effect="blur"
                 />
               </div>
@@ -38,7 +38,7 @@ const Integrations = () => {
               <div className="w-[180px] ">
                 {/* <img loading="lazy" src="/img/Apps/nureg_white.png" /> */}
                 <LazyLoadImage
-                  src="/img/Apps/nureg_white.png"
+                  src="/img/Apps/nureg_white.webp"
                   effect="blur"
                 />
               </div>
@@ -47,7 +47,7 @@ const Integrations = () => {
               <div className="w-[180px] ">
                 {/* <img loading="lazy" src="/img/Apps/covision-lab_white .png" /> */}
                 <LazyLoadImage
-                  src="/img/Apps/covision-lab_white .png"
+                  src="/img/Apps/covision-lab_white .webp"
                   effect="blur"
                 />
               </div>
