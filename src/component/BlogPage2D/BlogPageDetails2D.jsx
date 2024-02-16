@@ -19,7 +19,7 @@ const BlogPageDetails2D = () => {
 
                                 <div className='flex justify-end pt-4 '>
                                    <Link to="/2d/industry-trends-details">
-                                   <button className='text-[11px]  font-semibold text-white px-8 py-1 bg-[#7C9C30] rounded-3xl'>Read More</button>
+                                   <button aria-label="readmore" className='text-[11px]  font-semibold text-white px-8 py-1 bg-[#7C9C30] rounded-3xl'>Read More</button>
                                    </Link>
                                 </div>
                             </div>
@@ -51,7 +51,7 @@ const BlogPageDetails2D = () => {
 
                                 <div className='flex justify-start pt-4 '>
                                 <Link to="/2d/industry-trends-details">
-                                   <button className='text-[11px]  font-semibold text-white px-8 py-1 bg-[#7C9C30] rounded-3xl'>Read More</button>
+                                   <button aria-label="readmore" className='text-[11px]  font-semibold text-white px-8 py-1 bg-[#7C9C30] rounded-3xl'>Read More</button>
                                    </Link>
                                 </div>
                             </div>
@@ -69,7 +69,7 @@ const BlogPageDetails2D = () => {
 
                                 <div className='flex justify-end pt-4 '>
                                 <Link to="/2d/industry-trends-details">
-                                   <button className='text-[11px]  font-semibold text-white px-8 py-1 bg-[#7C9C30] rounded-3xl'>Read More</button>
+                                   <button aria-label="readmore" className='text-[11px]  font-semibold text-white px-8 py-1 bg-[#7C9C30] rounded-3xl'>Read More</button>
                                    </Link>
                                 </div>
                             </div>

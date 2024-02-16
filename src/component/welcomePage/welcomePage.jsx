@@ -36,7 +36,7 @@ const WelcomePage = () => {
                             />
                         </div>
                         <div className=" flex justify-end lg:h-[400px] items-center">
-                            <p className="w-full px-3 lg:w-3/4 lg:pl-20 lg:px-0 xl:px-20 text-white text-justify">With a relentless commitment to excellence, we have etched our name as a leading player in the world of Ecommerce
+                            <p className="w-full px-3 lg:w-3/4 lg:pl-20 lg:px-0 xl:px-20 text-white text-sm md:text-base text-justify">With a relentless commitment to excellence, we have etched our name as a leading player in the world of Ecommerce
                                 and Studio Image & 3D Post-Production. Our journey has been defined by creativity, precision, and an unwavering
                                 passion for transforming visual concepts into captivating realities.
                                 Our multifaceted expertise extends beyond the realms of traditional image editing. We boast a remarkable proficiency

@@ -104,6 +104,7 @@ const GetUpdate = () => {
             />
            
             <button
+            aria-label="submit-btn"
               type="submit"
               className="rounded-3xl text-white py-2 font-semibold px-4 text-sm bg-[#7C9C30]"
             >

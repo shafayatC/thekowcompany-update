@@ -19,10 +19,10 @@ with vitamin C in it, pairing it up with sliced up oranges/lemon and plants you 
             </div>
             <div className="flex flex-col md:flex-row justify-center items-center gap-2">
                 <div>
-                    <img loading="lazy" src={blogImg3}/>
+                    <img alt="blog-img" loading="lazy" src={blogImg3}/>
                 </div>
                 <div>
-                    <img loading="lazy" src={blogImg4}/>
+                    <img alt="blog-img" loading="lazy" src={blogImg4}/>
                 </div>
             </div>
            

@@ -133,7 +133,7 @@ import Footer from "../footer/footer";
                             </form>
                         </div>
                         <div>
-                            <img className="w-[350px] sm:w-[400px] md:w-[450px]" src="/img/Illustration.webp"/>
+                            <img alt="contact-us" className="w-[350px] sm:w-[400px] md:w-[450px]" src="/img/Illustration.webp"/>
                         </div>
                     </div>
                 </div>

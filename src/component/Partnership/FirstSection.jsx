@@ -8,13 +8,13 @@ const FirstSection = () => {
             <div className='row'>
                 <div className='p-i-container'>
                     <div className='p-i-h-a light-divider'>
-                        <img loading="lazy" src={"/img/partnership/1.webp"} />
+                        <img alt='partnership' loading="lazy" src={"/img/partnership/1.webp"} />
                     </div>
                     <div className='p-i-h-b light-divider'>
-                        <img loading="lazy" src={"/img/partnership/2.webp"} />
+                        <img  alt='partnership' loading="lazy" src={"/img/partnership/2.webp"} />
                     </div>
                     <div className='p-i-h-c'>
-                        <img loading="lazy" src={"/img/partnership/3.webp"} />
+                        <img alt='partnership' loading="lazy" src={"/img/partnership/3.webp"} />
                     </div>
                 </div>
 

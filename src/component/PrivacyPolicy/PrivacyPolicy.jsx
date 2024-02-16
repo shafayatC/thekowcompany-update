@@ -12,7 +12,7 @@ function PrivacyPolicy(props) {
       <div className="privacy">
         <div className="container">
           <div className="row mt-5">
-            <img loading="lazy" src={privacy} width="100%" height="100%" alt="" />
+            <img loading="lazy" src={privacy} width="100%" height="100%" alt="privacy" />
 
             <h1 className="text-center mt-5 text-4xl font-semibold">
               PRIVACY POLICY

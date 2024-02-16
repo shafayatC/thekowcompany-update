@@ -77,12 +77,12 @@ const DivSliderParrent = () => {
                         className='bg-[#666] lg:bg-transparent py-2 lg:py-0 px-2 absolute top-1/2 left-0 z-40 -translate-y-1/2  disabled:opacity-10 cursor-pointer' onClick={prevSlidFunc}
                     //  disabled={currentPosition === -((sliderList.length - 1))}
                     >
-                        <img loading="lazy" src={arrowImage} width={25} height={25} alt="" />
+                        <img loading="lazy" src={arrowImage} width={25} height={25} alt="left-arrow" />
                     </button>
                     <button
                         // disabled={currentPosition === (sliderList.length - 1)}
                         className='bg-[#666] lg:bg-transparent py-2 lg:py-0 px-2 absolute top-1/2 right-0 z-40 -translate-y-1/2 disabled:opacity-10 cursor-pointer' onClick={nextSlidFunc}>
-                        <img loading="lazy" className='rotate-180' src={arrowImage} width={25} height={25} alt="" />
+                        <img loading="lazy" className='rotate-180' src={arrowImage} width={25} height={25} alt="right-arrow"/>
                     </button>
                 </div>
                 {/* <div className='2xl:container 2xl:mx-auto h-[350px] grid grid-cols-1 lg:grid-cols-[350px_auto_350px] gap-3'> */}

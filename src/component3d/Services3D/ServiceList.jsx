@@ -7,10 +7,10 @@ const ServiceList = ({ icon, title, description, divider = false }) => {
             {divider && <div className='w-[90%] md:w-[2px] h-[2px] md:h-20 bg-gradient-to-t from-[#4f9e75]  to-[#cddcc8]'></div>}
             <div className='flex flex-col justify-center items-center '>
                 <div>
-                    {/* <img src={icon} alt='service icon' /> */}
-                    <LazyLoadImage
+                    <img src={icon} alt='service icon'/>
+                    {/* <LazyLoadImage
                         src={icon} alt='service icon'
-                        effect="blur" />
+                        effect="blur" /> */}
                 </div>
                 <div className='flex flex-col items-center md:gap-5'>
                     <h4>{title}</h4>

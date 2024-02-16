@@ -22,9 +22,8 @@ const Footer = () => {
                 <footer className="footer container pt-10 pb-10 mx-auto lg:justify-items-center justify-items-center  text-[#003333] gap-4 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4">
                     <div className="text-left flex flex-col justify-center">
                         <figure>
-                            <img loading="lazy" src={logoWhite}
-                                width={120}
-                                alt="" />
+                            <img alt="logo" loading="lazy" src={logoWhite}
+                                width={120}/>
                         </figure>
                         <p className="w-40 text-white text-[11px] p-1 border-b-2  border-white  mb-4">
                             <b>The KOW Company</b> is one of the

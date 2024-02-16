@@ -8,10 +8,10 @@ const LetsTalk = () => {
       <div className="container mx-auto ">
         <div className="flex justify-center py-12">
           <div>
-            <img loading="lazy" className="w-[430px]" src={"/img/illustration2.webp"} />
+            <img alt="illustration" loading="lazy" className="w-[430px]" src={"/img/illustration2.webp"} />
           </div>
           <div className="animate-pulse">
-            <img loading="lazy" className="w-[120px]" src={contact} />
+            <img alt="contact" loading="lazy" className="w-[120px]" src={contact} />
           </div>
         </div>
       </div>

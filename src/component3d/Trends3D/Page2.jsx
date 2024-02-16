@@ -16,7 +16,7 @@ const Page2 = () => {
             </div>
             <div className="relative h-[450px]">
                 <div className="flex justify-center h-full relative z-20">
-                    <img loading="lazy" className="h-full" src={cover1} />
+                    <img alt="cover" loading="lazy" className="h-full" src={cover1} />
                 </div>
                 <div className="absolute top-0 left-0 w-full h-full filter blur-sm bg-[length:100%_120%]" style={{ backgroundImage: `url(${cover1})` }}></div>
             </div>

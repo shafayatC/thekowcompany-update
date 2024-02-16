@@ -16,7 +16,7 @@ have to worry about spending money on mannequins or models and get clear, full v
         </div>
         <div className="relative h-[450px]">
             <div className="flex justify-center h-full relative z-20">
-                <img loading="lazy" className="h-full" src={coverPhoto2} />
+                <img alt="coverPhoto2" loading="lazy" className="h-full" src={coverPhoto2} />
             </div>
             <div className="absolute top-0 left-0 w-full h-full filter blur-sm bg-[length:100%_120%]" style={{ backgroundImage: `url(${coverPhoto2})` }}></div>
         </div>

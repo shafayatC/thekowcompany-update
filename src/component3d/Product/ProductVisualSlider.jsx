@@ -67,7 +67,9 @@ const ProductVisualSlider = () => {
                                     <div>
                                         {/* <img loading="lazy" src={item.image} className="w-full object-cover" /> */}
                                         <LazyLoadImage
-                                            src={item.image} className="w-full object-cover"
+                                            src={item.image} 
+                                            className="w-full object-cover"
+                                            alt='product visual'
                                             effect="blur" />
                                     </div>
                                     <div className='w-full flex gap-3 py-4 justify-center'>

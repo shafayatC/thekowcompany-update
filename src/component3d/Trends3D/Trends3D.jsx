@@ -66,7 +66,7 @@ const Trends3D = () => {
       <Heading className="pt-5 pb-12 " titleClassName="w-[500px]" title="3D TRENDS" />
       <div className="container mx-auto">
         <div className="flex justify-center items-center gap-5 ">
-          <button onClick={handlePrev}>
+          <button aria-label="prev-btn" onClick={handlePrev}>
             <MdArrowBackIosNew className="text-3xl -mt-16" />
           </button>
           <div className="flex justify-center gap-2 w-[280px] sm:w-full">
@@ -103,7 +103,7 @@ const Trends3D = () => {
                 </Link>
               ))}
           </div>
-          <button onClick={handleNext}>
+          <button aria-label="next-btn" onClick={handleNext}>
             <MdArrowForwardIos className="text-3xl -mt-16" />
           </button>
         </div>
