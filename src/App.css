@@ -244,11 +244,13 @@ html,body{
 /* blog page */
 
 .blogDetail p {padding-bottom: 20px;}
-.blogDetail ul {
-  list-style: disc;
+.blogDetail ul, .blogDetail ol {
   margin-left: 18px;
   padding-bottom: 20px;
 }
+.blogDetail ul{list-style: disc;}
+.blogDetail ol{list-style: decimal;}
+
 .blogDetail li {padding-bottom: 5px;}
 
 .blogDetail h3 {

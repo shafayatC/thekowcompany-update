@@ -4,30 +4,32 @@ import { MdArrowBackIosNew, MdArrowForwardIos } from "react-icons/md";
 import { Link } from "react-router-dom";
 import Heading from "../Heading/Heading";
 import { LazyLoadImage } from "react-lazy-load-image-component";
+import { LocalDataFor3D } from "../../localData/localData";
 const Trends3D = () => {
-  const [visibleDivs, setVisibleDivs] = useState([
-    {
-      id: 1,
-      text: "Photography Tips for Beginners",
-      text2: "01 JAN, 2023",
-      button: "Read More",
-      imageUrl: "/img/3d/3d-blog-1.webp",
-    },
-    {
-      id: 2,
-      text: "Top 8 Food Photography Tips For Beginners",
-      button: "Read More",
-      text2: "01 JAN, 2023",
-      imageUrl: "/img/3d/3d-blog-2.webp",
-    },
-    {
-      id: 3,
-      text: "Easy Product Photography Solutions for Small Business",
-      button: "Read More",
-      text2: "01 JAN, 2023",
-      imageUrl: "/img/3d/3d-blog-3.webp",
-    },
-  ]);
+  const [visibleDivs, setVisibleDivs] = useState(LocalDataFor3D);
+  // const [visibleDivs, setVisibleDivs] = useState([
+  //   {
+  //     id: 1,
+  //     text: "Photography Tips for Beginners",
+  //     text2: "01 JAN, 2023",
+  //     button: "Read More",
+  //     imageUrl: "/img/3d/3d-blog-1.webp",
+  //   },
+  //   {
+  //     id: 2,
+  //     text: "Top 8 Food Photography Tips For Beginners",
+  //     button: "Read More",
+  //     text2: "01 JAN, 2023",
+  //     imageUrl: "/img/3d/3d-blog-2.webp",
+  //   },
+  //   {
+  //     id: 3,
+  //     text: "Easy Product Photography Solutions for Small Business",
+  //     button: "Read More",
+  //     text2: "01 JAN, 2023",
+  //     imageUrl: "/img/3d/3d-blog-3.webp",
+  //   },
+  // ]);
 
   const [currentIndex, setCurrentIndex] = useState(0);
 
@@ -50,7 +52,7 @@ const Trends3D = () => {
     const startIndex =
       currentIndex === 0 ? visibleDivs.length - 1 : currentIndex - 1;
 
-    return window.screen.width <= 641
+    return window.screen.width <= 767
       ? [visibleDivs[startIndex]]
       : window.screen.width <= 1025
         ? [visibleDivs[startIndex], visibleDivs[middleIndex]]
@@ -69,34 +71,35 @@ const Trends3D = () => {
           <button aria-label="prev-btn" onClick={handlePrev}>
             <MdArrowBackIosNew className="text-3xl -mt-16" />
           </button>
-          <div className="flex justify-center gap-2 w-[280px] sm:w-full">
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 justify-center gap-2  w-[280px] sm:w-full">
             {getVisibleDivs() &&
-              getVisibleDivs().map((div) => (
-                <Link key={div.id} to="/3d/industry-trends-details">
+              getVisibleDivs().map((div, index) => (
+                <Link key={index} to={`/3d/blog/${div.id}`}>
                   {" "}
                   {/* Wrap the div with Link component */}
                   <div className="flex-col items-center justify-center">
-                    <div>
-                      {/* <img
-                        className=" w-full"
-                        src={div.imageUrl}
-                        alt={div.text}
-                      /> */}
-                      <LazyLoadImage
-                        className=" w-full"
-                        src={div.imageUrl}
-                        alt={div.text}
-                        effect="blur" />
+                    <div className="h-[220px] lg:h-[220px] xl:h-[280px]">
+                      <img
+                        className="w-full min-h-full"
+                        src={div.thumb}
+                        alt={div.title}
+                      />
+                      {/* <LazyLoadImage
+                        className=" w-full min-h-full"
+                        src={div.thumb}
+                        alt={div.title}
+                        effect="blur" /> */}
                     </div>
                     <div className="flex flex-col items-center gap-2 pt-5 pb-10">
                       <div className="flex justify-center items-center gap-2 ">
                         <p className="text-[12px] font-semibold">
-                          {div.text} |
+                          {div.title} | 
                         </p>
-                        <p className="text-[9px]">{div.text2}</p>
+                        <p className="text-[9px]">{div.date}</p>
                       </div>
                       <button className="bg-[#B1CC40] px-6 py-1 rounded-3xl font-semibold text-[10px]">
-                        {div.button}
+                        {/* {div.button} */}
+                        Read More
                       </button>
                     </div>
                   </div>
