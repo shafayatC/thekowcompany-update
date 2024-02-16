@@ -64,7 +64,7 @@ const Carousel = () => {
   return (
     <div className="carousel__wrap w-[500px]">
       <div className="carousel__inner">
-        <button className="carousel__btn carousel__btn--prev" onClick={prevClick}>
+        <button aria-label="prevbtn" className="carousel__btn carousel__btn--prev" onClick={prevClick}>
           <i className="carousel__btn-arrow carousel__btn-arrow--left" />
         </button>
         <div className="carousel__container">
@@ -78,12 +78,13 @@ const Carousel = () => {
             ))}
           </ul>
         </div>
-        <button className="carousel__btn carousel__btn--next" onClick={nextClick}>
+        <button aria-label="nextbtn" className="carousel__btn carousel__btn--next" onClick={nextClick}>
           <i className="carousel__btn-arrow carousel__btn-arrow--right" />
         </button>
         <div className="carousel__dots">
           {items.map((_, idx) => (
             <button
+            aria-label="carousel-dot"
               key={idx}
               onClick={() => setActiveIdx(idx)}
               className={idx === activeIdx ? 'dot active' : 'dot'}

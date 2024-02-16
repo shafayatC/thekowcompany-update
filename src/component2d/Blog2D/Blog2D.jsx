@@ -70,7 +70,7 @@ const Blog2D = () => {
       />
       <div className="container mx-auto">
         <div className="flex justify-center items-center gap-5 ">
-          <button onClick={handlePrev}>
+          <button aria-label="prev-btn" onClick={handlePrev}>
             <MdArrowBackIosNew className="text-3xl -mt-16" />
           </button>
           <div className="flex justify-center gap-2 w-[280px] sm:w-full">
@@ -107,7 +107,7 @@ const Blog2D = () => {
                 </Link>
               ))}
           </div>
-          <button onClick={handleNext}>
+          <button aria-label="next-btn" onClick={handleNext}>
             <MdArrowForwardIos className="text-3xl -mt-16" />
           </button>
         </div>

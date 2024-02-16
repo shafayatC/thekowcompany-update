@@ -49,7 +49,7 @@ const OrderGuide = () => {
           <div className="grid grid-cols-2 mr-5 gap-6 sm:grid-cols-3 sm:px-16 sm:gap-12 lg:grid-cols-4 xl:grid-cols-6 lg:gap-8 lg:px-16 xl:px-4 justify-items-center">
             <div className="bg-[#B1CC40] w-[140px] h-[130px] p-3 rounded-md border-2 border-white shadow-lg relative">
               <div className="">
-                <img loading="lazy" className="w-[30px] h-[30px]" src={order1} />
+                <img alt="order-1" loading="lazy" className="w-[30px] h-[30px]" src={order1} />
               </div>
               <h1 className="border-b-2 border-white w-16 pb-2 mb-1 text-white font-semibold text-[16px] pt-2">
                 STEP 1:
@@ -57,12 +57,12 @@ const OrderGuide = () => {
               <h1 className="text-[10px] font-semibold">Sign In</h1>
 
               <div className="absolute -top-[15px] -left-[14px] w-[190px]">
-                <img loading="lazy" className="w-full" src={arrow} />
+                <img alt="arrow" loading="lazy" className="w-full" src={arrow} />
               </div>
             </div>
             <div className="bg-[#B1CC40] w-[140px] h-[130px] p-3 rounded-md border-2 border-white shadow-lg relative">
               <div className="">
-                <img loading="lazy" className="w-[30px] h-[30px]" src={order2} />
+                <img alt="order-2" loading="lazy" className="w-[30px] h-[30px]" src={order2} />
               </div>
               <h1 className="border-b-2 border-white w-16 pb-2 mb-1 text-white font-semibold text-[16px] pt-2">
                 STEP 2:
@@ -70,12 +70,12 @@ const OrderGuide = () => {
               <h1 className="text-[10px] font-semibold">Choose your</h1>
               <h1 className="text-[10px] font-semibold">preferred subscription plan</h1>
               <div className="absolute -top-[15px] -left-[14px] w-[190px]">
-                <img loading="lazy" className="w-full" src={arrow} />
+                <img alt="arrow" loading="lazy" className="w-full" src={arrow} />
               </div>
             </div>
             <div className="bg-[#B1CC40] w-[140px]  h-[130px] p-3 rounded-md border-2 border-white shadow-lg relative">
               <div className="">
-                <img loading="lazy" className="w-[30px] h-[30px]" src={order3} />
+                <img alt="order-3" loading="lazy" className="w-[30px] h-[30px]" src={order3} />
               </div>
               <h1 className="border-b-2 border-white w-16 pb-2 mb-1 text-white font-semibold text-[16px] pt-2">
                 STEP 3:
@@ -83,12 +83,12 @@ const OrderGuide = () => {
               <h1 className="text-[10px] font-semibold">Go to your</h1>
               <h1 className="text-[10px] font-semibold">account to place an order</h1>
               <div className="absolute -top-[15px] -left-[14px] w-[190px]">
-                <img loading="lazy" className="w-full" src={arrow} />
+                <img alt="arrow" loading="lazy" className="w-full" src={arrow} />
               </div>
             </div>
             <div className="bg-[#B1CC40] w-[140px] h-[130px] p-3 rounded-md border-2 border-white shadow-lg relative">
               <div className="">
-                <img loading="lazy" className="w-[30px] h-[30px]" src={order4} />
+                <img alt="order-4" loading="lazy" className="w-[30px] h-[30px]" src={order4} />
               </div>
               <h1 className="border-b-2 border-white w-16 pb-2 mb-1 text-white font-semibold text-[16px] pt-2">
                 STEP 4:
@@ -96,12 +96,12 @@ const OrderGuide = () => {
               <h1 className="text-[10px] font-semibold">Upload your</h1>
               <h1 className="text-[10px] font-semibold">images you want us to edit</h1>
               <div className="absolute -top-[15px] -left-[14px] w-[190px]">
-                <img loading="lazy" className="w-full" src={arrow} />
+                <img alt="arrow" loading="lazy" className="w-full" src={arrow} />
               </div>
             </div>
             <div className="bg-[#B1CC40] w-[140px]  h-[130px] p-3 rounded-md border-2 border-white shadow-lg relative">
               <div className="">
-                <img loading="lazy" className="w-[30px] h-[30px]" src={order5} />
+                <img alt="order-5" loading="lazy" className="w-[30px] h-[30px]" src={order5} />
               </div>
               <h1 className="border-b-2 border-white w-16 pb-2 mb-1 text-white font-semibold text-[16px] pt-2">
                 STEP 5:
@@ -109,12 +109,12 @@ const OrderGuide = () => {
               <h1 className="text-[10px] font-semibold">The best photo editor</h1>
               <h1 className="text-[10px] font-semibold">process the photos for you</h1>
               <div className="absolute -top-[15px] -left-[14px] w-[190px]">
-                <img loading="lazy" className="w-full" src={arrow} />
+                <img alt="arrow" loading="lazy" className="w-full" src={arrow} />
               </div>
             </div>
             <div className="bg-[#B1CC40] w-[140px]  h-[130px] p-3 rounded-md border-2 border-white shadow-lg relative">
               <div className="">
-                <img loading="lazy" className="w-[30px] h-[30px]" src={order6} />
+                <img alt="order-6" loading="lazy" className="w-[30px] h-[30px]" src={order6} />
               </div>
               <h1 className="border-b-2 border-white w-16 pb-2 mb-1 text-white font-semibold text-[16px] pt-2">
                 STEP 6:
@@ -122,7 +122,7 @@ const OrderGuide = () => {
               <h1 className="text-[10px] font-semibold">Download the edited photos</h1>
 
               <div className="absolute -top-[15px] -left-[14px] w-[164px]">
-                <img loading="lazy" className="w-full" src={arrow3} />
+                <img alt="arrow" loading="lazy" className="w-full" src={arrow3} />
               </div>
             </div>
           </div>

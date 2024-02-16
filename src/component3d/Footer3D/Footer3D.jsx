@@ -4,7 +4,7 @@ import {
     FaFacebook,
 
     FaLinkedinIn,
- 
+
     FaYoutube,
 } from "react-icons/fa";
 import { BsTwitterX } from "react-icons/bs";
@@ -13,15 +13,16 @@ import { Link } from 'react-router-dom';
 
 
 const Footer3D = () => {
-    return ( 
+    return (
         <div>
             <div id="footer" className="bg-gradient-to-b to-[#8ebd8f] via-[#b3cda7] from-[#c7e0c0]">
                 <footer className="footer container pt-10 pb-10 mx-auto lg:justify-items-center justify-items-center  text-[#003333] gap-4 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4">
                     <div className="text-center md:text-left flex flex-col justify-center">
                         <figure className='flex justify-center md:justify-start'>
-                            <img loading="lazy" src="/img/logoBlack.png"
+                            <img
+                                loading="lazy" src="/img/logoBlack.png"
                                 width={120}
-                                alt="" />
+                                alt="logoBlack" />
                         </figure>
                         <p className="w-40 text-[#333333] text-[11px] p-1 border-b-2  border-[#333333]  mb-4">
                             <b>The KOW Company</b> is one of the leading image, video, 3D & CGI content production companies for businesses all over the world.
@@ -64,13 +65,13 @@ const Footer3D = () => {
                         <HashLink to="/3D#3d-services" className="link link-hover text-sm">Services</HashLink>
                         <HashLink to="/3d#3d-trends" className="link link-hover text-sm">3D Trends</HashLink>
                         {/* <HashLink  to="/3d#3d-contact" className="link link-hover text-sm">Contact us</HashLink> */}
-                      
-                 
+
+
                     </div>
-                 
+
                     <div className="flex text-[#333333] lg:items-start md:items-start md:-ml-16 flex-col text-center md:text-left gap-1  lg:-ml-0">
                         <span className="text-xl font-semibold mb-2">Support</span>
-                       
+
                         <Link to="/privacy-policy" className=" text-sm">Privacy Policy</Link>
                         <Link to="/terms-condition" className=" text-sm">Terms & Conditions</Link>
                         <Link to="/contact-us" className=" text-sm">Contact us</Link>

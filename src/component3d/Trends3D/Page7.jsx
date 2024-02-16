@@ -10,13 +10,13 @@ const Page7 = () => {
       <div className="container mx-auto ">
         <div className="flex justify-center items-center gap-5 md:gap-20">
           <div className="w-20">
-            <img loading="lazy" src={icon1} />
+            <img alt="icon" loading="lazy" src={icon1} />
           </div>
           <div className="w-20">
-            <img loading="lazy" src={icon2} />
+            <img alt="icon" loading="lazy" src={icon2} />
           </div>
           <div className="w-20">
-            <img loading="lazy" src={icon3} />
+            <img alt="icon" loading="lazy" src={icon3} />
           </div>
           {/* <div className="w-20 ">
             <img loading="lazy" src={icon4} />

@@ -40,7 +40,7 @@ const GetUpdateOld = () => {
               target="_blank"
               rel="noreferrer"
             >
-              <button className="rounded-3xl text-white py-2 font-semibold px-4 text-sm bg-[#7C9C30]">
+              <button aria-label="subscribe-btn" className="rounded-3xl text-white py-2 font-semibold px-4 text-sm bg-[#7C9C30]">
                 Subscribe
               </button>
             </a>

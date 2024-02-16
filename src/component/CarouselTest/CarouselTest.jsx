@@ -35,7 +35,7 @@ const Carousel = () => {
 
   return (
     <div className='flex justify-center items-center gap-5 mt-12'>
-      <button onClick={handlePrev}><MdArrowBackIosNew className='text-3xl'/></button>
+      <button aria-label="prev-button" onClick={handlePrev}><MdArrowBackIosNew className='text-3xl'/></button>
       <div className='flex justify-center gap-10'>
         {getVisibleDivs().map((div) => (
           <div className='flex-col items-center justify-center ' key={div.id}>
@@ -44,7 +44,7 @@ const Carousel = () => {
           </div>
         ))}
       </div>
-      <button onClick={handleNext}><MdArrowForwardIos  className='text-3xl'/></button>
+      <button aria-label="forwardbtn" onClick={handleNext}><MdArrowForwardIos  className='text-3xl'/></button>
     </div>
   );
 };

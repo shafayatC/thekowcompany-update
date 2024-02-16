@@ -13,28 +13,29 @@ const FifthSection = () => {
                 <div className='fifth-section-image-container'>
                     <div className=' side-light'>
                         <div className='fifth-section-image-1'>
-                            <img loading="lazy" src={"/img/partnership/COVISION_Image.webp"} className="max-w-[300px]" />
+                            <img alt="COVISION" loading="lazy" src={"/img/partnership/COVISION_Image.webp"} className="max-w-[300px]" />
                         </div>
                         <div className='Fifth-section-logo-1'>
-                            <img loading="lazy" src={covisionLogo} />
+                            <img alt="COVISION-logo" loading="lazy" src={covisionLogo} />
                         </div>
 
                     </div>
                     <div className=' side-light'>
                         <div className='fifth-section-image-2'>
-                            <img loading="lazy" src={"/img/partnership/NUREG_-Image.webp"} className="max-w-[300px]" />
+                            <img alt="NUREG" loading="lazy" src={"/img/partnership/NUREG_-Image.webp"} className="max-w-[300px]" />
                         </div>
                         <div className='Fifth-section-logo-2'>
-                            <img loading="lazy" src={nuregLogo} />
+                            <img alt="NUREG-logo" loading="lazy" src={nuregLogo} />
                         </div>
                     </div>
 
                     <div className=''>
                         <div className='fifth-section-image-3'>
-                            <img loading="lazy" src={"/img/partnership/KOW-COMPANY_image.webp"} className="max-w-[300px]" />
+                            <img alt="KOW-COMPANY" loading="lazy" src={"/img/partnership/KOW-COMPANY_image.webp"} className="max-w-[300px]" />
                         </div>
                         <div className='Fifth-section-logo-3'>
-                            <img loading="lazy" src={kowLogo} />
+                            <img alt="KOW-COMPANY-logo"
+                            loading="lazy" src={kowLogo} />
                         </div>
                     </div>
                 </div>

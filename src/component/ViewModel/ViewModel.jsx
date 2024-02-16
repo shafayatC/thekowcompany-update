@@ -11,7 +11,7 @@ const Image3DView = lazy(() => import('../../component/Image3DView/Image3DView')
 const ViewLoading = ({ imgSample }) => {
     return (
         <div className='w-full h-full relative flex flex-col justify-center'>
-            <img loading="lazy" className='mx-auto w-full h-full' src={imgSample} />
+            <img alt='sample-image' loading="lazy" className='mx-auto w-full h-full' src={imgSample} />
             <div className='absolute top-0 left-0 w-full h-full flex flex-col justify-center z-50 text-center font-bold text-3xl'>
                 <i class="fa-solid fa-circle-notch text-shade-color animate-spin"></i>
             </div>
@@ -33,7 +33,7 @@ const ViewModel = ({ imgSample, imageList = [] }) => {
                         <Suspense fallback={<div className='w-full h-full bg-slate-400 animate-pulse'></div>}>
                             <div>
 
-                                <img loading="lazy" draggable='false' className='absolute top-0 left-0 w-full h-full' src={imgSample} />
+                                <img alt='sample-image' loading="lazy" draggable='false' className='absolute top-0 left-0 w-full h-full' src={imgSample} />
                                 <div className='absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2'>
                                     <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" id="Layer_1" x="0px" y="0px" width="120px" height="120px" fill='#fff' viewBox="0 0 32 32" xml:space="preserve">
                                         <g>
@@ -58,7 +58,7 @@ const ViewModel = ({ imgSample, imageList = [] }) => {
                         <Suspense fallback={<div className='w-full h-full bg-slate-900 animate-pulse'></div>}>
 
                             <div>
-                                <img loading="lazy" draggable='false' className='absolute top-0 left-0  w-full h-full' src={imgSample} />
+                                <img  alt="loading-image" loading="lazy" draggable='false' className='absolute top-0 left-0  w-full h-full' src={imgSample} />
 
                                 <div className='absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2'>
 

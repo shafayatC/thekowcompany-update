@@ -14,7 +14,7 @@ const BottomPart = () => {
               <h1 className="text-[12px] font-semibold">Images</h1>
               <h1 className="text-[12px] font-semibold">Processed Daily</h1>
               <div className="absolute top-[37px] -left-[35px]">
-                <img loading="lazy" className="w-[60px]" src={logo1} />
+                <img alt="logo" loading="lazy" className="w-[60px]" src={logo1} />
               </div>
             </div>
             <div className="bg-white w-[140px] p-6 rounded-md shadow-slate-400 shadow-md relative">
@@ -22,7 +22,7 @@ const BottomPart = () => {
               <h1 className="text-[12px] font-semibold">Dedicated</h1>
               <h1 className="text-[12px] font-semibold">Customer Support</h1>
               <div className="absolute top-[37px] -left-[35px]">
-                <img loading="lazy" className="w-[60px]" src={logo2} />
+                <img  alt="logo" loading="lazy" className="w-[60px]" src={logo2} />
               </div>
             </div>
             <div className="bg-white w-[140px] p-6 rounded-md shadow-slate-400 shadow-md relative">
@@ -30,7 +30,7 @@ const BottomPart = () => {
               <h1 className="text-[12px] font-semibold">or Less</h1>
               <h1 className="text-[12px] font-semibold">Delivery Time</h1>
               <div className="absolute top-[37px] -left-[35px]">
-                <img loading="lazy" className="w-[60px]" src={logo3} />
+                <img  alt="logo" loading="lazy" className="w-[60px]" src={logo3} />
               </div>
             </div>
             <div className="bg-white w-[140px] p-6 rounded-md shadow-slate-400 shadow-md relative">
@@ -38,7 +38,7 @@ const BottomPart = () => {
               <h1 className="text-[12px] font-semibold">Free</h1>
               <h1 className="text-[12px] font-semibold">Trial Images</h1>
               <div className="absolute top-[37px] -left-[35px]">
-                <img loading="lazy" className="w-[60px]" src={logo4} />
+                <img  alt="logo" loading="lazy" className="w-[60px]" src={logo4} />
               </div>
             </div>
          

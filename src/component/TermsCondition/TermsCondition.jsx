@@ -11,7 +11,7 @@ function TermsCondition(props) {
     <div className="terms container mx-auto ">
       <div className="container">
         <div className="row mt-5 mb-5">
-          <img loading="lazy" src={terms} width="100%" height="100%" alt="" />
+          <img loading="lazy" src={terms} width="100%" height="100%" alt="termcondition" />
           <h1 className="text-center text-4xl font-semibold mt-3">
             Terms & Conditions
           </h1>

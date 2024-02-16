@@ -22,7 +22,7 @@ const Footer2D = () => {
                         <figure>
                             <img loading="lazy" src={logoWhite}
                                 width={120}
-                                alt="" />
+                                alt="logo" />
                         </figure>
                         <p className="w-40 text-black text-[11px] p-1 border-b-2  border-black  mb-4">
                             <b>The KOW Company</b> is one of the

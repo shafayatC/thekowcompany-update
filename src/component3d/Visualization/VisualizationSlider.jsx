@@ -85,11 +85,11 @@ const VisualizationSlider = () => {
                                 // <div className='h-full px-2'><img loading="lazy" src={item.image}/></div>
                                 <div className='relative flex flex-col md:block mx-2 cursor-pointer'>
                                     <div>
-                                        <img loading="lazy" src={item.image} className="w-full h-full object-cover" />
+                                        <img alt='slider' loading="lazy" src={item.image} className="w-full h-full object-cover" />
                                     </div>
                                     <div className='w-full flex gap-3 absolute left-0 bottom-0 py-4 justify-center z-40'>
                                         <h5 className='text-white z-30'>{item.label}</h5>
-                                        <img loading="lazy" className='h-6 z-30' src="/img/3d/3D-View.png" />
+                                        <img alt='3d-view' loading="lazy" className='h-6 z-30' src="/img/3d/3D-View.png" />
                                         <div className='absolute left-0 top-0 h-full w-full bg-gradient-to-t from-black via-black  opacity-50'></div>
                                     </div>
                                 </div>
