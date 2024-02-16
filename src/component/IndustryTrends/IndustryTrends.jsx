@@ -14,10 +14,12 @@ const IndustryTrends = () => {
         <h1 className="w-[50px] sm:w-[400px] border-b border-[#7C9C30]"></h1>
       </div>
       <div className="container mx-auto">
-        <div className="flex flex-col md:flex-row items-center justify-center gap-3 pt-10 md:pt-20 ">
+        <div className="flex flex-col md:flex-row  justify-items-center justify-center gap-3 pt-10 md:pt-20 ">
           <Link to={"/2d/industry-trends"}>
           <div className="relative">
-            <img loading="lazy" src={"/img/2d.webp"} width={500} alt="trends photo" />
+            <div>
+            <img className="w-[500px] " loading="lazy" src={"/img/2d.webp"}  alt="trends photo" />
+            </div>
             <div className="flex flex-col justify-items-center pt-5 gap-3">
               <div className="flex justify-center items-center gap-3 ">
                 <h1 className="text-xs md:text-base">
@@ -43,9 +45,11 @@ const IndustryTrends = () => {
           </Link>
           <Link to={"/3d/industry-trends"}>
           <div className="relative ">
-            <img loading="lazy" src={LocalDataFor3D[0].thumb} width={500} alt="trends photo" />
+           <div>
+           <img className="w-[500px] " loading="lazy" src={LocalDataFor3D[0].thumb}  alt="trends photo" />
+           </div>
 
-            <div className="absolute flex gap-2 items-end right-0 bottom-[85px]">
+            <div className="absolute flex gap-2 items-end right-[66px] bottom-[85px]">
               <h1 className="text-white text-[26px]">3D</h1>
               <h1 className="w-[110px]  border-b border-white mb-[12px] "></h1>
             </div>
