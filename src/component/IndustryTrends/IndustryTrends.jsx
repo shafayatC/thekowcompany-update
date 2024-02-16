@@ -1,4 +1,5 @@
 import { Link } from "react-router-dom";
+import { LocalDataFor3D } from "../../localData/localData";
 
 // import { MdOutlineArrowForwardIos,MdOutlineArrowBackIos  } from "react-icons/md";
 
@@ -42,7 +43,7 @@ const IndustryTrends = () => {
           </Link>
           <Link to={"/3d/industry-trends"}>
           <div className="relative ">
-            <img loading="lazy" src={"/img/3d.webp"} width={500} alt="trends photo" />
+            <img loading="lazy" src={LocalDataFor3D[0].thumb} width={500} alt="trends photo" />
 
             <div className="absolute flex gap-2 items-end right-0 bottom-[85px]">
               <h1 className="text-white text-[26px]">3D</h1>
@@ -52,9 +53,9 @@ const IndustryTrends = () => {
             <div className="flex flex-col justify-items-center pt-5 gap-3">
               <div className="flex justify-center items-center gap-3 ">
                 <h1 className="text-xs md:text-base">
-                  Photography Tips for Beginners |
+                  {LocalDataFor3D[0].title} |
                 </h1>
-                <h1 className="text-xs">01 JAN, 2023</h1>
+                <h1 className="text-xs">{LocalDataFor3D[0].date}</h1>
               </div>
               <div className="flex justify-center items-center">
                 <Link

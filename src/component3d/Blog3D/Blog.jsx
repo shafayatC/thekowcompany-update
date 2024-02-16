@@ -13,7 +13,7 @@ const Blog3D = () => {
     const param = useParams();
 
     useEffect(() => {
-        const blogData = LocalDataFor3D[param.id];
+        const blogData = LocalDataFor3D.filter((item) => item.id == param.id)[0];
         setBlogData(blogData);
         console.log(blogData)
     }, [])
