@@ -11,7 +11,7 @@ const Integration = () => {
                 <h1 className='w-[400px] border-b border-[#7C9C30]'></h1>
             </div>
             <div className='container mx-auto'>
-                <div className='flex flex-col md:flex-row justify-center items-center gap-2 '>
+                <div className='flex flex-col lg:flex-row justify-center items-center gap-2 '>
                     <div>
                         {/* <img loading="lazy" src={integration1}
                             width={270}

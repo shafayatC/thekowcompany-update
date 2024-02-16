@@ -17,7 +17,7 @@ const Integrations = () => {
         <div className="container mx-auto">
           <div className="flex flex-col md:flex-row justify-center items-center gap-20 md:gap-12">
             <a href="https://shopify.thekowcompany.com/Account/Login" target="_blank" rel="noreferrer" className="cursor-pointer ">
-              <div className="w-[180px]  ">
+              <div className="w-[140px] lg:w-[180px]  ">
                 {/* <img loading="lazy" src="/img/Apps/shopify_white.png" /> */}
                 <LazyLoadImage
                   src="/img/Apps/shopify_white.webp"
@@ -26,7 +26,7 @@ const Integrations = () => {
               </div>
             </a>
             <a href="https://app.thekowcompany.com/Identity/Account/Login?ReturnUrl=%2F" className="cursor-pointer " target="_blank" rel="noreferrer">
-              <div className="w-[180px] ">
+              <div className="w-[140px] lg:w-[180px] ">
                 {/* <img loading="lazy" src="/img/Apps/The-KOW-Company_white.png" /> */}
                 <LazyLoadImage
                   src="/img/Apps/The-KOW-Company_white.webp" 
@@ -35,7 +35,7 @@ const Integrations = () => {
               </div>
             </a>
             <a href="https://www.nureg.de/" className="cursor-pointer " target="_blank" rel="noreferrer">
-              <div className="w-[180px] ">
+              <div className="w-[140px] lg:w-[180px] ">
                 {/* <img loading="lazy" src="/img/Apps/nureg_white.png" /> */}
                 <LazyLoadImage
                   src="/img/Apps/nureg_white.webp"
@@ -44,7 +44,7 @@ const Integrations = () => {
               </div>
             </a>
             <a href="https://www.covisionmedialab.com/en" className="cursor-pointer " target="_blank" rel="noreferrer">
-              <div className="w-[180px] ">
+              <div className=" w-[140px] lg w-[180px] ">
                 {/* <img loading="lazy" src="/img/Apps/covision-lab_white .png" /> */}
                 <LazyLoadImage
                   src="/img/Apps/covision-lab_white .webp"
