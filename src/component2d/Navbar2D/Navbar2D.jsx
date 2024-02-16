@@ -14,7 +14,7 @@ const Navbar2D = () => {
       <div className="bg-[#DEE2E2] sticky w-full top-0 z-[999]  shadow-xl md:shadow-none">
         <MegaNavbar/>
         <div className="container mx-auto py-1">
-          <div className="hidden md:flex items-center justify-between gap-3">
+          <div className="hidden lg:flex items-center justify-between gap-3">
             <Link to={"/"}>
               <img loading="lazy" src={logo}
                 width={80}
@@ -36,7 +36,7 @@ const Navbar2D = () => {
             {/* <Link to="/" className="text-gray-800 text-[26px] lg:text-[32px] border-b-2 border-[#DEE2E2] font-semibold hover:border-b-2 hover:border-[#7C9C30]"><GoHomeFill />
             </Link> */}
           </div>
-          <div className="flex items-center justify-between md:hidden">
+          <div className="flex items-center justify-between lg:hidden">
             <Link to={"/"}>
               <img loading="lazy" src={logo}
                 width={80}
@@ -48,7 +48,7 @@ const Navbar2D = () => {
         </div>
         {/* -----------------------------------For Mobile--------------------------------------- */}
         {
-          getMenuBool && <div className="block md:hidden bg-[#DEE2E2] pt-2 ">
+          getMenuBool && <div className="block lg:hidden bg-[#DEE2E2] pt-2 ">
           <div className="container mx-auto">
             <div className="flex flex-col text-center gap-3">
               <HashLink onClick={() => setMenuBool(false)} to="/2d#services" className="transition-all duration-300 text-gray-800 text-base border-b-2 border-[#DEE2E2] font-semibold py-3 hover:bg-[#cfd6d6] hover:border-b-2 hover:border-[#7C9C30]">SERVICES</HashLink>

@@ -52,7 +52,7 @@ const Navbar3D = () => {
                 <div ref={menuRef} className={`fixed left-0 w-full top-0 z-[999] bg-[#DBE5D8] shadow-xl md:shadow-none  bg-[length:100%_100%] ${showDiv && `bg-[url("/img/3d/bg_3.jpg")] h-[310px]`}  ${getMenuBool && `bg-[url("/img/3d/bg_3.jpg")]`}`}>
                 <MegaNavbar />
                     <div className="container mx-auto ">
-                        <div className="hidden md:flex items-center justify-between gap-3">
+                        <div className="hidden lg:flex items-center justify-between gap-3">
                             <Link to={"/"}>
                                 <img loading="lazy" className="w-[80px] h-[45px]" src={logo} alt="logo" />
                             </Link>
@@ -77,7 +77,7 @@ const Navbar3D = () => {
                             </div>
                         </div>
 
-                        <div className={`flex items-center justify-between md:hidden`}>
+                        <div className={`flex items-center justify-between lg:hidden`}>
                             <Link to={"/"}>
                                 <img loading="lazy" src={logo}
                                     width={80}
@@ -90,7 +90,7 @@ const Navbar3D = () => {
                     </div>
                     {/* -----------------------------------For Mobile--------------------------------------- */}
                     {
-                        getMenuBool && <div className="block md:hidden pt-2 ">
+                        getMenuBool && <div className="block lg:hidden pt-2 ">
                             <div className="container mx-auto">
                                 <div className="flex flex-col text-center gap-4">
                                     <button onClick={() => setShowDivSubMenu(!showDivSubMenu)} className="flex flex-col group gap-1 transition-all duration-300 text-gray-800 text-base border-b-2 border-[#376f50] font-semibold hover:bg-[#376f50] hover:border-b-2 hover:border-[#7C9C30] hover:text-white">
