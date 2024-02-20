@@ -1,9 +1,12 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@100;200;300;400;500;600;700;800;900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Rubik+Doodle+Shadow&display=swap');
-html,body{
+
+html,
+body {
   font-family: 'Roboto Condensed', sans-serif;
   scroll-behavior: smooth;
 }
+
 /* --------------image ratio--------- */
 .img-container {
   display: block;
@@ -63,6 +66,7 @@ html,body{
   border-right: 2px solid white;
   border-bottom: 2px solid white;
 }
+
 /* ------------------button add------------------- */
 .view-content {
   position: absolute;
@@ -73,10 +77,11 @@ html,body{
   opacity: 0;
   transition: opacity 0.35s ease;
   width: 100%;
-  display: flex; 
+  display: flex;
   justify-content: center;
   text-transform: uppercase;
 }
+
 .view-button {
   width: 100px;
   color: white;
@@ -90,10 +95,12 @@ html,body{
   opacity: 1;
   z-index: 10;
 }
+
 .img-container:hover .blank {
   visibility: visible;
   opacity: 0.5;
 }
+
 .blank {
   position: absolute;
   visibility: hidden;
@@ -127,6 +134,7 @@ html,body{
   /* background: #3c3c3c; */
   padding: 20px;
 }
+
 .closeBtn {
   position: absolute;
   right: 30px;
@@ -147,41 +155,55 @@ html,body{
 }
 
 .bgImage {
-	background-image: url("./circle-bg.svg");
-	background-attachment: fixed;
-	min-height: 100%;
-	background-size: 466px;
-	background-repeat: no-repeat;
-	background-position: 110% -63px;
+  background-image: url("./circle-bg.svg");
+  background-attachment: fixed;
+  min-height: 100%;
+  background-size: 466px;
+  background-repeat: no-repeat;
+  background-position: 110% -63px;
 }
 
 .bgImage-2 {
-	background-image: url("./img/3d/round-shape.png");
-	background-attachment: fixed;
-	min-height: 100%;
-	background-size: 466px;
-	background-repeat: no-repeat;
-	background-position: 110% -63px;
+  background-image: url("./img/3d/round-shape.png");
+  background-attachment: fixed;
+  min-height: 100%;
+  background-size: 466px;
+  background-repeat: no-repeat;
+  background-position: 110% -63px;
 }
 
 
 
 /*after before image */
 
-#eccId_id_1011,#eccId_id_10115, .imageCompareWrap  {height: 100% !important;}
-#eccId_id_1011 [data-testid="container"],#eccId_id_10115 [data-testid="container"],.imageCompareWrap [data-testid="container"]{height: 100% !important;}
-#id_1011 div,#id_10115 div {height: 100%;}
+#eccId_id_1011,
+#eccId_id_10115,
+.imageCompareWrap {
+  height: 100% !important;
+}
+
+#eccId_id_1011 [data-testid="container"],
+#eccId_id_10115 [data-testid="container"],
+.imageCompareWrap [data-testid="container"] {
+  height: 100% !important;
+}
+
+#id_1011 div,
+#id_10115 div {
+  height: 100%;
+}
 
 
 
 /* Blog Background Image */
-.blog-bg-img{
+.blog-bg-img {
   background-image: url("/public/img/Blog-Images/blog-bangladesh.webp");
   background-repeat: no-repeat;
   background-size: 100% 100%;
   height: 80vh;
 }
-.cover-bg-1{
+
+.cover-bg-1 {
   background-image: url("/public/img/Blog-Images/coverPhoto1.webp");
   background-repeat: no-repeat;
   background-size: 100% 100%;
@@ -198,7 +220,7 @@ html,body{
 } */
 
 
-.contact-bg{
+.contact-bg {
   background-image: url("/public/img/3d/bg-2.jpg");
   height: 100%;
   width: 100%;
@@ -217,21 +239,23 @@ html,body{
   letter-spacing: 4px;
   box-sizing: border-box;
 }
+
 .loader::before {
-  content: '';  
+  content: '';
   position: absolute;
   right: 72px;
   bottom: 21px;
   height: 24px;
   width: 7px;
- 
+
   outline: 1px solid black;
   color: #FF3D00;
   box-sizing: border-box;
   animation: animloader1 1s linear infinite alternate;
 }
+
 .loader::after {
-  content: '';  
+  content: '';
   width: 4px;
   height: 4px;
   background: #FF3D00;
@@ -241,17 +265,30 @@ html,body{
   box-sizing: border-box;
   animation: animloader 1s ease-out infinite alternate;
 }
+
 /* blog page */
 
-.blogDetail p {padding-bottom: 20px;}
-.blogDetail ul, .blogDetail ol {
+.blogDetail p {
+  padding-bottom: 20px;
+}
+
+.blogDetail ul,
+.blogDetail ol {
   margin-left: 18px;
   padding-bottom: 20px;
 }
-.blogDetail ul{list-style: disc;}
-.blogDetail ol{list-style: decimal;}
 
-.blogDetail li {padding-bottom: 5px;}
+.blogDetail ul {
+  list-style: disc;
+}
+
+.blogDetail ol {
+  list-style: decimal;
+}
+
+.blogDetail li {
+  padding-bottom: 5px;
+}
 
 .blogDetail h3 {
   font-size: 20px;
@@ -266,14 +303,16 @@ html,body{
   margin-top: 20px;
   margin-bottom: 10px;
 }
-.blogFullImg .img-1{
+
+.blogFullImg .img-1 {
   width: auto;
   margin: auto;
   z-index: 9;
   position: relative;
   height: 100%;
 }
-.blogFullImg .img-2{
+
+.blogFullImg .img-2 {
   position: absolute;
   left: 0;
   top: 0;
@@ -281,12 +320,27 @@ html,body{
   height: 100%;
   filter: blur(5px);
 }
+
+.bgButtonAnim:hover {
+  /* background: rgb(124, 156, 48); */
+  background: linear-gradient(90deg, rgba(124, 156, 48, 1) 0%, rgba(211, 228, 172, 1) 100%);
+  /* animation: bgBtnAnim 4s infinite; */
+  /* animation-duration: 4s; */
+}
+
+@keyframes bgBtnAnim {
+  0%   {  background: linear-gradient(90deg, rgba(124, 156, 48, 1) 0%, rgba(211, 228, 172, 1) 100%);  }
+  50%  {  background: linear-gradient(90deg, rgba(124, 156, 48, 1) 100%, rgba(211, 228, 172, 1) 0%);  }
+  100%  {  background: linear-gradient(90deg, rgba(124, 156, 48, 1) 0%, rgba(211, 228, 172, 1) 100%);  }
+}
+
 /*end blog page*/
 @keyframes animloader {
   0% {
     top: 8px;
     transform: rotate(0deg) scale(1);
   }
+
   100% {
     top: 0px;
     transform: rotate(180deg) scale(1.5);
@@ -297,6 +351,7 @@ html,body{
   0% {
     box-shadow: 0 0 inset;
   }
+
   100% {
     box-shadow: 0 -28px inset;
   }
