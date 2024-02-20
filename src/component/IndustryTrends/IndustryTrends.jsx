@@ -17,8 +17,8 @@ const IndustryTrends = () => {
         <div className="flex flex-col md:flex-row  justify-items-center justify-center gap-3 pt-10 md:pt-20 ">
           <Link to={"/2d/industry-trends"}>
           <div className="relative">
-            <div>
-            <img className="w-[500px] " loading="lazy" src={"/img/2d.webp"}  alt="trends photo" />
+            <div className="w-[500px]">
+            <img className="w-full h-auto " loading="lazy" src={"/img/2d.webp"}  alt="trends photo" />
             </div>
             <div className="flex flex-col justify-items-center pt-5 gap-3">
               <div className="flex justify-center items-center gap-3 ">
@@ -45,8 +45,8 @@ const IndustryTrends = () => {
           </Link>
           <Link to={"/3d/industry-trends"}>
           <div className="relative ">
-           <div>
-           <img className="w-[500px] " loading="lazy" src={LocalDataFor3D[0].thumb}  alt="trends photo" />
+           <div className="w-[500px] ">
+           <img className="w-full h-auto "  loading="lazy" src={LocalDataFor3D[0].thumb}  alt="trends photo" />
            </div>
 
             <div className="absolute flex gap-2 items-end right-[66px] bottom-[85px]">
