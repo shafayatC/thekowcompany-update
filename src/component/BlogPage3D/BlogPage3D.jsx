@@ -11,6 +11,7 @@ import Navbar from "../navber/navbar";
 import BlogPageDetails from "./BlogPageDetails3D";
 
 import "./style.css"
+import { Link } from "react-router-dom";
 
 
 const BlogPage3D = () => {
@@ -42,7 +43,7 @@ const BlogPage3D = () => {
                             {
                                 blogData && blogData.map((item, index) =>
                                     index < 3 &&
-                                    <div key={index} className=''>
+                                    <Link to={"/3d/industry-trends-details/" + item.id + ""} key={index} className=''>
                                         <div className="md:h-[180px] lg:h-[230px] xl:h-[260px]">
                                             <img 
                                                 className="w-full h-full"
@@ -54,7 +55,7 @@ const BlogPage3D = () => {
                                         </div>
 
                                         <h1 className='text-center pt-3 font-semibold'>{item.title}</h1>
-                                    </div>
+                                    </Link>
 
                                 )
                             }

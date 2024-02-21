@@ -74,7 +74,7 @@ const Trends3D = () => {
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 justify-center gap-2  w-[280px] sm:w-full">
             {getVisibleDivs() &&
               getVisibleDivs().map((div, index) => (
-                <Link key={index} to={`/3d/blog/${div.id}`}>
+                <Link key={index} to={`/3d/industry-trends-details/${div.id}`}>
                   {" "}
                   {/* Wrap the div with Link component */}
                   <div className="flex-col items-center justify-center">
