@@ -13,7 +13,7 @@ const VisualizationSliderStatic = () => {
       />
       <div className="2xl:container mx-auto">
         <div className="flex flex-col md:flex-row justify-items-center justify-center ">
-          <Link to="/interior-visualization">
+          <Link aria-label="Interior visualization" to="/interior-visualization">
             <div className="  mx-2 cursor-pointer ">
               <div>
                 {/* <img
@@ -26,14 +26,14 @@ const VisualizationSliderStatic = () => {
                   effect="blur" />
               </div>
               <div className="w-full flex gap-3 pt-2 justify-center ">
-                <h5 className="text-black font-semibold">
+                <h2 className="text-black font-semibold">
                   INTERIOR VISUALIZATION
-                </h5>
+                </h2>
                 <img alt='view' loading="lazy" className="h-6 z-30" src="/img/3d/slider/view.png" />
               </div>
             </div>
           </Link>
-          <Link to="/exterior-visualization">
+          <Link aria-label="Exterior visualization" to="/exterior-visualization">
             <div className=" mx-2 cursor-pointer">
               <div>
                 {/* <img
@@ -46,14 +46,14 @@ const VisualizationSliderStatic = () => {
                   effect="blur" />
               </div>
               <div className="w-full flex gap-3  justify-center pt-2 ">
-                <h5 className="text-black font-semibold">
+                <h2 className="text-black font-semibold">
                   EXTERIOR VISUALIZATION
-                </h5>
+                </h2>
                 <img alt='view' loading="lazy" className="h-6 z-30" src="/img/3d/slider/view.png" />
               </div>
             </div>
           </Link>
-          <Link to="/interior-visualization">
+          <Link aria-label="Interior visualization" to="/interior-visualization">
             <div className=" mx-2 cursor-pointer">
               <div>
                 {/* <img
@@ -66,7 +66,7 @@ const VisualizationSliderStatic = () => {
                   effect="blur" />
               </div>
               <div className="w-full flex gap-3 justify-center pt-2 ">
-                <h5 className="text-black font-semibold">VR RENDERING</h5>
+                <h2 className="text-black font-semibold">VR RENDERING</h2>
                 <img alt='view' loading="lazy" className="h-6 z-30" src="/img/3d/slider/view.png" />
               </div>
             </div>

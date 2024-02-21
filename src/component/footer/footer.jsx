@@ -32,22 +32,24 @@ const Footer = () => {
                             the world.
                         </p>
                         <div className="flex text-[#003333] justify-center md:justify-start gap-1 mb-2">
-                            <a href="https://www.facebook.com/KOWCompany" target="_blank" rel="noreferrer">
+                            <a aria-label='facebook' href="https://www.facebook.com/KOWCompany" target="_blank" rel="noreferrer">
                                 <FaFacebook className="h-4 w-4 mr-2 text-white cursor-pointer"></FaFacebook>
                             </a>
-                            <a
+                            <a aria-label='youtube'
                                 href="https://www.youtube.com/channel/UCCXAA-Q_f0uuvG8RqW0HRYQ"
                                 target="_blank" rel="noreferrer"
                             >
                                 <FaYoutube className="h-4 w-4 mr-2 text-white cursor-pointer"></FaYoutube>
                             </a>
-                            <a
+                            <a aria-label='linkedin'
                                 href="https://www.linkedin.com/company/the-kow-company/"
                                 target="_blank" rel="noreferrer"
                             >
                                 <FaLinkedinIn className="h-4 w-4 mr-2 text-white cursor-pointer"></FaLinkedinIn>
                             </a>
-                            <a href="https://twitter.com/the_kow_company" target="_blank" rel="noreferrer">
+                            <a
+                             aria-label='twitter'
+                             href="https://twitter.com/the_kow_company" target="_blank" rel="noreferrer">
                                 <BsTwitterX  className="h-4 w-4 mr-2 text-white cursor-pointer"></BsTwitterX >
                             </a>
                             {/* <a
@@ -66,12 +68,12 @@ const Footer = () => {
 
                     <div className="flex flex-col text-white lg:items-start md:-ml-16 md:items-start text-center md:text-start gap-1">
                         <span className="text-xl font-semibold text-[white] mb-2 ">HOME</span>
-                        <HashLink to="/#images" className=" text-sm">Images</HashLink>
-                        <HashLink to="/#3d" className=" text-sm">3D</HashLink>
-                        <HashLink to="/#ai" className=" text-sm">AI</HashLink>
-                        <HashLink to="/#integration" className=" text-sm">Integrations</HashLink>
-                        <HashLink  className=" text-sm">Blueprint</HashLink>
-                        <HashLink to="/#trends" className=" text-sm">Industry Trends</HashLink>                  
+                        <HashLink  to="/#images" className="text-sm" aria-label='Images'>Images</HashLink>
+                        <HashLink to="/#3d" className="text-sm" aria-label='3D'>3D</HashLink>
+                        <HashLink to="/#ai" className="text-sm" aria-label='AI'>AI</HashLink>
+                        <HashLink to="/#integration" className="text-sm" aria-label='Integrations'>Integrations</HashLink>
+                        <HashLink  className="text-sm" aria-label='Blueprint'>Blueprint</HashLink>
+                        <HashLink to="/#trends" className="text-sm" aria-label='Industry Trends'>Industry Trends</HashLink>                  
                     
 
                     </div>
@@ -89,16 +91,17 @@ const Footer = () => {
                         {/* <a className="link link-hover text-xs">Help & FAQs</a>
                         <a className="link link-hover text-xs">Refunds</a>
                         <a className="link link-hover text-xs">Platform Status</a> */}
-                        <Link to="/privacy-policy" className=" text-sm">Privacy Policy</Link>
-                        <Link to="/terms-condition" className=" text-sm">Terms & Conditions</Link>
-                        <Link to="/contact-us" className="link link-hover text-sm">Contact us</Link>
-                        <a href="https://app.cutoutwiz.com/Identity/Account/Login?ReturnUrl=%2F" target="_blank" rel="noreferrer" className='text-sm cursor-pointer' >Sign Up</a>
+                        <Link to="/privacy-policy" className=" text-sm" aria-label='Privacy'>Privacy Policy</Link>
+                        <Link to="/terms-condition" className=" text-sm" aria-label='Terms'>Terms & Conditions</Link>
+                        <Link to="/contact-us" className="link link-hover text-sm" aria-label='Contact'>Contact us</Link>
+                        <a href="https://app.cutoutwiz.com/Identity/Account/Login?ReturnUrl=%2F" target="_blank" rel="noreferrer" className='text-sm cursor-pointer' aria-label='Sign Up' >Sign Up</a>
                     </div>
                     <div className="text-center flex flex-col items-center  md:ml-0 lg:ml-0">
                         <span className="font-bold text-white text-xl w-full text-center  md:mb-4 md:ml-8 lg:-ml-16">
                             Our Address
                         </span>
                         <iframe
+                        title="map"
                         className='rounded-md'
                             src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d10329.283883735325!2d90.39304891556642!3d23.749043274767246!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xc1fb12dbea63beca!2sCutOutWiz!5e0!3m2!1sbn!2sbd!4v1639129804206!5m2!1sbn!2sbd"
                             width="90%"

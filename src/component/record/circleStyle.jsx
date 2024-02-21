@@ -5,9 +5,9 @@ const CircleStyle = ({count, title}) => {
         <div className="p-6 bg-kow-green rounded-full z-20 relative">
           <div className="rounded-full">
             <div className="shadow-2xl w-[130px] h-[130px] flex bg-[#f9f9f9] rounded-full items-center justify-center">
-              <h5 className="text-4xl font-semibold">
+              <h1 className="text-4xl font-semibold">
                 {count}
-              </h5>
+              </h1>
             </div>
           </div>
         </div>
@@ -17,7 +17,7 @@ const CircleStyle = ({count, title}) => {
             <div className="bg-kow-green p-2 rounded-full"></div>
           </div>
           <div>
-            <h5 className="uppercase text-lg font-medium">{title}</h5>
+            <h2 className="uppercase text-lg font-medium">{title}</h2>
           </div>
         </div>
       </div>
