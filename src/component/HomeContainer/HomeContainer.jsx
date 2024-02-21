@@ -23,7 +23,7 @@ function HomeContainer() {
     return (
         <>
         <HeadProvider>
-            <Title>TheKow3D: Where CGI Brilliance Comes Alive</Title>
+            <Title>The KOW Company</Title>
             <Meta name="description" content="Discover excellence in Ecommerce and Studio Image & 3D Post-Production at The KOW Company. Our creative prowess and cutting-edge AI integration redefine product image enhancement. Elevate your brand with captivating visuals that surpass expectations and leave a lasting impression."/>
         </HeadProvider>
             <ScrolTop />
