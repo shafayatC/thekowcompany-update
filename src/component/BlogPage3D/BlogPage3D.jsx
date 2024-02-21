@@ -1,16 +1,12 @@
 
 
 import { useEffect, useState } from "react";
-import blog1 from "../../images/blog1.png"
-import blog2 from "../../images/blog2.png"
-import blog3 from "../../images/blog3.png"
 import { LocalDataFor3D } from "../../localData/localData";
 import ScrolTop from "../ScrolTop/ScrolTop";
 import Footer from "../footer/footer";
 import Navbar from "../navber/navbar";
 import BlogPageDetails from "./BlogPageDetails3D";
-
-import "./style.css"
+import { Link } from "react-router-dom";
 
 
 const BlogPage3D = () => {
@@ -42,7 +38,7 @@ const BlogPage3D = () => {
                             {
                                 blogData && blogData.map((item, index) =>
                                     index < 3 &&
-                                    <div key={index} className=''>
+                                    <Link to={"/3d/industry-trends-details/" + item.id + ""} key={index} className='' aria-label="industry trends details">
                                         <div className="md:h-[180px] lg:h-[230px] xl:h-[260px]">
                                             <img 
                                                 className="w-full h-full"
@@ -54,7 +50,7 @@ const BlogPage3D = () => {
                                         </div>
 
                                         <h1 className='text-center pt-3 font-semibold'>{item.title}</h1>
-                                    </div>
+                                    </Link>
 
                                 )
                             }

@@ -39,7 +39,7 @@ function App() {
         <Route path="/integrations" element={<Partnership />} />
         <Route path="/2d" element={<Container2D/>} />
         <Route path="/3d" element={<Container3D/>} />
-        <Route path='/3d/blog/:id' element={<Blog3D/>} />
+        <Route path='/3d/industry-trends-details/:id' element={<Blog3D/>} />
         <Route path="/2d/industry-trends-details" element={<BlogDetails/>} />
         <Route path="/3d/industry-trends-details" element={<TrendsDetails/>} />
         <Route path="/exterior-visualization" element={<ExteriorVisualization/>} />

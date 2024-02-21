@@ -31,22 +31,26 @@ const Footer2D = () => {
                             the world.
                         </p>
                         <div className="flex text-[#003333] justify-center md:justify-start gap-1 mb-2">
-                            <a href="https://www.facebook.com/cutoutwiz" target="_blank" rel="noreferrer">
+                            <a aria-label='facebook' href="https://www.facebook.com/cutoutwiz" target="_blank" rel="noreferrer">
                                 <FaFacebook className="h-4 w-4 mr-2 text-black cursor-pointer"></FaFacebook>
                             </a>
                             <a
+                                aria-label='youtube'
                                 href="https://www.youtube.com/channel/UClIkCcEBksZigP56p593fDQ"
                                 target="_blank" rel="noreferrer"
                             >
                                 <FaYoutube className="h-4 w-4 mr-2 text-black cursor-pointer"></FaYoutube>
                             </a>
                             <a
+                                aria-label='linkedin'
                                 href="https://www.linkedin.com/company/cutoutwiz-ltd/"
                                 target="_blank" rel="noreferrer"
                             >
                                 <FaLinkedinIn className="h-4 w-4 mr-2 text-black cursor-pointer"></FaLinkedinIn>
                             </a>
-                            <a href="https://twitter.com/cut_wiz?s=09" target="_blank" rel="noreferrer">
+                            <a
+                            aria-label='twitter'
+                            href="https://twitter.com/cut_wiz?s=09" target="_blank" rel="noreferrer">
                                 <BsTwitterX className="h-4 w-4 mr-2 text-black cursor-pointer"></BsTwitterX>
                             </a>
                             {/* <a
@@ -66,11 +70,11 @@ const Footer2D = () => {
 
                     <div className="flex flex-col text-black lg:items-start md:-ml-16 md:items-start text-center md:text-start gap-1">
                         <span className="text-xl font-semibold text-black mb-2 ">HOME</span>
-                        <HashLink to="/2d#services" className=" text-sm">SERVICES</HashLink>
-                        <HashLink to="/2d#apps" className=" text-sm">APPS</HashLink>
-                        <HashLink to="/2d#price" className=" text-sm">PRICE</HashLink>
-                        <HashLink to="/2d#order-guide" className=" text-sm">ORDER GUIDE</HashLink>
-                        <HashLink to="/2d#2d-trends" className=" text-sm">2D TRENDS</HashLink>
+                        <HashLink aria-label='services' to="/2d#services" className=" text-sm">SERVICES</HashLink>
+                        <HashLink aria-label='apps' to="/2d#apps" className=" text-sm">APPS</HashLink>
+                        <HashLink aria-label='price' to="/2d#price" className=" text-sm">PRICE</HashLink>
+                        <HashLink aria-label='order-guide' to="/2d#order-guide" className=" text-sm">ORDER GUIDE</HashLink>
+                        <HashLink aria-label='2d-trends' to="/2d#2d-trends" className=" text-sm">2D TRENDS</HashLink>
                         
                        
 
@@ -79,16 +83,17 @@ const Footer2D = () => {
                     <div className="flex text-black lg:items-start md:items-start md:-ml-16 flex-col text-center md:text-left gap-1  lg:-ml-0">
                         <span className="text-xl font-semibold mb-2">Support</span>
                       
-                        <Link to="/privacy-policy" className=" text-sm">Privacy Policy</Link>
-                        <Link to="/terms-condition" className=" text-sm">Terms & Conditions</Link>
-                        <Link to="/contact-us" className="link link-hover text-sm">Contact us</Link>
-                        <a className="text-sm cursor-pointer" href="https://app.cutoutwiz.com/Identity/Account/Login?ReturnUrl=%2F" target="_blank" rel="noreferrer" >Sign Up</a>
+                        <Link aria-label='privacy' to="/privacy-policy" className=" text-sm">Privacy Policy</Link>
+                        <Link aria-label='terms' to="/terms-condition" className=" text-sm">Terms & Conditions</Link>
+                        <Link aria-label="contact" to="/contact-us" className="link link-hover text-sm">Contact us</Link>
+                        <a aria-label='signup' className="text-sm cursor-pointer" href="https://app.cutoutwiz.com/Identity/Account/Login?ReturnUrl=%2F" target="_blank" rel="noreferrer" >Sign Up</a>
                     </div>
                     <div className="text-center flex flex-col items-center  md:ml-0 lg:ml-0">
                         <span className="font-bold text-black text-xl w-full text-center  md:mb-4 md:ml-8 lg:-ml-16">
                             Our Address
                         </span>
                         <iframe
+                        title='map'
                         className='rounded-md'
                             src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d10329.283883735325!2d90.39304891556642!3d23.749043274767246!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xc1fb12dbea63beca!2sCutOutWiz!5e0!3m2!1sbn!2sbd!4v1639129804206!5m2!1sbn!2sbd"
                             width="90%"

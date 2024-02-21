@@ -53,7 +53,7 @@ const ChoosePlan = () => {
     
                     </div>
                     <div className="flex justify-center items-center leading-4">
-                      <Link to={"/contact-us"}>
+                      <Link aria-label="contact-us" to={"/contact-us"}>
                       <button className="bg-[#B1CC40] text-white font-semibold text-[12px] px-4 py-1 rounded-3xl">
                         ORDER NOW
                       </button>
@@ -101,7 +101,7 @@ const ChoosePlan = () => {
   
                     </div>
                     <div className="flex justify-center items-center leading-4">
-                    <Link to={"/contact-us"}>
+                    <Link aria-label="contact-us" to={"/contact-us"}>
                       <button className="bg-[#B1CC40] text-white font-semibold text-[12px] px-4 py-1 rounded-3xl">
                         ORDER NOW
                       </button>
@@ -150,7 +150,7 @@ const ChoosePlan = () => {
     
                     </div>
                     <div className="flex justify-center items-center leading-4">
-                    <Link to={"/contact-us"}>
+                    <Link aria-label="contact-us" to={"/contact-us"}>
                       <button className="bg-[#B1CC40] text-white font-semibold text-[12px] px-4 py-1 rounded-3xl">
                         ORDER NOW
                       </button>

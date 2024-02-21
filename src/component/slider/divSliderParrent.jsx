@@ -104,7 +104,7 @@ const DivSliderParrent = () => {
                                                 objectFit='cover'
                                                 effect="blur" />
                                         </div>
-                                        <h4 className='absolute bottom-[1px] left-[1px] text-[22px] font-medium leading-[16px] uppercase flex items-end'><span className='text-[30px] pb-[3px]'>{item.lebel.charAt(0)}</span><span>{item.lebel.substring(1, item.lebel.length)}</span><span className='ml-3 w-10 h-[1px] bg-black'></span></h4>
+                                        <h1 className='absolute bottom-[1px] left-[1px] text-[22px] font-medium leading-[16px] uppercase flex items-end'><span className='text-[30px] pb-[3px]'>{item.lebel.charAt(0)}</span><span>{item.lebel.substring(1, item.lebel.length)}</span><span className='ml-3 w-10 h-[1px] bg-black'></span></h1>
                                     </div>
                                 ))}
                                 {sliderList.map((item, index) => (
@@ -120,7 +120,7 @@ const DivSliderParrent = () => {
                                                 effect="blur"
                                             />
                                         </div>
-                                        <h4 className='absolute bottom-[1px] left-[1px] text-[22px] font-medium leading-[16px] uppercase flex items-end'><span className='text-[30px] pb-[3px]'>{item.lebel.charAt(0)}</span><span>{item.lebel.substring(1, item.lebel.length)}</span><span className='ml-3 w-10 h-[1px] bg-black'></span></h4>
+                                        <h1 className='absolute bottom-[1px] left-[1px] text-[22px] font-medium leading-[16px] uppercase flex items-end'><span className='text-[30px] pb-[3px]'>{item.lebel.charAt(0)}</span><span>{item.lebel.substring(1, item.lebel.length)}</span><span className='ml-3 w-10 h-[1px] bg-black'></span></h1>
                                     </div>
                                 ))}
                                 {firstTwoItems.map((item, index) => (
@@ -135,7 +135,7 @@ const DivSliderParrent = () => {
                                                 objectFit='cover'
                                                 effect="blur" />
                                         </div>
-                                        <h4 className='absolute bottom-[1px] left-[1px] text-[22px] font-medium leading-[16px] uppercase flex items-end'><span className='text-[30px] pb-[3px]'>{item.lebel.charAt(0)}</span><span>{item.lebel.substring(1, item.lebel.length)}</span><span className='ml-3 w-10 h-[1px] bg-black'></span></h4>
+                                        <h1 className='absolute bottom-[1px] left-[1px] text-[22px] font-medium leading-[16px] uppercase flex items-end'><span className='text-[30px] pb-[3px]'>{item.lebel.charAt(0)}</span><span>{item.lebel.substring(1, item.lebel.length)}</span><span className='ml-3 w-10 h-[1px] bg-black'></span></h1>
                                     </div>
                                 ))}
 
@@ -155,7 +155,7 @@ const DivSliderParrent = () => {
                                                 />
                                             </LazyLoadComponent>
                                         </div>
-                                        <h4 className='absolute bottom-[1px] left-[1px] text-[22px] font-medium leading-[16px] uppercase flex items-end'><span className='text-[30px] pb-[3px]'>{item.lebel.charAt(0)}</span><span>{item.lebel.substring(1, item.lebel.length)}</span><span className='ml-3 w-10 h-[1px] bg-black'></span></h4>
+                                        <h1 className='absolute bottom-[1px] left-[1px] text-[22px] font-medium leading-[16px] uppercase flex items-end'><span className='text-[30px] pb-[3px]'>{item.lebel.charAt(0)}</span><span>{item.lebel.substring(1, item.lebel.length)}</span><span className='ml-3 w-10 h-[1px] bg-black'></span></h1>
                                     </div>
                                 ))}
                                 {firstOneItems.map((item, index) => (
@@ -168,7 +168,7 @@ const DivSliderParrent = () => {
                                                 />
                                             </LazyLoadComponent>
                                         </div>
-                                        <h4 className='absolute bottom-[1px] left-[1px] text-[22px] font-medium leading-[16px] uppercase flex items-end'><span className='text-[30px] pb-[3px]'>{item.lebel.charAt(0)}</span><span>{item.lebel.substring(1, item.lebel.length)}</span><span className='ml-3 w-10 h-[1px] bg-black'></span></h4>
+                                        <h1 className='absolute bottom-[1px] left-[1px] text-[22px] font-medium leading-[16px] uppercase flex items-end'><span className='text-[30px] pb-[3px]'>{item.lebel.charAt(0)}</span><span>{item.lebel.substring(1, item.lebel.length)}</span><span className='ml-3 w-10 h-[1px] bg-black'></span></h1>
                                     </div>
                                 ))}
                             </>
@@ -189,7 +189,7 @@ const DivSliderParrent = () => {
                                                 objectFit='cover'
                                                 effect="blur" />
                                         </div>
-                                        <h4 className='absolute bottom-[1px] left-[1px] text-[22px] font-medium leading-[16px] uppercase flex items-end'><span className='text-[30px] pb-[3px]'>{item.lebel.charAt(0)}</span><span>{item.lebel.substring(1, item.lebel.length)}</span><span className='ml-3 w-10 h-[1px] bg-black'></span></h4>
+                                        <h1 className='absolute bottom-[1px] left-[1px] text-[22px] font-medium leading-[16px] uppercase flex items-end'><span className='text-[30px] pb-[3px]'>{item.lebel.charAt(0)}</span><span>{item.lebel.substring(1, item.lebel.length)}</span><span className='ml-3 w-10 h-[1px] bg-black'></span></h1>
                                     </div>
                                 ))}
                                 {firstTwoItems.map((item, index) => (
@@ -205,7 +205,7 @@ const DivSliderParrent = () => {
                                                 effect="blur"
                                             />
                                         </div>
-                                        <h4 className='absolute bottom-[1px] left-[1px] text-[22px] font-medium leading-[16px] uppercase flex items-end'><span className='text-[30px] pb-[3px]'>{item.lebel.charAt(0)}</span><span>{item.lebel.substring(1, item.lebel.length)}</span><span className='ml-3 w-10 h-[1px] bg-black'></span></h4>
+                                        <h1 className='absolute bottom-[1px] left-[1px] text-[22px] font-medium leading-[16px] uppercase flex items-end'><span className='text-[30px] pb-[3px]'>{item.lebel.charAt(0)}</span><span>{item.lebel.substring(1, item.lebel.length)}</span><span className='ml-3 w-10 h-[1px] bg-black'></span></h1>
                                     </div>
                                 ))}
                             </>
@@ -220,8 +220,8 @@ const DivSliderParrent = () => {
                 <p className='text-xs md:text-sm text-center mt-5 mb-10 px-[52px] '>{`Experience a palette of color brilliance, where each hue harmonizes to craft the perfect ambiance for brands. We tailor the product visuals for any platform, making sure your products radiate brilliance, whether on a website, social media, or in print.`}</p>
 
                 <div className='flex justify-center '>
-                    <Link to={"/contact-us"} className='text-xs md:text-sm font-semibold text-white px-6 py-1 bg-[#7C9C30] rounded-3xl'>Avail Image Retouching at Scale</Link>
-                </div>
+                    <Link aria-label='Contact' to={"/contact-us"} className='text-xs md:text-sm font-semibold text-white px-6 py-1 bg-[#7C9C30] rounded-3xl'>Avail Image Retouching at Scale</Link>
+                </div> 
             </div>
         </div>
     );

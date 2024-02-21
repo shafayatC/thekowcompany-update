@@ -356,3 +356,10 @@ body {
     box-shadow: 0 -28px inset;
   }
 }
+
+.bg{
+  background-image: url("../../images//blog-BG2.png");
+  background-repeat: no-repeat;
+  background-size: 100% 14%;
+ 
+}

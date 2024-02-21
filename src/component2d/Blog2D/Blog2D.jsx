@@ -76,7 +76,7 @@ const Blog2D = () => {
           <div className="flex justify-center gap-2 w-[280px] sm:w-full">
             {getVisibleDivs() &&
               getVisibleDivs().map((div) => (
-                <Link key={div.id} to="/2d/industry-trends-details">
+                <Link aria-label="2d | Industry trends" key={div.id} to="/2d/industry-trends-details">
                   {" "}
                   {/* Wrap the div with Link component */}
                   <div className="flex-col items-center justify-center">

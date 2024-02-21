@@ -79,8 +79,8 @@ const MegaMenu = () => {
                     </p>
                     <div className="flex flex-col gap-1 text-xs">
                       <p className="hover:text-[#AF8E56] hover:underline cursor-default">Visualization</p>
-                      <Link className="hover:text-[#AF8E56] hover:underline" to="/exterior-visualization">Exterior Visualization</Link>
-                      <Link className="hover:text-[#AF8E56] hover:underline" to="/interior-visualization">Interior Visualization</Link>
+                      <Link aria-label="exterior visualization" className="hover:text-[#AF8E56] hover:underline" to="/exterior-visualization">Exterior Visualization</Link>
+                      <Link aria-label="interior visualization" className="hover:text-[#AF8E56] hover:underline" to="/interior-visualization">Interior Visualization</Link>
                       <p className="hover:text-[#AF8E56] hover:underline cursor-default">VR Rendering</p>
                     </div>
                   </div>
@@ -100,12 +100,12 @@ const MegaMenu = () => {
                     </p>
 
                     <div className="flex flex-col gap-1 text-xs">
-                      <Link className="hover:text-[#AF8E56] hover:underline" to={"/product-visualiztion-3d"}>Furnitures</Link>
-                      <Link className="hover:text-[#AF8E56] hover:underline" to={"/fashion-accessories"}>Fashion Accessories</Link>
-                      <Link className="hover:text-[#AF8E56] hover:underline" to={"/cosmetics"}>Cosmetics</Link>
-                      <Link className="hover:text-[#AF8E56] hover:underline" to={"/packaging"}>Packaging</Link>
-                      <Link className="hover:text-[#AF8E56] hover:underline" to={"/tech-equipments"}>Tech Equipments</Link>
-                      <Link className="hover:text-[#AF8E56] hover:underline" to={"/tech-accessories"}>Tech Accessories</Link>
+                      <Link aria-label="furnitures" className="hover:text-[#AF8E56] hover:underline" to={"/product-visualiztion-3d"}>Furnitures</Link>
+                      <Link aria-label="fashion" className="hover:text-[#AF8E56] hover:underline" to={"/fashion-accessories"}>Fashion Accessories</Link>
+                      <Link aria-label="cosmetics" className="hover:text-[#AF8E56] hover:underline" to={"/cosmetics"}>Cosmetics</Link>
+                      <Link aria-label="packaging" className="hover:text-[#AF8E56] hover:underline" to={"/packaging"}>Packaging</Link>
+                      <Link aria-label="tech Equipments" className="hover:text-[#AF8E56] hover:underline" to={"/tech-equipments"}>Tech Equipments</Link>
+                      <Link aria-label="tech Accessories" className="hover:text-[#AF8E56] hover:underline" to={"/tech-accessories"}>Tech Accessories</Link>
                     </div>
                   </div>
                 </div>

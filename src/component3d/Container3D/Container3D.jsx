@@ -14,15 +14,21 @@ import ProductVideoLatest from '../../component/ProductVideo/ProductVideoLatest'
 import VisualizationSliderStatic from '../Visualization/VisualizationSliderStatic';
 import GetUpdate3D from '../GetUpdate3D/GetUpdate3D';
 import { ScrollEffect } from '../../component/scrollEffect/ScrollEffect';
+import { HeadProvider, Meta, Title } from 'react-head';
 
 
 const Container3D = () => {
     return (
+        <>
+        <HeadProvider>
+            <Title>TheKow3D: Where CGI Brilliance Comes Alive</Title>
+            <Meta name="description" content="Elevate your brand with expert 3D modeling and CGI services. Our team collaborates with top designers to create high-quality 3D models, imagery, and animations. Tailored for retail industries, our product image rendering delivers captivating visuals to engage customers and boost sales. Experience exceptional quality and attract more business opportunities with our premium solutions."/>
+        </HeadProvider>
         <div>
             <ScrolTop />
             <Navbar3D />
             <ProductVideoLatest
-                videoUrl="/video/For Website.mp4"
+                videoUrl="/video/For Website.webm"
                 loadingImg="/video/3dvideo_loading.webp" />
 
             {/* <StartPage /> */}
@@ -61,6 +67,8 @@ const Container3D = () => {
 
             <Footer3D />
         </div>
+        </>
+
     );
 };
 

@@ -1,0 +1,22 @@
+{
+    "name": "The Kow Company Ltd",
+    "short_name": "KowCompany",
+    "description": "A leading player in Ecommerce and Studio Image & 3D Post-Production. We specialize in 3D Modeling, Rendering, and Architectural Visualization, with cutting-edge AI integration. Our expertise empowers brands to surpass expectations and turn every visual into a masterpiece.",
+    "start_url": ".",
+    "display": "standalone",
+    "theme_color": "#ffffff",
+    "background_color": "#ffffff",
+    "icons": [
+        {
+            "src": "/logo.png",
+            "sizes": "192x192",
+            "type": "image/png",
+            "purpose": "maskable"
+        },
+        {
+            "src": "/logo.png",
+            "sizes": "512x512",
+            "type": "image/png"
+        }
+    ]
+}

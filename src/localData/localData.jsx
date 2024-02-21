@@ -113,7 +113,7 @@ export const LocalDataFor3D = [
           In the expansive retail landscape, The KOW Company's influence surpasses content creation; it crafts immersive experiences that resonate with consumers. This epitomizes the AI-driven retail revolution, reshaping customer experiences and operational efficiency. The NRF Innovation Lab not only provides a glimpse into the future but serves as a testament to these companies' influence on the very fabric of retail dynamics.</li>
         </ul>
         <p>&nbsp;</p>`,
-        metaDescription: "In the dynamic landscape of online shopping, personalization emerges as the ultimate differentiator. ",
+        metaDescription: "In the dynamic landscape of online shopping, personalization emerges as the ultimate differentiator.The impact of PSYKHE AI is evident in confidential partnerships, boasting a five-fold increase in revenue, a three-fold surge in basket value, a 26% rise in customer retention, and a 4% reduction in product return rates. As it integrates with enterprise retailers in 2024, the promise of reshaping personalized online shopping experiences looms large. ",
         thumb: '/img/3d/blog/retail-revolution.webp',
         sort: 0,
         date: "05 FAB, 2024",
