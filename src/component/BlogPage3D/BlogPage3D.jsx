@@ -1,8 +1,10 @@
 
 
+import { useEffect, useState } from "react";
 import blog1 from "../../images/blog1.png"
 import blog2 from "../../images/blog2.png"
 import blog3 from "../../images/blog3.png"
+import { LocalDataFor3D } from "../../localData/localData";
 import ScrolTop from "../ScrolTop/ScrolTop";
 import Footer from "../footer/footer";
 import Navbar from "../navber/navbar";
@@ -13,53 +15,58 @@ import "./style.css"
 
 const BlogPage3D = () => {
 
+    const [blogData, setBlogData] = useState(null);
+
+    useEffect(() => {
+        setBlogData(LocalDataFor3D);
+        console.log(blogData)
+    }, [])
     return (
         <>
-        <ScrolTop/>
-        <Navbar/>
-        <div className='bg bg-white'>
-            <div className='container mx-auto'>
-                <div className="flex justify-center">
-                    <h1 className='text-[40px] w-[610px] pt-28 font-bold border-b-2 border-[#7C9C30] '>
-                        CREATIVE INDUSTRY TRENDS!
-                    </h1>
-                </div>
+            <ScrolTop />
+            <Navbar />
+            <div className='bg bg-white'>
+                <div className='container mx-auto'>
+                    <div className="flex justify-center">
+                        <h1 className='text-[40px] w-[610px] pt-28 font-bold border-b-2 border-[#7C9C30] '>
+                            CREATIVE INDUSTRY TRENDS!
+                        </h1>
+                    </div>
 
-                <div className='pt-20'>
-                    <h1 className='text-center text-2xl text-[#696666]'>RECENT POSTS</h1>
+                    <div className='pt-20'>
+                        <h1 className='text-center text-2xl text-[#696666]'>RECENT POSTS</h1>
+                        {
+                            console.log(blogData)
+                        }
+                        <div className='flex flex-col md:grid md:grid-cols-3 justify-center items-center gap-3 pt-3'>
+                            {
+                                blogData && blogData.map((item, index) =>
+                                    index < 3 &&
+                                    <div key={index} className=''>
+                                        <div className="md:h-[180px] lg:h-[230px] xl:h-[260px]">
+                                            <img 
+                                                className="w-full h-full"
+                                                loading="lazy" 
+                                                src={item.thumb}
+                                                width={350}
+                                                alt='trends photo'
+                                            />
+                                        </div>
 
-                    <div className='flex flex-col md:flex-row justify-center items-center gap-3 pt-3'>
-                        <div className=''>
-                            <img loading="lazy" src={blog1}
-                                width={350}
-                                alt='trends photo'
-                            />
-                            <h1 className='text-center pt-3 font-semibold'>INDUSTRY TRENDS ON 2D</h1>
-                        </div>
-                        <div className=''>
-                            <img loading="lazy" src={blog2}
-                                width={350}
-                                alt='trends photo'
-                            />
-                            <h1 className='text-center pt-3 font-semibold'>INDUSTRY TRENDS ON 3D</h1>
+                                        <h1 className='text-center pt-3 font-semibold'>{item.title}</h1>
+                                    </div>
 
-                        </div>
-                        <div className=''>
-                            <img loading="lazy" src={blog3}
-                                width={350}
-                                alt='trends photo'
-                            />
+                                )
+                            }
 
-                            <h1 className='text-center pt-3 font-semibold'>INDUSTRY TRENDS ON STUDIO</h1>
                         </div>
                     </div>
-                </div>
 
-               
+
+                </div>
+                <BlogPageDetails />
             </div>
-            <BlogPageDetails/>
-        </div>
-        <Footer/>
+            <Footer />
         </>
     );
 };

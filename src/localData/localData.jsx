@@ -37,7 +37,7 @@ export const LocalDataFor3D = [
         <p>The collaborative nature of e-commerce further accentuates the fusion of technology and creativity. Artists and designers collaborate with algorithms, crafting unique pieces that resonate with a digitally connected audience. E-commerce platforms serve as the stage where these collaborations unfold, enabling artists to reach global audiences and consumers to discover and embrace the paradoxical allure of pixel-perfect imperfections.</p>
         <p>In the dynamic interplay between pixel perfection and intentional imperfections in the AI-enhanced 3D realm, e-commerce emerges as a crucial player. As consumers navigate digital marketplaces, their preferences and choices are reshaping the landscape of 3D design. E-commerce is not just a transactional space but a collaborative platform where the dance of dichotomy between flawless precision and intentional imperfections is celebrated, setting the stage for a vibrant and diverse future in the market of AI-enhanced 3D output.</p>`,
         metaDescription: "The market for AI-enhanced 3D design is not only witnessing a shift in artistic paradigms but also experiencing a dynamic evolution in consumer attitudes, amplified by the role of e-commerce platforms. This attitude can be further explored by observing how the convergence of pixel perfection and intentional imperfections is shaping the 3D design market, with a specific focus on the impact of e-commerce on consumer behavior.",
-        thumb: '/img/3d/blog/shopping-cart-with-shopping-bag.webp',
+        thumb: '/img/shopping-cart-with-shopping-bag.webp',
         sort: 0,
         date: "02 FAB, 2024",
         category: ""

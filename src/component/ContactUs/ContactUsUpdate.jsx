@@ -3,9 +3,12 @@ import emailjs from "emailjs-com";
 import ScrolTop from "../ScrolTop/ScrolTop";
 import Navbar from "../navber/navbar";
 import Footer from "../footer/footer";
+import { useNavigate } from "react-router-dom";
 // import { Helmet } from "react-helmet";
 
  function ContactUs ()  {
+
+    const navigate = useNavigate();
 
     function randomDate(end) {
         return new Number(end + Math.random());
@@ -23,7 +26,8 @@ import Footer from "../footer/footer";
             .then(
                 (result) => {
                     console.log(result.text);
-                    window.location.href = "./thank-you/" + p;
+                    // window.location.href = "./thank-you/" + p;
+                    navigate(`/thank-you/${p}"`)
                 },
                 (error) => {
                     console.log(error.text);
@@ -38,6 +42,7 @@ import Footer from "../footer/footer";
 
     }, [])
 
+
     return (
         <>
             <ScrolTop />
@@ -46,7 +51,6 @@ import Footer from "../footer/footer";
                 {/* <Helmet>
         <style>{"body { background-color: #c5da9c; }"}</style>
       </Helmet> */}
-
                 <div className="container mx-auto">
                     <div className="flex flex-col-reverse md:flex-row  justify-center gap-10 md:gap-20 items-center">
                         <div className="flex flex-col justify-center items-center gap-4">
