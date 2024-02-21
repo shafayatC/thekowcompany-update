@@ -26,12 +26,12 @@ const StartPage = () => {
             </h1>
             <div className="pt-5 flex justify-center md:justify-start">
               <div className="rounded-3xl bg-white w-[260px] flex justify-between px-1 ">
-                <Link to="/contact-us">
+                <Link aria-label="Free Trial" to="/contact-us">
                 <button className="bg-[#B1CC40] my-1 px-8 py-1 font-semibold rounded-3xl text-[13px]">
                   Free Trial
                 </button>
                 </Link>
-                <Link to="/contact-us">
+                <Link aria-label="Free Quote" to="/contact-us">
                 <button className=" my-2 px-10 rounded-3xl font-semibold text-[13px]">
                   Free Quote
                 </button>

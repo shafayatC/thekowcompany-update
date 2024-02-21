@@ -63,7 +63,7 @@ and The KOW Company. This powerful trio brings together distinct realms of exper
 AI-powered scanners, NUREG GmbH's unrivaled expertise in content production and photography studio services along with The KOW Company’s post-production magic comes together!`}</p>
                     <p className='text-xs md:text-sm text-center mt-5 mb-10 px-[52px] '>{`From inception to flawlessness, we're pushing boundaries, breaking limits, and crafting the future with each polygon.`}</p>
                     <div className='flex justify-center'>
-                        <Link to="/integrations">
+                        <Link to="/integrations" aria-label="intergration-btn">
                             <button aria-label="explore-btn" className='text-xs md:text-sm font-semibold text-white px-6 py-1 bg-[#7C9C30] rounded-3xl'>Explore the 3D Content Production Solution</button>
                         </Link>
                     </div>

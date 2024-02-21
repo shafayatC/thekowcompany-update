@@ -1,6 +1,5 @@
 import { useState } from "react";
 import { MdArrowBackIosNew, MdArrowForwardIos } from "react-icons/md";
-import { Link } from "react-router-dom";
 
 const FAPage1 = () => {
   const [visibleDivs, setVisibleDivs] = useState([

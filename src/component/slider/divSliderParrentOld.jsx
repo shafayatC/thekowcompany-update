@@ -95,7 +95,7 @@ const DivSliderParrentOld = () => {
                                         <div className='w-full h-full relative'>
                                             <img loading="lazy" className='w-auto h-full' src={item.after} alt="slider" fill={true} objectFit='cover' />
                                         </div>
-                                        <h4 className='absolute bottom-[1px] left-[1px] text-[22px] font-medium leading-[16px] uppercase flex items-end'><span className='text-[30px] pb-[3px]'>{item.lebel.charAt(0)}</span><span>{item.lebel.substring(1, item.lebel.length)}</span><span className='ml-3 w-10 h-[1px] bg-black'></span></h4>
+                                        <h1 className='absolute bottom-[1px] left-[1px] text-[22px] font-medium leading-[16px] uppercase flex items-end'><span className='text-[30px] pb-[3px]'>{item.lebel.charAt(0)}</span><span>{item.lebel.substring(1, item.lebel.length)}</span><span className='ml-3 w-10 h-[1px] bg-black'></span></h1>
                                     </div>
                                 ))}
                                 {sliderList.map((item, index) => (
@@ -103,7 +103,7 @@ const DivSliderParrentOld = () => {
                                         <div className='w-full h-full relative'>
                                             <img loading="lazy" className='w-auto h-full' src={item.after} alt="slider" fill={true} objectFit='cover' />
                                         </div>
-                                        <h4 className='absolute bottom-[1px] left-[1px] text-[22px] font-medium leading-[16px] uppercase flex items-end'><span className='text-[30px] pb-[3px]'>{item.lebel.charAt(0)}</span><span>{item.lebel.substring(1, item.lebel.length)}</span><span className='ml-3 w-10 h-[1px] bg-black'></span></h4>
+                                        <h1 className='absolute bottom-[1px] left-[1px] text-[22px] font-medium leading-[16px] uppercase flex items-end'><span className='text-[30px] pb-[3px]'>{item.lebel.charAt(0)}</span><span>{item.lebel.substring(1, item.lebel.length)}</span><span className='ml-3 w-10 h-[1px] bg-black'></span></h1>
                                     </div>
                                 ))}
                                 {firstTwoItems.map((item, index) => (
@@ -111,7 +111,7 @@ const DivSliderParrentOld = () => {
                                         <div className='w-full h-full relative'>
                                             <img loading="lazy" className='w-auto h-full' src={item.after} alt="slider" fill={true} objectFit='cover' />
                                         </div>
-                                        <h4 className='absolute bottom-[1px] left-[1px] text-[22px] font-medium leading-[16px] uppercase flex items-end'><span className='text-[30px] pb-[3px]'>{item.lebel.charAt(0)}</span><span>{item.lebel.substring(1, item.lebel.length)}</span><span className='ml-3 w-10 h-[1px] bg-black'></span></h4>
+                                        <h1 className='absolute bottom-[1px] left-[1px] text-[22px] font-medium leading-[16px] uppercase flex items-end'><span className='text-[30px] pb-[3px]'>{item.lebel.charAt(0)}</span><span>{item.lebel.substring(1, item.lebel.length)}</span><span className='ml-3 w-10 h-[1px] bg-black'></span></h1>
                                     </div>
                                 ))}
 
@@ -154,7 +154,7 @@ const DivSliderParrentOld = () => {
                                         <div className='w-full h-full relative'>
                                             <img loading="lazy" className='w-full h-full' src={item.after} alt="slider" fill={true} objectFit='cover' />
                                         </div>
-                                        <h4 className='absolute bottom-[1px] left-[1px] text-[22px] font-medium leading-[16px] uppercase flex items-end'><span className='text-[30px] pb-[3px]'>{item.lebel.charAt(0)}</span><span>{item.lebel.substring(1, item.lebel.length)}</span><span className='ml-3 w-10 h-[1px] bg-black'></span></h4>
+                                        <h1 className='absolute bottom-[1px] left-[1px] text-[22px] font-medium leading-[16px] uppercase flex items-end'><span className='text-[30px] pb-[3px]'>{item.lebel.charAt(0)}</span><span>{item.lebel.substring(1, item.lebel.length)}</span><span className='ml-3 w-10 h-[1px] bg-black'></span></h1>
                                     </div>
                                 ))}
                                 {firstTwoItems.map((item, index) => (
@@ -162,7 +162,7 @@ const DivSliderParrentOld = () => {
                                         <div className='w-full h-full relative'>
                                             <img loading="lazy" className='w-full h-full' src={item.after} alt="slider" fill={true} objectFit='cover' />
                                         </div>
-                                        <h4 className='absolute bottom-[1px] left-[1px] text-[22px] font-medium leading-[16px] uppercase flex items-end'><span className='text-[30px] pb-[3px]'>{item.lebel.charAt(0)}</span><span>{item.lebel.substring(1, item.lebel.length)}</span><span className='ml-3 w-10 h-[1px] bg-black'></span></h4>
+                                        <h1 className='absolute bottom-[1px] left-[1px] text-[22px] font-medium leading-[16px] uppercase flex items-end'><span className='text-[30px] pb-[3px]'>{item.lebel.charAt(0)}</span><span>{item.lebel.substring(1, item.lebel.length)}</span><span className='ml-3 w-10 h-[1px] bg-black'></span></h1>
                                     </div>
                                 ))}
                             </>

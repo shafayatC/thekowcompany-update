@@ -73,7 +73,7 @@ const ProductVisualSlider = () => {
                                             effect="blur" />
                                     </div>
                                     <div className='w-full flex gap-3 py-4 justify-center'>
-                                        <h5 className='text-black font-medium'>{item.label}</h5>
+                                        <h2 className='text-black font-medium'>{item.label}</h2>
                                     </div>
                                 </div>
                             ))}

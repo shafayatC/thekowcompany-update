@@ -28,22 +28,26 @@ const Footer3D = () => {
                             <b>The KOW Company</b> is one of the leading image, video, 3D & CGI content production companies for businesses all over the world.
                         </p>
                         <div className="flex text-[#003333] justify-center md:justify-start gap-1 mb-2">
-                            <a href="https://www.facebook.com/cutoutwiz" target="_blank" rel="noreferrer">
+                            <a aria-label="Facebook" href="https://www.facebook.com/cutoutwiz" target="_blank" rel="noreferrer">
                                 <FaFacebook className="h-4 w-4 mr-2 text-[#333333] cursor-pointer"></FaFacebook>
                             </a>
                             <a
+                                aria-label="Youtube"
                                 href="https://www.youtube.com/channel/UClIkCcEBksZigP56p593fDQ"
                                 target="_blank" rel="noreferrer"
                             >
                                 <FaYoutube className="h-4 w-4 mr-2 text-[#333333] cursor-pointer"></FaYoutube>
                             </a>
                             <a
+                                aria-label="Linkedin"
                                 href="https://www.linkedin.com/company/cutoutwiz-ltd/"
                                 target="_blank" rel="noreferrer"
                             >
                                 <FaLinkedinIn className="h-4 w-4 mr-2 text-[#333333] cursor-pointer"></FaLinkedinIn>
                             </a>
-                            <a href="https://twitter.com/cut_wiz?s=09" target="_blank" rel="noreferrer">
+                            <a
+                                aria-label="Twitter"
+                             href="https://twitter.com/cut_wiz?s=09" target="_blank" rel="noreferrer">
                                 <BsTwitterX className="h-4 w-4 mr-2 text-[#333333] cursor-pointer"></BsTwitterX>
                             </a>
                             {/* <a
@@ -62,8 +66,8 @@ const Footer3D = () => {
 
                     <div className="flex flex-col text-[#333333] lg:items-start md:-ml-16 md:items-start text-center md:text-start gap-1">
                         <span className="text-xl font-semibold mb-2 ">HOME</span>
-                        <HashLink to="/3D#3d-services" className="link link-hover text-sm">Services</HashLink>
-                        <HashLink to="/3d#3d-trends" className="link link-hover text-sm">3D Trends</HashLink>
+                        <HashLink aria-label="3d services" to="/3D#3d-services" className="link link-hover text-sm">Services</HashLink>
+                        <HashLink aria-label="3d trends" to="/3d#3d-trends" className="link link-hover text-sm">3D Trends</HashLink>
                         {/* <HashLink  to="/3d#3d-contact" className="link link-hover text-sm">Contact us</HashLink> */}
 
 
@@ -72,9 +76,9 @@ const Footer3D = () => {
                     <div className="flex text-[#333333] lg:items-start md:items-start md:-ml-16 flex-col text-center md:text-left gap-1  lg:-ml-0">
                         <span className="text-xl font-semibold mb-2">Support</span>
 
-                        <Link to="/privacy-policy" className=" text-sm">Privacy Policy</Link>
-                        <Link to="/terms-condition" className=" text-sm">Terms & Conditions</Link>
-                        <Link to="/contact-us" className=" text-sm">Contact us</Link>
+                        <Link aria-label="Privacy Policy" to="/privacy-policy" className=" text-sm">Privacy Policy</Link>
+                        <Link aria-label="Terms & Conditions" to="/terms-condition" className=" text-sm">Terms & Conditions</Link>
+                        <Link aria-label="Contact us" to="/contact-us" className=" text-sm">Contact us</Link>
                         {/* <a href="https://app.cutoutwiz.com/Identity/Account/Login?ReturnUrl=%2F" target="_blank" className="text-sm cursor-pointer" rel="noreferrer">SIGN UP</a> */}
                     </div>
                     <div className="text-center flex flex-col items-center  md:ml-0 lg:ml-0">
@@ -82,6 +86,7 @@ const Footer3D = () => {
                             Our Address
                         </span>
                         <iframe
+                            title="map"
                             className='rounded-md'
                             src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d10329.283883735325!2d90.39304891556642!3d23.749043274767246!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xc1fb12dbea63beca!2sCutOutWiz!5e0!3m2!1sbn!2sbd!4v1639129804206!5m2!1sbn!2sbd"
                             width="90%"

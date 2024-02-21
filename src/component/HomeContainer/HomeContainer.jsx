@@ -13,6 +13,7 @@ import ThreeDModelContainer from '../ThreeDModelContainer/ThreeDModelContainer'
 import NavbarHome from '../navber/navbarHome'
 import ProductVideoLatestMother from '../ProductVideo/ProductVideoLatestMother'
 import { ScrollEffect } from '../scrollEffect/ScrollEffect'
+import { HeadProvider, Meta, Title } from 'react-head'
 
 function HomeContainer() {
 
@@ -21,6 +22,10 @@ function HomeContainer() {
 
     return (
         <>
+        <HeadProvider>
+            <Title>TheKow3D: Where CGI Brilliance Comes Alive</Title>
+            <Meta name="description" content="Discover excellence in Ecommerce and Studio Image & 3D Post-Production at The KOW Company. Our creative prowess and cutting-edge AI integration redefine product image enhancement. Elevate your brand with captivating visuals that surpass expectations and leave a lasting impression."/>
+        </HeadProvider>
             <ScrolTop />
             <NavbarHome />
             <div className="bg-[#DEE2E2] bgImage pb-3 flex flex-col relative">

@@ -1,10 +1,5 @@
 
 import ReactCompareImage from "react-compare-image";
-
-import { Link } from "react-router-dom";
-import { LazyLoadComponent } from "react-lazy-load-image-component";
-
-
 const Retouched = () => {
     return (
         <div id="ai">

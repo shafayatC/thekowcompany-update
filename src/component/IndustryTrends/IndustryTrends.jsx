@@ -31,18 +31,25 @@ const IndustryTrends = () => {
                   Easy Product Photography Solutions for Small Business |<span className="text-xs">  01 JAN, 2023 </span>
                 </h1>
                 {/* <h1 className="text-xs w-[90px]"> </h1> */}
+
               </div>
-              <div className="flex justify-center items-center">
-                <Link
-                  to="/2d/industry-trends"
-                  className="text-xs font-medium text-white px-12 py-1 bg-[#7C9C30] rounded-3xl"
-                >
-                  See More
-                </Link>
+              <div className="flex flex-col justify-items-center pt-5 gap-3">
+                <div className="flex flex-row md:flex-col lg:flex-row justify-center items-center gap-3 ">
+                  <h1 className="text-xs  md:text-base">
+                    Easy Product Photography Solutions for Small Business
+                  </h1>
+                  <h1 className="text-xs w-[90px]"> <span className="hidden lg:block">|</span>  01 JAN, 2023</h1>
+                </div>
+                <div className="flex justify-center items-center">
+                  <h2
+                    className="text-xs font-medium text-white px-12 py-1 bg-[#7C9C30] rounded-3xl"
+                  >
+                    See More
+                  </h2>
+                </div>
               </div>
+              {/* <MdOutlineArrowBackIos className='absolute left-0 font-semibold bottom-20 text-white text-2xl'/> */}
             </div>
-            {/* <MdOutlineArrowBackIos className='absolute left-0 font-semibold bottom-20 text-white text-2xl'/> */}
-          </div>
           </Link>
           <Link to={"/3d/industry-trends"} className="flex flex-col w-full">
           <div className="relative ">
@@ -62,17 +69,26 @@ const IndustryTrends = () => {
                   {LocalDataFor3D[0].title} | <span className="text-xs">{LocalDataFor3D[0].date}</span>
                 </h1>
                 {/* <h1 className="text-xs w-[90px]"> <span className="hidden lg:block"></span> {LocalDataFor3D[0].date}</h1> */}
+
               </div>
-              <div className="flex justify-center items-center">
-                <Link
-                  to="/3d/industry-trends"
-                  className="text-xs font-medium text-white px-12 py-1 bg-[#7C9C30] rounded-3xl"
-                >
-                  See More
-                </Link>
+
+              {/* <MdOutlineArrowForwardIos className='absolute right-0 font-semibold bottom-20 text-white text-2xl' /> */}
+              <div className="flex flex-col justify-items-center pt-5 gap-3">
+                <div className="flex flex-row md:flex-col lg:flex-row justify-center items-center gap-3 ">
+                  <h1 className="text-xs md:text-base">
+                    {LocalDataFor3D[0].title}
+                  </h1>
+                  <h1 className="text-xs w-[90px]"> <span className="hidden lg:block">|</span> {LocalDataFor3D[0].date}</h1>
+                </div>
+                <div className="flex justify-center items-center">
+                  <h2
+                    className="text-xs font-medium text-white px-12 py-1 bg-[#7C9C30] rounded-3xl"
+                  >
+                    See More
+                  </h2>
+                </div>
               </div>
             </div>
-          </div>
           </Link>
         </div>
       </div>

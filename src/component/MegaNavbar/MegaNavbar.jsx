@@ -21,9 +21,9 @@ const MegaNavbar = () => {
             </Link> */}
             {/* --------------------------------------For Large Screen------------------------------------------ */}
             {/* <div className="hidden md:flex sm:items-center md:gap-1 lg:gap-8 xl:gap-12"> */}
-            <Link to="/2d" className="text-white text-xs    font-semibold">IMAGES</Link>
-            <Link to="/3d" className="text-white text-xs   font-semibold ">3D</Link>
-            <a href="http://retouched.ai/" target="_blank" className="text-white text-xs cursor-pointer   font-semibold " rel="noreferrer">AI</a>
+            <Link to="/2d" className="text-white text-xs font-semibold" aria-label="2D">IMAGES</Link>
+            <Link to="/3d" className="text-white text-xs font-semibold " aria-label="3D">3D</Link>
+            <a href="http://retouched.ai/" target="_blank" className="text-white text-xs cursor-pointer   font-semibold " rel="noreferrer" aria-label="AI">AI</a>
            
           </div>
           {/* <div className="flex items-center justify-between md:hidden">

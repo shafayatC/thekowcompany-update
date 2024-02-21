@@ -1,6 +1,4 @@
 import React, { Component } from "react";
-
-import { Link } from "react-router-dom";
 import privacy from "/img/privacy.jpg";
 import ScrolTop from "../ScrolTop/ScrolTop";
 
