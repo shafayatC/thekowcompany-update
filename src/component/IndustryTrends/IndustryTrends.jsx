@@ -15,15 +15,23 @@ const IndustryTrends = () => {
       </div>
       <div className="container mx-auto">
         <div className="flex flex-col lg:px-28 md:grid md:grid-cols-2  justify-items-center justify-center gap-3 pt-10 md:pt-20 ">
-          <Link to={"/2d/industry-trends"} aria-label="2D industry Trends">
-            <div className="relative">
-              <div className="w-full md:h-[232px] lg:h-[315px] relative">
-                <img className="w-full md:w-auto md:h-full lg:w-full lg:h-auto h-auto" loading="lazy" src={"/img/2d.webp"} alt="trends photo" />
+          <Link className="flex w-full flex-col" to={"/2d/industry-trends"}>
+          <div className="relative">
+          <div className="flex  w-full md:h-[210px] xl:h-[270px] 2xl:h-[320px] relative">
+            <img className="w-full md:w-full md:h-auto lg:w-full lg:h-auto h-auto" loading="lazy" src={"/img/2d.webp"}  alt="trends photo" />
+            
+            <div className="absolute flex gap-2 items-end right-0 bottom-0">
+              <h1 className="text-white text-[26px]">2D</h1>
+              <h1 className="w-[110px]  border-b border-white mb-[10px]"></h1>
+            </div>
+            </div>
+            <div className="flex flex-col justify-items-center pt-5 gap-3">
+              <div className="flex flex-row md:flex-col lg:flex-row  justify-center items-center gap-3 ">
+                <h1 className="text-sm">
+                  Easy Product Photography Solutions for Small Business |<span className="text-xs">  01 JAN, 2023 </span>
+                </h1>
+                {/* <h1 className="text-xs w-[90px]"> </h1> */}
 
-                <div className="absolute flex gap-2 items-end right-0 bottom-0">
-                  <h1 className="text-white text-[26px]">2D</h1>
-                  <h1 className="w-[110px]  border-b border-white mb-[10px]"></h1>
-                </div>
               </div>
               <div className="flex flex-col justify-items-center pt-5 gap-3">
                 <div className="flex flex-row md:flex-col lg:flex-row justify-center items-center gap-3 ">
@@ -43,15 +51,25 @@ const IndustryTrends = () => {
               {/* <MdOutlineArrowBackIos className='absolute left-0 font-semibold bottom-20 text-white text-2xl'/> */}
             </div>
           </Link>
-          <Link to={"/3d/industry-trends"} aria-label="3D industry Trends">
-            <div className="relative ">
-              <div className="w-full md:h-[232px] lg:h-[315px] relative">
-                <img className="w-full md:w-auto md:h-full lg:w-full lg:h-auto h-auto" loading="lazy" src={LocalDataFor3D[0].thumb} alt="trends photo" />
+          <Link to={"/3d/industry-trends"} className="flex flex-col w-full">
+          <div className="relative ">
+          <div className="flex w-full md:h-[210px] xl:h-[270px] 2xl:h-[320px] relative">
+            <img className="w-full md:w-full md:h-auto lg:w-full lg:h-auto h-auto" loading="lazy" src={LocalDataFor3D[0].thumb}  alt="trends photo" />
+          
+           <div className="absolute flex gap-2 items-end right-0 bottom-0">
+              <h1 className="text-white text-[26px]">3D</h1>
+              <h1 className="w-[110px]  border-b border-white mb-[12px] "></h1>
+            </div>
+           </div>
 
-                <div className="absolute flex gap-2 items-end right-0 bottom-0">
-                  <h1 className="text-white text-[26px]">3D</h1>
-                  <h1 className="w-[110px]  border-b border-white mb-[12px] "></h1>
-                </div>
+            {/* <MdOutlineArrowForwardIos className='absolute right-0 font-semibold bottom-20 text-white text-2xl' /> */}
+            <div className="flex flex-col justify-items-center pt-5 gap-3">
+              <div className="flex flex-row md:flex-col lg:flex-row justify-center items-center gap-3 ">
+                <h1 className="text-sm">
+                  {LocalDataFor3D[0].title} | <span className="text-xs">{LocalDataFor3D[0].date}</span>
+                </h1>
+                {/* <h1 className="text-xs w-[90px]"> <span className="hidden lg:block"></span> {LocalDataFor3D[0].date}</h1> */}
+
               </div>
 
               {/* <MdOutlineArrowForwardIos className='absolute right-0 font-semibold bottom-20 text-white text-2xl' /> */}
