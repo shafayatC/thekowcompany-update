@@ -8,9 +8,6 @@ import Footer from "../footer/footer";
 import Navbar from "../navber/navbar";
 import BlogPageDetails from "./BlogPageDetails2D";
 
-import "./style.css"
-
-
 const BlogPage2D = () => {
 
     return (

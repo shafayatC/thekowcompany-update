@@ -30,6 +30,7 @@ const BlogPageDetails3D = () => {
 
                 <div className="flex justify-end pt-4 ">
                   <Link
+                  aria-label="Read more"
                     to={`/3d/industry-trends-details/${
                       blogData && blogData[0].id
                     }`}
@@ -77,6 +78,7 @@ const BlogPageDetails3D = () => {
 
                 <div className="flex justify-start pt-4 ">
                   <Link
+                  aria-label="Read more"
                     to={`/3d/industry-trends-details/${
                       blogData && blogData[1].id
                     }`}
@@ -108,6 +110,7 @@ const BlogPageDetails3D = () => {
 
                 <div className="flex justify-end pt-4 ">
                   <Link
+                  aria-label="Read more"
                     to={`/3d/industry-trends-details/${
                       blogData && blogData[2].id
                     }`}
@@ -156,6 +159,7 @@ const BlogPageDetails3D = () => {
 
                 <div className="flex justify-start pt-4 ">
                   <Link
+                  aria-label="Read more"
                     to={`/3d/industry-trends-details/${
                       blogData && blogData[3].id
                     }`}
@@ -186,6 +190,7 @@ const BlogPageDetails3D = () => {
 
                 <div className="flex justify-end pt-4 ">
                   <Link
+                  aria-label="Read more"
                     to={`/3d/industry-trends-details/${
                       blogData && blogData[4].id
                     }`}
@@ -234,6 +239,7 @@ const BlogPageDetails3D = () => {
 
                 <div className="flex justify-start pt-4 ">
                   <Link
+                  aria-label="Read more"
                     to={`/3d/industry-trends-details/${
                       blogData && blogData[5].id
                     }`}
