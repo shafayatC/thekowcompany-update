@@ -14,11 +14,13 @@ const Navbar3D = () => {
     const menuRef = useRef(null);
     const [showDiv, setShowDiv] = useState(false);
     const [showDivSubMenu, setShowDivSubMenu] = useState(false);
-
+    const [activeSubChild, setActiveSubChild] = useState("");
     const toggleDiv = () => {
         setShowDiv(!showDiv);
     };
-
+    const toggleSubchild = (id) => {
+        activeSubChild === id ? setActiveSubChild("") : setActiveSubChild(id);
+    }
     // useEffect(()=>{
 
 
@@ -44,13 +46,13 @@ const Navbar3D = () => {
     // },[])
     return (
         <>
-           
+
 
             <div className="relative z-50">
-            
+
                 {/* <div className="bg-[#DEE2E2] font-sans w-full min-h-screen m-0"> */}
                 <div ref={menuRef} className={`fixed left-0 w-full top-0 z-[999] bg-[#DBE5D8] shadow-xl md:shadow-none  bg-[length:100%_100%] ${showDiv && `bg-[url("/img/3d/bg_3.jpg")] h-[310px]`}  ${getMenuBool && `bg-[url("/img/3d/bg_3.jpg")]`}`}>
-                <MegaNavbar />
+                    <MegaNavbar />
                     <div className="container mx-auto ">
                         <div className="hidden lg:flex items-center justify-between gap-3">
                             <Link aria-label="Home" to={"/"}>
@@ -93,11 +95,23 @@ const Navbar3D = () => {
                         getMenuBool && <div className="block lg:hidden pt-2 ">
                             <div className="container mx-auto">
                                 <div className="flex flex-col text-center gap-4">
-                                    <button onClick={() => setShowDivSubMenu(!showDivSubMenu)} className="flex flex-col group gap-1 transition-all duration-300 text-gray-800 text-base border-b-2 border-[#376f50] font-semibold hover:bg-[#376f50] hover:border-b-2 hover:border-[#7C9C30] hover:text-white">
-                                        <sapn className=" py-3 flex self-baseline mx-auto items-center justify-between">SERVICES  <span><IoMdArrowDropdown /></span></sapn>
-                                        {showDivSubMenu && <ul className="flex flex-col font-normal w-full group-hover:bg-[#2f6246]">
-                                            <li className="flex flex-col"><a href="" className="py-3 hover:bg-[#244a35]">ARCHITECTURAL VISUALIZATION</a></li>
-                                            <li className="flex flex-col"><a href="" className="py-3 hover:bg-[#244a35]">PRODUCT VISUALIZATION</a></li>
+                                    <button className={`flex flex-col group gap-1 transition-all duration-300 text-gray-800 text-base border-b-2 border-[#376f50] font-semibold hover:bg-[#376f50] hover:border-b-2 hover:border-[#7C9C30] hover:text-white ${showDivSubMenu && `bg-[#376f50] border-b-2 border-[#7C9C30] text-white`}`}>
+                                        <sapn onClick={() => setShowDivSubMenu(!showDivSubMenu)} className="py-3 flex self-baseline mx-auto items-center w-full  justify-center">SERVICES  <span><IoMdArrowDropdown /></span></sapn>
+                                        {showDivSubMenu && <ul className="flex flex-col font-normal w-full bg-[#2f6246]">
+                                            <li onClick={() => toggleSubchild("architectural")} className="flex flex-col items-center justify-center"><span className="py-3 flex items-center justify-center w-full">ARCHITECTURAL VISUALIZATION <span><IoMdArrowDropdown /></span></span>
+                                                <ul className={`bg-[#244a35] w-full flex flex-col ${activeSubChild == 'architectural' ? 'block' : 'hidden'}`}> 
+                                                    <li className="py-3 hover:bg-[#173123]"><Link to={'/Visualization'}>Visualization</Link></li>
+                                                    <li className="py-3 hover:bg-[#173123]"><Link to={'/Visualization'}>Visualization</Link></li>
+                                                </ul>
+                                            </li>
+                                            <li onClick={() => toggleSubchild("product")} className="flex flex-col items-center justify-center"><span className="py-3 flex items-center justify-center w-full">PRODUCT VISUALIZATION <span><IoMdArrowDropdown /></span></span>
+                                                <ul className={`bg-[#244a35] w-full flex flex-col ${activeSubChild == 'product' ? 'block' : 'hidden'}`}> 
+                                                    <li className="py-3 hover:bg-[#173123]"><Link to={'/Visualization'}>Sample Menu</Link></li>
+                                                    <li className="py-3 hover:bg-[#173123]"><Link to={'/Visualization'}>Sample Menu</Link></li>
+                                                </ul>
+                                            </li>
+
+                                            {/* <li onClick={() => setActiveSubChild("product")} className="flex flex-col"><a href="" className="py-3 hover:bg-[#244a35]">PRODUCT VISUALIZATION</a></li> */}
                                         </ul>
                                         }
                                     </button>
@@ -105,7 +119,7 @@ const Navbar3D = () => {
                                     <HashLink aria-label="3d-trends" onClick={() => setMenuBool(false)} to="/3d#3d-trends" className="transition-all duration-300 text-gray-800 text-base border-b-2 border-[#376f50] font-semibold py-3 hover:bg-[#376f50] hover:border-b-2 hover:border-[#7C9C30] hover:text-white">3D TRENDS</HashLink>
                                     <Link aria-label="Contact-us" onClick={() => setMenuBool(false)} to="/contact-us" className="transition-all duration-300 text-gray-800 text-base border-b-2 border-[#376f50] font-semibold py-3 hover:bg-[#376f50] hover:border-b-2 hover:border-[#7C9C30] hover:text-white">CONTACT US</Link>
                                     <HashLink aria-label="Subscribe" onClick={() => setMenuBool(false)} to={"/3d#subscribe"} className="transition-all duration-300 text-gray-800 text-base border-b-2 border-[#376f50] font-semibold py-3 hover:bg-[#376f50] hover:border-b-2 hover:border-[#7C9C30] hover:text-white">SUBSCRIBE</HashLink>
-                                    <Link aria-label="Book A Call" to="/book-a-call"className="transition-all duration-300 text-gray-800 text-base border-b-2 border-[#376f50] font-semibold py-3 hover:bg-[#376f50] hover:border-b-2 hover:border-[#7C9C30] hover:text-white">Book A Call</Link>
+                                    <Link aria-label="Book A Call" to="/book-a-call" className="transition-all duration-300 text-gray-800 text-base border-b-2 border-[#376f50] font-semibold py-3 hover:bg-[#376f50] hover:border-b-2 hover:border-[#7C9C30] hover:text-white">Book A Call</Link>
                                     {/* <Link onClick={() => setMenuBool(false)} to="/" className="transition-all duration-300 flex flex-col items-center text-gray-800 text-[32px] border-b-2 py-3 hover:bg-[#376f50] border-[#376f50] font-semibold hover:border-b-2 hover:border-[#7C9C30] hover:text-white"><GoHomeFill /></Link> */}
                                 </div>
                             </div>
@@ -113,9 +127,9 @@ const Navbar3D = () => {
                     }
                 </div>
                 {/* menu of any where click on screen  */}
-               {showDiv && 
-               <div onClick={toggleDiv} className="fixed -z-1 top-0 left-0 w-full h-full"></div>
-               } 
+                {showDiv &&
+                    <div onClick={toggleDiv} className="fixed -z-1 top-0 left-0 w-full h-full"></div>
+                }
                 {/* </div> */}
                 {/* </div> */}
             </div>

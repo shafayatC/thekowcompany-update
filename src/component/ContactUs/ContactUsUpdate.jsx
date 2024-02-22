@@ -1,12 +1,13 @@
-import  { useEffect } from "react";
+import { useEffect } from "react";
 import emailjs from "emailjs-com";
 import ScrolTop from "../ScrolTop/ScrolTop";
 import Navbar from "../navber/navbar";
 import Footer from "../footer/footer";
 import { useNavigate } from "react-router-dom";
+import { HeadProvider, Meta, Title } from "react-head";
 // import { Helmet } from "react-helmet";
 
- function ContactUs ()  {
+function ContactUs() {
 
     const navigate = useNavigate();
 
@@ -45,6 +46,10 @@ import { useNavigate } from "react-router-dom";
 
     return (
         <>
+            <HeadProvider>
+                <Title>Contact us | The KOW Company</Title>
+                <Meta name="description" content="Reach out easily! Our contact page is your gateway to connect with us. Questions, feedback, or just want to say hello? We're here for you!" />
+            </HeadProvider>
             <ScrolTop />
             <Navbar />
             <div className=" bg-[#DEE2E3] pt-4 pb-20">
@@ -70,8 +75,8 @@ import { useNavigate } from "react-router-dom";
                                             required
                                         />
                                     </div>
-                                    <div  className="flex flex-col">
-                                        <select id="inputState" 
+                                    <div className="flex flex-col">
+                                        <select id="inputState"
                                             className="py-2 pl-1 bg-[#DEE2E3] font-semibold cursor-pointer outline-none border-b-2 border-[#D2D2D2]"
                                             name="option">
                                             <option className="" selected> Select Option </option>
@@ -81,7 +86,7 @@ import { useNavigate } from "react-router-dom";
                                             {/* <option>Retouched.ai</option> */}
                                         </select>
                                     </div>
-                                    <div  className="flex flex-col">
+                                    <div className="flex flex-col">
                                         <input
                                             type="email"
                                             className="py-2 px-2 bg-[#DEE2E3] outline-none border-b-2 border-[#D2D2D2]"
@@ -90,7 +95,7 @@ import { useNavigate } from "react-router-dom";
                                             required
                                         />
                                     </div>
-                                    <div  className="flex flex-col">
+                                    <div className="flex flex-col">
                                         <input
                                             type="text"
                                             className="py-2 px-2 bg-[#DEE2E3] outline-none border-b-2 border-[#D2D2D2]"
@@ -102,7 +107,7 @@ import { useNavigate } from "react-router-dom";
 
                                     <div className="flex flex-col">
                                         <textarea
-                                           className="py-2 px-2 bg-[#DEE2E3] outline-none border-b-2 border-[#D2D2D2]"
+                                            className="py-2 px-2 bg-[#DEE2E3] outline-none border-b-2 border-[#D2D2D2]"
                                             id=""
                                             cols="20"
                                             rows="3"
@@ -112,7 +117,7 @@ import { useNavigate } from "react-router-dom";
                                         ></textarea>
                                     </div>
 
-                                    <div  hidden>
+                                    <div hidden>
                                         <textarea
                                             cols="30"
                                             rows="3"
@@ -137,7 +142,7 @@ import { useNavigate } from "react-router-dom";
                             </form>
                         </div>
                         <div>
-                            <img alt="contact-us" className="w-[350px] sm:w-[400px] md:w-[450px]" src="/img/Illustration.webp"/>
+                            <img alt="contact-us" className="w-[350px] sm:w-[400px] md:w-[450px]" src="/img/Illustration.webp" />
                         </div>
                     </div>
                 </div>

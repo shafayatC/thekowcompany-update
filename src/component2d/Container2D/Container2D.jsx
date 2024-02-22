@@ -1,3 +1,4 @@
+import { HeadProvider, Meta, Title } from "react-head";
 import ScrolTop from "../../component/ScrolTop/ScrolTop";
 import { ScrollEffect } from "../../component/scrollEffect/ScrollEffect";
 import Integrations from "../Apps&Integration/Apps&Integrations";
@@ -15,6 +16,10 @@ import VideoSliderNew from "../VideoSlider/VideoSliderNew";
 const Container2D = () => {
     return (
         <>
+         <HeadProvider>
+            <Title>The KOW Company 2D</Title>
+            <Meta name="description" content="Transform your media with expert image & video editing services. Elevate your content and captivate your audience with stunning visuals."/>
+        </HeadProvider>
             <ScrolTop />
             <Navbar2D />
             <div className="bg-[#DEE2E2] bgImage">

@@ -7,6 +7,7 @@ import Footer from "../footer/footer";
 import Navbar from "../navber/navbar";
 import BlogPageDetails from "./BlogPageDetails3D";
 import { Link } from "react-router-dom";
+import { HeadProvider, Meta, Title } from "react-head";
 
 
 const BlogPage3D = () => {
@@ -19,6 +20,10 @@ const BlogPage3D = () => {
     }, [])
     return (
         <>
+            <HeadProvider>
+                <Title> CREATIVE INDUSTRY TRENDS!</Title>
+                <Meta name="description" content={`${blogData && blogData[0].title}`} />
+            </HeadProvider>
             <ScrolTop />
             <Navbar />
             <div className='bg bg-white'>
@@ -40,9 +45,9 @@ const BlogPage3D = () => {
                                     index < 3 &&
                                     <Link to={"/3d/industry-trends-details/" + item.id + ""} key={index} className='' aria-label="industry trends details">
                                         <div className="md:h-[180px] lg:h-[230px] xl:h-[260px]">
-                                            <img 
+                                            <img
                                                 className="w-full h-full"
-                                                loading="lazy" 
+                                                loading="lazy"
                                                 src={item.thumb}
                                                 width={350}
                                                 alt='trends photo'

@@ -7,22 +7,27 @@ import FourthSection from './FourthSection';
 import FifthSection from './FifthSection';
 import Navbar from '../navber/navbar';
 import ScrolTop from '../ScrolTop/ScrolTop';
+import { HeadProvider, Meta, Title } from 'react-head';
 
 const Partnership = () => {
     return (
         <>
-        <ScrolTop/>
-         <Navbar/>
+            <HeadProvider>
+                <Title>Pertnership | The Kow Company</Title>
+                {/* <Meta name="description" content={`${blogData && blogData[0].title}`} /> */}
+            </HeadProvider>
+            <ScrolTop />
+            <Navbar />
             <div className='partnership-background pt-20'>
-               
+
                 <div className='container mx-auto'>
-                <FirstSection />
-                <SecondSection />
-                <ThirdSection />
-                <FifthSection />
-                <FourthSection />
+                    <FirstSection />
+                    <SecondSection />
+                    <ThirdSection />
+                    <FifthSection />
+                    <FourthSection />
                 </div>
-                
+
             </div>
         </>
     );

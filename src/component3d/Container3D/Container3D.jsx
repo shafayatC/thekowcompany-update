@@ -21,8 +21,8 @@ const Container3D = () => {
     return (
         <>
         <HeadProvider>
-            <Title>TheKow3D: Where CGI Brilliance Comes Alive</Title>
-            <Meta name="description" content="Elevate your brand with expert 3D modeling and CGI services. Our team collaborates with top designers to create high-quality 3D models, imagery, and animations. Tailored for retail industries, our product image rendering delivers captivating visuals to engage customers and boost sales. Experience exceptional quality and attract more business opportunities with our premium solutions."/>
+            <Title>The KOW Company 3D</Title>
+            <Meta name="description" content="Elevate your brand with expert 3D modeling and CGI services. Collaborate with top designers for high-quality visuals tailored to retail. Boost sales with captivating product image rendering."/>
         </HeadProvider>
         <div>
             <ScrolTop />
