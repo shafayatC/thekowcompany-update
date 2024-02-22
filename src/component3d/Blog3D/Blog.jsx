@@ -19,13 +19,18 @@ const Blog3D = () => {
     }, [])
     return (
         <>
-            <HeadProvider>
-                <Title>{blogData.title}</Title>
-                <Meta property='og:title' content={blogData.title} />
-                <Meta property='og:image' content={window.location.href + blogData.thumb} />
-                <Meta property='og:description' content={blogData.metaDescription} />
-                <Meta property='og:url' content={window.location.href} />
-            </HeadProvider>
+            {
+                blogData &&
+                <HeadProvider>
+                    <Title>{blogData.title}</Title>
+                    <Meta name="description" content={blogData.metaDescription} />
+                    <Meta property='og:title' content={blogData.title} />
+                    <Meta property='og:image' content={window.location.href + blogData.thumb} />
+                    <Meta property='og:description' content={blogData.metaDescription} />
+                    <Meta property='og:url' content={window.location.href} />
+                </HeadProvider>
+            }
+
             <ScrolTop />
             <Navbar3D />
             <div className='bg-[#DEE2E2]'>

@@ -18,7 +18,7 @@ const Container2D = () => {
         <>
          <HeadProvider>
             <Title>The KOW Company 2D</Title>
-            <Meta name="description" content="Discover excellence in Ecommerce and Studio Image & 3D Post-Production at The KOW Company. Our creative prowess and cutting-edge AI integration redefine product image enhancement. Elevate your brand with captivating visuals that surpass expectations and leave a lasting impression."/>
+            <Meta name="description" content="Transform your media with expert image & video editing services. Elevate your content and captivate your audience with stunning visuals."/>
         </HeadProvider>
             <ScrolTop />
             <Navbar2D />

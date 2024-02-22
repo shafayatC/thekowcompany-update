@@ -24,7 +24,7 @@ function HomeContainer() {
         <>
         <HeadProvider>
             <Title>The KOW Company</Title>
-            <Meta name="description" content="Discover excellence in Ecommerce and Studio Image & 3D Post-Production at The KOW Company. Our creative prowess and cutting-edge AI integration redefine product image enhancement. Elevate your brand with captivating visuals that surpass expectations and leave a lasting impression."/>
+            <Meta name="description" content="Elevate your brand with top-tier Ecommerce and Studio Image & 3D Post-Production services at The KOW Company. Let us redefine your visual identity."/>
         </HeadProvider>
             <ScrolTop />
             <NavbarHome />

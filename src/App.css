@@ -358,8 +358,8 @@ body {
 }
 
 .bg{
-  background-image: url("../../images//blog-BG2.png");
+  background-image: url("/img/blog-BG2.png");
   background-repeat: no-repeat;
-  background-size: 100% 14%;
+  background-size: 100% 12%;
  
 }
