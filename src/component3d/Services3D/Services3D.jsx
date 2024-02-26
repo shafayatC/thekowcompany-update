@@ -6,17 +6,17 @@ const Services3D = () => {
 
     const serviceData = [
         {
-            icon: '/img/3d/Color-Adjustments.png',
+            icon: '/img/3d/Color-Adjustments.webp',
             title: '3D Views',
             description: `Product images of any Perspective & Lighting`
         },
         {
-            icon: '/img/3d/Textures.png',
+            icon: '/img/3d/Textures.webp',
             title: 'Textures',
             description: `Easy change of Fabrics & Materials`
         },
         {
-            icon: '/img/3d/3D-Views.png',
+            icon: '/img/3d/3D-Views.webp',
             title: 'Color Adjustments',
             description: `Quick exchange of Colors & Patterns`
         }
