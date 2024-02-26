@@ -22,7 +22,7 @@ const OrderGuide = () => {
       </div> */}
 
       <div >
-      <div className="container mx-auto">
+      <div className="2xl:container mx-auto">
       <div className="flex justify-center w-full  transition-all duration-300">
           <video
             id="productVideo"

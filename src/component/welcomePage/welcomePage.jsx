@@ -1,6 +1,6 @@
 
-import sideArt from "../../images/sideArtV1.png"
-import logowhite from "../../images/logo2.png"
+import sideArt from "../../images/sideArtV1.webp"
+import logowhite from "../../images/logo2.webp"
 
 const WelcomePage = () => {
     return (

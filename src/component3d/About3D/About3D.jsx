@@ -10,7 +10,7 @@ const About3D = () => {
                         {/* <img loading="lazy" className='w-full' src='/img/3d/logo.png' /> */}
                         <LazyLoadImage
                             className='w-[200px] md:w-full'
-                            src='/img/3d/logo.png'
+                            src='/img/3d/logo.webp'
                             effect="blur"
                             alt='logo'
                              />

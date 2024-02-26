@@ -46,11 +46,12 @@ function ContactUs() {
 
     return (
         <>
+            <ScrolTop />
+
             <HeadProvider>
                 <Title>Contact us | The KOW Company</Title>
                 <Meta name="description" content="Reach out easily! Our contact page is your gateway to connect with us. Questions, feedback, or just want to say hello? We're here for you!" />
             </HeadProvider>
-            <ScrolTop />
             <Navbar />
             <div className=" bg-[#DEE2E3] pt-4 pb-20">
                 {/* <Helmet>
