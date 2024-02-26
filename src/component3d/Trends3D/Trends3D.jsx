@@ -77,7 +77,7 @@ const Trends3D = () => {
                 <Link  aria-label="blog"  key={index} to={`/3d/industry-trends-details/${div.id}`}>
                   {/* Wrap the div with Link component */}
                   <div className="flex-col items-center justify-center">
-                    <div className="h-[220px] lg:h-[220px] xl:h-[280px]">
+                    <div className="h-auto md:h-[220px] xl:h-[280px] flex">
                       <img 
                         className="w-full min-h-full"
                         src={div.thumb}
@@ -92,9 +92,9 @@ const Trends3D = () => {
                     <div className="flex flex-col items-center gap-2 pt-5 pb-10">
                       <div className="flex justify-center items-center gap-2 ">
                         <p className="text-[12px] font-semibold">
-                          {div.title} | 
+                          {div.title}  | <span className="text-[10px] font-normal">{div.date}</span>
                         </p>
-                        <p className="text-[9px]">{div.date}</p>
+                        {/* <p className="text-[9px] w-[70px]">{div.date}</p> */}
                       </div>
                       <button className="bg-[#B1CC40] px-6 py-1 rounded-3xl font-semibold text-[10px]">
                         {/* {div.button} */}
