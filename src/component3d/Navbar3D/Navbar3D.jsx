@@ -100,14 +100,18 @@ const Navbar3D = () => {
                                         {showDivSubMenu && <ul className="flex flex-col font-normal w-full bg-[#2f6246]">
                                             <li onClick={() => toggleSubchild("architectural")} className="flex flex-col items-center justify-center"><span className="py-3 flex items-center justify-center w-full">ARCHITECTURAL VISUALIZATION <span><IoMdArrowDropdown /></span></span>
                                                 <ul className={`bg-[#244a35] w-full flex flex-col ${activeSubChild == 'architectural' ? 'block' : 'hidden'}`}> 
-                                                    <li className="py-3 hover:bg-[#173123]"><Link to={'/Visualization'}>Visualization</Link></li>
-                                                    <li className="py-3 hover:bg-[#173123]"><Link to={'/Visualization'}>Visualization</Link></li>
+                                                    <li className="py-3 hover:bg-[#173123]"><Link to={'/exterior-visualization'}>Exterior Visualization</Link></li>
+                                                    <li className="py-3 hover:bg-[#173123]"><Link to={'/interior-visualization'}>Interior Visualization</Link></li>
                                                 </ul>
                                             </li>
                                             <li onClick={() => toggleSubchild("product")} className="flex flex-col items-center justify-center"><span className="py-3 flex items-center justify-center w-full">PRODUCT VISUALIZATION <span><IoMdArrowDropdown /></span></span>
                                                 <ul className={`bg-[#244a35] w-full flex flex-col ${activeSubChild == 'product' ? 'block' : 'hidden'}`}> 
-                                                    <li className="py-3 hover:bg-[#173123]"><Link to={'/Visualization'}>Sample Menu</Link></li>
-                                                    <li className="py-3 hover:bg-[#173123]"><Link to={'/Visualization'}>Sample Menu</Link></li>
+                                                    <li className="py-3 hover:bg-[#173123]"><Link to={'/product-visualiztion-3d'}>Furnitures</Link></li>
+                                                    <li className="py-3 hover:bg-[#173123]"><Link to={'/fashion-accessories'}>Fashion Accessories</Link></li>
+                                                    <li className="py-3 hover:bg-[#173123]"><Link to={'/cosmetics'}>Cosmetics</Link></li>
+                                                    <li className="py-3 hover:bg-[#173123]"><Link to={'/packaging'}>Packaging</Link></li>
+                                                    <li className="py-3 hover:bg-[#173123]"><Link to={'/tech-equipments'}>Tech Equipments</Link></li>
+                                                    <li className="py-3 hover:bg-[#173123]"><Link to={'/tech-accessories'}>Tech Accessories</Link></li>
                                                 </ul>
                                             </li>
 
