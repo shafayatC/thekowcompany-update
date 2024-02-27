@@ -12,7 +12,7 @@ const Integrations = () => {
                 {`APPS & INTEGRATION`}
               </span>
             </h2>
-          </div>
+          </div> 
         </div>
         <div className="container mx-auto">
           <div className="flex flex-col md:flex-row justify-center items-center gap-20 md:gap-12">
