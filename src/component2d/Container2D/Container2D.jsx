@@ -27,9 +27,9 @@ const Container2D = () => {
                 {/* <ScrollEffect offset={100}> */}
                     <Record2d />
                 {/* </ScrollEffect> */}
-                <ScrollEffect id="services" offset={100}>
+                {/* <ScrollEffect id="services" offset={100}> */}
                     <ImageSlider />
-                </ScrollEffect>
+                {/* </ScrollEffect> */}
                 {/* <VideoSlider /> */}
                 {/* <ScrollEffect offset={100}> */}
                     <VideoSliderNew />

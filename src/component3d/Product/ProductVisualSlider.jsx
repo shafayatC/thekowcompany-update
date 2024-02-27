@@ -65,7 +65,7 @@ const ProductVisualSlider = () => {
                                 // <div className='h-full px-2'><img loading="lazy" src={item.image}/></div>
                                 <div className='relative flex flex-col md:block mx-2 cursor-pointer'>
                                     <div>
-                                        {/* <img loading="lazy" src={item.image} className="w-full object-cover" /> */}
+                                        {/* <img loading="lazy" src={item.image} className="w-full object-cover"  alt='product visual' /> */}
                                         <LazyLoadImage
                                             src={item.image} 
                                             className="w-full object-cover"
