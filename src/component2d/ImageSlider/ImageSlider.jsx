@@ -8,35 +8,35 @@ const ImageSlider = () => {
     const sliderList = [
       
         {
-            "after": "/img/Image_Slide_2D/Background-Removal-&-Shadow-Creation_B.jpg",
-            "before": "/img/Image_Slide_2D/Background-Removal-&-Shadow-Creation_A.jpg",
+            "after": "/img/Image_Slide_2D/Background-Removal-&-Shadow-Creation_B.webp",
+            "before": "/img/Image_Slide_2D/Background-Removal-&-Shadow-Creation_A.webp",
             "lebel": "Background removal"
         },
         {
-            "after": "/img/Image_Slide_2D/Ghost-Mannequin_B.jpg",
-            "before": "/img/Image_Slide_2D/Ghost-Mannequin_A.jpg",
+            "after": "/img/Image_Slide_2D/Ghost-Mannequin_B.webp",
+            "before": "/img/Image_Slide_2D/Ghost-Mannequin_A.webp",
             "lebel": "Ghost Mannequin"
         }, 
         {
-            "after": "/img/Image_Slide_2D/Photo-Recolor_B.jpg",
-            "before": "/img/Image_Slide_2D/Photo-Recolor_A.jpg",
+            "after": "/img/Image_Slide_2D/Photo-Recolor_B.webp",
+            "before": "/img/Image_Slide_2D/Photo-Recolor_A.webp",
             "lebel": "Photo Recolor"
         },
         {
-            "after": "/img/Image_Slide_2D/Hair-Masking_B.jpg",
-            "before": "/img/Image_Slide_2D/Hair-Masking_A.jpg",
+            "after": "/img/Image_Slide_2D/Hair-Masking_B.webp",
+            "before": "/img/Image_Slide_2D/Hair-Masking_A.webp",
             "lebel": "Hair Masking"
         },
        
         {
-            "after": "/img/Image_Slide_2D/Photo-Retouch_B.jpg",
-            "before": "/img/Image_Slide_2D/Photo-Retouch_A.jpg",
+            "after": "/img/Image_Slide_2D/Photo-Retouch_B.webp",
+            "before": "/img/Image_Slide_2D/Photo-Retouch_A.webp",
             "lebel": "Photo Retouch"
         }
         ,
         {
-            "after": "/img/Image_Slide_2D/Color-Correction_B.jpg",
-            "before": "/img/Image_Slide_2D/Color-Correction_A.jpg",
+            "after": "/img/Image_Slide_2D/Color-Correction_B.webp",
+            "before": "/img/Image_Slide_2D/Color-Correction_A.webp",
             "lebel": "Color Correction"
         },
     ]

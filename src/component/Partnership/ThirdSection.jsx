@@ -1,5 +1,5 @@
 
-import photo3 from './image/nirob-2.png'
+import photo3 from './image/nirob-2.webp'
 
 const ThirdSection = () => {
     return (

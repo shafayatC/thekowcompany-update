@@ -53,7 +53,7 @@ const Blog3D = () => {
                                 </div>
                                 <div className="absolute bottom-0 -right-[100px] -z-10 w-[400px] h-[400px] opacity-60">
                                     <img
-                                        src="/img/Blog-Images/circle.png"
+                                        src="/img/Blog-Images/circle.webp"
                                         alt=""
                                         className="w-full h-full"
                                     />

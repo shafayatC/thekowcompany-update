@@ -3,7 +3,7 @@ import { LazyLoadImage } from 'react-lazy-load-image-component';
 
 const About3D = () => {
     return (
-        <div className='bg-[#d2e0cf] md:bg-[url("/img/3d/bg_3.jpg")] bg-cover py-10'>
+        <div className='bg-[#d2e0cf] md:bg-[url("/img/3d/bg_3.webp")] bg-cover py-10'>
             <div className='container mx-auto'>
                 <div className='grid grid-col-1 justify-items-center md:grid-cols-[300px_auto] gap-10 md:gap-28 items-center'>
                     <div>

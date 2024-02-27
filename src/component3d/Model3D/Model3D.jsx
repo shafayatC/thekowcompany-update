@@ -33,7 +33,7 @@ const Model3D = () => {
               {/* <img loading="lazy" className="md:mt-16 " src="/img/shoeLogo2.png" /> */}
               <LazyLoadImage
                 className="md:mt-16 "
-                 src="/img/shoeLogo2.png"
+                 src="/img/shoeLogo2.webp"
                 effect="blur" />
             </div>}>
               <ShoeModel />

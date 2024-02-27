@@ -20,7 +20,7 @@ const Footer3D = () => {
                     <div className="text-center md:text-left flex flex-col justify-center">
                         <figure className='flex justify-center md:justify-start'>
                             <img
-                                loading="lazy" src="/img/logoBlack.png"
+                                loading="lazy" src="/img/logoBlack.webp"
                                 width={120}
                                 alt="logoBlack" />
                         </figure>

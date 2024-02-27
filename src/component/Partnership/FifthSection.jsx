@@ -1,8 +1,8 @@
 
 
-import covisionLogo from "./image/Covision-Media-Logo.png";
-import nuregLogo from "./image/Nureg-Logo.png"
-import kowLogo from "./image/The-KOW-Company-Logo.png"
+import covisionLogo from "./image/Covision-Media-Logo.webp";
+import nuregLogo from "./image/Nureg-Logo.webp"
+import kowLogo from "./image/The-KOW-Company-Logo.webp"
 import './style.css'
 
 const FifthSection = () => {
