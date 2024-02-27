@@ -1,7 +1,7 @@
 
-import a from './image/Covision-Media-Logo.png'
-import b from './image/Nureg-Logo.png'
-import c from './image/The-KOW-Company-Logo.png'
+import a from './image/Covision-Media-Logo.webp'
+import b from './image/Nureg-Logo.webp'
+import c from './image/The-KOW-Company-Logo.webp'
 import './style.css'
 
 const ForMenuSections = () => {

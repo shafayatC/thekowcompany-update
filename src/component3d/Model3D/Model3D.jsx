@@ -30,11 +30,12 @@ const Model3D = () => {
             ></ViewModel> */}
 
             <Suspense fallback={<div className="flex justify-center items-center  ">
-              <img loading="lazy" className="md:mt-16 " src="/img/shoeLogo2.png" alt="shoe 3d file" />
+              <img loading="lazy" className="md:mt-16 " src="/img/shoeLogo2.webp" alt="shoe 3d file" />
               {/* <LazyLoadImage
-                className="md:mt-16 "
-                 src="/img/shoeLogo2.png"
-                effect="blur" /> */}
+                className="md:mt-16"
+                 src="/img/shoeLogo2.webp"
+                effect="blur" />
+
             </div>}>
               <ShoeModel />
             </Suspense>

@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import privacy from "/img/privacy.jpg";
+import privacy from "/img/privacy.webp";
 import ScrolTop from "../ScrolTop/ScrolTop";
 
 function PrivacyPolicy(props) {
