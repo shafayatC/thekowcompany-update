@@ -98,7 +98,7 @@ const ChairModel = () => {
         <div className="container mx-auto flex justify-between">
           <div className="flex justify-center items-center gap-3">
             <div className="w-8 md:w-16">
-              <img loading="lazy" src="/img/3d/slider/view.png" alt="lazy" />
+              <img loading="lazy" src="/img/3d/slider/view.webp" alt="lazy" />
             </div>
             <div>
               <p className="font-semibold text-base md:text-2xl text-black">

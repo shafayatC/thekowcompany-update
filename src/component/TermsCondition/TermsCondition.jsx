@@ -1,7 +1,7 @@
 import React, { Component } from "react";
 
 import { Link } from "react-router-dom";
-import terms from "/img/terms-banner.jpg";
+import terms from "/img/terms-banner.webp";
 import ScrolTop from "../ScrolTop/ScrolTop";
 
 function TermsCondition(props) {

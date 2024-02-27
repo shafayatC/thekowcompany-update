@@ -1,7 +1,7 @@
-import icon1 from "../../../public/img/Blog-Images/icon1.png";
-import icon2 from "../../../public/img/Blog-Images/icon2.png";
-import icon3 from "../../../public/img/Blog-Images/icon3.png";
-import icon4 from "../../../public/img/Blog-Images/icon4.png";
+import icon1 from "../../../public/img/Blog-Images/icon1.webp";
+import icon2 from "../../../public/img/Blog-Images/icon2.webp";
+import icon3 from "../../../public/img/Blog-Images/icon3.webp";
+
 
 
 const Page7 = () => {

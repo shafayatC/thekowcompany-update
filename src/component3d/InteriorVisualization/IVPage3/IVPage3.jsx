@@ -10,7 +10,7 @@ const IVPage3 = () => {
       text2: "01 JAN, 2023",
       imageUrl: "/img/3d/slider/INDUSTRIAL BLACK LUXURIOUS.webp",
      
-      imageUrl2: "/img/3d/slider/view.png",
+      imageUrl2: "/img/3d/slider/view.webp",
     },
     {
       id: 2,
@@ -18,14 +18,14 @@ const IVPage3 = () => {
       text2: "01 JAN, 2023",
       imageUrl: "/img/3d/slider/PERSIAN BLUE COOL SUNRISE COMPACT ECOMMERCE .webp",
     
-      imageUrl2: "/img/3d/slider/view.png",
+      imageUrl2: "/img/3d/slider/view.webp",
     },
     {
       id: 3,
       text: "YOUR PROJECT TITLE",
       text2: "01 JAN, 2023",
       imageUrl: "/img/3d/slider/THE MINIMALIST WARM SUNSET LUXRIOUS.webp",
-      imageUrl2: "/img/3d/slider/view.png",
+      imageUrl2: "/img/3d/slider/view.webp",
     },
  
   ]);

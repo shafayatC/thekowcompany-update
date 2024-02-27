@@ -164,7 +164,7 @@ body {
 }
 
 .bgImage-2 {
-  background-image: url("./img/3d/round-shape.png");
+  background-image: url("./img/3d/round-shape.webp");
   background-attachment: fixed;
   min-height: 100%;
   background-size: 466px;
@@ -221,7 +221,7 @@ body {
 
 
 .contact-bg {
-  background-image: url("/public/img/3d/bg-2.jpg");
+  background-image: url("/public/img/3d/bg-2.webp");
   height: 100%;
   width: 100%;
   background-repeat: no-repeat;

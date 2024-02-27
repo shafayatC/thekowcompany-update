@@ -29,7 +29,7 @@ const VisualizationSliderStatic = () => {
                 <h2 className="text-black font-semibold">
                   INTERIOR VISUALIZATION
                 </h2>
-                <img alt='view' loading="lazy" className="h-6 z-30" src="/img/3d/slider/view.png" />
+                <img alt='view' loading="lazy" className="h-6 z-30" src="/img/3d/slider/view.webp" />
               </div>
             </div>
           </Link>
@@ -49,7 +49,7 @@ const VisualizationSliderStatic = () => {
                 <h2 className="text-black font-semibold">
                   EXTERIOR VISUALIZATION
                 </h2>
-                <img alt='view' loading="lazy" className="h-6 z-30" src="/img/3d/slider/view.png" />
+                <img alt='view' loading="lazy" className="h-6 z-30" src="/img/3d/slider/view.webp" />
               </div>
             </div>
           </Link>
@@ -67,7 +67,7 @@ const VisualizationSliderStatic = () => {
               </div>
               <div className="w-full flex gap-3 justify-center pt-2 ">
                 <h2 className="text-black font-semibold">VR RENDERING</h2>
-                <img alt='view' loading="lazy" className="h-6 z-30" src="/img/3d/slider/view.png" />
+                <img alt='view' loading="lazy" className="h-6 z-30" src="/img/3d/slider/view.webp" />
               </div>
             </div>
           </Link>

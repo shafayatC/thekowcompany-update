@@ -8,21 +8,21 @@ const TAPage1 = () => {
       text: "YOUR PROJECT TITLE",
       text2: "01 JAN, 2023",
       imageUrl: "/img/Tech Accessories.webp",
-      imageUrl2: "/img/3d/slider/view.png",
+      imageUrl2: "/img/3d/slider/view.webp",
     },
     // {
     //   id: 2,
     //   text: "YOUR PROJECT TITLE",
     //   text2: "01 JAN, 2023",
     //   imageUrl: "/public/img/3d/slider/THE MINIMALIST WARM SUNSET LUXRIOUS.jpg",
-    //   imageUrl2: "/img/3d/slider/view.png",
+    //   imageUrl2: "/img/3d/slider/view.webp",
     // },
     // {
     //   id: 3,
     //   text: "YOUR PROJECT TITLE",
     //   text2: "01 JAN, 2023",
     //   imageUrl: "/public/img/3d/slider/PERSIAN BLUE COOL SUNRISE COMPACT ECOMMERCE .jpg",
-    //   imageUrl2: "/img/3d/slider/view.png",
+    //   imageUrl2: "/img/3d/slider/view.webp",
     // },
  
   ]);

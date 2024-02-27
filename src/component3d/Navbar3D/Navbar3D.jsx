@@ -51,7 +51,7 @@ const Navbar3D = () => {
             <div className="relative z-50">
 
                 {/* <div className="bg-[#DEE2E2] font-sans w-full min-h-screen m-0"> */}
-                <div ref={menuRef} className={`fixed left-0 w-full top-0 z-[999] bg-[#DBE5D8] shadow-xl md:shadow-none  bg-[length:100%_100%] ${showDiv && `bg-[url("/img/3d/bg_3.jpg")] h-[310px]`}  ${getMenuBool && `bg-[url("/img/3d/bg_3.jpg")]`}`}>
+                <div ref={menuRef} className={`fixed left-0 w-full top-0 z-[999] bg-[#DBE5D8] shadow-xl md:shadow-none  bg-[length:100%_100%] ${showDiv && `bg-[url("/img/3d/bg_3.webp")] h-[310px]`}  ${getMenuBool && `bg-[url("/img/3d/bg_3.webp")]`}`}>
                     <MegaNavbar />
                     <div className="container mx-auto ">
                         <div className="hidden lg:flex items-center justify-between gap-3">

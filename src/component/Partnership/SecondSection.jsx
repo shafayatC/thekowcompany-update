@@ -1,5 +1,5 @@
 
-import photo1 from './image/nirob-1.png'
+import photo1 from './image/nirob-1.webp'
 import './style.css'
 
 
