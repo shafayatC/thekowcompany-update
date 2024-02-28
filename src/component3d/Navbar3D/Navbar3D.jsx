@@ -106,7 +106,7 @@ const Navbar3D = () => {
                                             </li>
                                             <li onClick={() => toggleSubchild("product")} className="flex flex-col items-center justify-center"><span className="py-3 flex items-center justify-center w-full">PRODUCT VISUALIZATION <span><IoMdArrowDropdown /></span></span>
                                                 <ul className={`bg-[#244a35] w-full flex flex-col ${activeSubChild == 'product' ? 'block' : 'hidden'}`}> 
-                                                    <li className="py-3 hover:bg-[#173123]"><Link to={'/product-visualiztion-3d'}>Furnitures</Link></li>
+                                                    <li className="py-3 hover:bg-[#173123]"><Link to={'/furniture'}>Furnitures</Link></li>
                                                     <li className="py-3 hover:bg-[#173123]"><Link to={'/fashion-accessories'}>Fashion Accessories</Link></li>
                                                     <li className="py-3 hover:bg-[#173123]"><Link to={'/cosmetics'}>Cosmetics</Link></li>
                                                     <li className="py-3 hover:bg-[#173123]"><Link to={'/packaging'}>Packaging</Link></li>
