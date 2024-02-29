@@ -1,6 +1,6 @@
-import icon1 from "../../../public/img/Blog-Images/icon1.webp";
-import icon2 from "../../../public/img/Blog-Images/icon2.webp";
-import icon3 from "../../../public/img/Blog-Images/icon3.webp";
+import icon1 from "../../../public/img/Blog-Images/2fb.webp";
+import icon2 from "../../../public/img/Blog-Images/2in.webp";
+import icon3 from "../../../public/img/Blog-Images/2X.webp";
 
 
 
