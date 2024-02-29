@@ -10,7 +10,7 @@ const BottomPart = () => {
         <div className="grid gap-8 sm:grid-cols-2 sm:px-32 sm:gap-8 md:grid-cols-4 md:px-10 lg:px-20 xl:px-52 justify-items-center">
          
             <div className="bg-white w-[140px] p-6 rounded-md shadow-slate-400 shadow-md relative">
-              <h1 className="border-b-2 border-[#B1CC40] pb-4 mb-1 font-semibold">16,500+</h1>
+              <h1 className="border-b-2 border-[#B1CC40] pb-4 mb-1 font-semibold">50,000+</h1>
               <h1 className="text-[12px] font-semibold">Images</h1>
               <h1 className="text-[12px] font-semibold">Processed Daily</h1>
               <div className="absolute top-[37px] -left-[35px]">

@@ -3,42 +3,41 @@ import { Carousel } from 'react-div-carousel'
 import 'react-div-carousel/dist/index.css'
 import Heading from '../Heading/Heading';
 import { LazyLoadImage } from 'react-lazy-load-image-component';
+import { Link } from 'react-router-dom'
 
 const ProductVisualSlider = () => {
     const sliderList = [
         {
-            "image": "/img/Fashion Accessories.webp",
-            "label": "Fashion Accessories",
-            "link": "#"
+          image: "/img/Fashion Accessories.webp",
+          label: "Fashion Accessories",
+          link: "/fashion-accessories"
         },
         {
-            "image": "/img/Tech Accessories.webp",
-            "label": "Tech Accessories",
-            "link": "#"
-        },
-
-        {
-            "image": "/img/Packaging.webp",
-            "label": "Packaging",
-            "link": "#"
+          image: "/img/Tech Accessories.webp",
+          label: "Tech Accessories",
+          link: "/tech-accessories"
         },
         {
-            "image": "/img/Cosmetics-update.webp",
-            "label": "Cosmetics",
-            "link": "#"
+          image: "/img/Packaging.webp",
+          label: "Packaging",
+          link: "/packaging"
         },
         {
-            "image": "/img/Furniture.webp",
-            "label": "Furniture",
-            "link": "#"
+          image: "/img/Cosmetics-update.webp",
+          label: "Cosmetics",
+          link: "/cosmetics"
         },
         {
-            "image": "/img/Tech Equipment.webp",
-            "label": "Tech Equipment",
-            "link": "#"
+          image: "/img/Furniture.webp",
+          label: "Furniture",
+          link: "/furniture"
         },
-
-    ]
+        {
+          image: "/img/Tech Equipment.webp",
+          label: "Tech Equipment",
+          link: "/tech-equipments"
+        },
+      ];
 
     return (
         <div className=' py-6' >
@@ -61,22 +60,24 @@ const ProductVisualSlider = () => {
                             ]
                             }
                         >
-                            {sliderList.map((item, index) => (
-                                // <div className='h-full px-2'><img loading="lazy" src={item.image}/></div>
-                                <div className='relative flex flex-col md:block mx-2 cursor-pointer'>
-                                    <div>
-                                        {/* <img loading="lazy" src={item.image} className="w-full object-cover"  alt='product visual' /> */}
-                                        <LazyLoadImage
-                                            src={item.image} 
-                                            className="w-full object-cover"
-                                            alt='product visual'
-                                            effect="blur" />
-                                    </div>
-                                    <div className='w-full flex gap-3 py-4 justify-center'>
-                                        <h2 className='text-black font-medium'>{item.label}</h2>
-                                    </div>
-                                </div>
-                            ))}
+                              {sliderList.map((item, index) => (
+            <div key={index}> 
+                <Link to={item.link} key={index} className='relative flex flex-col md:block mx-2 cursor-pointer'>
+              
+              <div>
+                  <LazyLoadImage
+                    src={item.image}
+                    className="w-full object-cover"
+                    effect="blur"
+                  />
+                </div>
+                <div className='w-full flex gap-3 py-4 justify-center'>
+                  <h2 className='text-black font-medium'>{item.label}</h2>
+                </div>
+              
+              </Link>
+            </div>
+            ))}
                         </Carousel>
                     </div>
                 </div>

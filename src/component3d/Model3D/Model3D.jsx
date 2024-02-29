@@ -35,7 +35,7 @@ const Model3D = () => {
                 className="md:mt-16"
                  src="/img/shoeLogo2.webp"
                 effect="blur" />
-
+*/}
             </div>}>
               <ShoeModel />
             </Suspense>

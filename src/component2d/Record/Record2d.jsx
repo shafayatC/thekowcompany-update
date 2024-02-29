@@ -17,22 +17,22 @@ const Record2d = () => {
           <div className="flex flex-col gap-6">
             <div className="grid grid-cols-1 gap-12 md:gap-0 md:grid-cols-4 justify-items-center -mt-24">
               <CircleStyle2d
-                count="18M"
+                count="30M"
                 title="IMAGE PRODUCTION"
-                recordTime="2020-21"
+                recordTime="2022-23"
               />
               <CircleStyle2d
-                count="40K"
+                count="50K"
                 title="IMAGE PRODUCTION"
                 recordTime="PER DAY"
               />
               <CircleStyle2d
-                count="9.2K"
+                count="60K"
                 title="VIDEO PRODUCTION"
-                recordTime="2020-21"
+                recordTime="2022-23"
               />
               <CircleStyle2d
-                count="54K"
+                count="2M"
                 title="VIDEO PRODUCTION"
                 recordTime="FIVE YEARS"
               />

@@ -100,7 +100,7 @@ const MegaMenu = () => {
                     </p>
 
                     <div className="flex flex-col gap-1 text-xs">
-                      <Link aria-label="furnitures" className="hover:text-[#AF8E56] hover:underline" to={"/product-visualiztion-3d"}>Furnitures</Link>
+                      <Link aria-label="furnitures" className="hover:text-[#AF8E56] hover:underline" to={"/furniture"}>Furnitures</Link>
                       <Link aria-label="fashion" className="hover:text-[#AF8E56] hover:underline" to={"/fashion-accessories"}>Fashion Accessories</Link>
                       <Link aria-label="cosmetics" className="hover:text-[#AF8E56] hover:underline" to={"/cosmetics"}>Cosmetics</Link>
                       <Link aria-label="packaging" className="hover:text-[#AF8E56] hover:underline" to={"/packaging"}>Packaging</Link>

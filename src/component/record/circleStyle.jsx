@@ -1,4 +1,4 @@
-const CircleStyle = ({count, title}) => {
+const CircleStyle = ({count, title, recordTime}) => {
   return (
     <div className="flex flex-col items-center">
       <div className="flex flex-col items-center">
@@ -16,8 +16,9 @@ const CircleStyle = ({count, title}) => {
           <div className="p-[7px] border-[1px] border-solid border-[#666666] rounded-full">
             <div className="bg-kow-green p-2 rounded-full"></div>
           </div>
-          <div>
+          <div className="text-center">
             <h2 className="uppercase text-lg font-medium">{title}</h2>
+            <h2 className="uppercase text-lg font-bold text-[#7C9C30]">{recordTime}</h2>
           </div>
         </div>
       </div>
