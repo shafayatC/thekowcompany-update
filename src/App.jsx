@@ -44,7 +44,7 @@ function App() {
         <Route path="/3d/industry-trends-details" element={<TrendsDetails/>} />
         <Route path="/exterior-visualization" element={<ExteriorVisualization/>} />
         <Route path="/interior-visualization" element={<InteriorVisualization/>} />
-        <Route path="/product-visualiztion-3d" element={<Furniture/>} />
+        <Route path="/furniture" element={<Furniture/>} />
         <Route path="/packaging" element={<Packaging/>} />
         <Route path="/fashion-accessories" element={<FashionAccessories/>} />
         <Route path="/tech-accessories" element={<TechAccessories/>} />
