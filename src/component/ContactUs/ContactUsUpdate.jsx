@@ -1,4 +1,4 @@
-import { useEffect } from "react";
+import { useEffect, useState } from "react";
 import emailjs from "emailjs-com";
 import ScrolTop from "../ScrolTop/ScrolTop";
 import Navbar from "../navber/navbar";
@@ -8,7 +8,7 @@ import { HeadProvider, Meta, Title } from "react-head";
 // import { Helmet } from "react-helmet";
 
 function ContactUs() {
-
+    const [getOption, setOption] = useState(null);
     const navigate = useNavigate();
 
     function randomDate(end) {
@@ -18,7 +18,7 @@ function ContactUs() {
     function sendEmail(e) {
         e.preventDefault();
 
-        emailjs.sendForm(
+        getOption && emailjs.sendForm(
             "service_1zfatsb",
             "template_0ciuxfr",
             e.target,
@@ -77,13 +77,15 @@ function ContactUs() {
                                         />
                                     </div>
                                     <div className="flex flex-col">
-                                        <select id="inputState"
+                                        <select  id="inputState"
+                                            onChange={(e) => {setOption(e.target.value)}}
                                             className="py-2 pl-1 bg-[#DEE2E3] font-semibold cursor-pointer outline-none border-b-2 border-[#D2D2D2]"
-                                            name="option">
-                                            <option className="" selected> Select Option </option>
-                                            <option >Image Editing Services</option>
-                                            <option>Video Editing Services</option>
-                                            <option>3D/CGI Services</option>
+                                            name="option"
+                                            required>
+                                            <option value="" className="" selected> Select Option </option>
+                                            <option value="Image Editing Services">Image Editing Services</option>
+                                            <option value="Video Editing Services">Video Editing Services</option>
+                                            <option value="3D/CGI Services">3D/CGI Services</option>
                                             {/* <option>Retouched.ai</option> */}
                                         </select>
                                     </div>
