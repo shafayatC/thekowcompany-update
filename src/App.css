@@ -271,7 +271,10 @@ body {
 .blogDetail p {
   padding-bottom: 20px;
 }
-
+.blogDetail a {
+  color: #0000c1;
+  text-decoration: underline;
+}
 .blogDetail ul,
 .blogDetail ol {
   margin-left: 18px;
