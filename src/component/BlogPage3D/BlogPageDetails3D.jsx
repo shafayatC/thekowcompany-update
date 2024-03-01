@@ -73,7 +73,7 @@ const BlogPageDetails3D = () => {
                           </h1>
 
                           <p className="text-xs text-justify pt-10 ">
-                            {item.metaDescription}.......
+                            {item.metaDescription}...
                           </p>
 
                           <div className="flex justify-end pt-4 ">
