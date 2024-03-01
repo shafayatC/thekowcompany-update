@@ -17,7 +17,7 @@ const IndustryTrends = () => {
         <div className="flex flex-col lg:px-28 md:grid md:grid-cols-2  justify-items-center justify-center gap-3 pt-10 md:pt-20 ">
           <Link  aria-label="2d industry trends" className="flex w-full flex-col" to={"/2d/industry-trends"}>
             <div className="relative">
-              <div className="flex  w-full md:h-[210px] xl:h-[270px] 2xl:h-[320px] relative">
+            <div className="flex flex-col justify-center overflow-hidden w-full md:h-[210px] xl:h-[270px] 2xl:h-[320px] relative">
                 <img className="w-full md:w-full md:h-auto lg:w-full lg:h-auto h-auto" loading="lazy" src={"/img/2d.webp"} alt="trends photo" />
 
                 <div className="absolute flex gap-2 items-end right-0 bottom-0">
@@ -44,7 +44,7 @@ const IndustryTrends = () => {
           </Link>
           <Link aria-label="3d industry trends" to={"/3d/industry-trends"} className="flex flex-col w-full">
             <div className="relative ">
-              <div className="flex w-full md:h-[210px] xl:h-[270px] 2xl:h-[320px] relative">
+              <div className="flex flex-col justify-center overflow-hidden w-full md:h-[210px] xl:h-[270px] 2xl:h-[320px] relative">
                 <img className="w-full md:w-full md:h-auto lg:w-full lg:h-auto h-auto" loading="lazy" src={LocalDataFor3D[0].thumb} alt="trends photo" />
 
                 <div className="absolute flex gap-2 items-end right-0 bottom-0">

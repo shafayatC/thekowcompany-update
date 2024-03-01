@@ -25,7 +25,7 @@ const BlogPageDetails3D = () => {
                     isOdd(index) ? 
                     
                     <div className="flex flex-col md:grid md:grid-cols-2 md:justify-items-center justify-center items-end gap-12 px-2 md:px-0">
-                      <div>
+                      <div className="max-h-[350px] flex flex-col justify-center overflow-hidden">
                         <img
                           loading="lazy"
                           src={item.thumb}
@@ -90,7 +90,7 @@ const BlogPageDetails3D = () => {
                             </Link>
                           </div>
                         </div>
-                        <div>
+                        <div className="max-h-[350px] flex flex-col justify-center overflow-hidden">
                           <img
                             loading="lazy"
                             src={item.thumb}
