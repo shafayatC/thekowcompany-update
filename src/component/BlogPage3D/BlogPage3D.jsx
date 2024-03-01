@@ -44,9 +44,9 @@ const BlogPage3D = () => {
                                 blogData && blogData.map((item, index) =>
                                     index < 3 &&
                                     <Link to={"/3d/industry-trends-details/" + item.id + ""} key={index} className='' aria-label="industry trends details">
-                                        <div className="md:h-[180px] lg:h-[230px] xl:h-[260px]">
+                                        <div className="md:h-[180px] lg:h-[230px] xl:h-[260px] flex flex-col justify-center overflow-hidden">
                                             <img
-                                                className="w-full h-full"
+                                                className="w-full h-auto"
                                                 loading="lazy"
                                                 src={item.thumb}
                                                 width={350}
