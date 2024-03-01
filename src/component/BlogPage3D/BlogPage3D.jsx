@@ -13,10 +13,10 @@ import { HeadProvider, Meta, Title } from "react-head";
 const BlogPage3D = () => {
 
     const [blogData, setBlogData] = useState(null);
-
+    
     useEffect(() => {
         setBlogData(LocalDataFor3D);
-        console.log(blogData)
+        console.log(window.location.origin);
     }, [])
     return (
         <>
