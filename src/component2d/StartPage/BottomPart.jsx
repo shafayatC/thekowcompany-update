@@ -34,7 +34,7 @@ const BottomPart = () => {
               </div>
             </div>
             <div className="bg-white w-[140px] p-6 rounded-md shadow-slate-400 shadow-md relative">
-              <h1 className="border-b-2 border-[#B1CC40] pb-4 mb-1 font-semibold">10+</h1>
+              <h1 className="border-b-2 border-[#B1CC40] pb-4 mb-1 font-semibold">10</h1>
               <h1 className="text-[12px] font-semibold">Free</h1>
               <h1 className="text-[12px] font-semibold">Trial Images</h1>
               <div className="absolute top-[37px] -left-[35px]">
