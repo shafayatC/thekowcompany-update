@@ -10,9 +10,15 @@ import {
 import { BsTwitterX } from "react-icons/bs";
 import { HashLink } from 'react-router-hash-link';
 import { Link } from 'react-router-dom';
+import { useEffect, useState } from "react";
 
 
 const Footer3D = () => {
+    const [boolMap, setBoolMap] = useState(false);
+
+    useEffect(() => {
+        setBoolMap(true); 
+    },[])
     return (
         <div>
             <div id="footer" className="bg-gradient-to-b to-[#8ebd8f] via-[#b3cda7] from-[#c7e0c0]">
@@ -85,16 +91,20 @@ const Footer3D = () => {
                         <span className="font-bold text-[#333333] text-xl w-full text-center  md:mb-4 md:ml-8 lg:-ml-16">
                             Our Address
                         </span>
-                        <iframe
-                            title="map"
-                            className='rounded-md'
-                            src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d10329.283883735325!2d90.39304891556642!3d23.749043274767246!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xc1fb12dbea63beca!2sCutOutWiz!5e0!3m2!1sbn!2sbd!4v1639129804206!5m2!1sbn!2sbd"
-                            width="90%"
-                            height="80%"
-                            style={{ border: "0" }}
-                            allowFullScreen=""
-                            loading="lazy"
-                        ></iframe>
+                        {
+                            boolMap &&
+
+                            <iframe
+                                title="map"
+                                className='rounded-md'
+                                src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d10329.283883735325!2d90.39304891556642!3d23.749043274767246!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xc1fb12dbea63beca!2sCutOutWiz!5e0!3m2!1sbn!2sbd!4v1639129804206!5m2!1sbn!2sbd"
+                                width="90%"
+                                height="80%"
+                                style={{ border: "0" }}
+                                allowFullScreen=""
+                                loading="lazy"
+                            ></iframe>
+                        }
                     </div>
 
                 </footer>
