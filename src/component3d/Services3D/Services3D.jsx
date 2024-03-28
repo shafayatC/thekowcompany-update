@@ -1,6 +1,6 @@
 import React from 'react';
 import Heading from '../Heading/Heading';
-import ServiceList from './serviceList';
+import ServiceList from './ServiceList';
 
 const Services3D = () => {
 
