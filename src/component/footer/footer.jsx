@@ -4,7 +4,7 @@ import logoWhite from '../../images/logo2.png'
 
 import {
     FaFacebook,
-  
+
     FaLinkedinIn,
 
     FaYoutube,
@@ -13,17 +13,25 @@ import {
 import { BsTwitterX } from "react-icons/bs";
 import { Link } from 'react-router-dom';
 import { HashLink } from 'react-router-hash-link';
+import { useEffect, useState } from 'react';
 
 
 const Footer = () => {
-    return ( 
+
+    const [boolMap, setBoolMap] = useState(false);
+
+    useEffect(() => {
+        setBoolMap(true);
+    }, [])
+
+    return (
         <div>
             <div id="footer" className="bg-[#7C9C30]">
                 <footer className="footer container pt-10 pb-10 mx-auto lg:justify-items-center justify-items-center  text-[#003333] gap-4 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4">
                     <div className="text-left flex flex-col justify-center">
                         <figure>
                             <img alt="logo" loading="lazy" src={logoWhite}
-                                width={120}/>
+                                width={120} />
                         </figure>
                         <p className="w-40 text-white text-[11px] p-1 border-b-2  border-white  mb-4">
                             <b>The KOW Company</b> is one of the
@@ -48,9 +56,9 @@ const Footer = () => {
                                 <FaLinkedinIn className="h-4 w-4 mr-2 text-white cursor-pointer"></FaLinkedinIn>
                             </a>
                             <a
-                             aria-label='twitter'
-                             href="https://twitter.com/the_kow_company" target="_blank" rel="noreferrer">
-                                <BsTwitterX  className="h-4 w-4 mr-2 text-white cursor-pointer"></BsTwitterX >
+                                aria-label='twitter'
+                                href="https://twitter.com/the_kow_company" target="_blank" rel="noreferrer">
+                                <BsTwitterX className="h-4 w-4 mr-2 text-white cursor-pointer"></BsTwitterX >
                             </a>
                             {/* <a
                                 href="https://www.instagram.com/accounts/login/"
@@ -68,13 +76,13 @@ const Footer = () => {
 
                     <div className="flex flex-col text-white lg:items-start md:-ml-16 md:items-start text-center md:text-start gap-1">
                         <span className="text-xl font-semibold text-[white] mb-2 ">HOME</span>
-                        <HashLink  to="/#images" className="text-sm" aria-label='Images'>Images</HashLink>
+                        <HashLink to="/#images" className="text-sm" aria-label='Images'>Images</HashLink>
                         <HashLink to="/#3d" className="text-sm" aria-label='3D'>3D</HashLink>
                         <HashLink to="/#ai" className="text-sm" aria-label='AI'>AI</HashLink>
                         <HashLink to="/#integration" className="text-sm" aria-label='Integrations'>Integrations</HashLink>
-                        <HashLink  className="text-sm" aria-label='Blueprint'>Blueprint</HashLink>
-                        <HashLink to="/#trends" className="text-sm" aria-label='Industry Trends'>Industry Trends</HashLink>                  
-                    
+                        <HashLink className="text-sm" aria-label='Blueprint'>Blueprint</HashLink>
+                        <HashLink to="/#trends" className="text-sm" aria-label='Industry Trends'>Industry Trends</HashLink>
+
 
                     </div>
                     {/* <div className="flex lg:items-start text-white md:items-start flex-col md:-ml-16 text-center md:text-start  gap-1  lg:-ml-0">
@@ -100,16 +108,20 @@ const Footer = () => {
                         <span className="font-bold text-white text-xl w-full text-center  md:mb-4 md:ml-8 lg:-ml-16">
                             Our Address
                         </span>
-                        <iframe
-                        title="map"
-                        className='rounded-md'
-                            src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d10329.283883735325!2d90.39304891556642!3d23.749043274767246!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xc1fb12dbea63beca!2sCutOutWiz!5e0!3m2!1sbn!2sbd!4v1639129804206!5m2!1sbn!2sbd"
-                            width="90%"
-                            height="80%"
-                            style={{ border: "0" }}
-                            allowFullScreen=""
-                            loading="lazy"
-                        ></iframe>
+                        {
+                            boolMap &&
+
+                            <iframe
+                                title="map"
+                                className='rounded-md'
+                                src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d10329.283883735325!2d90.39304891556642!3d23.749043274767246!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xc1fb12dbea63beca!2sCutOutWiz!5e0!3m2!1sbn!2sbd!4v1639129804206!5m2!1sbn!2sbd"
+                                width="90%"
+                                height="80%"
+                                style={{ border: "0" }}
+                                allowFullScreen=""
+                                loading="lazy"
+                            ></iframe>
+                        }
                     </div>
 
                 </footer>
