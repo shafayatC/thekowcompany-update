@@ -25,6 +25,7 @@ import ContactUs from './component/ContactUs/ContactUsUpdate'
 import 'react-lazy-load-image-component/src/effects/blur.css';
 import BookACall from './component/Calendly/BookACall'
 import Blog3D from './component3d/Blog3D/Blog'
+import ContactUsLanding from './component/ContactUsLanding/ContactUsLanding'
 
 function App() {
 
@@ -34,6 +35,7 @@ function App() {
       <Routes>
       <Route path="/" element={<HomeContainer />} />
       <Route path="/contact-us" element={<ContactUs />} />
+      <Route path="/landing-contact-us" element={<ContactUsLanding />} />
         <Route path="/2d/industry-trends" element={<BlogPage2D />} />
         <Route path="/3d/industry-trends" element={<BlogPage3D />} />
         <Route path="/integrations" element={<Partnership />} />
