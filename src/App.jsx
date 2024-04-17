@@ -26,6 +26,10 @@ import 'react-lazy-load-image-component/src/effects/blur.css';
 import BookACall from './component/Calendly/BookACall'
 import Blog3D from './component3d/Blog3D/Blog'
 import ContactUsLanding from './component/ContactUsLanding/ContactUsLanding'
+import ContactUsLanding2 from './component/ContactUsLanding2/ContactUsLanding2'
+import ContactUsLanding3 from './component/ContactUsLanding3/ContactUsLanding3'
+import ContactUsLanding4 from './component/ContactUsLanding4/ContactUsLanding4'
+
 
 function App() {
 
@@ -36,27 +40,31 @@ function App() {
       <Route path="/" element={<HomeContainer />} />
       <Route path="/contact-us" element={<ContactUs />} />
       <Route path="/landing-contact-us" element={<ContactUsLanding />} />
-        <Route path="/2d/industry-trends" element={<BlogPage2D />} />
-        <Route path="/3d/industry-trends" element={<BlogPage3D />} />
-        <Route path="/integrations" element={<Partnership />} />
-        <Route path="/2d" element={<Container2D/>} />
-        <Route path="/3d" element={<Container3D/>} />
-        <Route path='/3d/industry-trends-details/:id' element={<Blog3D/>} />
-        <Route path="/2d/industry-trends-details" element={<BlogDetails/>} />
-        <Route path="/3d/industry-trends-details" element={<TrendsDetails/>} />
-        <Route path="/exterior-visualization" element={<ExteriorVisualization/>} />
-        <Route path="/interior-visualization" element={<InteriorVisualization/>} />
-        <Route path="/furniture" element={<Furniture/>} />
-        <Route path="/packaging" element={<Packaging/>} />
-        <Route path="/fashion-accessories" element={<FashionAccessories/>} />
-        <Route path="/tech-accessories" element={<TechAccessories/>} />
-        <Route path="/tech-equipments" element={<TechEquipments/>} />
-        <Route path="/cosmetics" element={<Cosmetics/>} />
+      <Route path="/landing-contact-us-2" element={<ContactUsLanding2 />} />
+      <Route path="/landing-contact-us-3" element={<ContactUsLanding3 />} />
+      <Route path="/landing-contact-us-4" element={<ContactUsLanding4 />} />
+    
+      <Route path="/2d/industry-trends" element={<BlogPage2D />} />
+      <Route path="/3d/industry-trends" element={<BlogPage3D />} />
+      <Route path="/integrations" element={<Partnership />} />
+      <Route path="/2d" element={<Container2D/>} />
+      <Route path="/3d" element={<Container3D/>} />
+      <Route path='/3d/industry-trends-details/:id' element={<Blog3D/>} />
+      <Route path="/2d/industry-trends-details" element={<BlogDetails/>} />
+      <Route path="/3d/industry-trends-details" element={<TrendsDetails/>} />
+      <Route path="/exterior-visualization" element={<ExteriorVisualization/>} />
+      <Route path="/interior-visualization" element={<InteriorVisualization/>} />
+      <Route path="/furniture" element={<Furniture/>} />
+      <Route path="/packaging" element={<Packaging/>} />
+      <Route path="/fashion-accessories" element={<FashionAccessories/>} />
+      <Route path="/tech-accessories" element={<TechAccessories/>} />
+      <Route path="/tech-equipments" element={<TechEquipments/>} />
+      <Route path="/cosmetics" element={<Cosmetics/>} />
         {/* <Route path="/3dTest" element={<Test3DModel/>} /> */}
-        <Route path="/terms-condition" element={<TermsCondition/>} />
-        <Route path="/privacy-policy" element={<PrivacyPolicy/>} />
-        <Route path="/thank-you/*" element={<Thankyou/>} />
-        <Route path="/book-a-call" element={<BookACall/>} />
+      <Route path="/terms-condition" element={<TermsCondition/>} />
+      <Route path="/privacy-policy" element={<PrivacyPolicy/>} />
+      <Route path="/thank-you/*" element={<Thankyou/>} />
+      <Route path="/book-a-call" element={<BookACall/>} />
       </Routes>
     </>
   )
