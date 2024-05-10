@@ -1,21 +1,28 @@
 
 
-import { HeadProvider, Meta, Title } from "react-head";
-import blog1 from "../../images/blog1.png"
-import blog2 from "../../images/blog2.png"
-import blog3 from "../../images/blog3.png"
+import { useEffect, useState } from "react";
 import ScrolTop from "../ScrolTop/ScrolTop";
 import Footer from "../footer/footer";
 import Navbar from "../navber/navbar";
-import BlogPageDetails from "./BlogPageDetails2D";
+import { Link } from "react-router-dom";
+import BlogPageDetails2D from "./BlogPageDetails2D"
+import { HeadProvider, Meta, Title } from "react-head";
+import { LocalDataFor2D } from "../../localData/localData2D";
+
 
 const BlogPage2D = () => {
 
+    const [blogData2d, setBlogData2d] = useState(null);
+    
+    useEffect(() => {
+        setBlogData2d(LocalDataFor2D);
+        console.log(window.location.origin);
+    }, [])
     return (
         <>
             <HeadProvider>
-                <Title>CREATIVE INDUSTRY TRENDS!</Title>
-                <Meta name="description" content="CREATIVE INDUSTRY TRENDS! | INDUSTRY TRENDS ON 2D | INDUSTRY TRENDS ON 3D" />
+                <Title> CREATIVE INDUSTRY TRENDS!</Title>
+                <Meta name="description" content={`${blogData2d && blogData2d[0].title}`} />
             </HeadProvider>
             <ScrolTop />
             <Navbar />
@@ -29,37 +36,36 @@ const BlogPage2D = () => {
 
                     <div className='pt-20'>
                         <h1 className='text-center text-2xl text-[#696666]'>RECENT POSTS</h1>
+                        {
+                            console.log(blogData2d)
+                        }
+                        <div className='flex flex-col md:grid md:grid-cols-3 justify-center items-center gap-3 pt-3'>
+                            {
+                                blogData2d && blogData2d.map((item, index) =>
+                                    index < 3 &&
+                                    <Link to={"/2d/industry-trends-details/" + item.id + ""} key={index} className='' aria-label="industry trends details">
+                                        <div className="md:h-[180px] lg:h-[230px] xl:h-[260px] flex flex-col justify-center overflow-hidden">
+                                            <img
+                                                className="w-full h-[230px]"
+                                                loading="lazy"
+                                                src={item.thumb}
+                                                width={350}
+                                                alt='trends photo'
+                                            />
+                                        </div>
 
-                        <div className='flex flex-col md:flex-row justify-center items-center gap-3 pt-3'>
-                            <div className=''>
-                                <img loading="lazy" src={blog1}
-                                    width={350}
-                                    alt='trends photo'
-                                />
-                                <h1 className='text-center pt-3 font-semibold'>INDUSTRY TRENDS ON 2D</h1>
-                            </div>
-                            <div className=''>
-                                <img loading="lazy" src={blog2}
-                                    width={350}
-                                    alt='trends photo'
-                                />
-                                <h1 className='text-center pt-3 font-semibold'>INDUSTRY TRENDS ON 3D</h1>
+                                        <h1 className='text-center pt-3 font-semibold'>{item.title}</h1>
+                                    </Link>
 
-                            </div>
-                            <div className=''>
-                                <img loading="lazy" src={blog3}
-                                    width={350}
-                                    alt='trends photo'
-                                />
+                                )
+                            }
 
-                                <h1 className='text-center pt-3 font-semibold'>INDUSTRY TRENDS ON STUDIO</h1>
-                            </div>
                         </div>
                     </div>
 
 
                 </div>
-                <BlogPageDetails />
+                <BlogPageDetails2D/>
             </div>
             <Footer />
         </>

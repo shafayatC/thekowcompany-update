@@ -1,93 +1,116 @@
-
+import { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
 
+import { LocalDataFor2D } from "../../localData/localData2D";
+
 const BlogPageDetails2D = () => {
-    return (
-        <div className='bg-white pt-28'>
-            <div className='bg-[#DEE2E2]'>
-                <div className='container mx-auto'>
-                    <div className='pt-40 pb-5 sm:pb-20 flex flex-col gap-40'>
-                        <div className='flex flex-col md:flex-row justify-center items-end gap-12 px-2 md:px-0'>
-                            <div>
-                                <h1 className='text-[24px] leading-3 font-semibold text-end'>Easy Product</h1>
-                                <h1 className='text-[24px] font-semibold text-end border-b-2 border-[#7C9C30]'>Photography Solutions for Small Business</h1>
-                                <h1 className='text-[16px] font-semibold text-end pt-5'>01 JAN, 2023</h1>
+  const [blogData2d, setBlogData2d] = useState(null);
+  
+  useEffect(() => {
+    setBlogData2d(LocalDataFor2D);
+    console.log(blogData2d);
+  }, []);
 
-                                <p className='text-xs text-justify pt-10 pl-28'>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy
-                                    nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut
-                                    wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper susci.......</p>
+  const isOdd = (num) => { return num % 2; }
 
-                                <div className='flex justify-end pt-4 '>
-                                   <Link aria-label="Read more" to="/2d/industry-trends-details">
-                                   <button aria-label="readmore" className='text-[11px] font-semibold text-white px-8 py-1 bg-[#7C9C30] rounded-3xl'>Read More</button>
-                                   </Link>
-                                </div>
-                            </div>
-                            <div>
-                                <img loading="lazy" src={"/img/blog4.webp"}
-                                    width={1200}
-                                    alt='trends photo'
-                                    className='shadow-xl shadow-slate-400'
-                                />
-                            </div>
+  return (
+    <div className="bg-white pt-28">
+      <div className="bg-[#DEE2E2]">
+        <div className="container mx-auto">
+          <div className="pt-40 pb-5 sm:pb-20 flex flex-col gap-40">
+
+            {
+              blogData2d && blogData2d.map((item, index) =>
+                <>
+                  {
+                    isOdd(index) ? 
+                    
+                    <div className="flex flex-col md:grid md:grid-cols-2 md:justify-items-center justify-center items-end gap-12 px-2 md:px-0">
+                      <div className="max-h-[350px] flex flex-col justify-center overflow-hidden">
+                        <img
+                          loading="lazy"
+                          src={item.thumb}
+                          width={1200}
+                          alt="trends photo"
+                          className="shadow-xl shadow-slate-400"
+                        />
+                      </div>
+                      <div>
+                        <h1 className="text-[24px] font-semibold text-start border-b-2 border-[#7C9C30]">
+                          {item.title}
+                        </h1>
+                        <h1 className="text-[16px] font-semibold text-start pt-5">
+                          {item.date}
+                        </h1>
+
+                        <p className="text-xs text-justify pt-10 ">
+                          {item.metaDescription}...
+                        </p>
+
+                        <div className="flex justify-start pt-4 ">
+                          <Link
+                            aria-label="Read more"
+                            to={`/2d/industry-trends-details/${item.id}`}
+                          >
+                            <button
+                              aria-label="readmore"
+                              className="text-[11px]  font-semibold text-white px-8 py-1 bg-[#7C9C30] rounded-3xl"
+                            >
+                              Read More
+                            </button>
+                          </Link>
+
                         </div>
-                        <div className='flex flex-col-reverse md:flex-row  justify-center items-end gap-12 px-2 md:px-0'>
-
-                            <div>
-                                <img loading="lazy" src={"/img/blog5.webp"}
-                                    width={1200}
-                                    alt='trends photo'
-                                    className='shadow-xl shadow-slate-400'
-                                />
-                            </div>
-                            <div>
-                                <h1 className='text-[24px] leading-3 font-semibold text-start'>Top 8</h1>
-                                <h1 className='text-[24px] font-semibold text-start border-b-2 border-[#7C9C30]'>Food Photography Tips For Beginners</h1>
-                                <h1 className='text-[16px] font-semibold text-start pt-5'>01 JAN, 2023</h1>
-
-                                <p className='text-xs text-justify pt-10 pr-28'>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy
-                                    nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut
-                                    wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper susci.......</p>
-
-                                <div className='flex justify-start pt-4 '>
-                                <Link aria-label="Read more" to="/2d/industry-trends-details">
-                                   <button aria-label="readmore" className='text-[11px]  font-semibold text-white px-8 py-1 bg-[#7C9C30] rounded-3xl'>Read More</button>
-                                   </Link>
-                                </div>
-                            </div>
-
-                        </div>
-                        <div className='flex flex-col md:flex-row justify-center items-end gap-12 px-2 md:px-0'>
-                            <div>
-                                <h1 className='text-[24px] leading-3 font-semibold text-end'>5 Important</h1>
-                                <h1 className='text-[24px] font-semibold text-end border-b-2 border-[#7C9C30]'>Photography Tips for Beginners</h1>
-                                <h1 className='text-[16px] font-semibold text-end pt-5'>01 JAN, 2023</h1>
-
-                                <p className='text-xs text-justify pt-10 pl-28'>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy
-                                    nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut
-                                    wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper susci.......</p>
-
-                                <div className='flex justify-end pt-4 '>
-                                <Link aria-label="Read more" to="/2d/industry-trends-details">
-                                   <button aria-label="readmore" className='text-[11px]  font-semibold text-white px-8 py-1 bg-[#7C9C30] rounded-3xl'>Read More</button>
-                                   </Link>
-                                </div>
-                            </div>
-                            <div>
-                                <img loading="lazy" src={"/img/blog6.webp"}
-                                    width={1200}
-                                    alt='trends photo'
-                                    className='shadow-xl shadow-slate-400'
-                                />
-                            </div>
-                        </div>
+                      </div>
                     </div>
-                </div>
-            </div>
+                    :
+                      <div className="flex flex-col-reverse md:grid md:grid-cols-2 md:justify-items-center justify-center items-end gap-12 px-2 md:px-0">
+                        <div>
+                          <h1 className="text-[24px] font-semibold text-end border-b-2 border-[#7C9C30]">
+                            {item.title}
+                          </h1>
+                          <h1 className="text-[16px] font-semibold text-end pt-5">
+                            {item.date}
+                          </h1>
+
+                          <p className="text-xs text-justify pt-10 ">
+                            {item.metaDescription}...
+                          </p>
+
+                          <div className="flex justify-end pt-4 ">
+                            <Link
+                              aria-label="Read more"
+                              to={`/2d/industry-trends-details/${item.id}`}
+                            >
+                              <button
+                                aria-label="readmore"
+                                className="text-[11px]  font-semibold text-white px-8 py-1 bg-[#7C9C30] rounded-3xl"
+                              >
+                                Read More
+                              </button>
+                            </Link>
+                          </div>
+                        </div>
+                        <div className="max-h-[350px] flex flex-col justify-center overflow-hidden">
+                          <img
+                            loading="lazy"
+                            src={item.thumb}
+                            alt="trends photo"
+                            className="shadow-xl shadow-slate-400 w-full h-full"
+                          />
+                        </div>
+                      </div>
+                  }
+                </>
+              )
+            }
+
+            
+          </div>
         </div>
-    );
+      </div>
+    </div>
+  );
 };
 
 export default BlogPageDetails2D;
-
-

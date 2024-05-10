@@ -1,5 +1,6 @@
 import { Link } from "react-router-dom";
 import { LocalDataFor3D } from "../../localData/localData";
+import { LocalDataFor2D } from "../../localData/localData2D";
 
 // import { MdOutlineArrowForwardIos,MdOutlineArrowBackIos  } from "react-icons/md";
 
@@ -18,7 +19,7 @@ const IndustryTrends = () => {
           <Link  aria-label="2d industry trends" className="flex w-full flex-col" to={"/2d/industry-trends"}>
             <div className="relative">
             <div className="flex flex-col justify-center overflow-hidden w-full md:h-[210px] xl:h-[270px] 2xl:h-[320px] relative">
-                <img className="w-full md:w-full md:h-auto lg:w-full lg:h-auto h-auto" loading="lazy" src={"/img/2d.webp"} alt="trends photo" />
+                <img className="w-full md:w-full md:h-auto lg:w-full lg:h-auto h-auto" loading="lazy"  src={LocalDataFor2D[0].thumb} alt="trends photo" />
 
                 <div className="absolute flex gap-2 items-end right-0 bottom-0">
                   <h1 className="text-white text-[26px]">2D</h1>
@@ -28,7 +29,7 @@ const IndustryTrends = () => {
               <div className="flex flex-col justify-items-center pt-5 gap-3">
                   <div className="flex flex-row md:flex-col lg:flex-row justify-center items-center gap-3 ">
                   <h1 className="text-sm">
-                    Easy Product Photography Solutions for Small Business |<span className="text-xs">  01 JAN, 2023 </span>
+                 {LocalDataFor2D[0].title} | <span className="text-xs">{LocalDataFor2D[0].date}</span>
                   </h1>
                   </div>
                   <div className="flex justify-center items-center">
