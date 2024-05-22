@@ -6,8 +6,21 @@ import { Link } from "react-router-dom";
 import { useEffect, useState } from "react";
 import { HashLink } from "react-router-hash-link";
 import MegaNavbar from "../MegaNavbar/MegaNavbar";
+import { IoLanguage } from "react-icons/io5";
+import { IoMdArrowDropdown } from "react-icons/io";
+import GoogleTranslate from "../GoogleTranslate/GoogleTranslate";
 
 const NavbarHome = () => {
+  const [dropdownOpen, setDropdownOpen] = useState(false);
+  const { handleTranslate } = GoogleTranslate();
+
+  const selectLanguage = (lang) => {
+    handleTranslate(lang);
+    setDropdownOpen(false);
+    setTimeout(() => {
+      window.location.reload();
+    }, 1000); // Adjust the delay to ensure the language change is fully applied
+  };
   const [getMenuBool, setMenuBool] = useState(false);
   const [screenLeft, setScreenLeft] = useState(false);
 
@@ -72,6 +85,77 @@ const NavbarHome = () => {
             <Link aria-label="book a call" to="/book-a-call" className={`text-xs lg:text-sm border-2 rounded-3xl px-4 py-1 border-[#7C9C30] font-semibold ${screenLeft ? 'text-gray-800 ':' text-white'}`} rel="noreferrer">Book A Call</Link>
             {/* <Link to="/" className={`text-[26px] lg:text-[32px]  font-semibold ${ screenLeft ? 'text-gray-800 border-b-2 border-[#DEE2E2] hover:border-[#7C9C30] hover:border-b-2 ' : 'text-white'}`}><GoHomeFill color={`${screenLeft ? 'black' : 'white'}`}/>
             </Link> */}
+            {/* --------------------------------------------Language---------------------------------------------------- */}
+            <div id="google_translate_element" style={{ display: "none" }}></div>
+            <div className="relative inline-block text-center notranslate">
+      <div>
+        <button
+          type="button"
+          className={`flex justify-center text-base ${screenLeft ? 'text-gray-800 border-b-2 border-[#7C9C30]' : 'text-white border-b-2 border-[#7C9C30]'} items-center gap-2 w-40 rounded-3xl border shadow-sm px-2 py-1 font-medium focus:outline-none`}
+          id="options-menu"
+          aria-expanded="true"
+          aria-haspopup="true"
+          onClick={() => setDropdownOpen(!dropdownOpen)}
+        >
+          <IoLanguage className="text-xl" />
+          Language
+          <IoMdArrowDropdown className="text-xl" />
+        </button>
+      </div>
+
+      {dropdownOpen && (
+        <div
+          className="origin-top-right absolute bg-white right-0 mt-2 w-40 rounded-md shadow-lg ring-1 ring-black ring-opacity-5 focus:outline-none"
+          role="menu"
+          aria-orientation="vertical"
+          aria-labelledby="options-menu"
+        >
+          <div className="py-1" role="none">
+            <button
+              onClick={() => selectLanguage('en')}
+              className="flex justify-start items-center gap-3 px-4 py-1 text-base text-gray-700 hover:bg-gray-100 w-full text-center"
+              role="menuitem"
+            >
+              <img className="h-7 w-7" src="/img/flags/united-kingdom.png" alt="English" />
+              English
+            </button>
+            <button
+              onClick={() => selectLanguage('es')}
+              className="flex justify-start items-center gap-3 px-4 py-1 text-base text-gray-700 hover:bg-gray-100 w-full text-center"
+              role="menuitem"
+            >
+              <img className="h-7 w-7" src="/img/flags/spain.png" alt="Spanish" />
+              Spanish
+            </button>
+            <button
+              onClick={() => selectLanguage('fr')}
+              className="flex justify-start items-center gap-3 px-4 py-1 text-base text-gray-700 hover:bg-gray-100 w-full text-center"
+              role="menuitem"
+            >
+              <img className="h-7 w-7" src="/img/flags/france.png" alt="French" />
+              French
+            </button>
+            <button
+              onClick={() => selectLanguage('de')}
+              className="flex justify-start items-center gap-3 px-4 py-1 text-base text-gray-700 hover:bg-gray-100 w-full text-center"
+              role="menuitem"
+            >
+              <img className="h-7 w-7" src="/img/flags/germany.png" alt="German" />
+              German
+            </button>
+            <button
+              onClick={() => selectLanguage('nl')}
+              className="flex justify-start items-center gap-3 px-4 py-1 text-base text-gray-700 hover:bg-gray-100 w-full text-center"
+              role="menuitem"
+            >
+              <img className="h-7 w-7" src="/img/flags/netherlands.png" alt="Dutch" />
+              Dutch
+            </button>
+          </div>
+        </div>
+      )}
+    </div>
+            {/* ------------------------------------------------------------------------------------------------------ */}
           </div>
           <div className="flex items-center justify-between lg:hidden">
             <Link aria-label="logo" to={"/"}>
