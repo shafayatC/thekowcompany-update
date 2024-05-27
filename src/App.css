@@ -323,6 +323,31 @@ body {
   height: 100%;
   filter: blur(5px);
 }
+/* ----------------------------for single image------------------------- */
+.blogFullImgSingle {
+  position: relative;
+  height: auto;
+  margin-top: 20px;
+  margin-bottom: 10px;
+}
+
+.blogFullImgSingle .img-1 {
+ 
+  margin: auto;
+  z-index: 9;
+  position: relative;
+  height: 50%;
+  width: 100%;
+}
+
+/* .blogFullImgSingle .img-2 {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 50%;
+  filter: blur(5px);
+} */
 
 .bgButtonAnim:hover {
   /* background: rgb(124, 156, 48); */
