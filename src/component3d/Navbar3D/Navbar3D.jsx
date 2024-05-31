@@ -21,29 +21,23 @@ const Navbar3D = () => {
     const toggleSubchild = (id) => {
         activeSubChild === id ? setActiveSubChild("") : setActiveSubChild(id);
     }
-    // useEffect(()=>{
+    const fileUrl = '/3D_PORTFOLIO.pdf'; // Update this path
+
+    const openPDFInNewTab = () => {
+      const newWindow = window.open(fileUrl, '_blank');
+      if (newWindow) {
+        newWindow.onload = () => {
+          const downloadButton = newWindow.document.createElement('button');
+          downloadButton.innerText = 'Download PDF';
+          downloadButton.onclick = () => saveAs(fileUrl, 'downloaded-file.pdf');
+          downloadButton.className = 'fixed top-4 right-4 bg-blue-500 text-white px-4 py-2 rounded';
+          newWindow.document.body.appendChild(downloadButton);
+        };
+      }
+    };
 
 
-    //     const handleScroll = () => {
-    //         if (window.scrollY > 0) {
-    //             menuRef.current.style.backgroundImage = 'url("/img/3d/menubgr.jpg")';
-    //             menuRef.current.style.backgroundSize = '100% 100%';
-    //             console.log("scrolled");
-    //         } else {
-    //             // menuRef.current.style.backgroundColor = 'green';
-    //             menuRef.current.style.backgroundImage = 'none';
-    //             console.log("not scroll");
-    //         }
-    //       };
-
-    //       window.addEventListener('scroll', handleScroll);
-
-    //       // Cleanup the event listener on component unmount
-    //       return () => {
-    //         window.removeEventListener('scroll', handleScroll);
-    //       };
-
-    // },[])
+  
     return (
         <>
 
@@ -72,6 +66,7 @@ const Navbar3D = () => {
                                 </button>
                                 <HashLink aria-label="3d-trends" to="/3d#3d-trends" className="text-gray-800 text-xl lg:text-sm font-medium">3D TRENDS</HashLink>
                                 <Link aria-label="Contact-us" to="/contact-us" className="text-gray-800 text-xl lg:text-sm font-medium">CONTACT US</Link>
+                                <Link   aria-label="creative-showcase" to={"/3d/creative-showcase"}  className="text-gray-800 text-xl lg:text-sm font-medium uppercase">Creative Showcase</Link>
                                 <HashLink aria-label="Subscribe" to={"/3d#subscribe"} className="text-gray-800 text-xl lg:text-sm border-2 rounded-3xl px-4 py-1 border-[#7C9C30] font-medium" rel="noreferrer">SUBSCRIBE</HashLink>
                                 <Link aria-label="Book A Call" to="/book-a-call" className="text-gray-800 text-xl lg:text-sm border-2 rounded-3xl px-4 py-1 border-[#7C9C30] font-medium" rel="noreferrer">Book A Call</Link>
                                 {/* <Link to="/" className="text-gray-800 text-[26px] lg:text-[32px]font-medium"><GoHomeFill />
@@ -122,6 +117,7 @@ const Navbar3D = () => {
 
                                     <HashLink aria-label="3d-trends" onClick={() => setMenuBool(false)} to="/3d#3d-trends" className="transition-all duration-300 text-gray-800 text-base border-b-2 border-[#376f50] font-semibold py-3 hover:bg-[#376f50] hover:border-b-2 hover:border-[#7C9C30] hover:text-white">3D TRENDS</HashLink>
                                     <Link aria-label="Contact-us" onClick={() => setMenuBool(false)} to="/contact-us" className="transition-all duration-300 text-gray-800 text-base border-b-2 border-[#376f50] font-semibold py-3 hover:bg-[#376f50] hover:border-b-2 hover:border-[#7C9C30] hover:text-white">CONTACT US</Link>
+                                    <Link aria-label="Creative-Showcase" onClick={() => setMenuBool(false)} to="/3d/creative-showcase" className="transition-all duration-300 text-gray-800 text-base border-b-2 border-[#376f50] font-semibold py-3 hover:bg-[#376f50] hover:border-b-2 hover:border-[#7C9C30] hover:text-white uppercase">creative showcase</Link>
                                     <HashLink aria-label="Subscribe" onClick={() => setMenuBool(false)} to={"/3d#subscribe"} className="transition-all duration-300 text-gray-800 text-base border-b-2 border-[#376f50] font-semibold py-3 hover:bg-[#376f50] hover:border-b-2 hover:border-[#7C9C30] hover:text-white">SUBSCRIBE</HashLink>
                                     <Link aria-label="Book A Call" to="/book-a-call" className="transition-all duration-300 text-gray-800 text-base border-b-2 border-[#376f50] font-semibold py-3 hover:bg-[#376f50] hover:border-b-2 hover:border-[#7C9C30] hover:text-white">Book A Call</Link>
                                     {/* <Link onClick={() => setMenuBool(false)} to="/" className="transition-all duration-300 flex flex-col items-center text-gray-800 text-[32px] border-b-2 py-3 hover:bg-[#376f50] border-[#376f50] font-semibold hover:border-b-2 hover:border-[#7C9C30] hover:text-white"><GoHomeFill /></Link> */}
