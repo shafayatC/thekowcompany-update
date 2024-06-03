@@ -1,0 +1,151 @@
+#pdfViewBodyWrap {
+	position: relative;
+	height: Calc( 100vh - 66px );
+	display: flex;
+	align-items: center;
+}
+#pdfViewBodyWrap::before {
+	content: "";
+	background: black;
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	z-index: -1;
+	opacity: 0.4;
+}
+.pdfViewcon_wrap {
+    float: left;
+    width: 100%;
+}
+
+.pdfview_wrap {
+	width: 60%;
+	margin: auto;
+	opacity: 0;
+	transition: 2s;
+	visibility: hidden;
+}
+.pdfview_wrap.active {
+	opacity: 1;
+	visibility: visible;
+}
+
+.viewPdfBody {
+	display: flex;
+}
+.pdfViewFile {
+    min-width: 100% !important;
+    min-height: auto !important;
+}
+.pdfViewFile canvas {
+    width: 100% !important;
+    height: auto !important;
+}
+
+.react-pdf__Page__annotations.annotationLayer {
+	display: none;
+}
+
+/* nav area */
+.pdf_nav_wrap {
+	display: grid;
+	align-items: center;
+	align-content: center;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    background-color: #353535;
+}
+.pdf_nav {
+	display: grid;
+	grid-template-columns: 50px 70px 50px;
+	margin: auto;
+	text-align: center;
+}
+#pageInfo {
+	align-self: center;
+	margin: 0px;
+	color: #ffff;
+}
+
+
+.pdfBtn {
+	background: none;
+	color: #fff !important;
+	transition: 0.5s;
+	border: none;
+}
+.pdfBtn i {
+	font-size: 25px;
+	margin: 0;
+	padding: 0;
+}
+.pdfBtn:hover {
+	color:#778954 !important;
+}
+@keyframes formAnimCome {
+    0%   {left: 200%;}
+    25%  {left: 45%;}
+    35%  {left: 55%;}
+    45%  {left: 47%;}
+    55% {left: 52%;}
+    65% {left: 50%;}
+    100% {left: 50%;}
+  }
+  @keyframes formAnimGo {
+    0%   {left: 50%;}
+    100% {left: 200%;}
+  }
+
+.text-muted.pdfInfoForm {
+	background: #abd0bc;
+	color: #272727 !important;
+	padding: 10px;
+	text-align: center;
+	margin-bottom: 20px;
+}
+
+#submitInfoWrap {
+	position: fixed;
+	top: 50%;
+	left: 200%;
+	transform: translate(-50%,-50%);
+}
+#submitInfoWrap.deactive {
+    animation: 1s formAnimGo;
+    left: 200%;
+}
+#submitInfoWrap.active {
+    animation: 1s formAnimCome;
+    left: 50%;
+}
+.pdfFormSubmit {
+	position: relative;
+	margin: auto;
+	width: 420px;
+	background: #ffff;
+	padding: 30px;
+}
+@media only screen and (min-width: 1400px) {
+	.pdfview_wrap {width: 1320px;}
+}
+@media only screen and (max-width: 991px) {
+	.pdfview_wrap {
+		width: 90%;
+	}
+}
+@media only screen and (max-width: 575px) {
+	#submitInfoWrap {
+		width: 90%;
+	}
+	.pdfFormSubmit {
+		width: 100%;
+	}
+}
+@media only screen and (max-width: 360px) {
+	.pdf_nav {
+		grid-template-columns: 60px 60px 60px;
+		font-size: 12px;
+	}
+}
