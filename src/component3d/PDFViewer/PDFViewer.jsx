@@ -1,10 +1,12 @@
 import React, { useState } from 'react';
-import { Document, Page } from 'react-pdf/dist/esm/entry.webpack';
-import { pdfjs } from 'react-pdf';
+import { Document, Page,  pdfjs } from 'react-pdf';
 import pdfFile from './sample.pdf';
 import './style.css';
+import { FaArrowLeft } from "react-icons/fa";
+import { FaArrowRight } from "react-icons/fa";
 
-pdfjs.GlobalWorkerOptions.workerSrc = `//cdnjs.cloudflare.com/ajax/libs/pdf.js/${pdfjs.version}/pdf.worker.js`;
+// pdfjs.GlobalWorkerOptions.workerSrc = `//cdnjs.cloudflare.com/ajax/libs/pdf.js/${pdfjs.version}/pdf.worker.js`;
+pdfjs.GlobalWorkerOptions.workerSrc = `//unpkg.com/pdfjs-dist@${pdfjs.version}/build/pdf.worker.min.mjs`;
 
 
 const PDFViewer = () => {
@@ -15,7 +17,7 @@ const PDFViewer = () => {
   const [formActive, setFormActive] = useState("");
 
   const [pdfVisible, setPdfVisible] = useState(false);
-  const defaultPageView = 3;
+  const defaultPageView = 43;
 
 
  
@@ -44,7 +46,15 @@ const PDFViewer = () => {
   return (
     <div id='pdfViewBodyWrap' className="fwidth">
 
- 
+
+    {/* <div>
+      <Document file={pdfFile} onLoadSuccess={onDocumentLoadSuccess}>
+        <Page pageNumber={pageNumber} />
+      </Document>
+      <p>
+        Page {pageNumber} of {numPages}
+      </p>
+    </div> */}
 
       <div className={`pdfview_wrap  ${pdfVisible == true && 'active'}`}>
         <div className='viewPdfBody fwidth'>
@@ -57,11 +67,11 @@ const PDFViewer = () => {
 
         <div className='pdf_nav_wrap fwidth'>
           <div className='pdf_nav'>
-            <button onClick={() => handlePageClick(pageNumber - 1)} className='pdfBtn'><i className="fa fa-long-arrow-left" aria-hidden="true"></i></button>
+            <button onClick={() => handlePageClick(pageNumber - 1)} className='pdfBtn flex justify-center items-center'><FaArrowLeft /></button>
             <p id="pageInfo">
               {pageNumber} of <span className="glyphicon glyphicon-asterisk"></span> {numPages}
             </p>
-            <button onClick={() => handlePageClick(pageNumber + 1)} className='pdfBtn'><i className="fa fa-long-arrow-right" aria-hidden="true"></i></button>
+            <button onClick={() => handlePageClick(pageNumber + 1)} className='pdfBtn flex justify-center items-center'><FaArrowRight /></button>
 
           </div>
         </div>
