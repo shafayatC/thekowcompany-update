@@ -1,0 +1,16 @@
+
+/*thank you page*/
+.thanksInfoWrap {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    background:#c5da9c;
+}
+.thanksInfo {
+    width: 60%;
+    left: 50%;
+    top: 50%;
+    position: relative;
+    transform: translate(-50%,-50%);
+    padding: 30px;
+}

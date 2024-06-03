@@ -29,6 +29,9 @@ import ContactUsLanding from './component/ContactUsLanding/ContactUsLanding'
 import ContactUsLanding2 from './component/ContactUsLanding2/ContactUsLanding2'
 import ContactUsLanding3 from './component/ContactUsLanding3/ContactUsLanding3'
 import ContactUsLanding4 from './component/ContactUsLanding4/ContactUsLanding4'
+// import PDFViewerPage from './component3d/PDFViewerPage/PDFViewerPage'
+import PDFViewer from './component3d/PDFViewer/PDFViewer'
+
 
 
 function App() {
@@ -49,6 +52,8 @@ function App() {
       <Route path="/integrations" element={<Partnership />} />
       <Route path="/2d" element={<Container2D/>} />
       <Route path="/3d" element={<Container3D/>} />
+
+      <Route path="/3d/creative-showcase" element ={<PDFViewer />}/>
       <Route path='/3d/industry-trends-details/:id' element={<Blog3D/>} />
       <Route path="/2d/industry-trends-details/:id" element={<BlogDetails/>} />
       <Route path="/3d/industry-trends-details" element={<TrendsDetails/>} />
