@@ -6,7 +6,7 @@
 }
 #pdfViewBodyWrap::before {
 	content: "";
-	background: black;
+	/* background: black; */
 	position: absolute;
 	top: 0;
 	left: 0;
@@ -21,11 +21,12 @@
 }
 
 .pdfview_wrap {
-	width: 60%;
+	width: 95%;
 	margin: auto;
 	opacity: 0;
 	transition: 2s;
 	visibility: hidden;
+	
 }
 .pdfview_wrap.active {
 	opacity: 1;
@@ -38,6 +39,7 @@
 .pdfViewFile {
     min-width: 100% !important;
     min-height: auto !important;
+	margin-bottom: 5px;
 }
 .pdfViewFile canvas {
     width: 100% !important;
@@ -55,7 +57,7 @@
 	align-content: center;
     padding-top: 10px;
     padding-bottom: 10px;
-    background-color: #353535;
+    /* background-color: #353535; */
 }
 .pdf_nav {
 	display: grid;
