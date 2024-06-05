@@ -1,6 +1,8 @@
 import React, { useState, useEffect } from 'react';
 import { Document, Page, pdfjs } from 'react-pdf';
 import pdfFile from '/Creative-Showcase.pdf';
+import 'react-pdf/dist/esm/Page/AnnotationLayer.css';
+// import 'react-pdf/dist/esm/Page/TextLayer.css';
 import './style.css';
 import { GrDownload } from "react-icons/gr";
 
@@ -25,7 +27,7 @@ const PDFViewer = () => {
     <div id="pdfViewBodyWrap" className="fwidth">
 
       <div className={`pdfview_wrap ${pdfVisible && 'active'}`}>
-        <a target='_blank' href="https://demo.thekowcompany.com/emailTempleteImage/AI%20IN%203D_The%20KOW%20Company.pdf" download className=' fixed top-[10px] right-8  z-50'>
+        <a target='_blank' rel='noreferrer' href="https://demo.thekowcompany.com/emailTempleteImage/AI%20IN%203D_The%20KOW%20Company.pdf" download className=' fixed top-[10px] right-8  z-50'>
           <GrDownload className='text-2xl font-extrabold absolute top-0 right-2 cursor-pointer bg-white p-1' />
         </a>
         <div className="viewPdfBody fwidth">
@@ -40,6 +42,7 @@ const PDFViewer = () => {
               {Array.from(
                 new Array(numPages),
                 (el, index) => (
+                  
                   <Page
                     key={`page_${index + 1}`}
                     pageNumber={index + 1}
