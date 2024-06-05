@@ -23,24 +23,24 @@ const PDFViewer = () => {
 
   return (
     <div id="pdfViewBodyWrap" className="fwidth">
-     
+
       <div className={`pdfview_wrap ${pdfVisible && 'active'}`}>
-         <div className=' sticky top-[10px]  z-50'>
-      <GrDownload className='text-2xl font-extrabold absolute top-0 right-2 cursor-pointer bg-white p-1'/> 
-      </div>
+        <a target='_blank' href="https://demo.thekowcompany.com/emailTempleteImage/AI%20IN%203D_The%20KOW%20Company.pdf" download className=' fixed top-[10px] right-8  z-50'>
+          <GrDownload className='text-2xl font-extrabold absolute top-0 right-2 cursor-pointer bg-white p-1' />
+        </a>
         <div className="viewPdfBody fwidth">
-          
+
           <div className="viewPdf fwidth">
-            <Document 
-              file={pdfFile} 
-              onLoadSuccess={onDocumentLoadSuccess} 
+            <Document
+              file={pdfFile}
+              onLoadSuccess={onDocumentLoadSuccess}
               onLoadError={console.error} // add error handling
               className="pdfViewcon_wrap"
             >
               {Array.from(
                 new Array(numPages),
                 (el, index) => (
-                  <Page 
+                  <Page
                     key={`page_${index + 1}`}
                     pageNumber={index + 1}
                     renderTextLayer={false}
