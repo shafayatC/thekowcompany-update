@@ -27,7 +27,7 @@ const PDFViewer = () => {
     <div id="pdfViewBodyWrap" className="fwidth">
 
       <div className={`pdfview_wrap ${pdfVisible && 'active'}`}>
-        <a target='_blank' rel='noreferrer' href="https://demo.thekowcompany.com/emailTempleteImage/AI%20IN%203D_The%20KOW%20Company.pdf" download className=' fixed top-[10px] right-8  z-50'>
+        <a target='_blank' rel='noreferrer' href="https://demo.thekowcompany.com/emailTempleteImage/Creative_Showcase.pdf" download className=' fixed top-[10px] right-8  z-50'>
           <GrDownload className='text-2xl font-extrabold absolute top-0 right-2 cursor-pointer bg-white p-1' />
         </a>
         <div className="viewPdfBody fwidth">
