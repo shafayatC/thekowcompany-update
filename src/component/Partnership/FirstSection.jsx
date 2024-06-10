@@ -20,12 +20,8 @@ const FirstSection = () => {
 
                 <div className='partnership-heading'>
                     <h1><span>3D VISIONARIES UNITE FOR EVOLUTION!</span></h1>
-                    <div>
-                        <p>Get ready to witness the future as <a className='text-blue-700' href='https://www.covisionmedialab.com/en' target='_blank' rel="noreferrer"><b>Covision Media’s</b></a> AI-powered scanners, <a className='text-blue-700' href='https://www.nureg.de/' target='_blank' rel="noreferrer"><b>Nureg GMBH’s</b></a> <br />  unrivaled expertise in content production and photography studio services along with <br /> our post-production magic has come together!<br /></p>
-
-                        <p>From inception to flawlessness,{` we're`} pushing boundaries, breaking limits & crafting<br />the future with each polygon.</p>
-
-                        <p>Join us, Covision Media & Nureg on this electrifying partnership journey!</p>
+                    <div className='flex justify-center'>
+                        <p className='text-justify w-[700px]'>Step into the future with us! Covision Media’s AI-driven scanners and Nureg GmbH’s unmatched 3D scanning and content creation expertise have joined forces with our post-production magic. Together, we’re crafting a powerhouse of visual perfection. Every polygon is a step towards innovation, as we break through boundaries to redefine what’s possible. Be part of this thrilling journey with Covision Media & Nureg GmbH.</p>
                     </div>
 
                 </div>
