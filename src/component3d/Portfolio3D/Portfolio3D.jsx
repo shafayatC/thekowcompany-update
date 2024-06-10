@@ -46,6 +46,9 @@ const Portfolio3D = () => {
   const { ref: ref15, inView: inView15 } = useInView({
     threshold: 0.2,
   });
+  const { ref: ref16, inView: inView16 } = useInView({
+    threshold: 0.2,
+  });
   return (
     <div>
       <div className="container mx-auto overflow-hidden">
@@ -554,7 +557,12 @@ into a digital reality that drives sales.`}</p>
         </div>
         {/* -----------------------------------------------------Section 16 End---------------------------------------------------- */}
         {/* ---------------------------------------------------Section 17 start---------------------------------------------------- */}
-        
+        <div className="section-17-bg h-screen mb-1">
+          <div ref={ref16} className="flex justify-center items-center h-[100vh]">
+            <h1  className={`poppins-thin text-white text-[130px] duration-1000 transition-all ${inView16 ? "opacity-100 translate-x-0" : "opacity-0 -translate-x-20"}`}>Packaging</h1>
+          </div>
+
+        </div>
         {/* ---------------------------------------------------Section 17 End---------------------------------------------------- */}
       </div>
     </div>
