@@ -199,7 +199,7 @@ const Portfolio3D = () => {
             <div className="bg-black w-[1px] h-[140px]  mr-10 "></div>
             <div ref={ref3}>
               <p
-                className={`text-sm text-justify transition-all duration-1000 ${
+                className={`text-[14px] text-justify transition-all duration-1000 ${
                   inView3
                     ? "opacity-100 translate-x-0"
                     : "opacity-0 translate-x-20"
