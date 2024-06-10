@@ -79,3 +79,17 @@
     background-size: cover;
   
 }
+.section-13-bg{
+    background-image: url('/img/3d/3d_portfolio/S13FR_Cover.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  
+}
+.section-15-bg{
+    background-image: url('/img/3d/3d_portfolio/S15_FR_Image-Background_02.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  
+}
