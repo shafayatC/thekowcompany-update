@@ -31,6 +31,7 @@ import ContactUsLanding3 from './component/ContactUsLanding3/ContactUsLanding3'
 import ContactUsLanding4 from './component/ContactUsLanding4/ContactUsLanding4'
 // import PDFViewerPage from './component3d/PDFViewerPage/PDFViewerPage'
 import PDFViewer from './component3d/PDFViewer/PDFViewer'
+import Portfolio3D from './component3d/Portfolio3D/Portfolio3D'
 
 
 
@@ -70,6 +71,7 @@ function App() {
       <Route path="/privacy-policy" element={<PrivacyPolicy/>} />
       <Route path="/thank-you/*" element={<Thankyou/>} />
       <Route path="/book-a-call" element={<BookACall/>} />
+      <Route path="/3d-portfolio" element={<Portfolio3D/>} />
       </Routes>
     </>
   )
