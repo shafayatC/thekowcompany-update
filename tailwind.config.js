@@ -15,7 +15,7 @@ export default {
         sm: '10px',
         lg: '20px',
         xl: '20px',
-        '2xl': '20px',
+        '2xl': '0px',
       },
 
     },

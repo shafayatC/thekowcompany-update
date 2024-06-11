@@ -49,6 +49,36 @@ const Portfolio3D = () => {
   const { ref: ref16, inView: inView16 } = useInView({
     threshold: 0.2,
   });
+  const { ref: ref17, inView: inView17 } = useInView({
+    threshold: 0.2,
+  });
+  const { ref: ref18, inView: inView18 } = useInView({
+    threshold: 0.2,
+  });
+  const { ref: ref19, inView: inView19 } = useInView({
+    threshold: 0.2,
+  });
+  const { ref: ref20, inView: inView20 } = useInView({
+    threshold: 0.2,
+  });
+  const { ref: ref21, inView: inView21 } = useInView({
+    threshold: 0.2,
+  });
+  const { ref: ref22, inView: inView22 } = useInView({
+    threshold: 0.2,
+  });
+  const { ref: ref23, inView: inView23 } = useInView({
+    threshold: 0.2,
+  });
+  const { ref: ref24, inView: inView24 } = useInView({
+    threshold: 0.2,
+  });
+  const { ref: ref25, inView: inView25 } = useInView({
+    threshold: 0.2,
+  });
+  const { ref: ref26, inView: inView26 } = useInView({
+    threshold: 0.2,
+  });
   return (
     <div>
       <div className="container mx-auto overflow-hidden">
@@ -184,7 +214,7 @@ const Portfolio3D = () => {
         </div>
         {/* -----------------------------------------------Section 2 End----------------------------------------------- */}
         {/* ----------------------------------------------Section 3 Start----------------------------------------------*/}
-        <div className="section-3-bg h-screen mb-1">
+        <div className="section-3-bg h-[100vh]  mb-1">
           <div className="flex justify-center items-center gap-5 h-[100vh] px-40">
             <div ref={ref3} className="w-full">
               <img
@@ -529,17 +559,37 @@ dreams to vivid reality with us.`}</p>
         {/* ---------------------------------------------------Section 16 start---------------------------------------------------- */}
         <div className="bg-[#F12B35] mb-1 h-[100vh]">
           <div className="flex  justify-center items-center  h-[100vh]">
-            <div ref={ref15} className="flex justify-start items-end h-full w-full">
+            <div
+              ref={ref15}
+              className="flex justify-start items-end h-full w-full"
+            >
               <img
                 className={`max-w-full max-h-full transition-all duration-1000 ${
-                  inView15 ? "opacity-100 translate-x-0" : "opacity-0 -translate-x-20"}`}
+                  inView15
+                    ? "opacity-100 translate-x-0"
+                    : "opacity-0 -translate-x-20"
+                }`}
                 src="/img/3d/3d_portfolio/S16_FR_Image1.png"
               />
             </div>
             <div ref={ref15} className="w-1/2">
-              <h1  className={`text-white text-[50px] poppins-regular transition-all duration-1000 ${inView15 ? "opacity-100 translate-y-0" : "opacity-0 -translate-y-20"}`}>Fashion <span className="text-[#FF9999]">Retail</span></h1>
+              <h1
+                className={`text-white text-[50px] poppins-regular transition-all duration-1000 ${
+                  inView15
+                    ? "opacity-100 translate-y-0"
+                    : "opacity-0 -translate-y-20"
+                }`}
+              >
+                Fashion <span className="text-[#FF9999]">Retail</span>
+              </h1>
               <h1 className="bg-white w-full h-[1px]"></h1>
-              <p className={`poppins-light text-white text-[14px] transition-all duration-1000 pt-5 text-justify pr-16 ${inView15 ? "opacity-100 translate-y-0" : "opacity-0 translate-y-20"}`}>{`Imagine showcasing your entire fashion line
+              <p
+                className={`poppins-light text-white text-[14px] transition-all duration-1000 pt-5 text-justify pr-16 ${
+                  inView15
+                    ? "opacity-100 translate-y-0"
+                    : "opacity-0 translate-y-20"
+                }`}
+              >{`Imagine showcasing your entire fashion line
 without a single stitch sewn. Our 3D asset
 production revolutionizes fashion and retail.
 We craft hyper-realistic digital garments –
@@ -558,12 +608,359 @@ into a digital reality that drives sales.`}</p>
         {/* -----------------------------------------------------Section 16 End---------------------------------------------------- */}
         {/* ---------------------------------------------------Section 17 start---------------------------------------------------- */}
         <div className="section-17-bg h-screen mb-1">
-          <div ref={ref16} className="flex justify-center items-center h-[100vh]">
-            <h1  className={`poppins-thin text-white text-[130px] duration-1000 transition-all ${inView16 ? "opacity-100 translate-x-0" : "opacity-0 -translate-x-20"}`}>Packaging</h1>
+          <div
+            ref={ref16}
+            className="flex justify-center items-center h-[100vh]"
+          >
+            <h1
+              className={`poppins-thin text-white text-[130px] duration-1000 transition-all ${
+                inView16
+                  ? "opacity-100 translate-x-0"
+                  : "opacity-0 -translate-x-20"
+              }`}
+            >
+              Packaging
+            </h1>
           </div>
-
         </div>
         {/* ---------------------------------------------------Section 17 End---------------------------------------------------- */}
+        {/* ---------------------------------------------------Section 18 start---------------------------------------------------- */}
+        <div className="section-18-bg mb-1 h-[100vh] overflow-hidden">
+          <div ref={ref17} className="h-[100vh] flex gap-1">
+            <div
+              className={`h-full duration-1000 transition-all ${
+                inView17
+                  ? "opacity-100 translate-x-0"
+                  : "opacity-0 -translate-x-20"
+              }`}
+            >
+              <img
+                className="max-h-full max-w-full"
+                src="/img/3d/3d_portfolio/s18_2.jpg"
+              />
+            </div>
+            <div className="flex flex-col gap-1 items-start ">
+              <div
+                className={`h-1/2 duration-1000 transition-all ${
+                  inView17
+                    ? "opacity-100 translate-x-0"
+                    : "opacity-0 translate-x-20"
+                }`}
+              >
+                <img
+                  className="max-h-full max-w-full"
+                  src="/img/3d/3d_portfolio/s18.jpg"
+                />
+              </div>
+              <div className="flex h-1/2 gap-1">
+                <div
+                  className={`h-full duration-1000 transition-all ${
+                    inView17
+                      ? "opacity-100 translate-y-0"
+                      : "opacity-0 translate-y-20"
+                  }`}
+                >
+                  <img
+                    className="h-full max-w-full"
+                    src="/img/3d/3d_portfolio/s18_4.jpg"
+                  />
+                </div>
+                <div
+                  className={` duration-1000 transition-all ${
+                    inView17
+                      ? "opacity-100 translate-x-0"
+                      : "opacity-0 translate-x-20"
+                  }`}
+                >
+                  <img
+                    className="max-h-[200px] 2xl:max-h-[300px] max-w-full"
+                    src="/img/3d/3d_portfolio/s18_3.jpg"
+                  />
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        {/* ---------------------------------------------------Section 18 End---------------------------------------------------- */}
+        {/* ---------------------------------------------------Section 19 start---------------------------------------------------- */}
+        <div className="section-19-bg mb-1 h-[100vh]">
+          <div ref={ref18} className=" h-[100vh]">
+            <div
+              className={`h-full w-full flex justify-end items-end duration-1000 transition-all ${
+                inView18
+                  ? "opacity-100 translate-x-0"
+                  : "opacity-0 translate-x-20"
+              }`}
+            >
+              <img
+                className="max-h-full max-w-full"
+                src="/img/3d/3d_portfolio/s19.jpg"
+              />
+            </div>
+          </div>
+        </div>
+        {/* ---------------------------------------------------Section 19 End---------------------------------------------------- */}
+        {/* ---------------------------------------------------Section 20 start---------------------------------------------------- */}
+        <div className="section-20-bg mb-1 h-[100vh]">
+          <div className="flex justify-end items-center xl:gap-5 h-[100vh]">
+            <div
+              ref={ref19}
+              className={` duration-1000 transition-all  ${
+                inView19
+                  ? "opacity-100 translate-x-0"
+                  : "opacity-0 -translate-x-20"
+              }`}
+            >
+              <img
+                className="max-w-[300px] 2xl:max-w-[400px] "
+                src="/img/3d/3d_portfolio/s20.jpg"
+              />
+            </div>
+            <div
+              ref={ref19}
+              className={`h-full  flex justify-end duration-1000 transition-all  ${
+                inView19
+                  ? "opacity-100 translate-x-0"
+                  : "opacity-0 translate-x-20"
+              }`}
+            >
+              <img
+                className="max-h-full max-w-full "
+                src="/img/3d/3d_portfolio/s20_2.jpg"
+              />
+            </div>
+          </div>
+        </div>
+        {/* ---------------------------------------------------Section 20 End---------------------------------------------------- */}
+        {/* ---------------------------------------------------Section 21 start---------------------------------------------------- */}
+        <div className=" mb-1 h-[100vh]">
+          <div
+            ref={ref20}
+            className="flex justify-center items-center gap-1 h-[100vh]  overflow-hidden"
+          >
+            <div
+              className={`h-full w-full duration-1000 transition-all ${
+                inView20
+                  ? "opacity-100 translate-x-0"
+                  : "opacity-0 -translate-x-20"
+              }`}
+            >
+              <img
+                className="h-full w-full object-cover"
+                src="/img/3d/3d_portfolio/s21.jpg"
+                alt="Portfolio Image 1"
+              />
+            </div>
+            <div
+              className={`h-full w-full duration-1000 transition-all ${
+                inView20
+                  ? "opacity-100 translate-x-0"
+                  : "opacity-0 translate-x-20"
+              }`}
+            >
+              <img
+                className="h-full w-full object-cover"
+                src="/img/3d/3d_portfolio/s21_2.jpg"
+                alt="Portfolio Image 2"
+              />
+            </div>
+          </div>
+        </div>
+        {/* -----------------------------------------------------Section 21 End---------------------------------------------------- */}
+        {/* ---------------------------------------------------Section 22 start---------------------------------------------------- */}
+        <div className=" mb-1 h-[100vh]">
+          <div
+            ref={ref21}
+            className="flex justify-center items-center gap-1 h-[100vh]"
+          >
+            <div
+              className={`h-full  w-full duration-1000 transition-all  ${
+                inView21
+                  ? "opacity-100 translate-x-0"
+                  : "opacity-0 -translate-x-20"
+              }`}
+            >
+              <img
+                className=" h-full w-full object-cover "
+                src="/img/3d/3d_portfolio/s22.jpg"
+              />
+            </div>
+            <div
+              className={`h-full  w-full duration-1000 transition-all  ${
+                inView21
+                  ? "opacity-100 translate-x-0"
+                  : "opacity-0 translate-x-20"
+              }`}
+            >
+              <img
+                className=" h-full w-full object-cover"
+                src="/img/3d/3d_portfolio/s22_2.jpg"
+              />
+            </div>
+          </div>
+        </div>
+        {/* -----------------------------------------------------Section 22 End---------------------------------------------------- */}
+        {/* ---------------------------------------------------Section 23 start---------------------------------------------------- */}
+        <div className="section-23-bg mb-1 h-[100vh]"></div>
+        {/* -----------------------------------------------------Section 23 End---------------------------------------------------- */}
+        {/* ---------------------------------------------------Section 24 start---------------------------------------------------- */}
+        <div className="bg-[#849C8C] mb-1 h-[100vh]">
+          <div ref={ref22} className=" h-[100vh]">
+            <div
+              className={`h-full w-full flex justify-end items-end duration-1000 transition-all ${
+                inView22
+                  ? "opacity-100 translate-x-0"
+                  : "opacity-0 translate-x-20"
+              }`}
+            >
+              <img
+                className="max-h-full max-w-full"
+                src="/img/3d/3d_portfolio/s24.jpg"
+              />
+            </div>
+          </div>
+        </div>
+        {/* -------------------------------------------------------Section 24 End---------------------------------------------------- */}
+        {/* ---------------------------------------------------Section 25 start---------------------------------------------------- */}
+        <div className="section-25-bg mb-1 h-[100vh]"></div>
+        {/* -------------------------------------------------------Section 25 End---------------------------------------------------- */}
+        {/* ---------------------------------------------------Section 26 start---------------------------------------------------- */}
+        <div className="section-26-bg mb-1 h-[100vh]">
+          <div className="flex flex-col justify-center items-center gap-5 h-[100vh]">
+            <div ref={ref23} className="w-[700px]">
+              <h1
+                className={` text-white  text-[55px] poppins-light duration-1000 transition-all  ${
+                  inView23
+                    ? "opacity-100 translate-y-0"
+                    : "opacity-0 -translate-y-20"
+                }`}
+              >
+                Packaging
+              </h1>
+            </div>
+            <div className="h-[1px] w-full bg-white mb-5 -mt-5"></div>
+            <div ref={ref23}>
+              <p
+                className={`text-white text-[14px]  poppins-light w-[700px] text-justify  poppins-light duration-1000 transition-all  ${
+                  inView23
+                    ? "opacity-100 translate-y-0"
+                    : "opacity-0 translate-y-20"
+                }`}
+              >{`Unbox the future of packaging design with us. Our 3D asset production studio crafts
+hyper-realistic digital mockups of your packaging concepts. From sleek glass bottles to
+eco-friendly cardboard boxes, we meticulously model every detail using industry-leading
+software. But it's not just about aesthetics; we simulate real-world materials and interactions.
+This translates to faster design iterations, reduced physical prototyping costs, and the ability
+to showcase photorealistic packaging mockups for enhanced brand communication and
+marketing – all before a single box is printed. Let's bring your packaging vision to life in the
+digital realm, saving resources and accelerating your time to market.`}</p>
+            </div>
+          </div>
+        </div>
+        {/* -------------------------------------------------------Section 26 End---------------------------------------------------- */}
+        {/* ---------------------------------------------------Section 27 start---------------------------------------------------- */}
+        <div className="bg-[#333333] h-screen mb-1">
+          <div className="flex justify-between items-center h-full">
+            <div
+              ref={ref24}
+              className={`flex justify-center w-3/4 items-center ml-10  duration-1000 transition-all  ${
+                inView24
+                  ? "opacity-100 translate-x-0"
+                  : "opacity-0 -translate-x-20"
+              }`}
+            >
+              <h1 className="text-white  text-[50px] text-center ">
+                Automotive
+              </h1>
+            </div>
+            <div
+              ref={ref24}
+              className={`h-full flex justify-end  w-full duration-1000 transition-all  ${
+                inView24
+                  ? "opacity-100 translate-x-0"
+                  : "opacity-0 translate-x-20"
+              }`}
+            >
+              <img
+                src="/img/3d/3d_portfolio/car3.jpg"
+                className="max-h-full max-w-full "
+              />
+            </div>
+          </div>
+        </div>
+        {/* -------------------------------------------------------Section 27 End---------------------------------------------------- */}
+        {/* ---------------------------------------------------Section 28 start---------------------------------------------------- */}
+        <div className="bg-[#DBDAD9] mb-1 h-[100vh]">
+          <div
+            ref={ref25}
+            className="flex justify-center items-center gap-1 h-[100vh]"
+          >
+            <div
+              className={`duration-1000 transition-all ${
+                inView25
+                  ? "opacity-100 translate-x-0"
+                  : "opacity-0 -translate-x-20"
+              }`}
+            >
+              <img src="/img/3d/3d_portfolio/car1.jpg" />
+            </div>
+            <div
+              className={`duration-1000 transition-all ${
+                inView25
+                  ? "opacity-100 translate-y-0"
+                  : "opacity-0 translate-y-20"
+              }`}
+            >
+              <img src="/img/3d/3d_portfolio/car_body.jpg" />
+            </div>
+            <div
+              className={`duration-1000 transition-all ${
+                inView25
+                  ? "opacity-100 translate-x-0"
+                  : "opacity-0 translate-x-20"
+              }`}
+            >
+              <img src="/img/3d/3d_portfolio/car2.jpg" />
+            </div>
+          </div>
+        </div>
+        {/* -------------------------------------------------------Section 28 End---------------------------------------------------- */}
+        {/* ---------------------------------------------------Section 29 start---------------------------------------------------- */}
+        <div className="bg-[#333333] mb-1 h-[100vh]">
+          <div className="flex flex-col justify-center items-center gap-5 h-[100vh]">
+            <div ref={ref26} className="w-[700px]">
+              <h1
+                className={` text-white text-[55px] poppins-light duration-1000 transition-all  ${
+                  inView26
+                    ? "opacity-100 translate-y-0"
+                    : "opacity-0 -translate-y-20"
+                }`}
+              >
+                Automotive
+              </h1>
+            </div>
+            <div className="h-[1px] w-full bg-white mb-5 -mt-5"></div>
+            <div ref={ref26}>
+              <p
+                className={`text-white text-[14px]  poppins-light w-[700px] text-justify  poppins-light duration-1000 transition-all  ${
+                  inView26
+                    ? "opacity-100 translate-y-0"
+                    : "opacity-0 translate-y-20"
+                }`}
+              >{`Imagine sculpting a car not with clay, but with code. Our 3D asset production studio
+throws open the garage doors to a new era of automotive design. We don't just create
+digital models, we craft living, breathing simulations.
+This isn't just about aesthetics. We empower you to push the boundaries of design. It's
+like having a racetrack, a factory floor, and a design studio all condensed into a single,
+powerful software suite. The benefits? Faster design cycles, slashed prototyping costs,
+and the ability to showcase your vision with stunningly interactive 3D models. Let's shift
+your automotive design into high gear. Let's sculpt speed and refine reality with the
+power of 3D asset production.`}</p>
+            </div>
+          </div>
+        </div>
+        {/* -------------------------------------------------------Section 29 End---------------------------------------------------- */}
       </div>
     </div>
   );
