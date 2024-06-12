@@ -1,6 +1,6 @@
 import { useInView } from "react-intersection-observer";
 import "./portfolio.css";
-const Portfolio3D = () => {
+const Portfolio3DTest = () => {
   const { ref: ref1, inView: inView1 } = useInView({
     threshold: 0.2,
   });
@@ -84,9 +84,10 @@ const Portfolio3D = () => {
   });
   return (
     <div>
-      <div className="2xl:container mx-auto overflow-hidden">
+      <div className=" mx-auto overflow-hidden">
         {/* ----------------------------------------------Section 1 Start---------------------------------------------- */}
-        <div className="section-1-bg h-screen 2xl:h-[90vh] mb-1 relative">
+        <div className="section-1-bg h-screen  2xl:h-[90vh] mb-1 relative">
+          <div className="2xl:container">
           <div className="absolute bottom-10 right-32  ">
             <div className="flex justify-center items-center h-[150px] w-[700px]">
               <div
@@ -120,6 +121,7 @@ const Portfolio3D = () => {
                 </h1>
               </div>
             </div>
+          </div>
           </div>
         </div>
         {/* -----------------------------------------------Section 1 End----------------------------------------------- */}
@@ -218,6 +220,7 @@ const Portfolio3D = () => {
         {/* -----------------------------------------------Section 2 End----------------------------------------------- */}
         {/* ----------------------------------------------Section 3 Start----------------------------------------------*/}
         <div className="section-3-bg  h-[100vh] 2xl:h-[90vh]  mb-1">
+        <div className="2xl:container mx-auto">
           <div className="flex justify-center items-center gap-5 h-[100vh] 2xl:h-[90vh] px-40">
             <div ref={ref3} className="w-full">
               <img
@@ -248,6 +251,7 @@ const Portfolio3D = () => {
                 our clients but also attracts more business opportunities.
               </p>
             </div>
+          </div>
           </div>
         </div>
         {/* -----------------------------------------------Section 3 End----------------------------------------------- */}
@@ -288,7 +292,8 @@ const Portfolio3D = () => {
         </div>
         {/* ---------------------------------------------------Section 4 End---------------------------------------------------- */}
         {/* ---------------------------------------------------Section 5 Start---------------------------------------------------- */}
-        <div className="bg-white h-[115vh] xl:h-[105vh] 2xl:h-[90vh] mb-1">
+        <div className="bg-gray-200 h-[115vh] xl:h-[105vh] 2xl:h-[90vh] mb-1">
+        <div className="2xl:container mx-auto">
           <div ref={ref27} className="flex justify-between items-center h-[115vh] xl:h-[105vh] 2xl:h-[90vh]">
             <div className="h-full w-1/2 xl:w-[52%]  2xl:w-[60%] relative">
                 <img src={"/img/3d/3d_portfolio/s5_2.png"} className={`w-full h-full object-fill duration-1000 transition-all ${inView27 ? 'opacity-100 translate-x-0' : 'opacity-0 -translate-x-20'}`}/>
@@ -315,6 +320,8 @@ const Portfolio3D = () => {
            
 
           </div>
+
+        </div>
         </div>
         {/* ---------------------------------------------------Section 5 End---------------------------------------------------- */}
         {/* ---------------------------------------------------Section 6 Start---------------------------------------------------- */}
@@ -1019,4 +1026,4 @@ power of 3D asset production.`}</p>
   );
 };
 
-export default Portfolio3D;
+export default Portfolio3DTest;

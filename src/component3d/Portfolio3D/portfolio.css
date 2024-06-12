@@ -76,7 +76,7 @@
     background-image: url('/img/3d/3d_portfolio/S3_About.jpg');
     background-position: center;
     background-repeat: no-repeat;
-    background-size: cover;
+    background-size: 100% 100%;
   
 }
 .section-13-bg{
@@ -139,6 +139,25 @@
   background-image: url('/img/3d/3d_portfolio/S19_Image-BG.jpg');
     background-position: center;
     background-repeat: no-repeat;
-    background-size: cover;
+    /* background-size: cover; */
   
 }
+
+.section-31-bg{
+  background-image: url('/img/3d/3d_portfolio/S1_Cover.jpg');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+
+}
+
+
+/* @media only screen and (min-width: 1400px) {
+  .section-3-bg{
+    background-image: url('/img/3d/3d_portfolio/S3_About.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+  
+}
+} */
