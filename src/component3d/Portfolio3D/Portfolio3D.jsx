@@ -291,7 +291,7 @@ const Portfolio3D = () => {
         <div className="bg-white h-[115vh] xl:h-[105vh] 2xl:h-[90vh] mb-1">
           <div ref={ref27} className="flex justify-between items-center h-[115vh] xl:h-[105vh] 2xl:h-[90vh]">
             <div className="h-full w-1/2 xl:w-[52%]  2xl:w-[60%] relative">
-                <img src={"/img/3d/3d_portfolio/s5_2.png"} className={`w-full h-full object-fill duration-1000 transition-all ${inView27 ? 'opacity-100 translate-x-0' : 'opacity-0 -translate-x-20'}`}/>
+                <img src={"/img/3d/3d_portfolio/s5_2.jpg"} className={`w-full h-full object-fill duration-1000 transition-all ${inView27 ? 'opacity-100 translate-x-0' : 'opacity-0 -translate-x-20'}`}/>
                 <div className="h-[450px] w-[238px] absolute top-[50%] -translate-y-[50%] right-[-50px]">
                     <img src={"/img/3d/3d_portfolio/s5.png"} className={`w-full h-full duration-1000 transition-all ${inView27 ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-20'}`}/>
                 </div>
@@ -302,10 +302,10 @@ const Portfolio3D = () => {
                     <img src={"/img/3d/3d_portfolio/s5_5.png"} className={`w-full h-full duration-1000 transition-all ${inView27 ? 'opacity-100 translate-x-0' : 'opacity-0 translate-x-20'}`}/>
                 </div>
                 <div className="h-[180px] w-[200px] absolute bottom-[-50px] right-[240px]">
-                    <img src={"/img/3d/3d_portfolio/s5_4.png"} className={`w-full h-full duration-1000 transition-all ${inView27 ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-20'}`}/>
+                    <img src={"/img/3d/3d_portfolio/s5_4.jpg"} className={`w-full h-full duration-1000 transition-all ${inView27 ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-20'}`}/>
                 </div>
                 <div className="h-[260px] w-[380px] absolute top-[55px] right-[240px]">
-                    <img src={"/img/3d/3d_portfolio/s5_3.png"} className={`w-full h-full duration-1000 transition-all ${inView27 ? 'opacity-100 translate-y-0' : 'opacity-0 -translate-y-20'}`}/>
+                    <img src={"/img/3d/3d_portfolio/s5_3.jpg"} className={`w-full h-full duration-1000 transition-all ${inView27 ? 'opacity-100 translate-y-0' : 'opacity-0 -translate-y-20'}`}/>
                 </div>
                 <div className="h-[70px] w-[90px] absolute bottom-[-95px] right-[440px]">
                     <img src={"/img/3d/3d_portfolio/s5_7.png"} className={`w-full h-full duration-1000 transition-all ${inView27 ? 'opacity-100 translate-x-0' : 'opacity-0 -translate-x-20'}`}/>
