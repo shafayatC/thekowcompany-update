@@ -32,6 +32,7 @@ import ContactUsLanding4 from './component/ContactUsLanding4/ContactUsLanding4'
 // import PDFViewerPage from './component3d/PDFViewerPage/PDFViewerPage'
 import PDFViewer from './component3d/PDFViewer/PDFViewer'
 import Portfolio3D from './component3d/Portfolio3D/Portfolio3D'
+// import Portfolio3DTest from './component3d/Portfolio3D/Portfolio3DTest'
 
 
 

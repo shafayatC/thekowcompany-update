@@ -1,6 +1,6 @@
 import { useInView } from "react-intersection-observer";
 import "./portfolio.css";
-const Portfolio3D = () => {
+const Portfolio3DTest = () => {
   const { ref: ref1, inView: inView1 } = useInView({
     threshold: 0.2,
   });
@@ -84,9 +84,10 @@ const Portfolio3D = () => {
   });
   return (
     <div>
-      <div className="2xl:container mx-auto overflow-hidden">
+      <div className=" mx-auto overflow-hidden">
         {/* ----------------------------------------------Section 1 Start---------------------------------------------- */}
-        <div className="section-1-bg h-screen 2xl:h-[90vh] mb-1 relative">
+        <div className="section-1-bg h-screen  2xl:h-[90vh] mb-1 relative">
+          <div className="2xl:container">
           <div className="absolute bottom-10 right-32  ">
             <div className="flex justify-center items-center h-[150px] w-[700px]">
               <div
@@ -120,6 +121,7 @@ const Portfolio3D = () => {
                 </h1>
               </div>
             </div>
+          </div>
           </div>
         </div>
         {/* -----------------------------------------------Section 1 End----------------------------------------------- */}
@@ -218,6 +220,7 @@ const Portfolio3D = () => {
         {/* -----------------------------------------------Section 2 End----------------------------------------------- */}
         {/* ----------------------------------------------Section 3 Start----------------------------------------------*/}
         <div className="section-3-bg  h-[100vh] 2xl:h-[90vh]  mb-1">
+        <div className="2xl:container mx-auto">
           <div className="flex justify-center items-center gap-5 h-[100vh] 2xl:h-[90vh] px-40">
             <div ref={ref3} className="w-full">
               <img
@@ -248,6 +251,7 @@ const Portfolio3D = () => {
                 our clients but also attracts more business opportunities.
               </p>
             </div>
+          </div>
           </div>
         </div>
         {/* -----------------------------------------------Section 3 End----------------------------------------------- */}
@@ -288,82 +292,36 @@ const Portfolio3D = () => {
         </div>
         {/* ---------------------------------------------------Section 4 End---------------------------------------------------- */}
         {/* ---------------------------------------------------Section 5 Start---------------------------------------------------- */}
-        <div className="bg-white h-[115vh] xl:h-[105vh] 2xl:h-[90vh] mb-1">
-          <div
-            ref={ref27}
-            className="flex justify-between items-center h-[115vh] xl:h-[105vh] 2xl:h-[90vh]"
-          >
+        <div className="bg-gray-200 h-[115vh] xl:h-[105vh] 2xl:h-[90vh] mb-1">
+        <div className="2xl:container mx-auto">
+          <div ref={ref27} className="flex justify-between items-center h-[115vh] xl:h-[105vh] 2xl:h-[90vh]">
             <div className="h-full w-1/2 xl:w-[52%]  2xl:w-[60%] relative">
-              <img
-                src={"/img/3d/3d_portfolio/s5_2.jpg"}
-                className={`w-full h-full object-fill duration-1000 transition-all ${
-                  inView27
-                    ? "opacity-100 translate-x-0"
-                    : "opacity-0 -translate-x-20"
-                }`}
-              />
-              <div className="h-[450px] w-[238px] absolute top-[50%] -translate-y-[50%] right-[-50px]">
-                <img
-                  src={"/img/3d/3d_portfolio/s5.png"}
-                  className={`w-full h-full duration-1000 transition-all ${
-                    inView27
-                      ? "opacity-100 translate-y-0"
-                      : "opacity-0 translate-y-20"
-                  }`}
-                />
-              </div>
+                <img src={"/img/3d/3d_portfolio/s5_2.png"} className={`w-full h-full object-fill duration-1000 transition-all ${inView27 ? 'opacity-100 translate-x-0' : 'opacity-0 -translate-x-20'}`}/>
+                <div className="h-[450px] w-[238px] absolute top-[50%] -translate-y-[50%] right-[-50px]">
+                    <img src={"/img/3d/3d_portfolio/s5.png"} className={`w-full h-full duration-1000 transition-all ${inView27 ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-20'}`}/>
+                </div>
             </div>
             <div className="h-[450px] w-[480px] xl:w-[580px]  relative">
-              <img
-                src={"/img/3d/3d_portfolio/s5_6_n.png"}
-                className={`w-full h-full duration-1000 transition-all ${
-                  inView27
-                    ? "opacity-100 translate-x-0"
-                    : "opacity-0 translate-x-20"
-                }`}
-              />
-              <div className="h-[221px] w-[238px] absolute bottom-[-90px] right-0">
-                <img
-                  src={"/img/3d/3d_portfolio/s5_5.png"}
-                  className={`w-full h-full duration-1000 transition-all ${
-                    inView27
-                      ? "opacity-100 translate-x-0"
-                      : "opacity-0 translate-x-20"
-                  }`}
-                />
-              </div>
-              <div className="h-[180px] w-[200px] absolute bottom-[-50px] right-[240px]">
-                <img
-                  src={"/img/3d/3d_portfolio/s5_4.jpg"}
-                  className={`w-full h-full duration-1000 transition-all ${
-                    inView27
-                      ? "opacity-100 translate-y-0"
-                      : "opacity-0 translate-y-20"
-                  }`}
-                />
-              </div>
-              <div className="h-[260px] w-[380px] absolute top-[55px] right-[240px]">
-                <img
-                  src={"/img/3d/3d_portfolio/s5_3.jpg"}
-                  className={`w-full h-full duration-1000 transition-all ${
-                    inView27
-                      ? "opacity-100 translate-y-0"
-                      : "opacity-0 -translate-y-20"
-                  }`}
-                />
-              </div>
-              <div className="h-[70px] w-[90px] absolute bottom-[-95px] right-[440px]">
-                <img
-                  src={"/img/3d/3d_portfolio/s5_7.png"}
-                  className={`w-full h-full duration-1000 transition-all ${
-                    inView27
-                      ? "opacity-100 translate-x-0"
-                      : "opacity-0 -translate-x-20"
-                  }`}
-                />
-              </div>
+                <img src={"/img/3d/3d_portfolio/s5_6_n.png"} className={`w-full h-full duration-1000 transition-all ${inView27 ? 'opacity-100 translate-x-0' : 'opacity-0 translate-x-20'}`}/>
+                <div className="h-[221px] w-[238px] absolute bottom-[-90px] right-0">
+                    <img src={"/img/3d/3d_portfolio/s5_5.png"} className={`w-full h-full duration-1000 transition-all ${inView27 ? 'opacity-100 translate-x-0' : 'opacity-0 translate-x-20'}`}/>
+                </div>
+                <div className="h-[180px] w-[200px] absolute bottom-[-50px] right-[240px]">
+                    <img src={"/img/3d/3d_portfolio/s5_4.png"} className={`w-full h-full duration-1000 transition-all ${inView27 ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-20'}`}/>
+                </div>
+                <div className="h-[260px] w-[380px] absolute top-[55px] right-[240px]">
+                    <img src={"/img/3d/3d_portfolio/s5_3.png"} className={`w-full h-full duration-1000 transition-all ${inView27 ? 'opacity-100 translate-y-0' : 'opacity-0 -translate-y-20'}`}/>
+                </div>
+                <div className="h-[70px] w-[90px] absolute bottom-[-95px] right-[440px]">
+                    <img src={"/img/3d/3d_portfolio/s5_7.png"} className={`w-full h-full duration-1000 transition-all ${inView27 ? 'opacity-100 translate-x-0' : 'opacity-0 -translate-x-20'}`}/>
+                </div>
+                
             </div>
+           
+
           </div>
+
+        </div>
         </div>
         {/* ---------------------------------------------------Section 5 End---------------------------------------------------- */}
         {/* ---------------------------------------------------Section 6 Start---------------------------------------------------- */}
@@ -1041,67 +999,31 @@ power of 3D asset production.`}</p>
         </div>
         {/* -------------------------------------------------------Section 29 End---------------------------------------------------- */}
         {/* ---------------------------------------------------Section 30 start---------------------------------------------------- */}
-        <div className="section-30-bg mb-1 h-[100vh]  2xl:h-[90vh]">
-          <div className=" h-[100vh] 2xl:h-[90vh] ">
-            <div className="flex h-full justify-center items-center ">
-              <a
-                href="https://www.youtube.com/watch?v=j4jaD9DAMWo"
-                target="_blank"
-                rel="noreferrer"
-              >
-                {" "}
-                <img
-                  className="max-w-[100px]"
-                  src="/img/3d/3d_portfolio/s30.png"
-                />
-              </a>
-            </div>
-
-            <div className="flex justify-center items-end gap-5 -mt-32">
-              <div >
-              <h1 className="w-[400px] h-[1px] -mt-5 bg-white"></h1>
-              </div>
-              <div>
-                <h1 className="text-white text-[60px] w-[560px] poppins-regular">
-                  Product Animation
-                </h1>
-              </div>
-              <div >
-              <h1 className="w-[400px] h-[1px] -mt-5 bg-white"></h1>
-              </div>
-            </div>
-          </div>
-        </div>
-
         {/* -------------------------------------------------------Section 30 End---------------------------------------------------- */}
         {/* ---------------------------------------------------Section 31 start---------------------------------------------------- */}
         <div className="section-31-bg mb-1 h-[100vh] 2xl:h-[90vh]">
-          <div className="flex flex-col justify-center items-center h-[100vh] 2xl:h-[90vh] ">
-            <div className="flex justify-start items-end w-[1000px] gap-16">
-              <img
-                className="max-w-[350px]"
-                src="/img/3d/3d_portfolio/kow_logo_lg_w.png"
-              />
-              <div>
+        
+            <div className="flex flex-col justify-center items-center h-[100vh] 2xl:h-[90vh] ">
+              <div className="flex justify-start items-end w-[1000px] gap-16" >
+              <img className="max-w-[350px]" src="/public/img/3d/3d_portfolio/kow_logo_lg_w.png"/>
+              <div >
                 <h1 className="w-[600px] h-[1px] -mt-10 bg-white"></h1>
+                
+
               </div>
+             
+              </div>
+             <div className="w-[1000px]">
+             <a className="text-white text-[24px] -mt-5 poppins-light flex justify-end" href="https://thekowcompany.com" target="_blank" rel="noreferrer">https://thekowcompany.com</a>
+             </div>
             </div>
-            <div className="w-[1000px]">
-              <a
-                className="text-white text-[24px] -mt-5 poppins-light flex justify-end"
-                href="https://thekowcompany.com"
-                target="_blank"
-                rel="noreferrer"
-              >
-                https://thekowcompany.com
-              </a>
-            </div>
+            
+         
           </div>
-        </div>
         {/* -------------------------------------------------------Section 31 End---------------------------------------------------- */}
       </div>
     </div>
   );
 };
 
-export default Portfolio3D;
+export default Portfolio3DTest;
