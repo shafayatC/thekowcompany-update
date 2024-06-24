@@ -1119,10 +1119,10 @@ power of 3D asset production.`}</p>
       </div>
       
       {isPlaying && (
-        <div className="absolute inset-0 flex justify-center items-center bg-black bg-opacity-75">
+        <div className="absolute inset-0 flex justify-center items-center ">
           <video
             id="productVideo"
-            className="w-full h-full"
+            className="w-full h-full object-cover"
             onEnded={handleVideoEnd}
             controls={false}
             autoPlay
