@@ -1,6 +1,55 @@
 import { useInView } from "react-intersection-observer";
 import "./portfolio.css";
-const Portfolio3D = () => {
+import { useEffect, useRef, useState } from "react";
+const Portfolio3D = () => { 
+  const [isPlaying, setIsPlaying] = useState(false);
+  const sectionRef = useRef(null);
+
+  const handlePlayClick = () => {
+    setIsPlaying(true);
+    const videoElement = document.getElementById('productVideo');
+    if (videoElement) {
+      videoElement.play();
+    }
+  };
+
+  const handleVideoEnd = () => {
+    setIsPlaying(false);
+    const videoElement = document.getElementById('productVideo');
+    if (videoElement) {
+      videoElement.pause();
+      videoElement.currentTime = 0;
+    }
+  };
+
+  const handleIntersection = (entries) => {
+    const [entry] = entries;
+    if (!entry.isIntersecting) {
+      setIsPlaying(false);
+      const videoElement = document.getElementById('productVideo');
+      if (videoElement) {
+        videoElement.pause();
+        videoElement.currentTime = 0;
+      }
+    }
+  };
+
+  useEffect(() => {
+    const observer = new IntersectionObserver(handleIntersection, {
+      root: null, // Use the viewport as the root
+      threshold: 0.1, // Trigger when 10% of the section is visible
+    });
+
+    if (sectionRef.current) {
+      observer.observe(sectionRef.current);
+    }
+
+    return () => {
+      if (sectionRef.current) {
+        observer.unobserve(sectionRef.current);
+      }
+    };
+  }, []);
   const { ref: ref1, inView: inView1 } = useInView({
     threshold: 0.2,
   });
@@ -559,7 +608,7 @@ const Portfolio3D = () => {
           <div className="flex flex-col justify-center items-center gap-5 h-[100vh] 2xl:h-[90vh]">
             <div ref={ref11}>
               <h1
-                className={` text-white text-[55px] poppins-light duration-1000 transition-all  ${
+                className={` text-white text-[55px]  border-b border-white poppins-light duration-1000 transition-all  ${
                   inView11
                     ? "opacity-100 translate-y-0"
                     : "opacity-0 -translate-y-20"
@@ -568,7 +617,7 @@ const Portfolio3D = () => {
                 Architectural Visualization
               </h1>
             </div>
-            <div className="h-[1px] w-full bg-white mb-5 -mt-5"></div>
+            {/* <div className="h-[1px] w-full bg-white mb-5 -mt-5"></div> */}
             <div ref={ref11}>
               <p
                 className={`text-white text-[14px] 2xl:text-[17px]  poppins-light w-[700px] text-justify  poppins-light duration-1000 transition-all  ${
@@ -909,7 +958,7 @@ into a digital reality that drives sales.`}</p>
           <div className="flex flex-col justify-center items-center gap-5 h-[100vh] 2xl:h-[90vh]">
             <div ref={ref23} className="w-[700px]">
               <h1
-                className={` text-white  text-[55px] poppins-light duration-1000 transition-all  ${
+                className={` text-white border-b border-white  text-[55px] poppins-light duration-1000 transition-all  ${
                   inView23
                     ? "opacity-100 translate-y-0"
                     : "opacity-0 -translate-y-20"
@@ -918,7 +967,7 @@ into a digital reality that drives sales.`}</p>
                 Packaging
               </h1>
             </div>
-            <div className="h-[1px] w-full bg-white mb-5 -mt-5"></div>
+            {/* <div className="h-[1px] w-full bg-white mb-5 -mt-5"></div> */}
             <div ref={ref23}>
               <p
                 className={`text-white text-[14px]  poppins-light w-[700px] text-justify  poppins-light duration-1000 transition-all  ${
@@ -1010,7 +1059,7 @@ digital realm, saving resources and accelerating your time to market.`}</p>
           <div className="flex flex-col justify-center items-center gap-5 h-[100vh] 2xl:h-[90vh]">
             <div ref={ref26} className="w-[700px]">
               <h1
-                className={` text-white text-[55px] poppins-light duration-1000 transition-all  ${
+                className={` text-white text-[55px] border-b border-white poppins-light duration-1000 transition-all  ${
                   inView26
                     ? "opacity-100 translate-y-0"
                     : "opacity-0 -translate-y-20"
@@ -1019,7 +1068,7 @@ digital realm, saving resources and accelerating your time to market.`}</p>
                 Automotive
               </h1>
             </div>
-            <div className="h-[1px] w-full bg-white mb-5 -mt-5"></div>
+            {/* <div className="h-[1px] w-full bg-white mb-5 -mt-5"></div> */}
             <div ref={ref26}>
               <p
                 className={`text-white text-[14px]  poppins-light w-[700px] text-justify  poppins-light duration-1000 transition-all  ${
@@ -1041,38 +1090,49 @@ power of 3D asset production.`}</p>
         </div>
         {/* -------------------------------------------------------Section 29 End---------------------------------------------------- */}
         {/* ---------------------------------------------------Section 30 start---------------------------------------------------- */}
-        <div className="section-30-bg mb-1 h-[100vh]  2xl:h-[90vh]">
-          <div className=" h-[100vh] 2xl:h-[90vh] ">
-            <div className="flex h-full justify-center items-center ">
-              <a
-                href="https://www.youtube.com/watch?v=j4jaD9DAMWo"
-                target="_blank"
-                rel="noreferrer"
-              >
-                {" "}
-                <img
-                  className="max-w-[100px]"
-                  src="/img/3d/3d_portfolio/s30.png"
-                />
-              </a>
-            </div>
-
-            <div className="flex justify-center items-end gap-5 -mt-32">
-              <div >
-              <h1 className="w-[400px] h-[1px] -mt-5 bg-white"></h1>
-              </div>
-              <div>
-                <h1 className="text-white text-[60px] w-[560px] poppins-regular">
-                  Product Animation
-                </h1>
-              </div>
-              <div >
-              <h1 className="w-[400px] h-[1px] -mt-5 bg-white"></h1>
-              </div>
-            </div>
-          </div>
+        <div ref={sectionRef} className="section-30-bg mb-1 h-[100vh] 2xl:h-[90vh] relative">
+      <div className="h-[100vh] 2xl:h-[90vh]">
+        <div className="flex h-full justify-center items-center">
+          {!isPlaying && (
+            <img
+              className="max-w-[100px] cursor-pointer"
+              src="/img/3d/3d_portfolio/s30.png"
+              onClick={handlePlayClick}
+              alt="Play"
+            />
+          )}
         </div>
 
+        <div className="flex justify-center items-end gap-5 -mt-32">
+          <div>
+            <h1 className="w-[400px] h-[1px] -mt-5 bg-white"></h1>
+          </div>
+          <div>
+            <h1 className="text-white text-[60px] w-[560px] poppins-regular">
+              Product Animation
+            </h1>
+          </div>
+          <div>
+            <h1 className="w-[400px] h-[1px] -mt-5 bg-white"></h1>
+          </div>
+        </div>
+      </div>
+      
+      {isPlaying && (
+        <div className="absolute inset-0 flex justify-center items-center bg-black bg-opacity-75">
+          <video
+            id="productVideo"
+            className="w-full h-full"
+            onEnded={handleVideoEnd}
+            controls={false}
+            autoPlay
+          >
+            <source src="/video/For Website.webm" type="video/webm" />
+         
+          </video>
+        </div>
+      )}
+    </div>
         {/* -------------------------------------------------------Section 30 End---------------------------------------------------- */}
         {/* ---------------------------------------------------Section 31 start---------------------------------------------------- */}
         <div className="section-31-bg mb-1 h-[100vh] 2xl:h-[90vh]">
