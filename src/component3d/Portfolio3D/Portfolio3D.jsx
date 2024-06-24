@@ -630,7 +630,7 @@ dreams to vivid reality with us.`}</p>
                   : "opacity-0 -translate-x-20"
               }`}
             >
-              <img className="h-full" src="/img/3d/3d_portfolio/s15.png" />
+              <img className="h-full" src="/img/3d/3d_portfolio/s15_n.png" />
             </div>
           </div>
         </div>

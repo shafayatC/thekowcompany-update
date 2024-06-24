@@ -72,7 +72,7 @@ function App() {
       <Route path="/privacy-policy" element={<PrivacyPolicy/>} />
       <Route path="/thank-you/*" element={<Thankyou/>} />
       <Route path="/book-a-call" element={<BookACall/>} />
-      <Route path="/3d-portfolio" element={<Portfolio3D/>} />
+      <Route path="/CGI_3D/creativeshowcase" element={<Portfolio3D/>} />
       </Routes>
     </>
   )
