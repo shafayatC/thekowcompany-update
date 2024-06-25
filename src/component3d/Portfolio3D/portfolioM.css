@@ -93,3 +93,12 @@
     height: 100vh;
     width: 100%; 
 }
+  .se-6-bg{
+    background-image: url('/img/3d/3d_portfolio_m/se1_bg.png');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    /* height: 780px; */
+    height: 100vh;
+    width: 100%; 
+}
