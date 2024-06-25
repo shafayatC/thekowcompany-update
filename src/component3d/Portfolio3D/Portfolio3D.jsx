@@ -491,7 +491,7 @@ const Portfolio3D = () => {
               }`}
             >
               <h1 className="text-white text-[50px] text-center ">
-                Exterior
+                Interior
                 <span className="text-[#858580] pl-2 text-[40px] poppins-light">
                   Visualization
                 </span>
