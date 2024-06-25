@@ -9,7 +9,7 @@ const Portfolio3DTest = () => {
     "/img/3d/3d_portfolio_m/s6_3.jpg",
   ];
   const section7 = [
-    "/img/3d/3d_portfolio_m/s7.jpg",
+    "/img/3d/3d_portfolio_m/s7_n.jpg",
     "/img/3d/3d_portfolio_m/s7_2.jpg",
     "/img/3d/3d_portfolio_m/s7_3.jpg",
     "/img/3d/3d_portfolio_m/s7_4.jpg",
