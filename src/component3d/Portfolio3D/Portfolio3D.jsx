@@ -4,10 +4,11 @@ import { useEffect, useRef, useState } from "react";
 const Portfolio3D = () => { 
   const [isPlaying, setIsPlaying] = useState(false);
   const sectionRef = useRef(null);
+  const videoRef = useRef(null);
 
   const handlePlayClick = () => {
     setIsPlaying(true);
-    const videoElement = document.getElementById('productVideo');
+    const videoElement = videoRef.current;
     if (videoElement) {
       videoElement.play();
     }
@@ -15,7 +16,7 @@ const Portfolio3D = () => {
 
   const handleVideoEnd = () => {
     setIsPlaying(false);
-    const videoElement = document.getElementById('productVideo');
+    const videoElement = videoRef.current;
     if (videoElement) {
       videoElement.pause();
       videoElement.currentTime = 0;
@@ -26,7 +27,7 @@ const Portfolio3D = () => {
     const [entry] = entries;
     if (!entry.isIntersecting) {
       setIsPlaying(false);
-      const videoElement = document.getElementById('productVideo');
+      const videoElement = videoRef.current;
       if (videoElement) {
         videoElement.pause();
         videoElement.currentTime = 0;
@@ -50,6 +51,7 @@ const Portfolio3D = () => {
       }
     };
   }, []);
+
   const { ref: ref1, inView: inView1 } = useInView({
     threshold: 0.2,
   });
@@ -1119,16 +1121,17 @@ power of 3D asset production.`}</p>
       </div>
       
       {isPlaying && (
-        <div className="absolute inset-0 flex justify-center items-center ">
+        <div className="absolute inset-0 flex justify-center items-center">
           <video
+            ref={videoRef}
             id="productVideo"
             className="w-full h-full object-cover"
             onEnded={handleVideoEnd}
             controls={false}
             autoPlay
+            preload="auto"
           >
             <source src="/video/For Website.webm" type="video/webm" />
-         
           </video>
         </div>
       )}
