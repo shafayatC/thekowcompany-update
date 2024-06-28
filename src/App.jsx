@@ -33,6 +33,7 @@ import ContactUsLanding4 from './component/ContactUsLanding4/ContactUsLanding4'
 import PDFViewer from './component3d/PDFViewer/PDFViewer'
 import Portfolio3D from './component3d/Portfolio3D/Portfolio3D'
 import Portfolio3DTest from './component3d/Portfolio3D/Portfolio3DTest'
+import PortfolioFor3D from './component3d/Portfolio3D/PortfolioFor3D'
 
 
 
@@ -72,8 +73,9 @@ function App() {
       <Route path="/privacy-policy" element={<PrivacyPolicy/>} />
       <Route path="/thank-you/*" element={<Thankyou/>} />
       <Route path="/book-a-call" element={<BookACall/>} />
-      <Route path="/CGI_3D/creativeshowcase" element={<Portfolio3D/>} />
+      <Route path="/cgi-web" element={<Portfolio3D/>} />
       <Route path="/cgi-mobile" element={<Portfolio3DTest/>} />
+      <Route path="/CGI_3D/creativeshowcase" element={<PortfolioFor3D/>} />
       </Routes>
     </>
   )
