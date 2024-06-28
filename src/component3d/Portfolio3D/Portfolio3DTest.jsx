@@ -445,7 +445,7 @@ const Portfolio3DTest = () => {
       </div>
       {/* ------------------------------------section 04 end----------------------------- */}
       {/* -------------------------------------section 05 start------------------------------- */}
-      <div className="se-1-bg h-screen">
+      <div className=" h-screen">
         <div ref={ref3} className="relative">
           <img className="" src="/img/3d/3d_portfolio_m/s5_2.jpg" />
           <div
