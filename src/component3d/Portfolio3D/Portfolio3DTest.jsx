@@ -4,40 +4,40 @@ import "./portfolioM.css";
 
 const Portfolio3DTest = () => {
   const section6 = [
-    "/img/3d/3d_portfolio_m/s6_1.jpg",
-    "/img/3d/3d_portfolio_m/s6_2.jpg",
-    "/img/3d/3d_portfolio_m/s6_3.jpg",
+    "/img/3d/3d_portfolio_m/s6_1.webp",
+    "/img/3d/3d_portfolio_m/s6_2.webp",
+    "/img/3d/3d_portfolio_m/s6_3.webp",
   ];
   const section7 = [
-    "/img/3d/3d_portfolio_m/s7_1.jpg",
-    "/img/3d/3d_portfolio_m/s7_2.jpg",
-    "/img/3d/3d_portfolio_m/s7_3.jpg",
-    "/img/3d/3d_portfolio_m/s7_4.jpg",
-    "/img/3d/3d_portfolio_m/s7_5.jpg",
-    "/img/3d/3d_portfolio_m/s7_6.jpg",
+    "/img/3d/3d_portfolio_m/s7_1.webp",
+    "/img/3d/3d_portfolio_m/s7_2.webp",
+    "/img/3d/3d_portfolio_m/s7_3.webp",
+    "/img/3d/3d_portfolio_m/s7_4.webp",
+    "/img/3d/3d_portfolio_m/s7_5.webp",
+    "/img/3d/3d_portfolio_m/s7_6.webp",
   ];
   const section9 = [
-    "/img/3d/3d_portfolio_m/s9_1.jpg",
-    "/img/3d/3d_portfolio_m/s9_2.jpg",
-    "/img/3d/3d_portfolio_m/s9_3.jpg",
+    "/img/3d/3d_portfolio_m/s9_1.webp",
+    "/img/3d/3d_portfolio_m/s9_2.webp",
+    "/img/3d/3d_portfolio_m/s9_3.webp",
   ];
   const section10 = [
-    "/img/3d/3d_portfolio_m/s10_2.jpg",
-    "/img/3d/3d_portfolio_m/s10_3.jpg",
-    "/img/3d/3d_portfolio_m/s10_1.jpg",
-    "/img/3d/3d_portfolio_m/s10_4.jpg",
-    "/img/3d/3d_portfolio_m/s10_5.jpg",
-    "/img/3d/3d_portfolio_m/s10_6.jpg",
-    "/img/3d/3d_portfolio_m/s10_7.jpg",
-    "/img/3d/3d_portfolio_m/s10_8.jpg",
-    "/img/3d/3d_portfolio_m/s10_9.jpg",
-    "/img/3d/3d_portfolio_m/s10_10.jpg",
+    "/img/3d/3d_portfolio_m/s10_2.webp",
+    "/img/3d/3d_portfolio_m/s10_3.webp",
+    "/img/3d/3d_portfolio_m/s10_1.webp",
+    "/img/3d/3d_portfolio_m/s10_4.webp",
+    "/img/3d/3d_portfolio_m/s10_5.webp",
+    "/img/3d/3d_portfolio_m/s10_6.webp",
+    "/img/3d/3d_portfolio_m/s10_7.webp",
+    "/img/3d/3d_portfolio_m/s10_8.webp",
+    "/img/3d/3d_portfolio_m/s10_9.webp",
+    "/img/3d/3d_portfolio_m/s10_10.webp",
   ];
   const section11 = [
-    "/img/3d/3d_portfolio_m/s11_1.jpg",
-    "/img/3d/3d_portfolio_m/s11_2.jpg",
-    "/img/3d/3d_portfolio_m/s11_3.jpg",
-    "/img/3d/3d_portfolio_m/s11_4.jpg",
+    "/img/3d/3d_portfolio_m/s11_1.webp",
+    "/img/3d/3d_portfolio_m/s11_2.webp",
+    "/img/3d/3d_portfolio_m/s11_3.webp",
+    "/img/3d/3d_portfolio_m/s11_4.webp",
   ];
 
   const [isPlaying, setIsPlaying] = useState(false);
@@ -421,7 +421,7 @@ const Portfolio3DTest = () => {
                   ? "opacity-100 translate-x-0"
                   : "opacity-0 -translate-x-20"
               }`} >
-            <img src="/img/3d/3d_portfolio_m/s4.jpg" />
+            <img src="/img/3d/3d_portfolio_m/s4.webp" />
             <div className="absolute left-0 bottom-0">
               <img src="/img/3d/3d_portfolio_m/A.png" />
             </div>
@@ -445,7 +445,7 @@ const Portfolio3DTest = () => {
       </div>
       {/* ------------------------------------section 04 end----------------------------- */}
       {/* -------------------------------------section 05 start------------------------------- */}
-      <div className="h-screen">
+      <div className="se-1-bg h-screen">
         <div ref={ref3} className="relative">
           <img className="" src="/img/3d/3d_portfolio_m/s5_2.jpg" />
           <div
@@ -461,7 +461,7 @@ const Portfolio3DTest = () => {
           <div  className={`transition-all duration-1000 absolute bottom-[-270px] right-4  ${
               inView3 ? "opacity-100 translate-x-0" : "opacity-0 translate-x-20"
             }`} >
-            <img className="w-[130px]" src="/img/3d/3d_portfolio_m/s5_5.png" />
+            <img className="w-[130px]" src="/img/3d/3d_portfolio_m/s5_5.webp" />
           </div>
           <div  className={`transition-all duration-1000 absolute bottom-[-249px] right-[148px]  ${
               inView3 ? "opacity-100 translate-y-0" : "opacity-0 translate-y-20"
@@ -843,7 +843,7 @@ const Portfolio3DTest = () => {
             <>
               <img
                 className="w-full h-full object-cover absolute inset-0 m-auto"
-                src="/img/3d/3d_portfolio_m/s15.jpg"
+                src="/img/3d/3d_portfolio_m/s15.webp"
                 alt="Video Placeholder"
               />
               <img
