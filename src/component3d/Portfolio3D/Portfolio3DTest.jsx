@@ -15,11 +15,17 @@ const Portfolio3DTest = () => {
     "/img/3d/3d_portfolio_m/s7_4.webp",
     "/img/3d/3d_portfolio_m/s7_5.webp",
     "/img/3d/3d_portfolio_m/s7_6.webp",
+    "/img/3d/3d_portfolio_m/s7_7.webp",
+    "/img/3d/3d_portfolio_m/s7_8.webp",
   ];
   const section9 = [
     "/img/3d/3d_portfolio_m/s9_1.webp",
     "/img/3d/3d_portfolio_m/s9_2.webp",
     "/img/3d/3d_portfolio_m/s9_3.webp",
+    "/img/3d/3d_portfolio_m/s9_4.webp",
+    "/img/3d/3d_portfolio_m/s9_5.webp",
+    "/img/3d/3d_portfolio_m/s9_6.webp",
+    "/img/3d/3d_portfolio_m/s9_7.webp",
   ];
   const section10 = [
     "/img/3d/3d_portfolio_m/s10_2.webp",
