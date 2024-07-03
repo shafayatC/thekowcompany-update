@@ -1,13 +1,39 @@
 import "./career.css";
 import { SlCalender } from "react-icons/sl";
 import { MdOutlineEmail } from "react-icons/md";
+import { useState } from "react";
 
 const Career = () => {
+    const [jobCircular] = useState([
+        {
+            id: 1,
+            title: "Sales Executive",
+            date: "30th Jan, 2023"
+        },
+        {
+            id: 2,
+            title: "UI/UX Designer",
+            date: "30th Jan, 2023"
+        }, 
+        {
+            id: 3,
+            title: "Software Developer",
+            date: "30th Jan, 2023"
+        },
+        {
+            id: 4,
+            title: "Sales Executive",
+            date: "30th Jan, 2023"
+        }   
+    ])
     const submitCvFunc = () => {
         alert("Thank you for submitting your CV. We will get back to you soon!")
     }
+
+
   return (
     <div className="career-bg h-[100vh]">
+
       <div className="container mx-auto">
         <div className="flex flex-col items-center ">
           <div className="w-[450px] mt-[100px]">
@@ -62,6 +88,7 @@ const Career = () => {
        </div>
       </div>
     </div>
+    </>
   );
 };
 
