@@ -2,7 +2,7 @@ import { useEffect, useRef, useState } from "react";
 import { useInView } from "react-intersection-observer";
 import "./portfolioM.css";
 
-const Portfolio3DTest = () => {
+const PortfolioTab = () => {
   const section6 = [
     "/img/3d/3d_portfolio_m/s6_1.webp",
     "/img/3d/3d_portfolio_m/s6_2.webp",
@@ -890,4 +890,4 @@ const Portfolio3DTest = () => {
   );
 };
 
-export default Portfolio3DTest;
+export default PortfolioTab;
