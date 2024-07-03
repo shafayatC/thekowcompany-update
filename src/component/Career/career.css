@@ -1,6 +1,7 @@
 .career-bg{
-    background-image: url("./img/career.jpg");
+    background-image: url("./img/ca_bg.jpg");
     background-position: center;
     background-repeat: no-repeat;
-    /* background-size: cover; */
+    background-size: cover;
+    
 }

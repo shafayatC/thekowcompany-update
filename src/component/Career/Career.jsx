@@ -32,8 +32,8 @@ const Career = () => {
 
 
   return (
-    <>
-    <div className="bg-[#F3F0F1] h-[100vh]">
+    <div className="career-bg h-[100vh]">
+
       <div className="container mx-auto">
         <div className="flex flex-col items-center ">
           <div className="w-[450px] mt-[100px]">
@@ -71,17 +71,17 @@ const Career = () => {
        <div className="w-[450px]"> 
             <div className="flex flex-col items-start">
                 <div className="flex justify-center items-center gap-2">
-                    <SlCalender className="text-[#92988D]"/>
+                    <SlCalender className="text-green-800"/>
                 <h1>APPLY BEFORE</h1>
                 </div>
-                <h1>31st July, 2024 </h1>
+                <h1 className="text-xs pl-5">31st July, 2024 </h1>
             </div>
             <div className="flex flex-col items-start">
             <div className="flex justify-center items-center gap-2">
-            <MdOutlineEmail className="text-[#92988D]"/> 
+            <MdOutlineEmail className="text-green-800 text-xl"/> 
             <h1>AT</h1>
             </div>
-            <h1>career@thekowcompany.com</h1>
+            <h1 className="text-xs pl-5">career@thekowcompany.com</h1>
             </div>
         </div>
 
