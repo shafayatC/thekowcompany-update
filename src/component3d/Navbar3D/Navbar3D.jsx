@@ -111,6 +111,15 @@ const Navbar3D = () => {
                 >
                   CONTACT US
                 </Link>
+                
+                <Link
+                  aria-label="Contact-us"
+                  to="/career"
+                  target="_blank"
+                  className="text-gray-800 text-xl lg:text-sm font-medium"
+                >
+                  CAREER
+                </Link>
                 {/* <Link
                   aria-label="creative-showcase"
                   to={"/3d/creative-showcase"}
@@ -303,6 +312,14 @@ const Navbar3D = () => {
                     className="transition-all duration-300 text-gray-800 text-base border-b-2 border-[#376f50] font-semibold py-3 hover:bg-[#376f50] hover:border-b-2 hover:border-[#7C9C30] hover:text-white"
                   >
                     Book A Call
+                  </Link>
+                  
+                  <Link
+                    aria-label="Career"
+                    to="/career"
+                    className="transition-all duration-300 text-gray-800 text-base border-b-2 border-[#376f50] font-semibold py-3 hover:bg-[#376f50] hover:border-b-2 hover:border-[#7C9C30] hover:text-white"
+                  >
+                    CAREER
                   </Link>
                   {/* <Link onClick={() => setMenuBool(false)} to="/" className="transition-all duration-300 flex flex-col items-center text-gray-800 text-[32px] border-b-2 py-3 hover:bg-[#376f50] border-[#376f50] font-semibold hover:border-b-2 hover:border-[#7C9C30] hover:text-white"><GoHomeFill /></Link> */}
                 </div>
