@@ -24,7 +24,7 @@ const Container3D = () => {
             <Title>The KOW Company 3D</Title>
             <Meta name="description" content="Elevate your brand with expert 3D modeling and CGI services. Collaborate with top designers for high-quality visuals tailored to retail. Boost sales with captivating product image rendering."/>
         </HeadProvider>
-        <div>
+        <div>  
             <ScrolTop />
             <Navbar3D />
             <ProductVideoLatest

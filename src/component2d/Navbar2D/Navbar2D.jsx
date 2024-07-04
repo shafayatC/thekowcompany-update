@@ -12,7 +12,7 @@ const Navbar2D = () => {
     <>
       {/* <div className="bg-[#DEE2E2] font-sans w-full min-h-screen m-0"> */}
       <div className="bg-[#DEE2E2] sticky w-full top-0 z-[999]  shadow-xl md:shadow-none">
-        <MegaNavbar/>
+        <MegaNavbar/> 
         <div className="container mx-auto py-1">
           <div className="hidden lg:flex items-center justify-between gap-3">
             <Link aria-label="home" to={"/"}>

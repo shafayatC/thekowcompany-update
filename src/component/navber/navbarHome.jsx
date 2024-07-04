@@ -9,7 +9,7 @@ import MegaNavbar from "../MegaNavbar/MegaNavbar";
 import { IoLanguage } from "react-icons/io5";
 import { IoMdArrowDropdown } from "react-icons/io";
 import GoogleTranslate from "../GoogleTranslate/GoogleTranslate";
-
+ 
 const NavbarHome = () => {
   const [dropdownOpen, setDropdownOpen] = useState(false);
   const { handleTranslate } = GoogleTranslate();

@@ -15,7 +15,7 @@ function CareerThankYou() {
       <div className="my-20 container mx-auto">
         <div className="">
           <p
-            style={{
+            style={{ 
               fontWeight: "700",
               fontSize: "100px",
               marginTop: "4%",
