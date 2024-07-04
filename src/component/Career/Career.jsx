@@ -45,21 +45,30 @@ const Career = () => {
 
                 <div className="container mx-auto">
                     <div className="flex flex-col items-center ">
-                        <div className="w-full md:w-[450px] mt-[100px] text-center md:text-left">
-                            <h1 className="text-[30px] font-bold text-[#57524B]">WE ARE</h1>
-                            <h1 className="text-[90px] md:text-[140px] font-bold leading-[80px] md:leading-[110px] text-[#57524B] -ml-2">HIRING</h1>
+                        <div className="w-full md:w-[450px] mt-[60px] md:mt-[120px]  text-center md:text-left">
+                            <h1 className="text-[24px] font-bold text-[#57524B]">WE ARE</h1>
+                            <h1 className="text-[90px] md:text-[120px] font-bold leading-[80px] md:leading-[100px] text-[#57524B] -ml-2">HIRING</h1>
                         </div>
                     </div>
+
+                   <div className="flex justify-center">
+                   <div className="w-full md:w-[450px] ">
+                      <h1 className="text-[12px] text-green-700 font-semibold">Note : Please select a position and submit your curriculum vitae at your earliest convenience.</h1>
+                    </div>
+                   </div>
 
                     <div className="flex flex-col items-center">
                         <div className=" md:w-[450px] mt-5  border-black border-l-2 pl-3">
 
                             {
                                 jobCircular.map((item, index) =>
-                                    <div key={index}>
-                                        <button onClick={() => submitCvFunc(item)} className="bg-gray-200 px-4 py-1 mb-2 text-left rounded-md w-[140px]">
+                                    <div key={index} className="">
+                                        <button onClick={() => submitCvFunc(item)} className="bg-gray-200 px-4 py-1 text-[14px] mb-2 text-left rounded-md w-[120px]">
                                            {item.title}
                                         </button>
+                                        <div>
+                                            <h1 className="text-xs">{item.date}</h1>
+                                        </div>
                                     </div>
                                 )
 
