@@ -51,7 +51,7 @@ const Container3D = () => {
                     <ProductVisualSlider />
                 {/* </ScrollEffect> */}
                 {/* <ScrollEffect offset={100}> */}
-                    <Model3D />
+                    {/* <Model3D /> */}
                 {/* </ScrollEffect> */}
                 {/* <ScrollEffect id="3d-trends" offset={100}> */}
                     <Trends3D />

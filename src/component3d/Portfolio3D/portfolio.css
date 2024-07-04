@@ -1,0 +1,154 @@
+@import url(https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap);
+
+.poppins-thin {
+	font-family: Poppins, sans-serif;
+	font-weight: 100;
+	font-style: normal
+}
+
+.poppins-extralight {
+	font-family: Poppins, sans-serif;
+	font-weight: 200;
+	font-style: normal
+}
+
+.poppins-light {
+	font-family: Poppins, sans-serif;
+	font-weight: 300;
+	font-style: normal
+}
+
+.poppins-regular {
+	font-family: Poppins, sans-serif;
+	font-weight: 400;
+	font-style: normal
+}
+
+.poppins-medium {
+	font-family: Poppins, sans-serif;
+	font-weight: 500;
+	font-style: normal
+}
+
+.poppins-semibold {
+	font-family: Poppins, sans-serif;
+	font-weight: 600;
+	font-style: normal
+}
+
+.poppins-bold {
+	font-family: Poppins, sans-serif;
+	font-weight: 700;
+	font-style: normal
+}
+
+.poppins-extrabold {
+	font-family: Poppins, sans-serif;
+	font-weight: 800;
+	font-style: normal
+}
+
+.poppins-black {
+	font-family: Poppins, sans-serif;
+	font-weight: 900;
+	font-style: normal
+}
+
+.section-1-bg {
+	background-image: url('/img/3d/3d_portfolio/S1_Cover.jpg');
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover
+}
+
+.section-2-bg {
+	background-image: url('/img/3d/3d_portfolio/s2_bg.jpg');
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover
+}
+
+.section-3-bg {
+	background-image: url('/img/3d/3d_portfolio/S3_About.jpg');
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: 100% 100%
+}
+
+.section-13-bg {
+	background-image: url('/img/3d/3d_portfolio/S13FR_Cover.jpg');
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover
+}
+
+.section-15-bg {
+	background-image: url('/img/3d/3d_portfolio/S15_FR_Image-Background_02.png');
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover
+}
+
+.section-17-bg {
+	background-image: url('/img/3d/3d_portfolio/S17_P_Cover.jpg');
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover
+}
+
+.section-18-bg {
+	background-image: url('/img/3d/3d_portfolio/S18_Image-BG.jpg');
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover
+}
+
+.section-19-bg {
+	background-image: url('/img/3d/3d_portfolio/S19_Image-BG.jpg');
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover
+}
+
+.section-20-bg {
+	background-image: url('/img/3d/3d_portfolio/S20_Image-BG.jpg');
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover
+}
+
+.section-23-bg {
+	background-image: url('/img/3d/3d_portfolio/s23.jpg');
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover
+}
+
+.section-25-bg {
+	background-image: url('/img/3d/3d_portfolio/s25.jpg');
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover
+}
+
+.section-26-bg {
+	background-image: url('/img/3d/3d_portfolio/S19_Image-BG.jpg');
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover
+}
+
+.section-30-bg {
+	background-image: url('/img/3d/3d_portfolio/s30_bg.jpg');
+	opacity: .7;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover
+}
+
+.section-31-bg {
+	background-image: url('/img/3d/3d_portfolio/S1_Cover.jpg');
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover
+}
