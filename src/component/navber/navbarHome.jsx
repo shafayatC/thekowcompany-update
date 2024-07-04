@@ -134,6 +134,18 @@ const NavbarHome = () => {
             >
               INDUSTRY TRENDS
             </HashLink>
+            <Link
+              aria-label="trends"
+              to="/career"
+              target="_blank"
+              className={` text-xs lg:text-sm font-semibold ${
+                screenLeft
+                  ? "text-gray-800 border-[#DEE2E2] border-b-2  hover:border-b-2 hover:border-[#7C9C30] "
+                  : "text-white hover:text-[#7C9C30]"
+              } `}
+            >
+              CAREER
+            </Link>
             {/* <HashLink to="/#virtual" className={` text-xs lg:text-sm font-semibold ${ screenLeft ? 'text-gray-800 border-[#DEE2E2] border-b-2  hover:border-b-2 hover:border-[#7C9C30] ' : 'text-white hover:text-[#7C9C30]'} `}>VIRTUAL TOUR</HashLink> */}
             <a
               aria-label="sign up"
@@ -336,6 +348,14 @@ const NavbarHome = () => {
                   className="transition-all duration-300 text-gray-800 text-base border-b-2 border-[#DEE2E2] font-semibold py-3 hover:bg-[#cfd6d6] hover:border-b-2 hover:border-[#7C9C30]"
                 >
                   Book A Call
+                </Link>
+                
+                <Link
+                  onClick={() => setMenuBool(false)}
+                  to="/career"
+                  className="transition-all duration-300 text-gray-800 text-base border-b-2 border-[#DEE2E2] font-semibold py-3 hover:bg-[#cfd6d6] hover:border-b-2 hover:border-[#7C9C30]"
+                >
+                  CAREER
                 </Link>
                 <div className="flex justify-center mb-2">
                   <button
