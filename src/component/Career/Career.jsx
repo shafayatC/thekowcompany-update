@@ -4,7 +4,7 @@ import { MdOutlineEmail } from "react-icons/md";
 import { useState } from "react";
 import CareerMail from "./careerMail";
 
-const Career = () => {
+const Career = () => { 
     const [jobCircular] = useState([
         {
             id: 1,
