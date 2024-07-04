@@ -6,7 +6,16 @@
     background-size: cover;
 }
 
-
+.career-top-bg {
+    background-image: url("/img/light.png");
+    background-size: 100%;
+    background-repeat: no-repeat;
+}
+.career-bottom-bg {
+    background-image: url("/img/chair.png");
+    background-size: 100%;
+    background-repeat: no-repeat; 
+}
 .job-des p{ 
     padding-bottom: 20px;
 }

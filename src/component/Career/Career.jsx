@@ -101,12 +101,13 @@ const Career = () => {
     };
     return (
         <>
-            <div className="career-bg h-[100vh]">
+            {/* <div className="career-bg h-[100vh]"> */}
+            <div className="bg-gradient-to-t from-[#ebebeb] to-[#cdcbcc] h-[100vh]">
                 <div className="container mx-auto relative h-screen">
                     {/* <div dangerouslySetInnerHTML={{ __html: jobCircular[0].description }} /> */}
 
                     <div className="flex flex-col items-center ">
-                        <div className="w-full md:w-[450px] mt-[60px] md:mt-[120px]  text-center md:text-left">
+                        <div className="w-full md:w-[450px] mt-[140px] md:mt-[120px]  text-center md:text-left">
                             <h1 className="text-[24px] font-bold text-[#57524B]">WE ARE</h1>
                             <h1 className="text-[90px] md:text-[120px] font-bold leading-[80px] md:leading-[100px] text-[#57524B] -ml-2">
                                 HIRING
@@ -152,6 +153,21 @@ const Career = () => {
                         </div>
                     </div>
 
+                    <div class="flex justify-center mt-7">
+                        <div class="md:w-[450px]">
+                            <div class="flex flex-col justify-center items-center md:items-start ">
+
+                                <div class="flex flex-col justify-center items-center md:items-start pt-5 md:pt-0 ">
+                                    <div class="flex justify-center items-center gap-2">
+                                        <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 24 24" class="text-green-800 text-xl" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg">
+                                            <path fill="none" d="M0 0h24v24H0V0z"></path><path d="M22 6c0-1.1-.9-2-2-2H4c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6zm-2 0l-8 5-8-5h16zm0 12H4V8l8 5 8-5v10z"></path></svg>
+                                        <h1 class="text-sm  font-bold">career@thekowcompany.com</h1>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    {/*                     
                     <div className="absolute bottom-5 right-5">
                         <div className="flex justify-center items-center gap-1">
                             <MdOutlineEmail className="text-green-800 text-xl" />
@@ -159,7 +175,10 @@ const Career = () => {
                                 career@thekowcompany.com
                             </h1>
                         </div>
-                    </div>
+                    </div> */}
+
+                    <div className="career-top-bg absolute top-0 left-[50%] md:left-[35%] -translate-x-[50%] md:-translate-x-[35%] w-20 h-32"></div>
+                    <div className="career-bottom-bg absolute bottom-[25px] right-6 md:right-[20%] md:-translate-x-[20%] w-[200px] h-[170px] "></div>
                 </div>
                 {/* ------------------------------------main modal ----------------------------------- */}
 
