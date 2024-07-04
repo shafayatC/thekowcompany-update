@@ -12,7 +12,7 @@
     background-repeat: no-repeat;
 }
 .career-bottom-bg {
-    background-image: url("/img/chair.png");
+    background-image: url("/img/chair-shadow.png");
     background-size: 100%;
     background-repeat: no-repeat; 
 }
@@ -36,6 +36,11 @@
     font-size: 20px;
     font-weight: bold;
     padding-bottom: 20px;
+}
+.job-des h4 {
+    font-size: 20px;
+    font-weight: bold;
+    padding-bottom: 5px;
 }
 .job-des ul {
     list-style: unset;
