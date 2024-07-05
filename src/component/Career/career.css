@@ -57,7 +57,7 @@
 
 /* ------------------------------------------------------------------------------ */
 
-
+/* 
 @keyframes active {
   from {
     box-shadow: 0 4px 3px 1px #FCFCFC, 0 6px 8px #D6D7D9, 0 -4px 4px #CECFD1, 0 -6px 4px #FEFEFE, inset 0 0 10px 0px rgba(0, 0, 250, 0.6);
@@ -122,4 +122,4 @@ buttonAnim:active:not([disabled]) > *,
 [role="buttonAnim"]:active:not([disabled]) > * {
   transform: scale(0.95);
 }
-
+ */

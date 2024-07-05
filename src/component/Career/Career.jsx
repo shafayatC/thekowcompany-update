@@ -295,8 +295,8 @@ const Career = () => {
 
           <div className="flex flex-col items-center ">
             <div className="w-full md:w-[450px] mt-[140px] md:mt-[120px]  text-center md:text-left">
-              <h1 className="text-[24px] 2xl:text-[40px] font-bold text-[#57524B]">WE ARE</h1>
-              <h1 className="text-[90px] md:text-[120px] 2xl:text-[150px] font-bold leading-[80px] md:leading-[100px] text-[#57524B] -ml-2">
+              <h1 className="text-[18px] md:text-[24px] 2xl:text-[40px] font-bold text-[#57524B]">WE ARE</h1>
+              <h1 className="text-[60px]  md:text-[120px] 2xl:text-[150px] font-bold leading-[80px] md:leading-[100px] text-[#57524B] -ml-2">
                 HIRING
               </h1>
             </div>
@@ -321,7 +321,7 @@ const Career = () => {
                         onClick={() => openModal(item)}
                         // className="buttonAnim  hover:bg-green-600 hover:text-white "
                         // role="buttonAnim"
-                         className="bg-gray-300 font-semibold border-green-700 px-2 hover:bg-green-600  hover:text-white py-1 mb-2 text-left text-[12px] 2xl:text-[16px] shadow-md rounded-md w-[180px] 2xl:w-[230px]"
+                         className="bg-gray-300 font-semibold border-green-700 px-2 hover:bg-green-600  hover:text-white py-1 mb-2 text-left text-[12px] 2xl:text-[16px] shadow-md rounded-md w-[165px] 2xl:w-[230px]"
                       >
                         <span> {item.title}</span>
                       </button>
@@ -387,7 +387,7 @@ const Career = () => {
         <div className="w-full flex justify-center">
         <div className="flex justify-center  md:justify-end w-full md:w-[900px] 2xl:w-[1100px] ">
           
-          <img src="/img/chair-shadow.png" className="max-w-[330px] max-h-[270px] sm:-mt-[240px]  " />
+          <img src="/img/chair-shadow.png" className=" max-w-[230px]  md:max-w-[330px] md:max-h-[270px] sm:-mt-[240px]  " />
           </div>
         </div>
           
@@ -401,7 +401,7 @@ const Career = () => {
               className="absolute bg-gray-800 bg-opacity-50 inset-0"
               onClick={closeModal}
             ></div>
-            <div className="bg-white rounded-lg mx-10 md:mx-0  h-[500px] overflow-y-auto shadow-xl transform transition-all w-full md:w-[700px] p-6">
+            <div className="bg-white rounded-lg mx-2 md:mx-0  h-[500px] overflow-y-auto shadow-xl transform transition-all w-full md:w-[700px] p-6">
               <div className="flex justify-end">
                 <button
                   onClick={closeModal}
