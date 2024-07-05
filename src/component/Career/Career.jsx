@@ -5,11 +5,11 @@ import { useState } from "react";
 import CareerMail from "./careerMail";
 
 const Career = () => {
-    const [jobCircular] = useState([
-        {
-            id: 1,
-            title: "Creative Designer",
-            description: `<div class="job-des">
+  const [jobCircular] = useState([
+    {
+      id: 1,
+      title: "Creative Designer",
+      description: `<div class="job-des">
 <h1>Creative Designer for Marketing Team (Vacancy 02)</h1>
     <p>We strongly encourage you to read the whole circular prior to applying</p>
     
@@ -64,12 +64,12 @@ const Career = () => {
 	</div>
 
 `,
-            date: "31 July, 2024",
-        },
-        {
-            id: 2,
-            title: "UI/UX Designer",
-            description: `<div class="job-des">
+      date: "31 July, 2024",
+    },
+    {
+      id: 2,
+      title: "UI/UX Designer",
+      description: `<div class="job-des">
   <h1>UI/UX Designer</h1>
     <p>The KOW Company Ltd is looking for a brilliant UI/UX designer to join our dynamic team and be the creative force behind our cutting-edge projects. As a UI/UX designer with 1-3 years of hands-on experience, you will craft seamless, visually stunning user experiences that leave a lasting impact.</p>
     
@@ -102,12 +102,12 @@ const Career = () => {
 	</div>
 
 `,
-            date: "31 July, 2024",
-        },
-        {
-            id: 3,
-            title: "Strategy and Risk Analyst",
-            description: `  <div class="job-des">
+      date: "31 July, 2024",
+    },
+    {
+      id: 3,
+      title: "Strategy and Risk Analyst",
+      description: `  <div class="job-des">
    <h1>Strategy and Risk Analyst for Marketing Team (Vacancy 01)</h1>
     <p><strong>We strongly encourage you to read the whole circular prior to applying</strong></p>
 
@@ -155,12 +155,12 @@ const Career = () => {
      <p><strong>Email at: </strong><a href="mailto:career@thekowcompany.com">career@thekowcompany.com</a></p>
         <p><strong>Email Before:</strong> 31st July 2024</p>
 </div>`,
-            date: "31 July, 2024",
-        },
-        {
-            id: 4,
-            title: ".NET Developer",
-            description: `  <div class="job-des">
+      date: "31 July, 2024",
+    },
+    {
+      id: 4,
+      title: ".NET Developer",
+      description: `  <div class="job-des">
  <h1>Software Engineer (.Net)</h1>
 	<h4>Vacancy</h4>
 	<p>1</p>
@@ -203,106 +203,170 @@ const Career = () => {
     <p><strong>Email at:</strong> <a href="mailto:career@thekowcompany.com">career@thekowcompany.com</a></p>
     <p><strong>Email Before:</strong> 31st July 2024</p>
 </div>`,
-            date: "31 July, 2024",
-        },
-    ]);
-    const [isOpen, setIsOpen] = useState(false);
-    const [cvData, setCvData] = useState({});
-    const [isModalOpen, setIsModalOpen] = useState(false);
+      date: "31 July, 2024",
+    },
+    {
+      id: 5,
+      title: "Project Management Executive",
+      description: `  <div class="job-des">
+ <h1>Project Management Executive</h1>
+ <h1>Vacancy (03)</h1>
+	
 
-    const openModal = (data) => {
-        setCvData(data);
-        setIsModalOpen(true);
-    };
+    <p>We are seeking a dynamic and detail-oriented Project Management Executive to manage various image and video post-production projects for our organization.</p>
+    <h3>Job Responsibilities:</h3>
+    <ul>
+        <li>Oversee & manage end-to-end project lifecycle for all post-production projects.</li>
+        <li>Coordinate with clients to define project scope, goals, deliverables, required resources, budget & timing.</li>
+        <li>Develop detailed project plans.</li>
+        <li>Communicate and collaborate with production & editing teams to align objectives.</li>
+        <li>Manage client relationships, ensure client satisfaction & manage client expectations in terms of project deliverables.</li>
+        
+    </ul>
+    <h3>Qualifications:</h3>
+    <ul>
+        <li>Bachelor's degree in Business, Management, or any related field. Proven working experience in project management or related field.</li>
+        <li>Freshers are also encouraged to apply.</li>
+        <li>Experience in image & video post-production processes (editing, color grading, masking etc.) is a plus.</li>
+        <li>Excellent client-oriented & internal communication skills.</li>
+        <li>Proficiency with project management software tools, MS Office Suites, methodologies & best practices.</li>
+        
+    </ul>
+   
+    <h3>Benefits:</h3>
+    <ol>
+        <li>🎁 Festival Bonuses: Enjoy 2 Festival Bonuses as per company policy.</li>
+        <li>🍽️ Meal Facility: Fully subsidized meal facility to keep you fueled throughout the day.</li>
+        <li>🌿 Healthy Work Environment: Work in a supportive and positive atmosphere.</li>
+        <li>🎄 Christmas Leave: Celebrate the holidays with a special leave.</li>
+        <li>🚀 Career Advancement: Opportunities for growth and professional development.</li>
+        <li>🏝️ Yearly Office Retreat: Relax and recharge with your colleagues.</li>
+        <li>🎉 Events Celebration: Enjoy various events celebrated at our office premises.</li>
+        <li>🏏 Annual Tournaments: Participate in our Annual Cricket and Football Tournament.</li>
+        <li>🎲 Indoor Games: Have fun with Carrom and Table Tennis during breaks.</li>
+       
+    </ol>
+    
+    <h3>Job Location</h3>
+    <p>Dhaka</p>
+    <h3>Salary</h3>
+    <p>Negotiable</p>
+    <p><strong>Email at:</strong> <a href="mailto:career@thekowcompany.com">career@thekowcompany.com</a></p>
+    <p><strong>Email Before:</strong> 15 July 2024</p>
+    <p>• Most importantly mentioning in the Subject Line: Applying as a "Project Management Executive"</p>
+</div>`,
+      date: "15 July, 2024",
+    },
+  ]);
+  const [isOpen, setIsOpen] = useState(false);
+  const [cvData, setCvData] = useState({});
+  const [isModalOpen, setIsModalOpen] = useState(false);
 
-    const closeModal = () => {
-        setIsModalOpen(false);
-    };
-    const submitCvFunc = () => {
-        setIsOpen(true);
-        setIsModalOpen(false);
-    };
+  const openModal = (data) => {
+    setCvData(data);
+    setIsModalOpen(true);
+  };
 
-    const onClose = () => {
-        console.log("closed");
-        setIsOpen(false);
-    };
+  const closeModal = () => {
+    setIsModalOpen(false);
+  };
+  const submitCvFunc = () => {
+    setIsOpen(true);
+    setIsModalOpen(false);
+  };
 
-    const compareCurrentDate = (d) => {
-        const currentDate = new Date();
-        const selectedDate = new Date(d);
-        // console.log("currentDate",  currentDate.getTime() < selectedDate.getTime());
-        return currentDate.getTime() < selectedDate.getTime();
-    };
-    return (
-        <>
-            {/* <div className="career-bg h-[100vh]"> */}
-            <div className="bg-gradient-to-t from-[#ebebeb] to-[#cdcbcc] ">
-                <div className="container mx-auto relative min-h-screen">
-                    {/* <div dangerouslySetInnerHTML={{ __html: jobCircular[0].description }} /> */}
+  const onClose = () => {
+    console.log("closed");
+    setIsOpen(false);
+  };
 
-                    <div className="flex flex-col items-center ">
-                        <div className="w-full md:w-[450px] mt-[140px] md:mt-[120px]  text-center md:text-left">
-                            <h1 className="text-[24px] font-bold text-[#57524B]">WE ARE</h1>
-                            <h1 className="text-[90px] md:text-[120px] font-bold leading-[80px] md:leading-[100px] text-[#57524B] -ml-2">
-                                HIRING
-                            </h1>
-                        </div>
+  const compareCurrentDate = (d) => {
+    const currentDate = new Date();
+    const selectedDate = new Date(d);
+    // console.log("currentDate",  currentDate.getTime() < selectedDate.getTime());
+    return currentDate.getTime() < selectedDate.getTime();
+  };
+  return (
+    <>
+      {/* <div className="career-bg h-[100vh]"> */}
+      <div className="bg-gradient-to-t from-[#ebebeb] to-[#cdcbcc] ">
+        <div className="container mx-auto relative min-h-screen">
+          {/* <div dangerouslySetInnerHTML={{ __html: jobCircular[0].description }} /> */}
+
+          <div className="flex flex-col items-center ">
+            <div className="w-full md:w-[450px] mt-[140px] md:mt-[120px]  text-center md:text-left">
+              <h1 className="text-[24px] 2xl:text-[40px] font-bold text-[#57524B]">WE ARE</h1>
+              <h1 className="text-[90px] md:text-[120px] 2xl:text-[150px] font-bold leading-[80px] md:leading-[100px] text-[#57524B] -ml-2">
+                HIRING
+              </h1>
+            </div>
+          </div>
+
+          <div className="flex justify-center">
+            <div className="w-full  md:w-[450px] ">
+              <h1 className=" text-center md:text-left text-[12px] 2xl:text-[14px] 2xl:mt-5 text-green-700 font-semibold">
+                Note : Please select a position and submit your curriculum vitae
+                at your earliest convenience.
+              </h1>
+            </div>
+          </div>
+
+          <div className="flex flex-col items-center">
+            <div className=" md:w-[450px] mt-5 border-black border-l-2 pl-3">
+              {jobCircular.map((item, index) => (
+                <>
+                  {compareCurrentDate(item.date) && (
+                    <div className="flex  items-center gap-2" key={index}>
+                      <button
+                        onClick={() => openModal(item)}
+                        // className="buttonAnim  hover:bg-green-600 hover:text-white "
+                        // role="buttonAnim"
+                         className="bg-gray-300 font-semibold border-green-700 px-2 hover:bg-green-600  hover:text-white py-1 mb-2 text-left text-[12px] 2xl:text-[16px] shadow-md rounded-md w-[180px] 2xl:w-[230px]"
+                      >
+                        <span> {item.title}</span>
+                      </button>
+                      <div>
+                        <h1 className="text-xs 2xl:text-[14px]">
+                          Deadline :{" "}
+                          <span className="text-red-700 ">
+                            {item.date}
+                          </span>
+                        </h1>
+                      </div>
                     </div>
+                  )}
+                </>
+              ))}
+            </div>
+          </div>
 
-                    <div className="flex justify-center">
-                        <div className="w-full  md:w-[450px] ">
-                            <h1 className=" text-center md:text-left text-[12px] text-green-700 font-semibold">
-                                Note : Please select a position and submit your curriculum vitae
-                                at your earliest convenience.
-                            </h1>
-                        </div>
-                    </div>
-
-                    <div className="flex flex-col items-center">
-                        <div className=" md:w-[450px] mt-5  border-black border-l-2 pl-3">
-                            {jobCircular.map((item, index) => (
-                                <>
-                                    {
-                                        compareCurrentDate(item.date) &&
-                                        <div className="flex  items-center gap-2" key={index}>
-                                            <button
-                                                onClick={() => openModal(item)}
-                                                className="bg-gray-300 border-green-700 px-4 hover:bg-green-600 hover:text-white py-1 mb-2 text-left rounded-md w-[195px]"
-                                            >
-                                                {item.title}
-                                            </button>
-                                            <div>
-                                                <h1 className="text-xs ">
-                                                    Deadline :{" "}
-                                                    <span className="text-red-700 underline">
-                                                        {item.date}
-                                                    </span>
-                                                </h1>
-                                            </div>
-                                        </div>
-                                    }
-
-                                </>
-                            ))}
-                        </div>
-                    </div>
-
-                    <div class="flex justify-center mt-7">
-                        <div class="md:w-[450px]">
-                            <div class="flex flex-col justify-center items-center md:items-start ">
-
-                                <div class="flex flex-col justify-center items-center md:items-start pt-5 md:pt-0 ">
-                                    <div class="flex justify-center items-center gap-2">
-                                        <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 24 24" class="text-green-800 text-xl" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg">
-                                            <path fill="none" d="M0 0h24v24H0V0z"></path><path d="M22 6c0-1.1-.9-2-2-2H4c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6zm-2 0l-8 5-8-5h16zm0 12H4V8l8 5 8-5v10z"></path></svg>
-                                        <h1 class="text-sm  font-bold">career@thekowcompany.com</h1>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    {/*                     
+          <div className="flex justify-center mt-2">
+            <div className="md:w-[450px]">
+              <div className="flex flex-col justify-center items-center md:items-start ">
+                <div className="flex flex-col justify-center items-center md:items-start pt-3 pb-3 md:pt-0 2xl:pt-2 ">
+                  <div className="flex justify-center items-center gap-2">
+                    <svg
+                      stroke="currentColor"
+                      fill="currentColor"
+                      strokeWidth="0"
+                      viewBox="0 0 24 24"
+                      className="text-green-800 text-xl"
+                      height="1em"
+                      width="1em"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path fill="none" d="M0 0h24v24H0V0z"></path>
+                      <path d="M22 6c0-1.1-.9-2-2-2H4c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6zm-2 0l-8 5-8-5h16zm0 12H4V8l8 5 8-5v10z"></path>
+                    </svg>
+                    <h1 className="text-sm  font-bold">
+                      career@thekowcompany.com
+                    </h1>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          {/*                     
                     <div className="absolute bottom-5 right-5">
                         <div className="flex justify-center items-center gap-1">
                             <MdOutlineEmail className="text-green-800 text-xl" />
@@ -312,67 +376,82 @@ const Career = () => {
                         </div>
                     </div> */}
 
-                    <div className="career-top-bg absolute top-0 left-[50%] md:left-[37%] -translate-x-[50%] md:-translate-x-[37%] w-20 h-32"></div>
-                    <div className="flex flex-col justify-end items-end w-full md:w-[450px] mx-auto pt-5 md:pt-0">
-                        <div className="career-bottom-bg w-[230px] h-[186px] "></div>
-                    </div>
+          
+          <div className="career-top-bg absolute top-0 left-[50%] 2xl:left-[39%] -translate-x-[50%] xl:left-[38%] lg:left-[35%] md:left-[30%] 2xl:-translate-x-[37%] w-20 h-32">
+          <div>
+          <img src="/img/Light1.png" className="max-w-[300px] h-[300px] pt-[81px] ml-[-63px]" />
+          </div>
+           </div>
+         
+          
+        <div className="w-full flex justify-center">
+        <div className="flex justify-center  md:justify-end w-full md:w-[900px] 2xl:w-[1100px] ">
+          
+          <img src="/img/chair-shadow.png" className="max-w-[330px] max-h-[270px] sm:-mt-[240px]  " />
+          </div>
+        </div>
+          
+        </div>
+
+        {/* ------------------------------------main modal ----------------------------------- */}
+
+        {isModalOpen && (
+          <div className="fixed inset-0 flex items-center justify-center">
+            <div
+              className="absolute bg-gray-800 bg-opacity-50 inset-0"
+              onClick={closeModal}
+            ></div>
+            <div className="bg-white rounded-lg mx-10 md:mx-0  h-[500px] overflow-y-auto shadow-xl transform transition-all w-full md:w-[700px] p-6">
+              <div className="flex justify-end">
+                <button
+                  onClick={closeModal}
+                  className="text-gray-400 hover:text-gray-600"
+                >
+                  <svg
+                    className="w-6 h-6"
+                    fill="none"
+                    stroke="currentColor"
+                    viewBox="0 0 24 24"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
+                      strokeWidth="2"
+                      d="M6 18L18 6M6 6l12 12"
+                    ></path>
+                  </svg>
+                </button>
+              </div>
+
+              <div className="mt-4">
+                <h2 className="text-lg leading-6 font-medium text-gray-900">
+                  {cvData.title}
+                </h2>
+
+                <div
+                  dangerouslySetInnerHTML={{
+                    __html: cvData.description,
+                  }}
+                />
+
+                <div className="flex justify-center">
+                  <button
+                    onClick={() => submitCvFunc()}
+                    className="bg-teal-600 px-5 py-2 font-semibold text-white rounded-md"
+                  >
+                    Apply Now
+                  </button>
                 </div>
-                {/* ------------------------------------main modal ----------------------------------- */}
-
-                {isModalOpen && (
-                    <div className="fixed inset-0 flex items-center justify-center">
-                        <div className="absolute bg-gray-800 bg-opacity-50 inset-0" onClick={closeModal}></div>
-                        <div className="bg-white rounded-lg mx-10 md:mx-0  h-[500px] overflow-y-auto shadow-xl transform transition-all w-full md:w-[700px] p-6">
-                            <div className="flex justify-end">
-                                <button
-                                    onClick={closeModal}
-                                    className="text-gray-400 hover:text-gray-600"
-                                >
-                                    <svg
-                                        className="w-6 h-6"
-                                        fill="none"
-                                        stroke="currentColor"
-                                        viewBox="0 0 24 24"
-                                        xmlns="http://www.w3.org/2000/svg"
-                                    >
-                                        <path
-                                            strokeLinecap="round"
-                                            strokeLinejoin="round"
-                                            strokeWidth="2"
-                                            d="M6 18L18 6M6 6l12 12"
-                                        ></path>
-                                    </svg>
-                                </button>
-                            </div>
-
-                            <div className="mt-4">
-                                <h2 className="text-lg leading-6 font-medium text-gray-900">
-                                    {cvData.title}
-                                </h2>
-
-                                <div
-                                    dangerouslySetInnerHTML={{
-                                        __html: cvData.description,
-                                    }}
-                                />
-
-                                <div className="flex justify-center">
-                                    <button
-                                        onClick={() => submitCvFunc()}
-                                        className="bg-teal-600 px-5 py-2 font-semibold text-white rounded-md"
-                                    >
-                                        Apply Now
-                                    </button>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                )}
+              </div>
             </div>
+          </div>
+        )}
+      </div>
 
-            <CareerMail cvData={cvData} isOpen={isOpen} onClose={onClose} />
-        </>
-    );
+      <CareerMail cvData={cvData} isOpen={isOpen} onClose={onClose} />
+    </>
+  );
 };
 
 export default Career;
