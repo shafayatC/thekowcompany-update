@@ -2,7 +2,7 @@ import "./career.css";
 import { SlCalender } from "react-icons/sl";
 import { MdOutlineEmail } from "react-icons/md";
 import { useState } from "react";
-import CareerMail from "./careerMail";
+import CareerMail from "./CareerMail";
 
 const Career = () => {
   const [jobCircular] = useState([
