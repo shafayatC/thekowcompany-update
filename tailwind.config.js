@@ -9,13 +9,17 @@ export default {
       'tag-font' : ['Rubik Doodle Shadow', 'system-ui']
     },
     container: {
+      screens: {
+       
+        '2xl': '1600px',
+      },
 
       padding: {
         DEFAULT: '10px',
         sm: '10px',
         lg: '20px',
         xl: '20px',
-        '2xl': '20px',
+        '2xl': '0px',
       },
 
     },

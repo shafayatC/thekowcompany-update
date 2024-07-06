@@ -12,7 +12,7 @@ const Navbar2D = () => {
     <>
       {/* <div className="bg-[#DEE2E2] font-sans w-full min-h-screen m-0"> */}
       <div className="bg-[#DEE2E2] sticky w-full top-0 z-[999]  shadow-xl md:shadow-none">
-        <MegaNavbar/>
+        <MegaNavbar/> 
         <div className="container mx-auto py-1">
           <div className="hidden lg:flex items-center justify-between gap-3">
             <Link aria-label="home" to={"/"}>
@@ -59,6 +59,7 @@ const Navbar2D = () => {
               <Link aria-label="contact-us" onClick={() => setMenuBool(false)} to="/contact-us" className="transition-all duration-300 text-gray-800 text-base border-b-2 border-[#DEE2E2] font-semibold py-3 hover:bg-[#cfd6d6] hover:border-b-2 hover:border-[#7C9C30]">CONTACT US</Link>
               <a aria-label="sign-up" onClick={() => setMenuBool(false)} href="https://app.cutoutwiz.com/Identity/Account/Login?ReturnUrl=%2F" target="_blank" className="transition-all duration-300 text-gray-800 text-base border-b-2 border-[#DEE2E2] font-semibold py-3 hover:bg-[#cfd6d6] hover:border-b-2 hover:border-[#7C9C30]" rel="noreferrer">SIGN UP</a>
               <Link aria-label="book-a-call" to="/book-a-call" onClick={() => setMenuBool(false)}  className="transition-all duration-300 text-gray-800 text-base border-b-2 border-[#DEE2E2] font-semibold py-3 hover:bg-[#cfd6d6] hover:border-b-2 hover:border-[#7C9C30]">Book A Call</Link>
+              <Link aria-label="career" to="/career" onClick={() => setMenuBool(false)}  className="transition-all duration-300 text-gray-800 text-base border-b-2 border-[#DEE2E2] font-semibold py-3 hover:bg-[#cfd6d6] hover:border-b-2 hover:border-[#7C9C30]">CAREER</Link>
 
               {/* <Link onClick={() => setMenuBool(false)} to="/" className="transition-all duration-300 flex flex-col items-center text-gray-800 text-[32px] border-b-2 py-3 hover:bg-[#cfd6d6] border-[#DEE2E2] font-semibold hover:border-b-2 hover:border-[#7C9C30]"><GoHomeFill /></Link> */}
             </div>

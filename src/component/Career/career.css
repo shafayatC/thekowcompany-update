@@ -1,0 +1,125 @@
+
+.career-bg {
+    background-image: url("/img/career-bg.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.career-top-bg {
+    background-image: url("/img/light.png");
+    background-size: 100%;
+    background-repeat: no-repeat;
+}
+.career-bottom-bg {
+    background-image: url("/img/chair-shadow.png");
+    background-size: 100%;
+    background-repeat: no-repeat; 
+}
+.job-des p{ 
+    padding-bottom: 20px;
+}
+
+.job-des h1 {
+    font-size: 30px;
+    font-weight: bold;
+    padding-bottom: 5px;
+}
+
+.job-des h2 {
+    font-size: 25px;
+    font-weight: bold;
+    padding-bottom: 10px;
+}
+
+.job-des h3 {
+    font-size: 20px;
+    font-weight: bold;
+    padding-bottom: 10px;
+}
+.job-des h4 {
+    font-size: 20px;
+    font-weight: bold;
+    padding-bottom: 5px;
+}
+.job-des ul {
+    list-style: unset;
+    margin-left: 40px;
+    padding-bottom: 20px;
+}
+.job-des ol {
+    list-style: none;
+    margin-left: 40px;
+    padding-bottom: 10px;
+}
+
+
+
+/* ------------------------------------------------------------------------------ */
+
+/* 
+@keyframes active {
+  from {
+    box-shadow: 0 4px 3px 1px #FCFCFC, 0 6px 8px #D6D7D9, 0 -4px 4px #CECFD1, 0 -6px 4px #FEFEFE, inset 0 0 10px 0px rgba(0, 0, 250, 0.6);
+  }
+  to {
+    box-shadow: 0 4px 3px 1px #FCFCFC, 0 6px 8px #D6D7D9, 0 -4px 4px #CECFD1, 0 -6px 4px #FEFEFE, inset 0 0 3px 3px #CECFD1;
+  }
+}
+
+
+
+
+buttonAnim,
+[role="buttonAnim"] {
+  -webkit-appearance: none;
+  user-select: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  outline: none;
+  cursor: pointer;
+  width: 220px;
+  height: 40px;
+  background-image: linear-gradient(to top, #D8D9DB 0%, #fff 80%, #FDFDFD 100%);
+  border-radius: 30px;
+  border: 1px solid #8F9092;
+  box-shadow: 0 4px 3px 1px #FCFCFC, 0 6px 8px #D6D7D9, 0 -4px 4px #CECFD1, 0 -6px 4px #FEFEFE, inset 0 0 3px 0 #CECFD1;
+  transition: all 0.2s ease;
+  font-family: "Source Sans Pro", sans-serif;
+  font-size: 14px;
+  font-weight: 600;
+  color: #606060;
+  text-shadow: 0 1px #fff;
+  margin-bottom: 16px;
+}
+
+buttonAnim::-moz-focus-inner,
+[role="buttonAnim"]::-moz-focus-inner {
+  border: 0;
+}
+
+buttonAnim > *,
+[role="buttonAnim"] > * {
+  transition: transform 0.2s ease;
+}
+
+
+
+
+buttonAnim:focus:not(:active),
+[role="buttonAnim"]:focus:not(:active) {
+  animation: active 0.9s alternate infinite;
+  outline: none;
+}
+
+buttonAnim:active:not([disabled]),
+[role="buttonAnim"]:active:not([disabled]) {
+  box-shadow: 0 4px 3px 1px #FCFCFC, 0 6px 8px #D6D7D9, 0 -4px 4px #CECFD1, 0 -6px 4px #FEFEFE, inset 0 0 5px 3px #999, inset 0 0 30px #aaa;
+}
+
+buttonAnim:active:not([disabled]) > *,
+[role="buttonAnim"]:active:not([disabled]) > * {
+  transform: scale(0.95);
+}
+ */
