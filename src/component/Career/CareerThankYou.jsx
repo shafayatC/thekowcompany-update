@@ -15,19 +15,12 @@ function CareerThankYou() {
       <div className="my-20 container mx-auto">
         <div className="">
           <p
-            style={{ 
-              fontWeight: "700",
-              fontSize: "100px",
-              marginTop: "4%",
-              color: "black",
-              textAlign: "center",
-            }}
+            className="text-[50px] md:text-[100px] font-bold mt-[4%] text-black text-center"
           >
             Thank You
           </p>
           <p
-            className="text-center md:px-40"
-            style={{ fontSize: "25px", color: "black" }}
+            className="text-xl md:text-2xl text-black text-center px-2 md:px-40"
           >
             Thank you for sending your resume. We appreciate your interest in
             joining our team and will carefully review your qualifications.
