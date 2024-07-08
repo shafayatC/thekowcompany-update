@@ -379,7 +379,7 @@ const Career = () => {
           
           <div className="career-top-bg absolute top-0 left-[50%] 2xl:left-[39%] -translate-x-[50%] xl:left-[38%] lg:left-[35%] md:left-[30%] 2xl:-translate-x-[37%] w-20 h-32">
           <div>
-          <img src="/img/Light1.png" className="max-w-[300px] h-[300px] pt-[81px] ml-[-63px]" />
+          <img src="/img/Light1.png" className=" max-w-[300px] h-[300px] pt-[81px] ml-[-63px]" />
           </div>
            </div>
          
@@ -387,7 +387,7 @@ const Career = () => {
         <div className="w-full flex justify-center">
         <div className="flex justify-center  md:justify-end w-full md:w-[900px] 2xl:w-[1100px] ">
           
-          <img src="/img/chair-shadow.png" className=" max-w-[230px]  md:max-w-[330px] md:max-h-[270px] md:-mt-[240px]  " />
+          <img src="/img/chair-shadow.png" className=" max-w-[230px]   md:max-w-[300px] md:max-h-[270px] md:-mt-[240px]  " />
           </div>
         </div>
           
