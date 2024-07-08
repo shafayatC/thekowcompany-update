@@ -387,7 +387,7 @@ const Career = () => {
         <div className="w-full flex justify-center">
         <div className="flex justify-center  md:justify-end w-full md:w-[900px] 2xl:w-[1100px] ">
           
-          <img src="/img/chair-shadow.png" className=" max-w-[230px]  md:max-w-[330px] md:max-h-[270px] sm:-mt-[240px]  " />
+          <img src="/img/chair-shadow.png" className=" max-w-[230px]  md:max-w-[330px] md:max-h-[270px] md:-mt-[240px]  " />
           </div>
         </div>
           
