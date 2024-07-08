@@ -81,7 +81,7 @@ const CareerMail = ({ cvData, isOpen, onClose }) => {
 
                                     <div className='text-left pb-4'>
                                         <label name="name" className="block mb-2 text-sm font-medium text-gray-900 dark:text-white" htmlFor="file_input">Name</label>
-                                        <input required placeholder="Please input your name" name="name" className="block p-1 w-full text-sm text-gray-900 border border-gray-300 cursor-pointer bg-gray-50 dark:text-gray-400 focus:outline-none dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400" aria-describedby="file_input_help" id="file_input" type="text" />
+                                        <input required placeholder="Please enter your name" name="name" className="block p-1 w-full text-sm text-gray-900 border border-gray-300 cursor-pointer bg-gray-50 dark:text-gray-400 focus:outline-none dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400" aria-describedby="file_input_help" id="file_input" type="text" />
                                     </div>
                                     <div className='text-left pb-4'>
                                         <label className="block mb-2 text-sm font-medium text-gray-900 dark:text-white" htmlFor="file_input">Upload file</label>
