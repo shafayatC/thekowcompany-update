@@ -1,7 +1,7 @@
 import { useInView } from "react-intersection-observer";
 import "./portfolio.css";
 import { useEffect, useRef, useState } from "react";
-const Portfolio3D = () => { 
+const Portfolio3D = () => {
   const [isPlaying, setIsPlaying] = useState(false);
   const sectionRef = useRef(null);
   const videoRef = useRef(null);
@@ -133,6 +133,21 @@ const Portfolio3D = () => {
   const { ref: ref27, inView: inView27 } = useInView({
     threshold: 0.2,
   });
+  const { ref: ref28, inView: inView28 } = useInView({
+    threshold: 0.2,
+  });
+  const { ref: ref29, inView: inView29 } = useInView({
+    threshold: 0.2,
+  });
+  // const { ref: ref27, inView: inView27 } = useInView({
+  //   threshold: 0.2,
+  // });
+  // const { ref: ref27, inView: inView27 } = useInView({
+  //   threshold: 0.2,
+  // });
+  // const { ref: ref27, inView: inView27 } = useInView({
+  //   threshold: 0.2,
+  // });
   return (
     <div>
       <div className="2xl:container mx-auto overflow-hidden">
@@ -605,6 +620,38 @@ const Portfolio3D = () => {
           </div>
         </div>
         {/* ---------------------------------------------------Section 11 End---------------------------------------------------- */}
+        {/* ---------------------------------------------------Section 11.2 start---------------------------------------------------- */}
+        <div className="section-11-bg-2  mb-1 h-[100vh] 2xl:h-[90vh]">
+          <div className="flex  justify-center items-center  h-[100vh] 2xl:h-[90vh]">
+            <div
+              ref={ref28}
+              className={`h-full transition-all duration-1000 ${
+                inView28
+                  ? "opacity-100 translate-x-0"
+                  : "opacity-0 -translate-x-20"
+              }`}
+            >
+              <img className="w-full h-full" src="/img/3d/3d_portfolio/Chair.png" />
+            </div>
+          </div>
+        </div>
+        {/* ---------------------------------------------------Section 11.2 end---------------------------------------------------- */}
+        {/* ---------------------------------------------------Section 11.3 start---------------------------------------------------- */}
+        <div className="  mb-1 h-[100vh] 2xl:h-[90vh]">
+          <div className="flex  justify-center items-center  h-[100vh] 2xl:h-[90vh]">
+            <div
+              ref={ref29}
+              className={`h-full transition-all duration-1000 flex items-center ${
+                inView29
+                  ? "opacity-100 translate-x-0"
+                  : "opacity-0 translate-x-20"
+              }`}
+            >
+              <img className="w-full h-full object-cover" src="/img/3d/3d_portfolio/11_3.webp" />
+            </div>
+          </div>
+        </div>
+        {/* ---------------------------------------------------Section 11.3 end---------------------------------------------------- */}
         {/* ---------------------------------------------------Section 12 start---------------------------------------------------- */}
         <div className="bg-[#333333] mb-1 h-[100vh] 2xl:h-[90vh]">
           <div className="flex flex-col justify-center items-center gap-5 h-[100vh] 2xl:h-[90vh]">
@@ -1092,50 +1139,53 @@ power of 3D asset production.`}</p>
         </div>
         {/* -------------------------------------------------------Section 29 End---------------------------------------------------- */}
         {/* ---------------------------------------------------Section 30 start---------------------------------------------------- */}
-        <div ref={sectionRef} className="section-30-bg mb-1 h-[100vh] 2xl:h-[90vh] relative">
-      <div className="h-[100vh] 2xl:h-[90vh]">
-        <div className="flex h-full justify-center items-center">
-          {!isPlaying && (
-            <img
-              className="max-w-[100px] cursor-pointer"
-              src="/img/3d/3d_portfolio/s30.png"
-              onClick={handlePlayClick}
-              alt="Play"
-            />
+        <div
+          ref={sectionRef}
+          className="section-30-bg mb-1 h-[100vh] 2xl:h-[90vh] relative"
+        >
+          <div className="h-[100vh] 2xl:h-[90vh]">
+            <div className="flex h-full justify-center items-center">
+              {!isPlaying && (
+                <img
+                  className="max-w-[100px] cursor-pointer"
+                  src="/img/3d/3d_portfolio/s30.png"
+                  onClick={handlePlayClick}
+                  alt="Play"
+                />
+              )}
+            </div>
+
+            <div className="flex justify-center items-end gap-5 -mt-32">
+              <div>
+                <h1 className="w-[400px] h-[1px] -mt-5 bg-white"></h1>
+              </div>
+              <div>
+                <h1 className="text-white text-[60px] w-[560px] poppins-regular">
+                  Product Animation
+                </h1>
+              </div>
+              <div>
+                <h1 className="w-[400px] h-[1px] -mt-5 bg-white"></h1>
+              </div>
+            </div>
+          </div>
+
+          {isPlaying && (
+            <div className="absolute inset-0 flex justify-center items-center">
+              <video
+                ref={videoRef}
+                id="productVideo"
+                className="w-full h-full object-cover"
+                onEnded={handleVideoEnd}
+                controls={false}
+                autoPlay
+                preload="auto"
+              >
+                <source src="/video/For Website.webm" type="video/webm" />
+              </video>
+            </div>
           )}
         </div>
-
-        <div className="flex justify-center items-end gap-5 -mt-32">
-          <div>
-            <h1 className="w-[400px] h-[1px] -mt-5 bg-white"></h1>
-          </div>
-          <div>
-            <h1 className="text-white text-[60px] w-[560px] poppins-regular">
-              Product Animation
-            </h1>
-          </div>
-          <div>
-            <h1 className="w-[400px] h-[1px] -mt-5 bg-white"></h1>
-          </div>
-        </div>
-      </div>
-      
-      {isPlaying && (
-        <div className="absolute inset-0 flex justify-center items-center">
-          <video
-            ref={videoRef}
-            id="productVideo"
-            className="w-full h-full object-cover"
-            onEnded={handleVideoEnd}
-            controls={false}
-            autoPlay
-            preload="auto"
-          >
-            <source src="/video/For Website.webm" type="video/webm" />
-          </video>
-        </div>
-      )}
-    </div>
         {/* -------------------------------------------------------Section 30 End---------------------------------------------------- */}
         {/* ---------------------------------------------------Section 31 start---------------------------------------------------- */}
         <div className="section-31-bg mb-1 h-[100vh] 2xl:h-[90vh]">
