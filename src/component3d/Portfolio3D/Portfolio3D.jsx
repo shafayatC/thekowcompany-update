@@ -139,9 +139,9 @@ const Portfolio3D = () => {
   const { ref: ref29, inView: inView29 } = useInView({
     threshold: 0.2,
   });
-  // const { ref: ref27, inView: inView27 } = useInView({
-  //   threshold: 0.2,
-  // });
+  const { ref: ref30, inView: inView30 } = useInView({
+    threshold: 0.2,
+  });
   // const { ref: ref27, inView: inView27 } = useInView({
   //   threshold: 0.2,
   // });
@@ -621,6 +621,39 @@ const Portfolio3D = () => {
         </div>
         {/* ---------------------------------------------------Section 11 End---------------------------------------------------- */}
         {/* ---------------------------------------------------Section 11.2 start---------------------------------------------------- */}
+      
+        <div className="bg-[#333333] h-[100vh] 2xl:h-[90vh]  mb-1">
+          <div className="flex justify-center items-center xl:gap-5 h-[100vh] 2xl:h-[90vh]">
+            <div
+              ref={ref29}
+              className={` duration-1000 transition-all 2xl:ml-20  ${
+                inView29
+                  ? "opacity-100 translate-x-0"
+                  : "opacity-0 -translate-x-20"
+              }`}
+            >
+              <img
+                className="max-w-[300px] ml-16"
+                src="/img/3d/3d_portfolio/11_3.jpg"
+              />
+            </div>
+            <div
+              ref={ref29}
+              className={`h-full w-full flex justify-end duration-1000 transition-all  ${
+                inView29
+                  ? "opacity-100 translate-x-0"
+                  : "opacity-0 translate-x-20"
+              }`}
+            >
+              <img
+                className="max-h-full max-w-full py-5"
+                src="/img/3d/3d_portfolio/11_3.webp"
+              />
+            </div>
+          </div>
+        </div>
+        {/* ---------------------------------------------------Section 11.2 end---------------------------------------------------- */}
+        {/* ---------------------------------------------------Section 11.3 start---------------------------------------------------- */}
         <div className="section-11-bg-2  mb-1 h-[100vh] 2xl:h-[90vh]">
           <div className="flex  justify-center items-center  h-[100vh] 2xl:h-[90vh]">
             <div
@@ -632,22 +665,6 @@ const Portfolio3D = () => {
               }`}
             >
               <img className="w-full h-full" src="/img/3d/3d_portfolio/Chair.png" />
-            </div>
-          </div>
-        </div>
-        {/* ---------------------------------------------------Section 11.2 end---------------------------------------------------- */}
-        {/* ---------------------------------------------------Section 11.3 start---------------------------------------------------- */}
-        <div className="  mb-1 h-[100vh] 2xl:h-[90vh]">
-          <div className="flex  justify-center items-center  h-[100vh] 2xl:h-[90vh]">
-            <div
-              ref={ref29}
-              className={`h-full transition-all duration-1000 flex items-center ${
-                inView29
-                  ? "opacity-100 translate-x-0"
-                  : "opacity-0 translate-x-20"
-              }`}
-            >
-              <img className="w-full h-full object-cover" src="/img/3d/3d_portfolio/11_3.webp" />
             </div>
           </div>
         </div>
@@ -725,7 +742,7 @@ dreams to vivid reality with us.`}</p>
               className={`h-full transition-all duration-1000 ${
                 inView14
                   ? "opacity-100 translate-x-0"
-                  : "opacity-0 -translate-x-20"
+                  : "opacity-0 translate-x-20"
               }`}
             >
               <img className="h-full" src="/img/3d/3d_portfolio/s15_n.png" />
@@ -733,6 +750,63 @@ dreams to vivid reality with us.`}</p>
           </div>
         </div>
         {/* ---------------------------------------------------Section 15 End---------------------------------------------------- */}
+        {/* ---------------------------------------------------Section 15.2 start---------------------------------------------------- */}
+        <div className="section-15-bg-2 mb-1 h-[100vh] 2xl:h-[90vh]">
+          <div className="flex  justify-center items-center  h-[100vh] 2xl:h-[90vh]">
+            <div
+              ref={ref30}
+              className={`h-full transition-all duration-1000 ${
+                inView30
+                  ? "opacity-100 translate-x-0"
+                  : "opacity-0 -translate-x-20"
+              }`}
+            >
+              <img className="h-full" src="/img/3d/3d_portfolio/s15_1.png" />
+            </div>
+          </div>
+        </div>
+        {/* ---------------------------------------------------Section 15.2 End---------------------------------------------------- */}
+        {/* ---------------------------------------------------Section 15.3 start---------------------------------------------------- */}
+        {/* <div className="section-15-bg-3 mb-1 h-[100vh] 2xl:h-[90vh]"> */}
+        <div id="test" className="section-15-bg-3 mb-1 h-[600px] 2xl:h-[800px]">
+          <div className="flex  justify-center items-center h-full">
+              <div className="h-full w-[550px] 2xl:w-[700px] relative">
+                <img className="h-full w-full" src="/img/3d/3d_portfolio/Boot1.png" />
+
+                  <img className="absolute w-[320px] h-[320px] 2xl:w-[400px] 2xl:h-[400px] top-1/4 right-[-70px]" src="/img/3d/3d_portfolio/Boot2.png"/>
+                  <img className="absolute w-[250px] h-[290px] 2xl:w-[300px] 2xl:h-[400px] top-[20px] left-[-20%]" src="/img/3d/3d_portfolio/Boot4.png"/>
+                  <img className="absolute w-[250px] h-[290px] 2xl:w-[300px] 2xl:h-[400px] bottom-[20px] left-[-20%]" src="/img/3d/3d_portfolio/Boot3.png"/>
+              
+              </div>
+    
+          </div>
+        </div>
+        {/* ---------------------------------------------------Section 15.3 End---------------------------------------------------- */}
+        {/* ---------------------------------------------------Section 15.4 start---------------------------------------------------- */}
+        <div className="section-15-bg-4 mb-1 h-[100vh] 2xl:h-[90vh]">
+          <div className=" h-[100vh] 2xl:h-[90vh]">
+           <div className="flex flex-col justify-items-center items-center">
+              <div className="flex justify-center items-center">
+                  <div>
+                      <img className="" src="/img/3d/3d_portfolio/pant1.png" />
+                  </div>
+                  <div>
+                      <img className="" src="/img/3d/3d_portfolio/pant2.png" />
+                  </div>
+              </div>
+              <div className="flex justify-center items-center">
+                  <div>
+                      <img className="" src="/img/3d/3d_portfolio/pant3.png" />
+                  </div>
+                  <div>
+                      <img className="" src="/img/3d/3d_portfolio/pant4.png" />
+                  </div>
+              </div>
+            
+           </div>
+          </div>
+        </div>
+        {/* ---------------------------------------------------Section 15.4 End---------------------------------------------------- */}
         {/* ---------------------------------------------------Section 16 start---------------------------------------------------- */}
         <div className="bg-[#F12B35] mb-1 h-[100vh] 2xl:h-[90vh]">
           <div className="flex  justify-center items-center  h-[100vh] 2xl:h-[90vh]">

@@ -158,3 +158,21 @@
 	background-repeat: no-repeat;
 	background-size: cover
 }
+.section-15-bg-2 {
+	background-image: url('/img/3d/3d_portfolio/Handbag_BG.jpg');
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover
+}
+.section-15-bg-3 {
+	background-image: url('/img/3d/3d_portfolio/Boot_BG.jpg');
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover
+}
+.section-15-bg-4 {
+	background-image: url('/img/3d/3d_portfolio/Pant_BG.jpg');
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover
+}
