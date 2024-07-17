@@ -252,7 +252,7 @@ const Career = () => {
     <h3>Salary</h3>
     <p>Negotiable</p>
     <p><strong>Email at:</strong> <a href="mailto:career@thekowcompany.com">career@thekowcompany.com</a></p>
-    <p><strong>Email Before:</strong> 15 July 2024</p>
+    <p><strong>Email Before:</strong> 21 July 2024</p>
     <p>• Most importantly mentioning in the Subject Line: Applying as a "Project Management Executive"</p>
 </div>`,
       date: "21 July, 2024",
