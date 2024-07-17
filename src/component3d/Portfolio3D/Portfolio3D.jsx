@@ -780,7 +780,7 @@ dreams to vivid reality with us.`}</p>
               />
 
               <img
-                className={`absolute w-[320px] h-[320px] 2xl:w-[400px] 2xl:h-[400px] top-1/4 right-[-70px] transition-all duration-1000 ${
+                className={`absolute w-[320px] h-[320px] 2xl:w-[400px] 2xl:h-[400px] top-[20%] right-[-70px] transition-all duration-1000 ${
                   inView31
                     ? "opacity-100 translate-x-0"
                     : "opacity-0 translate-x-20"
@@ -788,7 +788,7 @@ dreams to vivid reality with us.`}</p>
                 src="/img/3d/3d_portfolio/Boot2.png"
               />
               <img
-              className={`absolute w-[250px] h-[290px] 2xl:w-[300px] 2xl:h-[400px] top-[20px] left-[-20%] transition-all duration-1000 ${
+              className={`absolute w-[250px] h-[290px] 2xl:w-[300px] 2xl:h-[400px] top-[20px] left-[-30%] transition-all duration-1000 ${
                 inView31
                   ? "opacity-100 translate-x-0"
                   : "opacity-0 -translate-x-20"
@@ -797,7 +797,7 @@ dreams to vivid reality with us.`}</p>
                 src="/img/3d/3d_portfolio/Boot4.png"
               />
               <img
-               className={`absolute w-[250px] h-[290px] 2xl:w-[300px] 2xl:h-[400px] bottom-[20px] left-[-20%] transition-all duration-1000 ${
+               className={`absolute w-[250px] h-[290px] 2xl:w-[300px] 2xl:h-[400px] bottom-[20px] left-[-30%] transition-all duration-1000 ${
                 inView31
                   ? "opacity-100 translate-x-0"
                   : "opacity-0 -translate-x-20"

@@ -255,7 +255,7 @@ const Career = () => {
     <p><strong>Email Before:</strong> 15 July 2024</p>
     <p>• Most importantly mentioning in the Subject Line: Applying as a "Project Management Executive"</p>
 </div>`,
-      date: "15 July, 2024",
+      date: "21 July, 2024",
     },
   ]);
   const [isOpen, setIsOpen] = useState(false);
