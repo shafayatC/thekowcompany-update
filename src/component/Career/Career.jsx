@@ -244,8 +244,11 @@ const Career = () => {
         <li>🎉 Events Celebration: Enjoy various events celebrated at our office premises.</li>
         <li>🏏 Annual Tournaments: Participate in our Annual Cricket and Football Tournament.</li>
         <li>🎲 Indoor Games: Have fun with Carrom and Table Tennis during breaks.</li>
+        
        
     </ol>
+    <h3>Office Hours:</h3>
+    <p> Rooster Basis (Night Shift)</p>
     
     <h3>Job Location</h3>
     <p>Dhaka</p>
