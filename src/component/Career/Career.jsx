@@ -2,7 +2,7 @@ import "./career.css";
 import { SlCalender } from "react-icons/sl";
 import { MdOutlineEmail } from "react-icons/md";
 import { useState } from "react";
-import CareerMail from "./careerMail";
+import CareerMail from "./CareerMail";
 
 const Career = () => {
   const [jobCircular] = useState([
@@ -244,18 +244,21 @@ const Career = () => {
         <li>🎉 Events Celebration: Enjoy various events celebrated at our office premises.</li>
         <li>🏏 Annual Tournaments: Participate in our Annual Cricket and Football Tournament.</li>
         <li>🎲 Indoor Games: Have fun with Carrom and Table Tennis during breaks.</li>
+        
        
     </ol>
+    <h3>Office Hours:</h3>
+    <p> Rooster Basis (Night Shift)</p>
     
     <h3>Job Location</h3>
     <p>Dhaka</p>
     <h3>Salary</h3>
     <p>Negotiable</p>
     <p><strong>Email at:</strong> <a href="mailto:career@thekowcompany.com">career@thekowcompany.com</a></p>
-    <p><strong>Email Before:</strong> 15 July 2024</p>
+    <p><strong>Email Before:</strong> 21 July 2024</p>
     <p>• Most importantly mentioning in the Subject Line: Applying as a "Project Management Executive"</p>
 </div>`,
-      date: "15 July, 2024",
+      date: "21 July, 2024",
     },
   ]);
   const [isOpen, setIsOpen] = useState(false);
@@ -379,7 +382,7 @@ const Career = () => {
           
           <div className="career-top-bg absolute top-0 left-[50%] 2xl:left-[39%] -translate-x-[50%] xl:left-[38%] lg:left-[35%] md:left-[30%] 2xl:-translate-x-[37%] w-20 h-32">
           <div>
-          <img src="/img/Light1.png" className="max-w-[300px] h-[300px] pt-[81px] ml-[-63px]" />
+          <img src="/img/Light1.png" className=" max-w-[300px] h-[300px] pt-[81px] ml-[-63px]" />
           </div>
            </div>
          
@@ -387,7 +390,7 @@ const Career = () => {
         <div className="w-full flex justify-center">
         <div className="flex justify-center  md:justify-end w-full md:w-[900px] 2xl:w-[1100px] ">
           
-          <img src="/img/chair-shadow.png" className=" max-w-[230px]  md:max-w-[330px] md:max-h-[270px] sm:-mt-[240px]  " />
+          <img src="/img/chair-shadow.png" className=" max-w-[230px]   md:max-w-[300px] md:max-h-[270px] md:-mt-[240px]  " />
           </div>
         </div>
           
