@@ -22,7 +22,7 @@ export default function ProductVideoLatestMother({ videoUrl, loadingImg, tagList
 
     return (
         <div id="videoElement" className="">
-            <div className="pt-[54px] md:pt-0 ">
+            <div className="pt-0 md:pt-0 ">
                 <div className="relative  flex flex-col justify-center items-center h-auto md:h-screen">
                     <Suspense fallback={
                         <div className="flex justify-center w-full h-full">
