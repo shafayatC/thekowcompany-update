@@ -174,7 +174,7 @@ const NavbarHome = () => {
             >
               Book A Call
             </Link>
-            {!showModal && !headline && (
+            {/* {!showModal && !headline && (
               <button
                 className={`text-xs lg:text-sm border-2 rounded-3xl px-4 py-1 border-[#7C9C30] font-semibold ${
                   screenLeft ? "text-gray-800 " : " text-white"
@@ -183,7 +183,7 @@ const NavbarHome = () => {
               >
                 Show Headline
               </button>
-            )}
+            )} */}
             <div
               id="google_translate_element"
               style={{ display: "none" }}
@@ -366,7 +366,7 @@ const NavbarHome = () => {
                 >
                   CAREER
                 </Link>
-                {!showModal && !headline && (
+                {/* {!showModal && !headline && (
                   <button
                     type="button"
                     className={`flex justify-center text-base ${
@@ -378,7 +378,7 @@ const NavbarHome = () => {
                   >
                     Show Headline
                   </button>
-                )}
+                )} */}
                 <div className="flex justify-center mb-2">
                   <button
                     type="button"
