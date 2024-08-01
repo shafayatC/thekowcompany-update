@@ -1,5 +1,6 @@
 import Portfolio3D from "./Portfolio3D";
 import Portfolio3DTest from "./Portfolio3DTest";
+import PortfolioTab from "./PortfolioTab";
 
 
 const PortfolioFor3D = () => {
@@ -8,7 +9,10 @@ const PortfolioFor3D = () => {
             <div className="hidden lg:block">
                 <Portfolio3D/>
             </div>
-            <div className="block lg:hidden">
+            <div className="hidden sm:block lg:hidden">
+               <PortfolioTab/> 
+            </div>
+            <div className="block sm:hidden">
                 <Portfolio3DTest/>
             </div>
         </div>
