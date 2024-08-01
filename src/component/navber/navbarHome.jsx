@@ -9,10 +9,15 @@ import MegaNavbar from "../MegaNavbar/MegaNavbar";
 import { IoLanguage } from "react-icons/io5";
 import { IoMdArrowDropdown } from "react-icons/io";
 import GoogleTranslate from "../GoogleTranslate/GoogleTranslate";
- 
+import "./navbar.css";
+import HeadlineModal from "./HeadlineModal";
+
 const NavbarHome = () => {
   const [dropdownOpen, setDropdownOpen] = useState(false);
   const { handleTranslate } = GoogleTranslate();
+  const [showModal, setShowModal] = useState(false);
+  const [headlineText, setHeadlineText] = useState('');
+  const [headline, setHeadline] = useState('');
 
   const selectLanguage = (lang) => {
     handleTranslate(lang);
@@ -56,9 +61,13 @@ const NavbarHome = () => {
     window.addEventListener("load", handleScroll);
   }, []);
 
+  const handleHeadlineSubmit = () => {
+    setHeadline(headlineText);
+    setShowModal(false);
+  };
+
   return (
     <>
-      {/* <div className="bg-[#DEE2E2] font-sans w-full min-h-screen m-0"> */}
       <div
         className={`menuActive  ${
           screenLeft && "bg-[#DEE2E2]"
@@ -77,7 +86,6 @@ const NavbarHome = () => {
               />
             </Link>
             {/* --------------------------------------For Large Screen------------------------------------------ */}
-            {/* <div className="hidden md:flex sm:items-center md:gap-1 lg:gap-8 xl:gap-12"> */}
             <HashLink
               aria-label="2D"
               to="/2d"
@@ -122,7 +130,6 @@ const NavbarHome = () => {
             >
               INTEGRATIONS
             </HashLink>
-            {/* <HashLink to="/#squad" className={` text-xs lg:text-sm font-semibold ${ screenLeft ? 'text-gray-800 border-[#DEE2E2] border-b-2  hover:border-b-2 hover:border-[#7C9C30] ' : 'text-white hover:text-[#7C9C30]'} `}>THE SQUAD</HashLink> */}
             <HashLink
               aria-label="trends"
               to="/#trends"
@@ -146,7 +153,6 @@ const NavbarHome = () => {
             >
               CAREER
             </Link>
-            {/* <HashLink to="/#virtual" className={` text-xs lg:text-sm font-semibold ${ screenLeft ? 'text-gray-800 border-[#DEE2E2] border-b-2  hover:border-b-2 hover:border-[#7C9C30] ' : 'text-white hover:text-[#7C9C30]'} `}>VIRTUAL TOUR</HashLink> */}
             <a
               aria-label="sign up"
               href="https://app.cutoutwiz.com/Identity/Account/Login?ReturnUrl=%2F"
@@ -168,9 +174,16 @@ const NavbarHome = () => {
             >
               Book A Call
             </Link>
-            {/* <Link to="/" className={`text-[26px] lg:text-[32px]  font-semibold ${ screenLeft ? 'text-gray-800 border-b-2 border-[#DEE2E2] hover:border-[#7C9C30] hover:border-b-2 ' : 'text-white'}`}><GoHomeFill color={`${screenLeft ? 'black' : 'white'}`}/>
-            </Link> */}
-            {/* --------------------------------------------Language---------------------------------------------------- */}
+            {/* {!showModal && !headline && (
+              <button
+                className={`text-xs lg:text-sm border-2 rounded-3xl px-4 py-1 border-[#7C9C30] font-semibold ${
+                  screenLeft ? "text-gray-800 " : " text-white"
+                }`}
+                onClick={() => setShowModal(true)}
+              >
+                Show Headline
+              </button>
+            )} */}
             <div
               id="google_translate_element"
               style={{ display: "none" }}
@@ -267,7 +280,6 @@ const NavbarHome = () => {
                 </div>
               )}
             </div>
-            {/* ------------------------------------------------------------------------------------------------------ */}
           </div>
           <div className="flex items-center justify-between lg:hidden">
             <Link aria-label="logo" to={"/"}>
@@ -322,7 +334,6 @@ const NavbarHome = () => {
                 >
                   INTEGRATIONS
                 </HashLink>
-                {/* <HashLink onClick={() => setMenuBool(false)} to="/#squad" className="transition-all duration-300 text-gray-800 text-base border-b-2 border-[#DEE2E2] font-semibold py-3 hover:bg-[#cfd6d6] hover:border-b-2 hover:border-[#7C9C30]">THE SQUAD</HashLink> */}
                 <HashLink
                   aria-label="trends"
                   onClick={() => setMenuBool(false)}
@@ -331,7 +342,6 @@ const NavbarHome = () => {
                 >
                   INDUSTRY TRENDS
                 </HashLink>
-                {/* <HashLink onClick={() => setMenuBool(false)} to="/#virtual" className="transition-all duration-300 text-gray-800 text-base border-b-2 border-[#DEE2E2] font-semibold py-3 hover:bg-[#cfd6d6] hover:border-b-2 hover:border-[#7C9C30]">VIRTUAL TOUR</HashLink> */}
                 <a
                   aria-label="subscribe"
                   onClick={() => setMenuBool(false)}
@@ -349,7 +359,6 @@ const NavbarHome = () => {
                 >
                   Book A Call
                 </Link>
-                
                 <Link
                   onClick={() => setMenuBool(false)}
                   to="/career"
@@ -357,6 +366,19 @@ const NavbarHome = () => {
                 >
                   CAREER
                 </Link>
+                {/* {!showModal && !headline && (
+                  <button
+                    type="button"
+                    className={`flex justify-center text-base ${
+                      screenLeft
+                        ? "text-gray-800 border-b-2 border-[#7C9C30]"
+                        : "text-black border-b-2 border-[#7C9C30]"
+                    } items-center gap-2 w-40 rounded-3xl border shadow-sm px-2 py-1 font-medium focus:outline-none`}
+                    onClick={() => setShowModal(true)}
+                  >
+                    Show Headline
+                  </button>
+                )} */}
                 <div className="flex justify-center mb-2">
                   <button
                     type="button"
@@ -376,64 +398,97 @@ const NavbarHome = () => {
                   </button>
                 </div>
                 {dropdownOpen && (
-        <div
-          className="top-[55%] absolute bg-white right-[30%]  mt-2 w-40 rounded-md shadow-lg ring-1 ring-black ring-opacity-5 focus:outline-none"
-          role="menu"
-          aria-orientation="vertical"
-          aria-labelledby="options-menu"
-        >
-          <div className="py-1" role="none">
-            <button
-              onClick={() => selectLanguage('en')}
-              className="flex justify-start items-center gap-3 px-4 py-1 text-base text-gray-700 hover:bg-gray-100 w-full text-center"
-              role="menuitem"
-            >
-              <img className="h-7 w-7" src="/img/flags/united-kingdom.png" alt="English" />
-              English
-            </button>
-            <button
-              onClick={() => selectLanguage('es')}
-              className="flex justify-start items-center gap-3 px-4 py-1 text-base text-gray-700 hover:bg-gray-100 w-full text-center"
-              role="menuitem"
-            >
-              <img className="h-7 w-7" src="/img/flags/spain.png" alt="Spanish" />
-              Spanish
-            </button>
-            <button
-              onClick={() => selectLanguage('fr')}
-              className="flex justify-start items-center gap-3 px-4 py-1 text-base text-gray-700 hover:bg-gray-100 w-full text-center"
-              role="menuitem"
-            >
-              <img className="h-7 w-7" src="/img/flags/france.png" alt="French" />
-              French
-            </button>
-            <button
-              onClick={() => selectLanguage('de')}
-              className="flex justify-start items-center gap-3 px-4 py-1 text-base text-gray-700 hover:bg-gray-100 w-full text-center"
-              role="menuitem"
-            >
-              <img className="h-7 w-7" src="/img/flags/germany.png" alt="German" />
-              German
-            </button>
-            <button
-              onClick={() => selectLanguage('nl')}
-              className="flex justify-start items-center gap-3 px-4 py-1 text-base text-gray-700 hover:bg-gray-100 w-full text-center"
-              role="menuitem"
-            >
-              <img className="h-7 w-7" src="/img/flags/netherlands.png" alt="Dutch" />
-              Dutch
-            </button>
-          </div>
-        </div>
-      )}
-                {/* <Link onClick={() => setMenuBool(false)} to="/" className="transition-all duration-300 flex flex-col items-center text-gray-800 text-[32px] border-b-2 py-3 hover:bg-[#cfd6d6] border-[#DEE2E2] font-semibold hover:border-b-2 hover:border-[#7C9C30]"><GoHomeFill /></Link> */}
+                  <div
+                    className="top-[62%] absolute bg-white right-[30%]  mt-2 w-40 rounded-md shadow-lg ring-1 ring-black ring-opacity-5 focus:outline-none"
+                    role="menu"
+                    aria-orientation="vertical"
+                    aria-labelledby="options-menu"
+                  >
+                    <div className="py-1" role="none">
+                      <button
+                        onClick={() => selectLanguage("en")}
+                        className="flex justify-start items-center gap-3 px-4 py-1 text-base text-gray-700 hover:bg-gray-100 w-full text-center"
+                        role="menuitem"
+                      >
+                        <img
+                          className="h-7 w-7"
+                          src="/img/flags/united-kingdom.png"
+                          alt="English"
+                        />
+                        English
+                      </button>
+                      <button
+                        onClick={() => selectLanguage("es")}
+                        className="flex justify-start items-center gap-3 px-4 py-1 text-base text-gray-700 hover:bg-gray-100 w-full text.center"
+                        role="menuitem"
+                      >
+                        <img
+                          className="h-7 w-7"
+                          src="/img/flags/spain.png"
+                          alt="Spanish"
+                        />
+                        Spanish
+                      </button>
+                      <button
+                        onClick={() => selectLanguage("fr")}
+                        className="flex justify-start items-center gap-3 px-4 py-1 text-base text-gray-700 hover:bg-gray-100 w-full text.center"
+                        role="menuitem"
+                      >
+                        <img
+                          className="h-7 w-7"
+                          src="/img/flags/france.png"
+                          alt="French"
+                        />
+                        French
+                      </button>
+                      <button
+                        onClick={() => selectLanguage("de")}
+                        className="flex justify-start items-center gap-3 px-4 py-1 text-base text-gray-700 hover:bg-gray-100 w-full text.center"
+                        role="menuitem"
+                      >
+                        <img
+                          className="h-7 w-7"
+                          src="/img/flags/germany.png"
+                          alt="German"
+                        />
+                        German
+                      </button>
+                      <button
+                        onClick={() => selectLanguage("nl")}
+                        className="flex justify.start items-center gap-3 px-4 py-1 text-base text-gray-700 hover:bg-gray-100 w-full text.center"
+                        role="menuitem"
+                      >
+                        <img
+                          className="h-7 w-7"
+                          src="/img/flags/netherlands.png"
+                          alt="Dutch"
+                        />
+                        Dutch
+                      </button>
+                    </div>
+                  </div>
+                )}
               </div>
             </div>
           </div>
         )}
       </div>
-      {/* </div> */}
-      {/* </div> */}
+    {/* -----------------------------------For Headline Input----------------------------------- */}
+    {/* -----------------------------------For Headline----------------------------------- */}
+    <HeadlineModal
+        show={showModal}
+        onClose={() => setShowModal(false)}
+        onSubmit={handleHeadlineSubmit}
+        headlineText={headlineText}
+        setHeadlineText={setHeadlineText}
+      />
+      {headline && (
+        <div className="bg-gray-800 text-white text-center pt-10 overflow-hidden">
+          <div className="whitespace-nowrap animate-marquee">
+            <h1 className="text-2xl font-bold inline-block">{headline}</h1>
+          </div>
+        </div>
+      )}
     </>
   );
 };

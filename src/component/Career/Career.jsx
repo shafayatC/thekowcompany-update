@@ -244,18 +244,21 @@ const Career = () => {
         <li>🎉 Events Celebration: Enjoy various events celebrated at our office premises.</li>
         <li>🏏 Annual Tournaments: Participate in our Annual Cricket and Football Tournament.</li>
         <li>🎲 Indoor Games: Have fun with Carrom and Table Tennis during breaks.</li>
+        
        
     </ol>
+    <h3>Office Hours:</h3>
+    <p> Rooster Basis (Night Shift)</p>
     
     <h3>Job Location</h3>
     <p>Dhaka</p>
     <h3>Salary</h3>
     <p>Negotiable</p>
     <p><strong>Email at:</strong> <a href="mailto:career@thekowcompany.com">career@thekowcompany.com</a></p>
-    <p><strong>Email Before:</strong> 15 July 2024</p>
+    <p><strong>Email Before:</strong> 21 July 2024</p>
     <p>• Most importantly mentioning in the Subject Line: Applying as a "Project Management Executive"</p>
 </div>`,
-      date: "15 July, 2024",
+      date: "21 July, 2024",
     },
   ]);
   const [isOpen, setIsOpen] = useState(false);
