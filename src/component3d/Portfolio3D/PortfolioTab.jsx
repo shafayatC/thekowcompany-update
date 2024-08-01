@@ -4,46 +4,45 @@ import "./portfolioM.css";
 
 const PortfolioTab = () => {
   const section6 = [
-    "/img/3d/3d_portfolio_m/s6_1.webp",
-    "/img/3d/3d_portfolio_m/s6_2.webp",
-    "/img/3d/3d_portfolio_m/s6_3.webp",
+    "/img/3d/3d_portfolio_tab/e1.jpg",
+    "/img/3d/3d_portfolio_tab/e2.jpg",
+    "/img/3d/3d_portfolio_tab/e3.jpg",
   ];
   const section7 = [
-    "/img/3d/3d_portfolio_m/s7_1.webp",
-    "/img/3d/3d_portfolio_m/s7_2.webp",
-    "/img/3d/3d_portfolio_m/s7_3.webp",
-    "/img/3d/3d_portfolio_m/s7_4.webp",
-    "/img/3d/3d_portfolio_m/s7_5.webp",
-    "/img/3d/3d_portfolio_m/s7_6.webp",
-    "/img/3d/3d_portfolio_m/s7_7.webp",
-    "/img/3d/3d_portfolio_m/s7_8.webp",
+    "/img/3d/3d_portfolio_tab/i1.jpg",
+    "/img/3d/3d_portfolio_tab/i2.jpg",
+    "/img/3d/3d_portfolio_tab/i3.jpg",
+    "/img/3d/3d_portfolio_tab/i4.jpg",
+    "/img/3d/3d_portfolio_tab/i5.jpg",
+    "/img/3d/3d_portfolio_tab/i6.jpg",
   ];
   const section9 = [
-    "/img/3d/3d_portfolio_m/s9_1.webp",
-    "/img/3d/3d_portfolio_m/s9_2.webp",
-    "/img/3d/3d_portfolio_m/s9_3.webp",
-    "/img/3d/3d_portfolio_m/s9_4.webp",
-    "/img/3d/3d_portfolio_m/s9_5.webp",
-    "/img/3d/3d_portfolio_m/s9_6.webp",
-    "/img/3d/3d_portfolio_m/s9_7.webp",
+    "/img/3d/3d_portfolio_tab/f1.jpg",
+    "/img/3d/3d_portfolio_tab/f2.jpg",
+    "/img/3d/3d_portfolio_tab/f3.jpg",
+    "/img/3d/3d_portfolio_tab/f4.jpg",
+    "/img/3d/3d_portfolio_tab/f5.jpg",
+    "/img/3d/3d_portfolio_tab/f6.jpg",
+    "/img/3d/3d_portfolio_tab/f7.jpg",
   ];
   const section10 = [
-    "/img/3d/3d_portfolio_m/s10_2.webp",
-    "/img/3d/3d_portfolio_m/s10_3.webp",
-    "/img/3d/3d_portfolio_m/s10_1.webp",
-    "/img/3d/3d_portfolio_m/s10_4.webp",
-    "/img/3d/3d_portfolio_m/s10_5.webp",
-    "/img/3d/3d_portfolio_m/s10_6.webp",
-    "/img/3d/3d_portfolio_m/s10_7.webp",
-    "/img/3d/3d_portfolio_m/s10_8.webp",
-    "/img/3d/3d_portfolio_m/s10_9.webp",
-    "/img/3d/3d_portfolio_m/s10_10.webp",
+    "/img/3d/3d_portfolio_tab/p1.jpg",
+    "/img/3d/3d_portfolio_tab/p2.jpg",
+    "/img/3d/3d_portfolio_tab/p3.jpg",
+    "/img/3d/3d_portfolio_tab/p4.jpg",
+    "/img/3d/3d_portfolio_tab/p5.jpg",
+    "/img/3d/3d_portfolio_tab/p6.jpg",
+    "/img/3d/3d_portfolio_tab/p7.jpg",
+    "/img/3d/3d_portfolio_tab/p8.jpg",
+    "/img/3d/3d_portfolio_tab/p9.jpg",
+    "/img/3d/3d_portfolio_tab/p10.jpg",
+    "/img/3d/3d_portfolio_tab/p11.jpg",
   ];
   const section11 = [
-    "/img/3d/3d_portfolio_m/s11_1.webp",
-    "/img/3d/3d_portfolio_m/s11_2.webp",
-    "/img/3d/3d_portfolio_m/s11_3.webp",
-    "/img/3d/3d_portfolio_m/s11_4.webp",
+    "/img/3d/3d_portfolio_tab/a1.jpg",
+    "/img/3d/3d_portfolio_tab/a2.jpg",
+    "/img/3d/3d_portfolio_tab/a3.jpg",
+    "/img/3d/3d_portfolio_tab/a4.jpg",
   ];
 
   const [isPlaying, setIsPlaying] = useState(false);
@@ -229,418 +228,511 @@ const PortfolioTab = () => {
     });
   };
   return (
-    <div className="overflow-hidden">
-      {/* ---------------------------------section 01 start-------------------------------- */}
-      <div className="se-1-bg mb-[1px]">
-        <div ref={ref1} className=" relative">
-          <div className="flex justify-center ">
-            <div className="h-[100px] w-[280px]  mt-[51px] mb-[72px] text-white border-r border-white ">
-              <h1
-                className={`transition-all duration-1000 text-[27px] poppins-regular text-center ${
-                  inView1
-                    ? "opacity-100 translate-x-0"
-                    : "opacity-0 translate-x-20"
-                }`}
-              >
-                Digital Content
-              </h1>
-              <h1
-                className={`transition-all duration-1000 text-[54px] poppins-thin text-center leading-[60px] ${
-                  inView1
-                    ? "opacity-100 translate-x-0"
-                    : "opacity-0 -translate-x-20"
-                }`}
-              >
-                PORTFOLIO
-              </h1>
-            </div>
-          </div>
-          <div className="flex justify-center mt-10 relative z-20">
-            <h1
-              className={`transition-all duration-1000 poppins-light text-[225px] text-white rotate-90 ${
-                inView1
-                  ? "opacity-100 translate-y-0"
-                  : "opacity-0 translate-y-20"
-              }`}
-            >
-              CGI
-            </h1>
-          </div>
-          <div className="absolute top-0 right-[68px]">
-            <img src="/img/3d/3d_portfolio_m/Ellipse 9.png" />
-          </div>
-          <div className="absolute top-[179px] left-[68px] z-30">
-            <img src="/img/3d/3d_portfolio_m/Ellipse 3.png" />
-          </div>
-          <div className="absolute top-[159px] left-[58px]">
-            <img src="/img/3d/3d_portfolio_m/Ellipse 8.png" />
-          </div>
-          <div className="absolute top-[159px] left-[58px]">
-            <img src="/img/3d/3d_portfolio_m/Ellipse 8.png" />
-          </div>
-          <div className="absolute bottom-[-77px] right-0 opacity-70 z-10">
-            <img src="/img/3d/3d_portfolio_m/Glass Effects_02.png" />
-          </div>
-        </div>
-      </div>
-      {/* ---------------------------------section 01 end-------------------------------- */}
-      {/* ----------------------------------section 02 start------------------------------- */}
-      <div className="se-2-bg mb-[1px] relative">
-        <div ref={ref2} className="">
-          <div className="flex justify-center">
-            <div className=" h-full w-full mx-[76px] mt-[77px]">
-              <div
-                className={`transition-all duration-1000 flex  flex-col items-start  ${
-                  inView2
-                    ? "opacity-100 translate-x-0"
-                    : "opacity-0 -translate-x-20"
-                }`}
-              >
-                <div className="h-[100px] w-[142px]">
-                  <h1 className="poppins-semibold border-b border-white w-[53px]  text-[40px] ">
-                    01
-                  </h1>
-                  <h1 className="poppins-regular text-white text-[12px] pt-2">
-                    Architectural Visualization
-                  </h1>
-                </div>
-              </div>
-              <div
-                className={`transition-all duration-1000 flex  flex-col items-end  ${
-                  inView2
-                    ? "opacity-100 translate-x-0"
-                    : "opacity-0 translate-x-20"
-                }`}
-              >
-                <div className="h-[100px] w-[90px] flex flex-col items-end">
-                  <h1 className="poppins-semibold border-b border-white w-[53px]  text-[40px]">
-                    02
-                  </h1>
-                  <h1 className="poppins-regular text-white text-[12px] pt-2">
-                    Fashion Retail
-                  </h1>
-                </div>
-              </div>
-              <div
-                className={`transition-all duration-1000 flex  flex-col items-start  ${
-                  inView2
-                    ? "opacity-100 translate-x-0"
-                    : "opacity-0 -translate-x-20"
-                }`}
-              >
-                <div className="h-[100px] w-[142px]">
-                  <h1 className="poppins-semibold border-b border-white w-[53px]  text-[40px]">
-                    03
-                  </h1>
-                  <h1 className="poppins-regular text-white text-[12px] pt-2">
-                    Packaging
-                  </h1>
-                </div>
-              </div>
-              <div
-                className={`transition-all duration-1000 flex  flex-col items-end  ${
-                  inView2
-                    ? "opacity-100 translate-x-0"
-                    : "opacity-0 translate-x-20"
-                }`}
-              >
-                <div className="h-[100px] w-[90px] flex flex-col items-end">
-                  <h1 className="poppins-semibold border-b border-white w-[53px]  text-[40px]">
-                    04
-                  </h1>
-                  <h1 className="poppins-regular text-white  text-[12px] pt-2">
-                    Automotive
-                  </h1>
-                </div>
-              </div>
-              <div
-                className={`transition-all duration-1000 flex  flex-col items-start  ${
-                  inView2
-                    ? "opacity-100 translate-x-0"
-                    : "opacity-0 -translate-x-20"
-                }`}
-              >
-                <div className="h-[100px] w-[142px]">
-                  <h1 className="poppins-semibold border-b border-white w-[53px]  text-[40px]">
-                    05
-                  </h1>
-                  <h1 className="poppins-regular text-white text-[12px] pt-2">
-                    Product Animation
-                  </h1>
-                </div>
+    <>
+      <div className="overflow-hidden">
+        {/* ---------------------------------section 01 start-------------------------------- */}
+        <div className="se-1-bg mb-[1px]">
+          <div ref={ref1} className=" relative">
+            <div className="flex justify-center ">
+              <div className="h-[100px] w-[280px]  mt-[51px] mb-[72px] text-white border-r border-white ">
+                <h1
+                  className={`transition-all duration-1000 text-[27px] poppins-regular text-center ${
+                    inView1
+                      ? "opacity-100 translate-x-0"
+                      : "opacity-0 translate-x-20"
+                  }`}
+                >
+                  Digital Content
+                </h1>
+                <h1
+                  className={`transition-all duration-1000 text-[54px] poppins-thin text-center leading-[60px] ${
+                    inView1
+                      ? "opacity-100 translate-x-0"
+                      : "opacity-0 -translate-x-20"
+                  }`}
+                >
+                  PORTFOLIO
+                </h1>
               </div>
             </div>
-          </div>
-          <div className="absolute top-0 right-0">
-            <img src="/img/3d/3d_portfolio_m/Ellipse_3_s2_v.png" />
-          </div>
-          <div className="absolute top-[14px] right-[79px]">
-            <img src="/img/3d/3d_portfolio_m/Ellipse_8_s2.png" />
-          </div>
-          <div className="absolute top-[175px] left-0">
-            <img src="/img/3d/3d_portfolio_m/Ellipse_9_s2.png" />
-          </div>
-          <div className="absolute bottom-0 right-0 opacity-50">
-            <img src="/img/3d/3d_portfolio_m/Glass Effects_02_s2.png" />
+            <div className="flex justify-center mt-10 relative z-20">
+              <h1
+                className={`transition-all duration-1000 poppins-light text-[225px] text-white rotate-90 ${
+                  inView1
+                    ? "opacity-100 translate-y-0"
+                    : "opacity-0 translate-y-20"
+                }`}
+              >
+                CGI
+              </h1>
+            </div>
+            <div className="absolute top-0 right-[68px]">
+              <img src="/img/3d/3d_portfolio_m/Ellipse 9.png" />
+            </div>
+            <div className="absolute top-[179px] left-[68px] z-30">
+              <img src="/img/3d/3d_portfolio_m/Ellipse 3.png" />
+            </div>
+            <div className="absolute top-[159px] left-[58px]">
+              <img src="/img/3d/3d_portfolio_m/Ellipse 8.png" />
+            </div>
+            <div className="absolute top-[159px] left-[58px]">
+              <img src="/img/3d/3d_portfolio_m/Ellipse 8.png" />
+            </div>
+            <div className="absolute bottom-[-77px] right-0 opacity-70 z-10">
+              <img src="/img/3d/3d_portfolio_m/Glass Effects_02.png" />
+            </div>
           </div>
         </div>
-      </div>
-      {/* ----------------------------------section 02 end------------------------------- */}
-      {/* -----------------------------------section 03 start------------------------------ */}
-      <div className="se-3-bg mb-[1px]">
-        <div ref={ref4} className="container mx-auto">
-          <div  className={`transition-all duration-1000 flex justify-center  ${
+        {/* ---------------------------------section 01 end-------------------------------- */}
+        {/* ----------------------------------section 02 start------------------------------- */}
+        <div className="se-2-bg mb-[1px] relative">
+          <div ref={ref2} className="">
+            <div className="flex justify-center">
+              <div className=" h-full w-full mx-[76px] mt-[150px]">
+             <div className=" flex flex-col gap-10  items-center"> 
+             <div className="flex justify-center gap-10">
+                  <div
+                    className={`transition-all duration-1000   ${
+                      inView2
+                        ? "opacity-100 translate-x-0"
+                        : "opacity-0 -translate-x-20"
+                    }`}
+                  >
+                    <div className="h-[100px] w-[142px]">
+                      <h1 className="poppins-semibold border-b border-white w-[53px]  text-[50px] ">
+                        01
+                      </h1>
+                      <h1 className="poppins-regular text-white text-[12px] pt-2">
+                        Architectural Visualization
+                      </h1>
+                    </div>
+                  </div>
+                  <div
+                    className={`transition-all duration-1000   ${
+                      inView2
+                        ? "opacity-100 translate-y-0"
+                        : "opacity-0 -translate-y-20"
+                    }`}
+                  >
+                    <div className="h-[100px] w-[142px] ">
+                      <h1 className="poppins-semibold border-b border-white w-[53px]  text-[50px]">
+                        02
+                      </h1>
+                      <h1 className="poppins-regular text-white text-[12px] pt-2">
+                        Fashion Retail
+                      </h1>
+                    </div>
+                  </div>
+                  <div
+                    className={`transition-all duration-1000   ${
+                      inView2
+                        ? "opacity-100 translate-x-0"
+                        : "opacity-0 translate-x-20"
+                    }`}
+                  >
+                    <div className="h-[100px] w-[142px]">
+                      <h1 className="poppins-semibold border-b border-white w-[53px]  text-[50px]">
+                        03
+                      </h1>
+                      <h1 className="poppins-regular text-white text-[12px] pt-2">
+                        Packaging
+                      </h1>
+                    </div>
+                  </div>
+                </div>
+              <div className="flex justify-center gap-10 ">
+              <div
+                  className={`transition-all duration-1000   ${
+                    inView2
+                      ? "opacity-100 translate-y-0"
+                      : "opacity-0 translate-y-20"
+                  }`}
+                >
+                  <div className="h-[100px] w-[142px] ">
+                    <h1 className="poppins-semibold border-b border-white w-[53px]  text-[50px]">
+                      04
+                    </h1>
+                    <h1 className="poppins-regular text-white  text-[12px] pt-2">
+                      Automotive
+                    </h1>
+                  </div>
+                </div>
+                <div
+                  className={`transition-all duration-1000  ${
+                    inView2
+                      ? "opacity-100 translate-y-0"
+                      : "opacity-0 translate-y-20"
+                  }`}
+                >
+                  <div className="h-[100px] w-[142px]">
+                    <h1 className="poppins-semibold border-b border-white w-[53px]  text-[50px]">
+                      05
+                    </h1>
+                    <h1 className="poppins-regular text-white text-[12px] pt-2">
+                      Product Animation
+                    </h1>
+                  </div>
+                </div>
+              </div>
+             </div>
+              </div>
+            </div>
+            <div className="absolute top-0 right-0">
+              <img src="/img/3d/3d_portfolio_m/Ellipse_3_s2_v.png" />
+            </div>
+            <div className="absolute top-[14px] right-[79px]">
+              <img src="/img/3d/3d_portfolio_m/Ellipse_8_s2.png" />
+            </div>
+            <div className="absolute top-[175px] left-0">
+              <img src="/img/3d/3d_portfolio_m/Ellipse_9_s2.png" />
+            </div>
+            <div className="absolute bottom-0 right-0 opacity-50">
+              <img src="/img/3d/3d_portfolio_m/Glass Effects_02_s2.png" />
+            </div>
+          </div>
+        </div>
+        {/* ----------------------------------section 02 end------------------------------- */}
+        {/* -----------------------------------section 03 start------------------------------ */}
+        <div className="se-3-bg mb-[1px]">
+          <div ref={ref4} className="container mx-auto">
+            <div
+              className={`transition-all duration-1000 flex justify-center  ${
                 inView4
                   ? "opacity-100 translate-y-0"
                   : "opacity-0 -translate-y-20"
               }`}
-           >
-            <img
-              className="mt-[100px] mb-[60px]"
-              src="/img/3d/3d_portfolio_m/KOW-Logo_-Gray 1.png "
-            />
-          </div>
-          <p className={`transition-all duration-1000 w-full px-2 text-justify poppins-regular text-[14px]  ${
+            >
+              <img
+                className="mt-[100px] mb-[60px]"
+                src="/img/3d/3d_portfolio_m/KOW-Logo_-Gray 1.png "
+              />
+            </div>
+            <p
+              className={`transition-all duration-1000 w-full px-2 text-justify poppins-regular text-[14px]  ${
                 inView4
                   ? "opacity-100 translate-y-0"
                   : "opacity-0 translate-y-20"
               }`}
-          
-         >
-            We are a specialized company in 3D modeling & CGI, producing
-            high-quality 3D models, imagery & animations in collaboration with
-            top 3D designers. Along with creating realistic 3D models, we also
-            offer high quality product image rendering tailored to retail
-            industries, enabling clients to catch the customers attention with
-            stunning product rendered outputs. Our commitment to delivering
-            exceptional visual experiences not only satisfies our clients but
-            also attracts more business opportunities.
-          </p>
+            >
+              We are a specialized company in 3D modeling & CGI, producing
+              high-quality 3D models, imagery & animations in collaboration with
+              top 3D designers. Along with creating realistic 3D models, we also
+              offer high quality product image rendering tailored to retail
+              industries, enabling clients to catch the customers attention with
+              stunning product rendered outputs. Our commitment to delivering
+              exceptional visual experiences not only satisfies our clients but
+              also attracts more business opportunities.
+            </p>
+          </div>
         </div>
-      </div>
-      {/* -----------------------------------section 03 end------------------------------ */}
-      {/* ------------------------------------section 04 start----------------------------- */}
-      <div className="se-4-bg relative">
-        <div ref={ref5}>
-          <div className={`transition-all duration-1000 flex justify-center relative  ${
+        {/* -----------------------------------section 03 end------------------------------ */}
+        {/* ------------------------------------section 04 start----------------------------- */}
+        <div className="se-4-bg relative">
+          <div ref={ref5}>
+            <div
+              className={`transition-all duration-1000 flex justify-center relative  ${
                 inView5
                   ? "opacity-100 translate-x-0"
                   : "opacity-0 -translate-x-20"
-              }`} >
-            <img src="/img/3d/3d_portfolio_m/s4.webp" />
-            <div className="absolute left-0 bottom-0">
-              <img src="/img/3d/3d_portfolio_m/A.png" />
+              }`}
+            >
+              <img src="/img/3d/3d_portfolio_m/s4.webp" />
+              <div className="absolute left-0 bottom-0">
+                <img src="/img/3d/3d_portfolio_m/A.png" />
+              </div>
             </div>
-          </div>
-          <div className={`transition-all duration-1000 flex flex-col items-center mt-[107px]   ${
+            <div
+              className={`transition-all duration-1000 flex flex-col items-center mt-[107px]   ${
                 inView5
                   ? "opacity-100 translate-x-0"
                   : "opacity-0 translate-x-20"
-              }`} >
-            <h1 className="text-white poppins-regular text-[38px] leading-6">
-              Architectural
-            </h1>
-            <h1 className="text-[#A5A5A5] poppins-extralight text-[38px]">
-              Visualization
-            </h1>
+              }`}
+            >
+              <h1 className="text-white poppins-regular text-[38px] leading-6">
+                Architectural
+              </h1>
+              <h1 className="text-[#A5A5A5] poppins-extralight text-[38px]">
+                Visualization
+              </h1>
+            </div>
+          </div>
+          <div className="absolute right-0 bottom-0">
+            <img src="/img/3d/3d_portfolio_m/V.png" />
           </div>
         </div>
-        <div className="absolute right-0 bottom-0">
-          <img src="/img/3d/3d_portfolio_m/V.png" />
+        {/* ------------------------------------section 04 end----------------------------- */}
+        {/* -------------------------------------section 05 start------------------------------- */}
+        <div className=" h-screen">
+          <div ref={ref3} className="relative">
+            <img className="" src="/img/3d/3d_portfolio_m/s5_2.jpg" />
+            <div
+              className={`transition-all duration-1000 absolute right-4 bottom-[-30px] z-50  ${
+                inView3
+                  ? "opacity-100 translate-x-0"
+                  : "opacity-0 translate-x-20"
+              }`}
+            >
+              <img src="/img/3d/3d_portfolio_m/s5_1.png" />
+            </div>
+            <div className="absolute bottom-[-180px] right-4">
+              <img
+                className="w-[320px]"
+                src="/img/3d/3d_portfolio_m/s5_6.png"
+              />
+            </div>
+            <div
+              className={`transition-all duration-1000 absolute bottom-[-270px] right-4  ${
+                inView3
+                  ? "opacity-100 translate-x-0"
+                  : "opacity-0 translate-x-20"
+              }`}
+            >
+              <img
+                className="w-[130px]"
+                src="/img/3d/3d_portfolio_m/s5_5.webp"
+              />
+            </div>
+            <div
+              className={`transition-all duration-1000 absolute bottom-[-249px] right-[148px]  ${
+                inView3
+                  ? "opacity-100 translate-y-0"
+                  : "opacity-0 translate-y-20"
+              }`}
+            >
+              <img
+                className="w-[130px]"
+                src="/img/3d/3d_portfolio_m/s5_4.jpg"
+              />
+            </div>
+            <div
+              className={`transition-all duration-1000 absolute bottom-[-140px] right-[148px]  ${
+                inView3
+                  ? "opacity-100 translate-x-0"
+                  : "opacity-0 -translate-x-20"
+              }`}
+            >
+              <img
+                className="w-[220px]"
+                src="/img/3d/3d_portfolio_m/s5_3.jpg"
+              />
+            </div>
+            <div
+              className={`transition-all duration-1000 absolute bottom-[-270px] right-[278px]  ${
+                inView3
+                  ? "opacity-100 translate-x-0"
+                  : "opacity-0 -translate-x-20"
+              }`}
+            >
+              <img className="w-[40px]" src="/img/3d/3d_portfolio_m/s5_7.png" />
+            </div>
+          </div>
         </div>
-      </div>
-      {/* ------------------------------------section 04 end----------------------------- */}
-      {/* -------------------------------------section 05 start------------------------------- */}
-      <div className=" h-screen">
-        <div ref={ref3} className="relative">
-          <img className="" src="/img/3d/3d_portfolio_m/s5_2.jpg" />
-          <div
-            className={`transition-all duration-1000 absolute right-4 bottom-[-30px] z-50  ${
-              inView3 ? "opacity-100 translate-x-0" : "opacity-0 translate-x-20"
-            }`}
-          >
-            <img src="/img/3d/3d_portfolio_m/s5_1.png" />
-          </div>
-          <div className="absolute bottom-[-180px] right-4">
-            <img className="w-[320px]" src="/img/3d/3d_portfolio_m/s5_6.png" />
-          </div>
-          <div  className={`transition-all duration-1000 absolute bottom-[-270px] right-4  ${
-              inView3 ? "opacity-100 translate-x-0" : "opacity-0 translate-x-20"
-            }`} >
-            <img className="w-[130px]" src="/img/3d/3d_portfolio_m/s5_5.webp" />
-          </div>
-          <div  className={`transition-all duration-1000 absolute bottom-[-249px] right-[148px]  ${
-              inView3 ? "opacity-100 translate-y-0" : "opacity-0 translate-y-20"
-            }`} >
-            <img className="w-[130px]" src="/img/3d/3d_portfolio_m/s5_4.jpg" />
-          </div>
-          <div  className={`transition-all duration-1000 absolute bottom-[-140px] right-[148px]  ${
-              inView3 ? "opacity-100 translate-x-0" : "opacity-0 -translate-x-20"
-            }`}>
-            <img className="w-[220px]" src="/img/3d/3d_portfolio_m/s5_3.jpg" />
-          </div>
-          <div  className={`transition-all duration-1000 absolute bottom-[-270px] right-[278px]  ${
-              inView3 ? "opacity-100 translate-x-0" : "opacity-0 -translate-x-20"
-            }`} >
-            <img className="w-[40px]" src="/img/3d/3d_portfolio_m/s5_7.png" />
-          </div>
-        </div>
-      </div>
-      {/* -------------------------------------section 05 end------------------------------- */}
+        {/* -------------------------------------section 05 end------------------------------- */}
 
-      {/* --------------------------------------section 06 start-------------------------------*/}
-      <div className="se-6-bg mb-[1px]">
-      <div ref={ref6}>
-        <div className={`transition-all duration-1000 relative ${
-          inView6 ? "opacity-100 translate-x-0" : "opacity-0 -translate-x-20"
-        }`}>
-          <img
-            src={section6[currentIndexSec6]}
-            alt="Exterior Visualization"
-          />
-          {currentIndexSec6 < section6.length - 1 && (
+        {/* --------------------------------------section 06 start-------------------------------*/}
+        <div className="se-6-bg mb-[1px]">
+          <div ref={ref6}>
             <div
-              className="absolute right-2 top-[50%] cursor-pointer"
-              onClick={handleNextClickSec6}
+              className={`transition-all duration-1000 relative ${
+                inView6
+                  ? "opacity-100 translate-x-0"
+                  : "opacity-0 -translate-x-20"
+              }`}
             >
-              <img src="/img/3d/3d_portfolio_m/Next Vector.png" alt="Next" />
+              <img
+                src={section6[currentIndexSec6]}
+                alt="Exterior Visualization"
+              />
+              {currentIndexSec6 < section6.length - 1 && (
+                <div
+                  className="absolute right-2 top-[50%] cursor-pointer"
+                  onClick={handleNextClickSec6}
+                >
+                  <img
+                    src="/img/3d/3d_portfolio_m/Next Vector.png"
+                    alt="Next"
+                  />
+                </div>
+              )}
+              {currentIndexSec6 > 0 && (
+                <div
+                  className="absolute left-2 top-[50%] rotate-180 cursor-pointer"
+                  onClick={handlePrevClickSec6}
+                >
+                  <img
+                    src="/img/3d/3d_portfolio_m/Next Vector.png"
+                    alt="Previous"
+                  />
+                </div>
+              )}
             </div>
-          )}
-          {currentIndexSec6 > 0 && (
             <div
-              className="absolute left-2 top-[50%] rotate-180 cursor-pointer"
-              onClick={handlePrevClickSec6}
+              className={`transition-all duration-1000 flex flex-col items-center mt-[107px] ${
+                inView6
+                  ? "opacity-100 translate-x-0"
+                  : "opacity-0 translate-x-20"
+              }`}
             >
-              <img src="/img/3d/3d_portfolio_m/Next Vector.png" alt="Previous" />
+              <h1 className="text-white poppins-regular text-[38px] leading-6">
+                Exterior
+              </h1>
+              <h1 className="text-[#A5A5A5] poppins-extralight text-[38px]">
+                Visualization
+              </h1>
             </div>
-          )}
+          </div>
         </div>
-        <div className={`transition-all duration-1000 flex flex-col items-center mt-[107px] ${
-          inView6 ? "opacity-100 translate-x-0" : "opacity-0 translate-x-20"
-        }`}>
-          <h1 className="text-white poppins-regular text-[38px] leading-6">
-            Exterior
-          </h1>
-          <h1 className="text-[#A5A5A5] poppins-extralight text-[38px]">
-            Visualization
-          </h1>
-        </div>
-      </div>
-    </div>
-      {/* --------------------------------------section 06 end-------------------------------*/}
-      {/* --------------------------------------section 07 start-------------------------------*/}
-      <div className="se-6-bg mb-[1px]">
-        <div ref={ref7}>
-          <div  className={`transition-all duration-1000 relative   ${
-              inView7 ? "opacity-100 translate-x-0" : "opacity-0 translate-x-20"
-            }`} >
-            <img
-              src={section7[currentIndexSec7]}
-              alt="Exterior Visualization"
-            />
+        {/* --------------------------------------section 06 end-------------------------------*/}
+        {/* --------------------------------------section 07 start-------------------------------*/}
+        <div className="se-6-bg mb-[1px]">
+          <div ref={ref7}>
+            <div
+              className={`transition-all duration-1000 relative   ${
+                inView7
+                  ? "opacity-100 translate-x-0"
+                  : "opacity-0 translate-x-20"
+              }`}
+            >
+              <img
+                src={section7[currentIndexSec7]}
+                alt="Exterior Visualization"
+              />
               {currentIndexSec7 < section7.length - 1 && (
-            <div
-              className="absolute right-2 top-[50%] cursor-pointer"
-              onClick={handleNextClickSec7}
-            >
-              
-              <img src="/img/3d/3d_portfolio_m/Next Vector.png" alt="Next" />
+                <div
+                  className="absolute right-2 top-[50%] cursor-pointer"
+                  onClick={handleNextClickSec7}
+                >
+                  <img
+                    src="/img/3d/3d_portfolio_m/Next Vector.png"
+                    alt="Next"
+                  />
+                </div>
+              )}
+              {currentIndexSec7 > 0 && (
+                <div
+                  className="absolute left-2 top-[50%] rotate-180 cursor-pointer"
+                  onClick={handlePrevClickSec7}
+                >
+                  <img
+                    src="/img/3d/3d_portfolio_m/Next Vector.png"
+                    alt="Next"
+                  />
+                </div>
+              )}
             </div>
-          )}
-           {currentIndexSec7 > 0 && (
             <div
-              className="absolute left-2 top-[50%] rotate-180 cursor-pointer"
-              onClick={handlePrevClickSec7}
+              className={`transition-all duration-1000 flex flex-col items-center mt-[107px]  ${
+                inView7
+                  ? "opacity-100 translate-x-0"
+                  : "opacity-0 -translate-x-20"
+              }`}
             >
-              <img src="/img/3d/3d_portfolio_m/Next Vector.png" alt="Next" />
+              <h1 className="text-white poppins-regular text-[38px] leading-6">
+                Interior
+              </h1>
+              <h1 className="text-[#A5A5A5] poppins-extralight text-[38px]">
+                Visualization
+              </h1>
             </div>
-          )}
-          </div>
-          <div  className={`transition-all duration-1000 flex flex-col items-center mt-[107px]  ${
-              inView7 ? "opacity-100 translate-x-0" : "opacity-0 -translate-x-20"
-            }`} >
-            <h1 className="text-white poppins-regular text-[38px] leading-6">
-              Interior
-            </h1>
-            <h1 className="text-[#A5A5A5] poppins-extralight text-[38px]">
-              Visualization
-            </h1>
           </div>
         </div>
-      </div>
-      {/* --------------------------------------section 07 end-------------------------------*/}
-      {/* -----------------------------------section 08 start------------------------------ */}
-      <div className="se-8-bg mb-[1px] ">
-        <div ref={ref8} className="container mx-auto ">
-          <div className={`transition-all duration-1000 flex flex-col items-center   ${
-              inView8 ? "opacity-100 translate-y-0" : "opacity-0 -translate-y-20"
-            }`}>
-            <h1 className="text-white poppins-regular text-[35px] mt-[100px]  leading-6">
-              Architectural
-            </h1>
-            <h1 className="text-[#A5A5A5] poppins-extralight text-[35px]">
-              Visualization
-            </h1>
+        {/* --------------------------------------section 07 end-------------------------------*/}
+        {/* -----------------------------------section 08 start------------------------------ */}
+        <div className="se-8-bg mb-[1px] ">
+          <div ref={ref8} className="container mx-auto ">
+            <div
+              className={`transition-all duration-1000 flex flex-col items-center   ${
+                inView8
+                  ? "opacity-100 translate-y-0"
+                  : "opacity-0 -translate-y-20"
+              }`}
+            >
+              <h1 className="text-white poppins-regular text-[35px] mt-[100px]  leading-6">
+                Architectural
+              </h1>
+              <h1 className="text-[#A5A5A5] poppins-extralight text-[35px]">
+                Visualization
+              </h1>
+            </div>
+            <p
+              className={`transition-all duration-1000 w-full px-2 text-justify text-white poppins-regular text-[14px] mt-[52px]  ${
+                inView8
+                  ? "opacity-100 translate-y-0"
+                  : "opacity-0 translate-y-20"
+              }`}
+            >
+              We are a specialized company in 3D modeling & CGI, producing
+              high-quality 3D models, imagery & animations in collaboration with
+              top 3D designers. Along with creating realistic 3D models, we also
+              offer high quality product image rendering tailored to retail
+              industries, enabling clients to catch the customers attention with
+              stunning product rendered outputs. Our commitment to delivering
+              exceptional visual experiences not only satisfies our clients but
+              also attracts more business opportunities.
+            </p>
           </div>
-          <p className={`transition-all duration-1000 w-full px-2 text-justify text-white poppins-regular text-[14px] mt-[52px]  ${
-              inView8 ? "opacity-100 translate-y-0" : "opacity-0 translate-y-20"
-            }`} >
-            We are a specialized company in 3D modeling & CGI, producing
-            high-quality 3D models, imagery & animations in collaboration with
-            top 3D designers. Along with creating realistic 3D models, we also
-            offer high quality product image rendering tailored to retail
-            industries, enabling clients to catch the customers attention with
-            stunning product rendered outputs. Our commitment to delivering
-            exceptional visual experiences not only satisfies our clients but
-            also attracts more business opportunities.
-          </p>
         </div>
-      </div>
-      {/* -----------------------------------section 08 end------------------------------ */}
-      {/* --------------------------------------section 09 start-------------------------------*/}
-      <div className="se-1-bg mb-[1px]">
-        <div ref={ref9}> 
-          <div  className={`transition-all duration-1000 relative   ${
-              inView9 ? "opacity-100 translate-x-0" : "opacity-0 -translate-x-20"
-            }`} >
-            <img
-              src={section9[currentIndexSec9]}
-              alt="Exterior Visualization"
-            />
-            {currentIndexSec9 < section9.length - 1 && (
+        {/* -----------------------------------section 08 end------------------------------ */}
+        {/* --------------------------------------section 09 start-------------------------------*/}
+        <div className="se-1-bg mb-[1px]">
+          <div ref={ref9}>
             <div
-              className="absolute right-2 top-[50%] cursor-pointer"
-              onClick={handleNextClickSec9}
+              className={`transition-all duration-1000 relative   ${
+                inView9
+                  ? "opacity-100 translate-x-0"
+                  : "opacity-0 -translate-x-20"
+              }`}
             >
-              <img src="/img/3d/3d_portfolio_m/Next Vector.png" alt="Next" />
+              <img
+                src={section9[currentIndexSec9]}
+                alt="Exterior Visualization"
+              />
+              {currentIndexSec9 < section9.length - 1 && (
+                <div
+                  className="absolute right-2 top-[50%] cursor-pointer"
+                  onClick={handleNextClickSec9}
+                >
+                  <img
+                    src="/img/3d/3d_portfolio_m/Next Vector.png"
+                    alt="Next"
+                  />
+                </div>
+              )}
+              {currentIndexSec9 > 0 && (
+                <div
+                  className="absolute left-2 top-[50%] rotate-180 cursor-pointer"
+                  onClick={handlePrevClickSec9}
+                >
+                  <img
+                    src="/img/3d/3d_portfolio_m/Next Vector.png"
+                    alt="Next"
+                  />
+                </div>
+              )}
             </div>
-          )}
-           {currentIndexSec9 > 0 && (
-             
-           
-            <div
-              className="absolute left-2 top-[50%] rotate-180 cursor-pointer"
-              onClick={handlePrevClickSec9}
-            >
-              <img src="/img/3d/3d_portfolio_m/Next Vector.png" alt="Next" />
-            </div>
-          )}
-          </div>
-          <div className="flex flex-col items-center ">
-            <h1 className={`transition-all duration-1000 text-white poppins-regular text-[30px] mt-6   ${
-              inView9 ? "opacity-100 translate-y-0" : "opacity-0 -translate-y-20"
-            }`} >
-              Fashion <span className="text-[#A5A5A5]">Retail</span>
-            </h1>
+            <div className="flex flex-col items-center ">
+              <h1
+                className={`transition-all duration-1000 text-white poppins-regular text-[30px] mt-6   ${
+                  inView9
+                    ? "opacity-100 translate-y-0"
+                    : "opacity-0 -translate-y-20"
+                }`}
+              >
+                Fashion <span className="text-[#A5A5A5]">Retail</span>
+              </h1>
 
-            <div className="w-full ">
-              <h1 className="h-[1px] bg-white w-full ml-[23%]"></h1>
-            </div>
+              <div className="w-full ">
+                <h1 className="h-[1px] bg-white w-full ml-[23%]"></h1>
+              </div>
 
-            <p className={`transition-all duration-1000 text-white mt-6 px-4 text-[12px] text-justify poppins-regular  ${
-              inView9 ? "opacity-100 translate-y-0" : "opacity-0 translate-y-20"
-            }`} >
-              {`Imagine showcasing your entire fashion line without a single
+              <p
+                className={`transition-all duration-1000 text-white mt-6 px-4 text-[12px] text-justify poppins-regular  ${
+                  inView9
+                    ? "opacity-100 translate-y-0"
+                    : "opacity-0 translate-y-20"
+                }`}
+              >
+                {`Imagine showcasing your entire fashion line without a single
               stitch sewn. Our 3D asset production revolutionizes fashion and
               retail. We craft hyper-realistic digital garments – from flowing
               silks to textured knits. But it's not just about the look, our
@@ -649,13 +741,13 @@ const PortfolioTab = () => {
               interactive online experiences, and give customers the freedom to
               experiment before purchasing. We are here to weave your fashion
               vision into a digital reality that drives sales.`}
-            </p>
+              </p>
+            </div>
           </div>
         </div>
-      </div>
-      {/* --------------------------------------section 09 end-------------------------------*/}
-      {/* -----------------------------------section 10 start------------------------------ */}
-      {/* <div className="se-1-bg mb-[1px]">
+        {/* --------------------------------------section 09 end-------------------------------*/}
+        {/* -----------------------------------section 10 start------------------------------ */}
+        {/* <div className="se-1-bg mb-[1px]">
         <div className="container mx-auto ">
           <div className="flex flex-col items-center ">
             <h1 className="text-white poppins-regular text-[35px] mt-[88px] ">
@@ -675,51 +767,67 @@ const PortfolioTab = () => {
           </p>
         </div>
       </div> */}
-      {/* -----------------------------------section 10 end------------------------------ */}
-      {/* --------------------------------------section 11 start-------------------------------*/}
-      <div className="se-13-bg mb-[1px]">
-        <div ref={ref10}>
-          <div className={`transition-all duration-1000 relative   ${
-              inView10 ? "opacity-100 translate-x-0" : "opacity-0 translate-x-20"
-            }`}>
-            <img
-              src={section10[currentIndexSec10]}
-              alt="Exterior Visualization"
-            />
-            {currentIndexSec10 < section10.length - 1 && (
+        {/* -----------------------------------section 10 end------------------------------ */}
+        {/* --------------------------------------section 11 start-------------------------------*/}
+        <div className="se-13-bg mb-[1px]">
+          <div ref={ref10}>
             <div
-              className="absolute right-2 top-[50%] cursor-pointer"
-              onClick={handleNextClickSec10}
+              className={`transition-all duration-1000 relative   ${
+                inView10
+                  ? "opacity-100 translate-x-0"
+                  : "opacity-0 translate-x-20"
+              }`}
             >
-              <img src="/img/3d/3d_portfolio_m/Next Vector.png" alt="Next" />
+              <img
+                src={section10[currentIndexSec10]}
+                alt="Exterior Visualization"
+              />
+              {currentIndexSec10 < section10.length - 1 && (
+                <div
+                  className="absolute right-2 top-[50%] cursor-pointer"
+                  onClick={handleNextClickSec10}
+                >
+                  <img
+                    src="/img/3d/3d_portfolio_m/Next Vector.png"
+                    alt="Next"
+                  />
+                </div>
+              )}
+              {currentIndexSec10 > 0 && (
+                <div
+                  className="absolute left-2 top-[50%] rotate-180 cursor-pointer"
+                  onClick={handlePrevClickSec10}
+                >
+                  <img
+                    src="/img/3d/3d_portfolio_m/Next Vector.png"
+                    alt="Next"
+                  />
+                </div>
+              )}
             </div>
-          )}
-           {currentIndexSec10 > 0 && (
-             
-           
-            <div
-              className="absolute left-2 top-[50%] rotate-180 cursor-pointer"
-              onClick={handlePrevClickSec10}
-            >
-              <img src="/img/3d/3d_portfolio_m/Next Vector.png" alt="Next" />
-            </div>
-          )}
-          </div>
-          <div className="flex flex-col items-center ">
-            <h1 className={`transition-all duration-1000 text-white poppins-regular text-[30px] mt-6   ${
-              inView10 ? "opacity-100 translate-y-0" : "opacity-0 -translate-y-20"
-            }`} >
-              Product
-            </h1>
+            <div className="flex flex-col items-center ">
+              <h1
+                className={`transition-all duration-1000 text-white poppins-regular text-[30px] mt-6   ${
+                  inView10
+                    ? "opacity-100 translate-y-0"
+                    : "opacity-0 -translate-y-20"
+                }`}
+              >
+                Product
+              </h1>
 
-            <div className="w-full ">
-              <h1 className="h-[1px] bg-white w-full ml-[35%]"></h1>
-            </div>
+              <div className="w-full ">
+                <h1 className="h-[1px] bg-white w-full ml-[35%]"></h1>
+              </div>
 
-            <p className={`transition-all duration-1000 text-white mt-6 px-4 text-[12px] text-justify poppins-regular   ${
-              inView10 ? "opacity-100 translate-y-0" : "opacity-0 translate-y-20"
-            }`} >
-              {`Our 3D asset production breathes life into architectural visions,
+              <p
+                className={`transition-all duration-1000 text-white mt-6 px-4 text-[12px] text-justify poppins-regular   ${
+                  inView10
+                    ? "opacity-100 translate-y-0"
+                    : "opacity-0 translate-y-20"
+                }`}
+              >
+                {`Our 3D asset production breathes life into architectural visions,
               crafting meticulously detailed elements – from intricate moldings
               to lifelike foliage. We don't just create objects, we create
               atmospheres. You can showcase the warmth of wood grain or the
@@ -728,13 +836,13 @@ const PortfolioTab = () => {
               marketing materials, and the ability to identify design tweaks–
               all thanks to the power of storytelling through stunning 3D
               assets. Bring your architectural dreams to vivid reality with us.`}
-            </p>
+              </p>
+            </div>
           </div>
         </div>
-      </div>
-      {/* --------------------------------------section 11 end-------------------------------*/}
-      {/* -----------------------------------section 12 start------------------------------ */}
-      {/* <div className="se-1-bg mb-[1px]">
+        {/* --------------------------------------section 11 end-------------------------------*/}
+        {/* -----------------------------------section 12 start------------------------------ */}
+        {/* <div className="se-1-bg mb-[1px]">
         <div className="container mx-auto ">
           <div className="flex flex-col items-center ">
             <h1 className="text-white poppins-regular text-[35px] mt-[88px]  leading-6">
@@ -756,51 +864,67 @@ const PortfolioTab = () => {
           </p>
         </div>
       </div> */}
-      {/* -----------------------------------section 12 end------------------------------ */}
-      {/* --------------------------------------section 13 start-------------------------------*/}
-      <div className="se-6-bg mb-[1px]">
-        <div ref={ref11}>
-          <div className={`transition-all duration-1000 relative   ${
-              inView11 ? "opacity-100 translate-x-0" : "opacity-0 -translate-x-20"
-            }`}>
-            <img
-              src={section11[currentIndexSec11]}
-              alt="Exterior Visualization"
-            />
-            {currentIndexSec11 < section11.length - 1 && (
+        {/* -----------------------------------section 12 end------------------------------ */}
+        {/* --------------------------------------section 13 start-------------------------------*/}
+        <div className="se-6-bg mb-[1px]">
+          <div ref={ref11}>
             <div
-              className="absolute right-2 top-[50%] cursor-pointer"
-              onClick={handleNextClickSec11}
+              className={`transition-all duration-1000 relative   ${
+                inView11
+                  ? "opacity-100 translate-x-0"
+                  : "opacity-0 -translate-x-20"
+              }`}
             >
-              <img src="/img/3d/3d_portfolio_m/Next Vector.png" alt="Next" />
+              <img
+                src={section11[currentIndexSec11]}
+                alt="Exterior Visualization"
+              />
+              {currentIndexSec11 < section11.length - 1 && (
+                <div
+                  className="absolute right-2 top-[50%] cursor-pointer"
+                  onClick={handleNextClickSec11}
+                >
+                  <img
+                    src="/img/3d/3d_portfolio_m/Next Vector.png"
+                    alt="Next"
+                  />
+                </div>
+              )}
+              {currentIndexSec11 > 0 && (
+                <div
+                  className="absolute left-2 top-[50%] rotate-180 cursor-pointer"
+                  onClick={handlePrevClickSec11}
+                >
+                  <img
+                    src="/img/3d/3d_portfolio_m/Next Vector.png"
+                    alt="Next"
+                  />
+                </div>
+              )}
             </div>
-          )}
-           {currentIndexSec11 > 0 && (
-             
-           
-            <div
-              className="absolute left-2 top-[50%] rotate-180 cursor-pointer"
-              onClick={handlePrevClickSec11}
-            >
-              <img src="/img/3d/3d_portfolio_m/Next Vector.png" alt="Next" />
-            </div>
-          )}
-          </div>
-          <div className="flex flex-col items-center ">
-            <h1 className={`transition-all duration-1000 text-white poppins-regular text-[30px] mt-6  ${
-              inView11 ? "opacity-100 translate-y-0" : "opacity-0 -translate-y-20"
-            }`} >
-              Automotive
-            </h1>
+            <div className="flex flex-col items-center ">
+              <h1
+                className={`transition-all duration-1000 text-white poppins-regular text-[30px] mt-6  ${
+                  inView11
+                    ? "opacity-100 translate-y-0"
+                    : "opacity-0 -translate-y-20"
+                }`}
+              >
+                Automotive
+              </h1>
 
-            <div className="w-full ">
-              <h1 className="h-[1px] bg-white w-full ml-[27%]"></h1>
-            </div>
+              <div className="w-full ">
+                <h1 className="h-[1px] bg-white w-full ml-[27%]"></h1>
+              </div>
 
-            <p className={`transition-all duration-1000 text-white mt-6 px-4 text-[12px] text-justify poppins-regular  ${
-              inView11 ? "opacity-100 translate-y-0" : "opacity-0 translate-y-20"
-            }`} >
-              {`Imagine sculpting a car not with clay, but with code. Our 3D asset
+              <p
+                className={`transition-all duration-1000 text-white mt-6 px-4 text-[12px] text-justify poppins-regular  ${
+                  inView11
+                    ? "opacity-100 translate-y-0"
+                    : "opacity-0 translate-y-20"
+                }`}
+              >
+                {`Imagine sculpting a car not with clay, but with code. Our 3D asset
               production studio throws open the garage doors to a new era of
               automotive design. We don't just create digital models, we craft
               living, breathing simulations. This isn't just about aesthetics.
@@ -811,13 +935,13 @@ const PortfolioTab = () => {
               showcase your vision with stunningly interactive 3D models. Let's
               shift your automotive design into high gear. Let's sculpt speed
               and refine reality with the power of 3D asset production.`}
-            </p>
+              </p>
+            </div>
           </div>
         </div>
-      </div>
-      {/* --------------------------------------section 13 end-------------------------------*/}
-      {/* -----------------------------------section 1 start------------------------------ */}
-      {/* <div className="se-1-bg mb-[1px]">
+        {/* --------------------------------------section 13 end-------------------------------*/}
+        {/* -----------------------------------section 1 start------------------------------ */}
+        {/* <div className="se-1-bg mb-[1px]">
         <div className="container mx-auto ">
           <div className="flex flex-col items-center ">
             <h1 className="text-white poppins-regular text-[35px] mt-[88px]  leading-6">
@@ -839,54 +963,60 @@ const PortfolioTab = () => {
           </p>
         </div>
       </div> */}
-      {/* -----------------------------------section 14 end------------------------------ */}
-      {/* -----------------------------------section 15 start------------------------------ */}
-      <div ref={sectionRef} className="se-1-bg mb-1 relative">
-        <div className="relative w-full h-[400px]">
-          {" "}
-          {/* Adjust the height as needed */}
-          {!isPlaying && (
-            <>
-              <img
-                className="w-full h-full object-cover absolute inset-0 m-auto"
-                src="/img/3d/3d_portfolio_m/s15.webp"
-                alt="Video Placeholder"
-              />
-              <img
-                className="cursor-pointer w-12 h-12 absolute inset-0 m-auto"
-                src="/img/3d/3d_portfolio_m/s15.png" // Path to your play button image
-                onClick={handlePlayClick}
-                alt="Play"
-              />
-            </>
-          )}
-          {isPlaying && (
-            <video
-              id="productVideo"
-              className="w-full h-[350px] object-cover  absolute top-0"
-              onEnded={handleVideoEnd}
-              controls={false}
-              autoPlay
-            >
-              <source src="/video/For Website.webm" type="video/webm" />
-            </video>
-          )}
+        {/* -----------------------------------section 14 end------------------------------ */}
+        {/* -----------------------------------section 15 start------------------------------ */}
+        <div ref={sectionRef} className="se-1-bg mb-1 relative">
+          <div className="relative w-full h-[400px]">
+            {" "}
+            {/* Adjust the height as needed */}
+            {!isPlaying && (
+              <>
+                <img
+                  className="w-full h-full object-cover absolute inset-0 m-auto"
+                  src="/img/3d/3d_portfolio_m/s15.webp"
+                  alt="Video Placeholder"
+                />
+                <img
+                  className="cursor-pointer w-12 h-12 absolute inset-0 m-auto"
+                  src="/img/3d/3d_portfolio_m/s15.png" // Path to your play button image
+                  onClick={handlePlayClick}
+                  alt="Play"
+                />
+              </>
+            )}
+            {isPlaying && (
+              <video
+                id="productVideo"
+                className="w-full h-[350px] object-cover  absolute top-0"
+                onEnded={handleVideoEnd}
+                controls={false}
+                autoPlay
+              >
+                <source src="/video/For Website.webm" type="video/webm" />
+              </video>
+            )}
+          </div>
+
+          <div
+            ref={ref12}
+            className={`transition-all duration-1000 flex flex-col items-center mt-[107px]  ${
+              inView12
+                ? "opacity-100 translate-y-0"
+                : "opacity-0 translate-y-20"
+            }`}
+          >
+            <h1 className="text-white poppins-extralight text-[38px] leading-6">
+              Product
+            </h1>
+            <h1 className="text-[#A5A5A5] poppins-extralight text-[38px]">
+              Animation
+            </h1>
+          </div>
         </div>
 
-        <div ref={ref12} className={`transition-all duration-1000 flex flex-col items-center mt-[107px]  ${
-              inView12 ? "opacity-100 translate-y-0" : "opacity-0 translate-y-20"
-            }`} >
-          <h1 className="text-white poppins-extralight text-[38px] leading-6">
-            Product
-          </h1>
-          <h1 className="text-[#A5A5A5] poppins-extralight text-[38px]">
-            Animation
-          </h1>
-        </div>
+        {/* -----------------------------------section 15 end------------------------------ */}
       </div>
-
-      {/* -----------------------------------section 15 end------------------------------ */}
-    </div>
+    </>
   );
 };
 
