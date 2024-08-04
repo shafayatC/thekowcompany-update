@@ -390,7 +390,7 @@ const Portfolio3D = () => {
               />
               <div className="h-[221px] w-[238px] absolute bottom-[-90px] right-0">
                 <img
-                  src={"/img/3d/3d_portfolio/s5_5.png"}
+                  src={"/img/3d/3d_portfolio/s5_5.webp"}
                   className={`w-full h-full duration-1000 transition-all ${
                     inView27
                       ? "opacity-100 translate-x-0"
@@ -400,7 +400,7 @@ const Portfolio3D = () => {
               </div>
               <div className="h-[180px] w-[200px] absolute bottom-[-50px] right-[240px]">
                 <img
-                  src={"/img/3d/3d_portfolio/s5_4.jpg"}
+                  src={"/img/3d/3d_portfolio/s5_4.webp"}
                   className={`w-full h-full duration-1000 transition-all ${
                     inView27
                       ? "opacity-100 translate-y-0"
@@ -732,7 +732,7 @@ dreams to vivid reality with us.`}</p>
                   : "opacity-0 -translate-x-20"
               }`}
             >
-              <img className="h-full" src="/img/3d/3d_portfolio/s14.png" />
+              <img className="h-full" src="/img/3d/3d_portfolio/s14.webp" />
             </div>
           </div>
         </div>
@@ -748,7 +748,7 @@ dreams to vivid reality with us.`}</p>
                   : "opacity-0 translate-x-20"
               }`}
             >
-              <img className="h-full" src="/img/3d/3d_portfolio/s15_n.png" />
+              <img className="h-full" src="/img/3d/3d_portfolio/s15_n.webp" />
             </div>
           </div>
         </div>
@@ -764,7 +764,7 @@ dreams to vivid reality with us.`}</p>
                   : "opacity-0 -translate-x-20"
               }`}
             >
-              <img className="h-full" src="/img/3d/3d_portfolio/s15_1.png" />
+              <img className="h-full" src="/img/3d/3d_portfolio/s15_1.webp" />
             </div>
           </div>
         </div>
@@ -776,7 +776,7 @@ dreams to vivid reality with us.`}</p>
             <div className="h-full w-[550px] 2xl:w-[700px] relative">
               <img
                 className="h-full w-full"
-                src="/img/3d/3d_portfolio/Boot1.png"
+                src="/img/3d/3d_portfolio/Boot1.webp"
               />
 
               <img
@@ -794,7 +794,7 @@ dreams to vivid reality with us.`}</p>
                   : "opacity-0 -translate-x-20"
               }`}
                 
-                src="/img/3d/3d_portfolio/Boot4.png"
+                src="/img/3d/3d_portfolio/Boot4.webp"
               />
               <img
                className={`absolute w-[250px] h-[290px] 2xl:w-[300px] 2xl:h-[400px] bottom-[20px] left-[-30%] transition-all duration-1000 ${
@@ -803,7 +803,7 @@ dreams to vivid reality with us.`}</p>
                   : "opacity-0 -translate-x-20"
               }`}
                
-                src="/img/3d/3d_portfolio/Boot3.png"
+                src="/img/3d/3d_portfolio/Boot3.webp"
               />
             </div>
           </div>
@@ -890,7 +890,7 @@ dreams to vivid reality with us.`}</p>
                     ? "opacity-100 translate-x-0"
                     : "opacity-0 -translate-x-20"
                 }`}
-                src="/img/3d/3d_portfolio/S16_FR_Image1.png"
+                src="/img/3d/3d_portfolio/s16.webp"
               />
             </div>
             <div ref={ref15} className="w-1/2">
@@ -1082,7 +1082,7 @@ into a digital reality that drives sales.`}</p>
             >
               <img
                 className="h-full w-full object-cover"
-                src="/img/3d/3d_portfolio/s21_2.jpg"
+                src="/img/3d/3d_portfolio/s21_2.webp"
                 alt="Portfolio Image 2"
               />
             </div>
@@ -1104,7 +1104,7 @@ into a digital reality that drives sales.`}</p>
             >
               <img
                 className=" h-full w-full object-cover "
-                src="/img/3d/3d_portfolio/s22.jpg"
+                src="/img/3d/3d_portfolio/s22.webp"
               />
             </div>
             <div
@@ -1116,7 +1116,7 @@ into a digital reality that drives sales.`}</p>
             >
               <img
                 className=" h-full w-full object-cover"
-                src="/img/3d/3d_portfolio/s22_2.jpg"
+                src="/img/3d/3d_portfolio/s22_2.webp"
               />
             </div>
           </div>
@@ -1137,7 +1137,7 @@ into a digital reality that drives sales.`}</p>
             >
               <img
                 className="max-h-full max-w-full"
-                src="/img/3d/3d_portfolio/s24.jpg"
+                src="/img/3d/3d_portfolio/s24.webp"
               />
             </div>
           </div>
@@ -1224,7 +1224,7 @@ digital realm, saving resources and accelerating your time to market.`}</p>
                   : "opacity-0 -translate-x-20"
               }`}
             >
-              <img src="/img/3d/3d_portfolio/car1.jpg" />
+              <img src="/img/3d/3d_portfolio/car1.webp" />
             </div>
             <div
               className={`duration-1000 transition-all ${
@@ -1233,7 +1233,7 @@ digital realm, saving resources and accelerating your time to market.`}</p>
                   : "opacity-0 translate-y-20"
               }`}
             >
-              <img src="/img/3d/3d_portfolio/car_body.jpg" />
+              <img src="/img/3d/3d_portfolio/car_body.webp" />
             </div>
             <div
               className={`duration-1000 transition-all ${

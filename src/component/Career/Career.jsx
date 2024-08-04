@@ -1,7 +1,7 @@
 import "./career.css";
 import { SlCalender } from "react-icons/sl";
 import { MdOutlineEmail } from "react-icons/md";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import CareerMail from "./CareerMail";
 
 const Career = () => {
@@ -264,6 +264,7 @@ const Career = () => {
   const [isOpen, setIsOpen] = useState(false);
   const [cvData, setCvData] = useState({});
   const [isModalOpen, setIsModalOpen] = useState(false);
+  const [getJobAvaialbeCount, setJobAvaialbleCount] = useState(0);
 
   const openModal = (data) => {
     setCvData(data);
@@ -289,6 +290,22 @@ const Career = () => {
     // console.log("currentDate",  currentDate.getTime() < selectedDate.getTime());
     return currentDate.getTime() < selectedDate.getTime();
   };
+
+
+  const checkJobAvaialble = (jobList) => {
+    let count = 0;
+    jobList.map((job) => {
+      if (compareCurrentDate(job.date)) {
+        count++;
+      }
+    });
+    setJobAvaialbleCount(count);
+  };
+
+
+  useEffect(() => {
+    checkJobAvaialble(jobCircular);
+  }, [])
   return (
     <>
       {/* <div className="career-bg h-[100vh]"> */}
@@ -324,7 +341,7 @@ const Career = () => {
                         onClick={() => openModal(item)}
                         // className="buttonAnim  hover:bg-green-600 hover:text-white "
                         // role="buttonAnim"
-                         className="bg-gray-300 font-semibold border-green-700 px-2 hover:bg-green-600  hover:text-white py-1 mb-2 text-left text-[12px] 2xl:text-[16px] shadow-md rounded-md w-[165px] 2xl:w-[230px]"
+                        className="bg-gray-300 font-semibold border-green-700 px-2 hover:bg-green-600  hover:text-white py-1 mb-2 text-left text-[12px] 2xl:text-[16px] shadow-md rounded-md w-[165px] 2xl:w-[230px]"
                       >
                         <span> {item.title}</span>
                       </button>
@@ -341,8 +358,16 @@ const Career = () => {
                 </>
               ))}
             </div>
+ 
           </div>
-
+                         
+          {
+                getJobAvaialbeCount == 0 && 
+                <div className="flex flex-col items-center">
+            <div className=" md:w-[450px]">
+                <h1 className="w-[400px] text-2xl text-red-700 font-semibold">We are not accepting new applications for now. Please check back later.</h1>
+         </div></div>
+          }
           <div className="flex justify-center mt-2">
             <div className="md:w-[450px]">
               <div className="flex flex-col justify-center items-center md:items-start ">
@@ -379,21 +404,21 @@ const Career = () => {
                         </div>
                     </div> */}
 
-          
+
           <div className="career-top-bg absolute top-0 left-[50%] 2xl:left-[39%] -translate-x-[50%] xl:left-[38%] lg:left-[35%] md:left-[30%] 2xl:-translate-x-[37%] w-20 h-32">
-          <div>
-          <img src="/img/Light1.png" className=" max-w-[300px] h-[300px] pt-[81px] ml-[-63px]" />
+            <div>
+              <img src="/img/Light1.png" className=" max-w-[300px] h-[300px] pt-[81px] ml-[-63px]" />
+            </div>
           </div>
-           </div>
-         
-          
-        <div className="w-full flex justify-center">
-        <div className="flex justify-center  md:justify-end w-full md:w-[900px] 2xl:w-[1100px] ">
-          
-          <img src="/img/chair-shadow.png" className=" max-w-[230px]   md:max-w-[300px] md:max-h-[270px] md:-mt-[240px]  " />
+
+
+          <div className="w-full flex justify-center">
+            <div className="flex justify-center  md:justify-end w-full md:w-[900px] 2xl:w-[1100px] ">
+
+              <img src="/img/chair-shadow.png" className=" max-w-[230px]   md:max-w-[300px] md:max-h-[270px] md:-mt-[180px]  " />
+            </div>
           </div>
-        </div>
-          
+
         </div>
 
         {/* ------------------------------------main modal ----------------------------------- */}
