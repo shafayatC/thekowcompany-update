@@ -260,6 +260,56 @@ const Career = () => {
 </div>`,
       date: "21 July, 2024",
     },
+    {
+      id: 6,
+      title: "Junior Executive, Client & Project Management",
+      description: `  <div class="job-des">
+ <h1>Junior Executive, Client & Project Management</h1>
+ <h1>Vacancy (01)</h1>
+    <p>We are seeking a dynamic and detail-oriented “Junior Executive, Client & Project Management” to manage various image and video post-production projects for our organization.</p>
+    <h3>Role Requirements:</h3>
+    <ul>
+        <li>Oversee & manage end-to-end project lifecycle for all post-production projects.</li>
+        <li>Coordinate with clients to define project scope, goals, deliverables, required resources, budget & timing.</li>
+        <li>Develop detailed project plans.</li>
+        <li>Communicate and collaborate with production & editing teams to align objectives.</li>
+        <li>Manage client relationships, ensure client satisfaction & manage client expectations in terms of project deliverables.</li>
+        
+    </ul>
+    <h3>Competencies: </h3>
+    <ul>
+        <li>Bachelor's degree in Business, Management, or any related field. Proven working experience in project management or related field.</li>
+        <li>Freshers are also encouraged to apply.</li>
+        <li>Experience in image & video post-production processes (editing, color grading, masking etc.) is a plus.</li>
+        <li>Excellent client-oriented & internal communication skills.</li>
+        <li>Proficiency with project management software tools, MS Office Suites, methodologies & best practices.</li>
+        
+    </ul>
+   <p class ="shift-p"><b>Shift:</b> Morning and Night Shifts (on a monthly rotating roster basis)<p>
+    <h3>Fringe benefits: </h3>
+    <ol>
+        <li>🎁 Festival Bonuses: Enjoy 2 Festival Bonuses as per company policy.</li>
+        <li>🍽️ Meal Facility: Fully subsidized meal facility to keep you fueled throughout the day.</li>
+        <li>📈Profit Sharing: Annually or quarterly as per company policy.</li>
+        <li>🌿 Healthy Work Environment: Work in a supportive and positive atmosphere.</li>
+        <li>🎄 Christmas Leave: Celebrate the holidays with a special leave.</li>
+        <li>🚀 Career Advancement: Opportunities for growth and professional development.</li>
+        <li>🏝️ Yearly Office Retreat: Relax and recharge with your colleagues.</li>
+        <li>🎉 Events Celebration: Enjoy various events celebrated at our office premises.</li>
+        <li>🏏 Annual Tournaments: Participate in our Annual Cricket and Football Tournament.</li>
+        <li>🎲 Indoor Games: Have fun with Carrom and Table Tennis during breaks.</li>
+        
+       
+    </ol>
+
+    <p class="normal-p"><b>Application Deadline:</b> 30 September 2024.</p>
+    <p class="normal-p">Remember to highlight your experience and any relevant projects you’ve worked on. </p>
+    <p class="normal-p">Most importantly, mention in the Subject Line: Applying as a “Junior Executive, Client & Project Management”.</p>
+    <p class="normal-p">Don't miss out on this fantastic opportunity to advance your career and become a part of the TKCL family! Apply now and take the next step in your professional journey.</p>
+    <p><strong>Email at:</strong> <a href="mailto:career@thekowcompany.com">career@thekowcompany.com</a></p>
+</div>`,
+      date: "30 September, 2024",
+    },
   ]);
   const [isOpen, setIsOpen] = useState(false);
   const [cvData, setCvData] = useState({});
@@ -291,7 +341,6 @@ const Career = () => {
     return currentDate.getTime() < selectedDate.getTime();
   };
 
-
   const checkJobAvaialble = (jobList) => {
     let count = 0;
     jobList.map((job) => {
@@ -302,10 +351,9 @@ const Career = () => {
     setJobAvaialbleCount(count);
   };
 
-
   useEffect(() => {
     checkJobAvaialble(jobCircular);
-  }, [])
+  }, []);
   return (
     <>
       {/* <div className="career-bg h-[100vh]"> */}
@@ -315,7 +363,9 @@ const Career = () => {
 
           <div className="flex flex-col items-center ">
             <div className="w-full md:w-[450px] mt-[140px] md:mt-[120px]  text-center md:text-left">
-              <h1 className="text-[18px] md:text-[24px] 2xl:text-[40px] font-bold text-[#57524B]">WE ARE</h1>
+              <h1 className="text-[18px] md:text-[24px] 2xl:text-[40px] font-bold text-[#57524B]">
+                WE ARE
+              </h1>
               <h1 className="text-[60px]  md:text-[120px] 2xl:text-[150px] font-bold leading-[80px] md:leading-[100px] text-[#57524B] -ml-2">
                 HIRING
               </h1>
@@ -332,7 +382,7 @@ const Career = () => {
           </div>
 
           <div className="flex flex-col items-center">
-            <div className=" md:w-[450px] mt-5 border-black border-l-2 pl-3">
+            <div className=" md:w-[450px] 2xl:w-[465px] mt-5 border-black border-l-2 pl-3">
               {jobCircular.map((item, index) => (
                 <>
                   {compareCurrentDate(item.date) && (
@@ -341,16 +391,14 @@ const Career = () => {
                         onClick={() => openModal(item)}
                         // className="buttonAnim  hover:bg-green-600 hover:text-white "
                         // role="buttonAnim"
-                        className="bg-gray-300 font-semibold border-green-700 px-2 hover:bg-green-600  hover:text-white py-1 mb-2 text-left text-[12px] 2xl:text-[16px] shadow-md rounded-md w-[165px] 2xl:w-[230px]"
+                        className="bg-gray-300 font-semibold border-green-700 px-2 hover:bg-green-600  hover:text-white py-1 mb-2 text-left text-[12px] 2xl:text-[16px] shadow-md rounded-md w-[241px] 2xl:w-[450px]"
                       >
                         <span> {item.title}</span>
                       </button>
                       <div>
                         <h1 className="text-xs 2xl:text-[14px]">
                           Deadline :{" "}
-                          <span className="text-red-700 ">
-                            {item.date}
-                          </span>
+                          <span className="text-red-700 ">{item.date}</span>
                         </h1>
                       </div>
                     </div>
@@ -358,16 +406,18 @@ const Career = () => {
                 </>
               ))}
             </div>
- 
           </div>
-                         
-          {
-                getJobAvaialbeCount == 0 && 
-                <div className="flex flex-col items-center">
-            <div className=" md:w-[450px]">
-                <h1 className="w-[400px] text-2xl text-red-700 font-semibold">We are not accepting new applications for now. Please check back later.</h1>
-         </div></div>
-          }
+
+          {getJobAvaialbeCount == 0 && (
+            <div className="flex flex-col items-center">
+              <div className=" md:w-[450px]">
+                <h1 className="w-[400px] text-2xl text-red-700 font-semibold">
+                  We are not accepting new applications for now. Please check
+                  back later.
+                </h1>
+              </div>
+            </div>
+          )}
           <div className="flex justify-center mt-2">
             <div className="md:w-[450px]">
               <div className="flex flex-col justify-center items-center md:items-start ">
@@ -404,21 +454,23 @@ const Career = () => {
                         </div>
                     </div> */}
 
-
           <div className="career-top-bg absolute top-0 left-[50%] 2xl:left-[39%] -translate-x-[50%] xl:left-[38%] lg:left-[35%] md:left-[30%] 2xl:-translate-x-[37%] w-20 h-32">
             <div>
-              <img src="/img/Light1.png" className=" max-w-[300px] h-[300px] pt-[81px] ml-[-63px]" />
+              <img
+                src="/img/Light1.png"
+                className=" max-w-[300px] h-[300px] pt-[81px] ml-[-63px]"
+              />
             </div>
           </div>
-
 
           <div className="w-full flex justify-center">
             <div className="flex justify-center  md:justify-end w-full md:w-[900px] 2xl:w-[1100px] ">
-
-              <img src="/img/chair-shadow.png" className=" max-w-[230px]   md:max-w-[300px] md:max-h-[270px] md:-mt-[180px]  " />
+              <img
+                src="/img/chair-shadow.png"
+                className=" max-w-[230px]   md:max-w-[300px] md:max-h-[270px] md:-mt-[90px]  "
+              />
             </div>
           </div>
-
         </div>
 
         {/* ------------------------------------main modal ----------------------------------- */}
