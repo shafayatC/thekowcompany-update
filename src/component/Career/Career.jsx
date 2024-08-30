@@ -302,13 +302,13 @@ const Career = () => {
        
     </ol>
 
-    <p class="normal-p"><b>Application Deadline:</b> 30 September 2024.</p>
+    <p class="normal-p"><b>Application Deadline:</b> 28 September 2024.(Interested candidates are encouraged to apply promptly, as we aim to fill this position as soon as possible.)</p>
     <p class="normal-p">Remember to highlight your experience and any relevant projects you’ve worked on. </p>
     <p class="normal-p">Most importantly, mention in the Subject Line: Applying as a “Junior Executive, Client & Project Management”.</p>
     <p class="normal-p">Don't miss out on this fantastic opportunity to advance your career and become a part of the TKCL family! Apply now and take the next step in your professional journey.</p>
     <p><strong>Email at:</strong> <a href="mailto:career@thekowcompany.com">career@thekowcompany.com</a></p>
 </div>`,
-      date: "30 September, 2024",
+      date: "28 September, 2024",
     },
   ]);
   const [isOpen, setIsOpen] = useState(false);
