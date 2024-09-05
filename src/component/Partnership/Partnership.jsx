@@ -13,7 +13,7 @@ const Partnership = () => {
     return (
         <>
             <HeadProvider>
-                <Title>Pertnership | The Kow Company</Title>
+                <Title>Partnership | The Kow Company</Title>
                 {/* <Meta name="description" content={`${blogData && blogData[0].title}`} /> */}
             </HeadProvider>
             <ScrolTop />
