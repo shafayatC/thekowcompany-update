@@ -3,6 +3,7 @@ import { SlCalender } from "react-icons/sl";
 import { MdOutlineEmail } from "react-icons/md";
 import { useEffect, useState } from "react";
 import CareerMail from "./CareerMail";
+import { HeadProvider, Meta, Title } from "react-head";
 
 const Career = () => {
   const [jobCircular] = useState([
@@ -356,6 +357,11 @@ const Career = () => {
   }, []);
   return (
     <>
+      <HeadProvider>
+        <Title>Career | The KOW Company</Title>
+        <Meta name="description" content="Please select a position and submit your curriculum vitae at your earliest convenience." />
+      </HeadProvider>
+      
       {/* <div className="career-bg h-[100vh]"> */}
       <div className="bg-gradient-to-t from-[#ebebeb] to-[#cdcbcc] ">
         <div className="container mx-auto relative min-h-screen">
