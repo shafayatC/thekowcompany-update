@@ -5,7 +5,7 @@ import './style.css'
 const FirstSection = () => {
     return (
         <div className='container'>
-            <div className='row'>
+            <div className=''>
                 <div className='p-i-container'>
                     <div className='p-i-h-a light-divider'>
                         <img alt='partnership' loading="lazy" src={"/img/partnership/1.webp"} />

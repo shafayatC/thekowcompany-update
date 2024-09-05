@@ -52,7 +52,16 @@
     margin-left: 40px;
     padding-bottom: 10px;
 }
-
+.shift-p{
+    background-color: #7C9C30;
+    padding-bottom: 0 !important;
+    color: white;
+    text-align: center;
+    
+}
+.normal-p{
+    padding-bottom: 5px !important;
+}
 
 
 /* width */
