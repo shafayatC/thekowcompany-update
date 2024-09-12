@@ -1,0 +1,4 @@
+User-agent: *
+Disallow: /tech-equipments  # Block the tech-equipments page
+
+Allow: /
