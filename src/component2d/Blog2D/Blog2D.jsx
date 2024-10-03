@@ -57,7 +57,7 @@ const Blog2D = () => {
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 justify-center gap-2  w-[280px] sm:w-full">
             {getVisibleDivs2d() &&
               getVisibleDivs2d().map((div, index) => (
-                <Link  aria-label="blog"  key={index} to={`/3d/industry-trends-details/${div.id}`}>
+                <Link  aria-label="blog"  key={index} to={`/2d/industry-trends-details/${div.id}`}>
                   {/* Wrap the div with Link component */}
                   <div className="flex-col items-center justify-center">
                     <div className="h-auto md:h-[220px] xl:h-[280px] flex">
