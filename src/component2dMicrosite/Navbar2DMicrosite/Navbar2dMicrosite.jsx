@@ -21,7 +21,7 @@ const Navbar2dMicrosite = () => {
       {/* Login */}
       <div className="">
         <div>
-            <button className="rounded-md border border-[#71AF50] py-1 px-4 text-[17px]">Book a call</button>
+            <Link to={"/book-a-call"} className="rounded-md border border-[#71AF50] py-1 px-4 text-[17px]">Book a call</Link>
         </div>
       </div>
     </nav>
