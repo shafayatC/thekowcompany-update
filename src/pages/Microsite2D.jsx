@@ -91,6 +91,114 @@ const Microsite2D = () => {
   const { ref: ref27, inView: inView27 } = useInView({
     threshold: 0.2,
   });
+  const { ref: ref28, inView: inView28 } = useInView({
+    threshold: 0.2,
+  });
+  const { ref: ref29, inView: inView29 } = useInView({
+    threshold: 0.2,
+  });
+  const { ref: ref30, inView: inView30 } = useInView({
+    threshold: 0.2,
+  });
+  const { ref: ref31, inView: inView31 } = useInView({
+    threshold: 0.2,
+  });
+  const { ref: ref32, inView: inView32 } = useInView({
+    threshold: 0.2,
+  });
+  const { ref: ref33, inView: inView33 } = useInView({
+    threshold: 0.2,
+  });
+  const { ref: ref34, inView: inView34 } = useInView({
+    threshold: 0.2,
+  });
+  const { ref: ref35, inView: inView35 } = useInView({
+    threshold: 0.2,
+  });
+  const { ref: ref36, inView: inView36 } = useInView({
+    threshold: 0.2,
+  });
+  const { ref: ref37, inView: inView37 } = useInView({
+    threshold: 0.2,
+  });
+  const { ref: ref38, inView: inView38 } = useInView({
+    threshold: 0.2,
+  });
+  const { ref: ref39, inView: inView39 } = useInView({
+    threshold: 0.2,
+  });
+  const { ref: ref40, inView: inView40 } = useInView({
+    threshold: 0.2,
+  });
+  const { ref: ref41, inView: inView41 } = useInView({
+    threshold: 0.2,
+  });
+  const { ref: ref42, inView: inView42 } = useInView({
+    threshold: 0.2,
+  });
+  const { ref: ref43, inView: inView43 } = useInView({
+    threshold: 0.2,
+  });
+  const { ref: ref44, inView: inView44 } = useInView({
+    threshold: 0.2,
+  });
+  const { ref: ref45, inView: inView45 } = useInView({
+    threshold: 0.2,
+  });
+  const { ref: ref46, inView: inView46 } = useInView({
+    threshold: 0.2,
+  });
+  const { ref: ref47, inView: inView47 } = useInView({
+    threshold: 0.2,
+  });
+  const { ref: ref48, inView: inView48 } = useInView({
+    threshold: 0.2,
+  });
+  const { ref: ref49, inView: inView49 } = useInView({
+    threshold: 0.2,
+  });
+  const { ref: ref50, inView: inView50 } = useInView({
+    threshold: 0.2,
+  });
+  const { ref: ref51, inView: inView51 } = useInView({
+    threshold: 0.2,
+  });
+  const { ref: ref52, inView: inView52 } = useInView({
+    threshold: 0.2,
+  });
+  const { ref: ref53, inView: inView53 } = useInView({
+    threshold: 0.2,
+  });
+  const { ref: ref54, inView: inView54 } = useInView({
+    threshold: 0.2,
+  });
+  const { ref: ref55, inView: inView55 } = useInView({
+    threshold: 0.2,
+  });
+  const { ref: ref56, inView: inView56 } = useInView({
+    threshold: 0.2,
+  });
+  const { ref: ref57, inView: inView57 } = useInView({
+    threshold: 0.2,
+  });
+  const { ref: ref58, inView: inView58 } = useInView({
+    threshold: 0.2,
+  });
+  const { ref: ref59, inView: inView59 } = useInView({
+    threshold: 0.2,
+  });
+  const { ref: ref60, inView: inView60 } = useInView({
+    threshold: 0.2,
+  });
+  const { ref: ref61, inView: inView61 } = useInView({
+    threshold: 0.2,
+  });
+  const { ref: ref62, inView: inView62 } = useInView({
+    threshold: 0.2,
+  });
+  const { ref: ref63, inView: inView63 } = useInView({
+    threshold: 0.2,
+  });
 
   // Scroll effect for scaling the header
   useEffect(() => {
@@ -196,7 +304,7 @@ const Microsite2D = () => {
         </div>
 
         {/* ----------------4th Section-----------------*/}
-        <div className="flex flex-col gap-10">
+        <div className="flex flex-col gap-10 pb-20">
           {/* 1st div of this section */}
           <div className="flex flex-col gap-5 justify-items-center items-center h-full">
             <div className="flex justify-center h-full">
@@ -410,7 +518,7 @@ const Microsite2D = () => {
           </div>
         </div>
         {/* ----------------5th Section-----------------*/}
-        <div className="flex flex-col gap-10">
+        <div className="flex flex-col gap-10 pb-20">
           {/* 1st div of this section */}
           <div className="flex flex-col gap-5 justify-items-center items-center h-full">
             <div className="flex justify-center h-full">
@@ -616,6 +724,648 @@ const Microsite2D = () => {
                   <img
                     className="w-[90%]"
                     src="/img/2D-Microsite/Mannequin/after-Mq-3.webp"
+                    alt="After Model Image 2"
+                  />
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        {/* ----------------6th Section-----------------*/}
+        <div className="flex flex-col gap-10 pb-20">
+          {/* 1st div of this section */}
+          <div className="flex flex-col gap-5 justify-items-center items-center h-full">
+            <div className="flex justify-center h-full">
+              <div className="w-1/2">
+                <div
+                  ref={ref28}
+                  className={`w-full flex justify-center items-center transition-all duration-1000  ${
+                    inView28
+                      ? "opacity-100 translate-x-0"
+                      : "opacity-0 -translate-x-20"
+                  }`}
+                >
+                  <img
+                    className="w-full"
+                    src="/img/2D-Microsite/Shoe/before-shoe-1.webp"
+                    alt="Before Model Image"
+                  />
+                </div>
+              </div>
+              <div className="w-1/2">
+                <div className="flex justify-center items-center w-full h-full">
+                  <h1
+                    ref={ref29}
+                    className={`text-[50px] font-bold transition-all duration-1000  ${
+                      inView29
+                        ? "opacity-100 -translate-x-0"
+                        : "opacity-0 translate-x-20"
+                    }`}
+                  >
+                    Shoe Retouching
+                  </h1>
+                </div>
+              </div>
+            </div>
+            <div className="flex justify-center h-full">
+              <div className="w-1/2">
+                <div className="flex justify-center items-center w-full h-full">
+                  <p
+                    ref={ref30}
+                    className={`w-[350px] text-[20px] font-semibold transition-all duration-1000  ${
+                      inView30
+                        ? "opacity-100 translate-x-0"
+                        : "opacity-0 -translate-x-20"
+                    }`}
+                  >
+                    Shoe Retouching to Perfection: From enhancing shape with
+                    precise image manipulation to adding natural shadows,
+                    removing imperfections, and perfecting the background, we
+                    ensure every pair stands out in flawless detail.
+                  </p>
+                </div>
+              </div>
+              <div className="w-1/2">
+                <div
+                  ref={ref31}
+                  className={`w-full flex justify-center items-center transition-all duration-1000  ${
+                    inView31
+                      ? "opacity-100 -translate-x-0"
+                      : "opacity-0 translate-x-20"
+                  }`}
+                >
+                  <img
+                    className="w-[90%]"
+                    src="/img/2D-Microsite/Shoe/after-shoe-1.webp"
+                    alt="After Model Image"
+                  />
+                </div>
+              </div>
+            </div>
+          </div>
+
+          {/* Second Div: Shoe 2 */}
+          <div className="flex flex-col gap-5 justify-items-center items-center h-full">
+            <div className="flex justify-center h-full">
+              <div className="w-1/2">
+                <div
+                  ref={ref32}
+                  className={`w-full flex justify-center items-center transition-all duration-1000  ${
+                    inView32
+                      ? "opacity-100 translate-x-0"
+                      : "opacity-0 -translate-x-20"
+                  }`}
+                >
+                  <img
+                    className="w-full"
+                    src="/img/2D-Microsite/Shoe/before-shoe-2.webp"
+                    alt="Before Model Image 2"
+                  />
+                </div>
+              </div>
+              <div className="w-1/2">
+                <div className="flex justify-center items-center w-full h-full">
+                  <h1
+                    ref={ref33}
+                    className={`text-[50px] font-bold transition-all duration-1000  ${
+                      inView33
+                        ? "opacity-100 -translate-x-0"
+                        : "opacity-0 translate-x-20"
+                    }`}
+                  >
+                    Shoe Retouching
+                  </h1>
+                </div>
+              </div>
+            </div>
+            <div className="flex justify-center h-full">
+              <div className="w-1/2">
+                <div className="flex justify-center items-center w-full h-full">
+                  <p
+                    ref={ref34}
+                    className={`w-[350px] text-[20px] font-semibold transition-all duration-1000  ${
+                      inView34
+                        ? "opacity-100 translate-x-0"
+                        : "opacity-0 -translate-x-20"
+                    }`}
+                  >
+                    Shoe Retouching to Perfection: From enhancing shape with
+                    precise image manipulation to adding natural shadows,
+                    removing imperfections, and perfecting the background, we
+                    ensure every pair stands out in flawless detail.
+                  </p>
+                </div>
+              </div>
+              <div className="w-1/2">
+                <div
+                  ref={ref35}
+                  className={`w-full flex justify-center items-center transition-all duration-1000  ${
+                    inView35
+                      ? "opacity-100 -translate-x-0"
+                      : "opacity-0 translate-x-20"
+                  }`}
+                >
+                  <img
+                    className="w-[90%]"
+                    src="/img/2D-Microsite/Shoe/after-shoe-2.webp"
+                    alt="After Model Image 2"
+                  />
+                </div>
+              </div>
+            </div>
+          </div>
+          {/* Third Div: Shoe 3 */}
+          <div className="flex flex-col gap-5 justify-items-center items-center h-full">
+            <div className="flex justify-center h-full">
+              <div className="w-1/2">
+                <div
+                  ref={ref36}
+                  className={`w-full flex justify-center items-center transition-all duration-1000  ${
+                    inView36
+                      ? "opacity-100 translate-x-0"
+                      : "opacity-0 -translate-x-20"
+                  }`}
+                >
+                  <img
+                    className="w-full"
+                    src="/img/2D-Microsite/Shoe/before-shoe-3.webp"
+                    alt="Before Model Image 2"
+                  />
+                </div>
+              </div>
+              <div className="w-1/2">
+                <div className="flex justify-center items-center w-full h-full">
+                  <h1
+                    ref={ref37}
+                    className={`text-[50px] font-bold transition-all duration-1000  ${
+                      inView37
+                        ? "opacity-100 -translate-x-0"
+                        : "opacity-0 translate-x-20"
+                    }`}
+                  >
+                    Shoe Retouching
+                  </h1>
+                </div>
+              </div>
+            </div>
+            <div className="flex justify-center h-full">
+              <div className="w-1/2">
+                <div className="flex justify-center items-center w-full h-full">
+                  <p
+                    ref={ref38}
+                    className={`w-[350px] text-[20px] font-semibold transition-all duration-1000  ${
+                      inView38
+                        ? "opacity-100 translate-x-0"
+                        : "opacity-0 -translate-x-20"
+                    }`}
+                  >
+                    Shoe Retouching to Perfection: From enhancing shape with
+                    precise image manipulation to adding natural shadows,
+                    removing imperfections, and perfecting the background, we
+                    ensure every pair stands out in flawless detail.
+                  </p>
+                </div>
+              </div>
+              <div className="w-1/2">
+                <div
+                  ref={ref39}
+                  className={`w-full flex justify-center items-center transition-all duration-1000  ${
+                    inView39
+                      ? "opacity-100 -translate-x-0"
+                      : "opacity-0 translate-x-20"
+                  }`}
+                >
+                  <img
+                    className="w-[90%]"
+                    src="/img/2D-Microsite/Shoe/after-shoe-3.webp"
+                    alt="After Model Image 2"
+                  />
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        {/* ----------------7th Section-----------------*/}
+        <div className="flex flex-col gap-10 pb-20">
+          {/* 1st div of this section */}
+          <div className="flex flex-col gap-5 justify-items-center items-center h-full">
+            <div className="flex justify-center h-full">
+              <div className="w-1/2">
+                <div
+                  ref={ref40}
+                  className={`w-full flex justify-center items-center transition-all duration-1000  ${
+                    inView40
+                      ? "opacity-100 translate-x-0"
+                      : "opacity-0 -translate-x-20"
+                  }`}
+                >
+                  <img
+                    className="w-[90%]"
+                    src="/img/2D-Microsite/Jewelry/before-jew-1v.webp"
+                    alt="Before Model Image"
+                  />
+                </div>
+              </div>
+              <div className="w-1/2">
+                <div className="flex justify-center items-center w-full h-full">
+                  <h1
+                    ref={ref41}
+                    className={`text-[50px] font-bold transition-all duration-1000  ${
+                      inView41
+                        ? "opacity-100 -translate-x-0"
+                        : "opacity-0 translate-x-20"
+                    }`}
+                  >
+                    Jewelry
+                  </h1>
+                </div>
+              </div>
+            </div>
+            <div className="flex justify-center h-full">
+              <div className="w-1/2">
+                <div className="flex justify-center items-center w-full h-full">
+                  <p
+                    ref={ref42}
+                    className={`w-[350px] text-[20px] font-semibold transition-all duration-1000  ${
+                      inView42
+                        ? "opacity-100 translate-x-0"
+                        : "opacity-0 -translate-x-20"
+                    }`}
+                  >
+                    Jewelry Retouching at Its Finest: Achieve perfect alignment,
+                    vibrant color brilliance, and flawless detail with expert
+                    dust and scratch removal, shadow addition, background plate
+                    refinement, and precise tag number and imperfection removal.
+                  </p>
+                </div>
+              </div>
+              <div className="w-1/2">
+                <div
+                  ref={ref43}
+                  className={`w-full flex justify-center items-center transition-all duration-1000  ${
+                    inView43
+                      ? "opacity-100 -translate-x-0"
+                      : "opacity-0 translate-x-20"
+                  }`}
+                >
+                  <img
+                    className="w-[90%]"
+                    src="/img/2D-Microsite/Jewelry/after-jew-1.webp"
+                    alt="After Model Image"
+                  />
+                </div>
+              </div>
+            </div>
+          </div>
+
+          {/* Second Div: Shoe 2 */}
+          <div className="flex flex-col gap-5 justify-items-center items-center h-full">
+            <div className="flex justify-center h-full">
+              <div className="w-1/2">
+                <div
+                  ref={ref44}
+                  className={`w-full flex justify-center items-center transition-all duration-1000  ${
+                    inView44
+                      ? "opacity-100 translate-x-0"
+                      : "opacity-0 -translate-x-20"
+                  }`}
+                >
+                  <img
+                    className="w-full"
+                    src="/img/2D-Microsite/Jewelry/before-jew-2.webp"
+                    alt="Before Model Image 2"
+                  />
+                </div>
+              </div>
+              <div className="w-1/2">
+                <div className="flex justify-center items-center w-full h-full">
+                  <h1
+                    ref={ref45}
+                    className={`text-[50px] font-bold transition-all duration-1000  ${
+                      inView45
+                        ? "opacity-100 -translate-x-0"
+                        : "opacity-0 translate-x-20"
+                    }`}
+                  >
+                    Jewelry
+                  </h1>
+                </div>
+              </div>
+            </div>
+            <div className="flex justify-center h-full">
+              <div className="w-1/2">
+                <div className="flex justify-center items-center w-full h-full">
+                  <p
+                    ref={ref46}
+                    className={`w-[350px] text-[20px] font-semibold transition-all duration-1000  ${
+                      inView46
+                        ? "opacity-100 translate-x-0"
+                        : "opacity-0 -translate-x-20"
+                    }`}
+                  >
+                    Jewelry Retouching at Its Finest: Achieve perfect alignment,
+                    vibrant color brilliance, and flawless detail with expert
+                    dust and scratch removal, shadow addition, background plate
+                    refinement, and precise tag number and imperfection removal.
+                  </p>
+                </div>
+              </div>
+              <div className="w-1/2">
+                <div
+                  ref={ref47}
+                  className={`w-full flex justify-center items-center transition-all duration-1000  ${
+                    inView47
+                      ? "opacity-100 -translate-x-0"
+                      : "opacity-0 translate-x-20"
+                  }`}
+                >
+                  <img
+                    className="w-[90%]"
+                    src="/img/2D-Microsite/Jewelry/after-jew-2.webp"
+                    alt="After Model Image 2"
+                  />
+                </div>
+              </div>
+            </div>
+          </div>
+          {/* Third Div: Shoe 3 */}
+          <div className="flex flex-col gap-5 justify-items-center items-center h-full">
+            <div className="flex justify-center h-full">
+              <div className="w-1/2">
+                <div
+                  ref={ref48}
+                  className={`w-full flex justify-center items-center transition-all duration-1000  ${
+                    inView48
+                      ? "opacity-100 translate-x-0"
+                      : "opacity-0 -translate-x-20"
+                  }`}
+                >
+                  <img
+                    className="w-[90%]"
+                    src="/img/2D-Microsite/Jewelry/before-jew-3v.webp"
+                    alt="Before Model Image 2"
+                  />
+                </div>
+              </div>
+              <div className="w-1/2">
+                <div className="flex justify-center items-center w-full h-full">
+                  <h1
+                    ref={ref49}
+                    className={`text-[50px] font-bold transition-all duration-1000  ${
+                      inView49
+                        ? "opacity-100 -translate-x-0"
+                        : "opacity-0 translate-x-20"
+                    }`}
+                  >
+                    Jewelry
+                  </h1>
+                </div>
+              </div>
+            </div>
+            <div className="flex justify-center h-full">
+              <div className="w-1/2">
+                <div className="flex justify-center items-center w-full h-full">
+                  <p
+                    ref={ref50}
+                    className={`w-[350px] text-[20px] font-semibold transition-all duration-1000  ${
+                      inView50
+                        ? "opacity-100 translate-x-0"
+                        : "opacity-0 -translate-x-20"
+                    }`}
+                  >
+                    Jewelry Retouching at Its Finest: Achieve perfect alignment,
+                    vibrant color brilliance, and flawless detail with expert
+                    dust and scratch removal, shadow addition, background plate
+                    refinement, and precise tag number and imperfection removal.
+                  </p>
+                </div>
+              </div>
+              <div className="w-1/2">
+                <div
+                  ref={ref51}
+                  className={`w-full flex justify-center items-center transition-all duration-1000  ${
+                    inView51
+                      ? "opacity-100 -translate-x-0"
+                      : "opacity-0 translate-x-20"
+                  }`}
+                >
+                  <img
+                    className="w-[90%]"
+                    src="/img/2D-Microsite/Jewelry/after-jew-3.webp"
+                    alt="After Model Image 2"
+                  />
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        {/* ----------------8th Section-----------------*/}
+        <div className="flex flex-col gap-10 pb-20">
+          {/* 1st div of this section */}
+          <div className="flex flex-col gap-5 justify-items-center items-center h-full">
+            <div className="flex justify-center h-full">
+              <div className="w-1/2">
+                <div
+                  ref={ref52}
+                  className={`w-full flex justify-center items-center transition-all duration-1000  ${
+                    inView52
+                      ? "opacity-100 translate-x-0"
+                      : "opacity-0 -translate-x-20"
+                  }`}
+                >
+                  <img
+                    className="w-[90%]"
+                    src="/img/2D-Microsite/Ambience/before-ambience-1.webp"
+                    alt="Before Model Image"
+                  />
+                </div>
+              </div>
+              <div className="w-1/2">
+                <div className="flex justify-center items-center w-full h-full">
+                  <h1
+                    ref={ref53}
+                    className={`text-[50px] font-bold transition-all duration-1000  ${
+                      inView53
+                        ? "opacity-100 -translate-x-0"
+                        : "opacity-0 translate-x-20"
+                    }`}
+                  >
+                    Ambience
+                  </h1>
+                </div>
+              </div>
+            </div>
+            <div className="flex justify-center h-full">
+              <div className="w-1/2">
+                <div className="flex justify-center items-center w-full h-full">
+                  <p
+                    ref={ref54}
+                    className={`w-[350px] text-[20px] font-semibold transition-all duration-1000  ${
+                      inView54
+                        ? "opacity-100 translate-x-0"
+                        : "opacity-0 -translate-x-20"
+                    }`}
+                  >
+                    Crafting Perfect Ambience: Through seamless background plate
+                    addition, soft shadow enhancement, and meticulous tag number
+                    and imperfection removal, we create an inviting atmosphere
+                    that enhances every detail beautifully.
+                  </p>
+                </div>
+              </div>
+              <div className="w-1/2">
+                <div
+                  ref={ref55}
+                  className={`w-full flex justify-center items-center transition-all duration-1000  ${
+                    inView55
+                      ? "opacity-100 -translate-x-0"
+                      : "opacity-0 translate-x-20"
+                  }`}
+                >
+                  <img
+                    className="w-[90%]"
+                    src="/img/2D-Microsite/Ambience/after-ambience-1.webp"
+                    alt="After Model Image"
+                  />
+                </div>
+              </div>
+            </div>
+          </div>
+
+          {/* Second Div: Ambience 2 */}
+          <div className="flex flex-col gap-5 justify-items-center items-center h-full">
+            <div className="flex justify-center h-full">
+              <div className="w-1/2">
+                <div
+                  ref={ref56}
+                  className={`w-full flex justify-center items-center transition-all duration-1000  ${
+                    inView56
+                      ? "opacity-100 translate-x-0"
+                      : "opacity-0 -translate-x-20"
+                  }`}
+                >
+                  <img
+                    className="w-[90%]"
+                    src="/img/2D-Microsite/Ambience/before-ambience-2.webp"
+                    alt="Before Model Image 2"
+                  />
+                </div>
+              </div>
+              <div className="w-1/2">
+                <div className="flex justify-center items-center w-full h-full">
+                  <h1
+                    ref={ref57}
+                    className={`text-[50px] font-bold transition-all duration-1000  ${
+                      inView57
+                        ? "opacity-100 -translate-x-0"
+                        : "opacity-0 translate-x-20"
+                    }`}
+                  >
+                    Ambience
+                  </h1>
+                </div>
+              </div>
+            </div>
+            <div className="flex justify-center h-full">
+              <div className="w-1/2">
+                <div className="flex justify-center items-center w-full h-full">
+                  <p
+                    ref={ref58}
+                    className={`w-[350px] text-[20px] font-semibold transition-all duration-1000  ${
+                      inView58
+                        ? "opacity-100 translate-x-0"
+                        : "opacity-0 -translate-x-20"
+                    }`}
+                  >
+                    Crafting Perfect Ambience: Through seamless background plate
+                    addition, soft shadow enhancement, and meticulous tag number
+                    and imperfection removal, we create an inviting atmosphere
+                    that enhances every detail beautifully.
+                  </p>
+                </div>
+              </div>
+              <div className="w-1/2">
+                <div
+                  ref={ref59}
+                  className={`w-full flex justify-center items-center transition-all duration-1000  ${
+                    inView59
+                      ? "opacity-100 -translate-x-0"
+                      : "opacity-0 translate-x-20"
+                  }`}
+                >
+                  <img
+                    className="w-[90%]"
+                    src="/img/2D-Microsite/Ambience/after-ambience-2.webp"
+                    alt="After Model Image 2"
+                  />
+                </div>
+              </div>
+            </div>
+          </div>
+          {/* Third Div: Ambience 3 */}
+          <div className="flex flex-col gap-5 justify-items-center items-center h-full">
+            <div className="flex justify-center h-full">
+              <div className="w-1/2">
+                <div
+                  ref={ref60}
+                  className={`w-full flex justify-center items-center transition-all duration-1000  ${
+                    inView60
+                      ? "opacity-100 translate-x-0"
+                      : "opacity-0 -translate-x-20"
+                  }`}
+                >
+                  <img
+                    className="w-[90%]"
+                    src="/img/2D-Microsite/Ambience/before-ambience-3.webp"
+                    alt="Before Model Image 2"
+                  />
+                </div>
+              </div>
+              <div className="w-1/2">
+                <div className="flex justify-center items-center w-full h-full">
+                  <h1
+                    ref={ref61}
+                    className={`text-[50px] font-bold transition-all duration-1000  ${
+                      inView61
+                        ? "opacity-100 -translate-x-0"
+                        : "opacity-0 translate-x-20"
+                    }`}
+                  >
+                    Ambience
+                  </h1>
+                </div>
+              </div>
+            </div>
+            <div className="flex justify-center h-full">
+              <div className="w-1/2">
+                <div className="flex justify-center items-center w-full h-full">
+                  <p
+                    ref={ref62}
+                    className={`w-[350px] text-[20px] font-semibold transition-all duration-1000  ${
+                      inView62
+                        ? "opacity-100 translate-x-0"
+                        : "opacity-0 -translate-x-20"
+                    }`}
+                  >
+                    Crafting Perfect Ambience: Through seamless background plate
+                    addition, soft shadow enhancement, and meticulous tag number
+                    and imperfection removal, we create an inviting atmosphere
+                    that enhances every detail beautifully.
+                  </p>
+                </div>
+              </div>
+              <div className="w-1/2">
+                <div
+                  ref={ref63}
+                  className={`w-full flex justify-center items-center transition-all duration-1000  ${
+                    inView63
+                      ? "opacity-100 -translate-x-0"
+                      : "opacity-0 translate-x-20"
+                  }`}
+                >
+                  <img
+                    className="w-[90%]"
+                    src="/img/2D-Microsite/Ambience/after-ambience-3.webp"
                     alt="After Model Image 2"
                   />
                 </div>
