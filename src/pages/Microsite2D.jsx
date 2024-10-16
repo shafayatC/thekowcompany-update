@@ -1373,6 +1373,21 @@ const Microsite2D = () => {
             </div>
           </div>
         </div>
+        {/* ----------------9th Section-----------------*/}
+        <div>
+        <h1 className="text-center text-[41px] font-semibold">Try the Ai powered background replacement </h1>
+        <h1 className="text-center text-[41px] font-semibold">solution with Retouched.ai</h1>
+    <div className="w-full flex justify-center items-center">
+    <iframe
+        src="https://retouched.ai/"
+        width="80%"
+        height="600px"
+        title="Embedded Website"
+        frameBorder="0"
+        allowFullScreen
+      />
+    </div>
+        </div>
       </div>
     </div>
   );
