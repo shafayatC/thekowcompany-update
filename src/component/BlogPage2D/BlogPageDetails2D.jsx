@@ -26,7 +26,7 @@ const BlogPageDetails2D = () => {
                     isOdd(index) ? 
                     
                     <div className="flex flex-col md:grid md:grid-cols-2 md:justify-items-center justify-center items-end gap-12 px-2 md:px-0">
-                      <div className="max-h-[350px] flex flex-col justify-center overflow-hidden">
+                      <div className="max-h-[350px] xl:max-h-[450px]  flex flex-col justify-center overflow-hidden">
                         <img
                           loading="lazy"
                           src={item.thumb}
@@ -91,7 +91,7 @@ const BlogPageDetails2D = () => {
                             </Link>
                           </div>
                         </div>
-                        <div className="max-h-[350px] flex flex-col justify-center overflow-hidden">
+                        <div className="max-h-[350px] xl:max-h-[450px] flex flex-col justify-center overflow-hidden">
                           <img
                             loading="lazy"
                             src={item.thumb}
