@@ -37,6 +37,7 @@ import PortfolioFor3D from './component3d/Portfolio3D/PortfolioFor3D'
 import PortfolioTab from './component3d/Portfolio3D/PortfolioTab'
 import Career from './component/Career/Career'
 import CareerThankYou from './component/Career/CareerThankYou'
+import Onboarding from './pages/Onboarding'
 
 
 
@@ -82,6 +83,7 @@ function App() {
       <Route path="/CGI_3D/creativeshowcase" element={<PortfolioFor3D/>} />
       <Route path="/career" element={<Career/>} />
       <Route path="/career-thank-you" element={<CareerThankYou/>} />
+      <Route path="/onboarding" element={<Onboarding/>} />
       </Routes>
     </>
   )

@@ -153,6 +153,18 @@ const NavbarHome = () => {
             >
               CAREER
             </Link>
+            <Link
+              aria-label="trends"
+              to="/onboarding"
+              target="_blank"
+              className={` text-xs lg:text-sm font-semibold ${
+                screenLeft
+                  ? "text-gray-800 border-[#DEE2E2] border-b-2  hover:border-b-2 hover:border-[#7C9C30] "
+                  : "text-white hover:text-[#7C9C30]"
+              } `}
+            >
+              ONBOARDING
+            </Link>
             <a
               aria-label="sign up"
               href="https://app.cutoutwiz.com/Identity/Account/Login?ReturnUrl=%2F"
@@ -365,6 +377,13 @@ const NavbarHome = () => {
                   className="transition-all duration-300 text-gray-800 text-base border-b-2 border-[#DEE2E2] font-semibold py-3 hover:bg-[#cfd6d6] hover:border-b-2 hover:border-[#7C9C30]"
                 >
                   CAREER
+                </Link>
+                <Link
+                  onClick={() => setMenuBool(false)}
+                  to="/onboarding"
+                  className="transition-all duration-300 text-gray-800 text-base border-b-2 border-[#DEE2E2] font-semibold py-3 hover:bg-[#cfd6d6] hover:border-b-2 hover:border-[#7C9C30]"
+                >
+                  ONBOARDING
                 </Link>
                 {/* {!showModal && !headline && (
                   <button
