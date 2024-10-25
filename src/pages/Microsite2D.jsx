@@ -1375,22 +1375,26 @@ const Microsite2D = () => {
         </div>
         {/* ----------------9th Section-----------------*/}
         <div className="pb-10">
-        <div className="py-10">
-        <h1 className="text-center text-[41px] font-semibold">Try the Ai powered background replacement </h1>
-        <h1 className="text-center text-[41px] font-semibold">solution with Retouched.ai</h1>
+          <div className="py-10">
+            <h1 className="text-center text-[41px] font-semibold">
+              Try the Ai powered background replacement{" "}
+            </h1>
+            <h1 className="text-center text-[41px] font-semibold">
+              solution with Retouched.ai
+            </h1>
+          </div>
+          <div className="w-full flex justify-center items-center">
+            <iframe
+              className="bg-white 2xl:h-[720px] h-[650px] w-[100%] "
+              src="https://www.retouched.ai"
+              title="Embedded Website"
+              frameBorder="0"
+            
+              allowFullScreen
+            />
+          </div>
         </div>
-    <div className="w-full flex justify-center items-center">
-    <iframe
-    className="bg-white 2xl:h-[800px] h-[650px]"
-        src="https://retouched.ai/"
-        width="100%"
-        height=""
-        title="Embedded Website"
-        frameBorder="0"
-        allowFullScreen
-      />
-    </div>
-        </div>
+       
       </div>
     </div>
   );
