@@ -159,9 +159,6 @@ const Microsite2DTest = () => {
             console.log("scrollHeight : ", document.body.scrollHeight, " scrollY : ", window.scrollY);
         }
 
-        // if(index < 0 &&  currentIndex + 1 === (sliderParent.current.children.length) ){
-        //     sliderParent.current.scrollIntoView({ behavior: 'smooth' });
-        // }
         if (index < 0 && currentIndex === 0) {
             setIsWheel(true);
             window.scrollTo({ top: window.scrollY - 200, behavior: 'smooth' });
