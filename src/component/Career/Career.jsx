@@ -311,6 +311,80 @@ const Career = () => {
 </div>`,
       date: "28 September, 2024",
     },
+    {
+      id: 7,
+      title: "Staff Software Engineer – .NET Core ",
+      description: `  <div class="job-des">
+ <h1><b>Position Title:</b> Staff Software Engineer – .NET Core </h1>
+ <p><strong>Employment Type: </strong> Full Time</p>
+ <p><strong>Open Position: </strong> 02 </p>
+ <p><strong>Deadline: </strong> Priority will be given to applications submitted before <span class="deadline">November 05, 2024</span>, with the final deadline being <span class="deadline">November 25, 2024</span> by 11:59 PM (GMT+6) </p>
+
+    <h3>About Us:</h3>
+  <p>At The KOW Company Ltd., we are committed to delivering scalable, secure, and high performance software solutions that empower businesses. As a leading innovator in the tech industry, we are seeking Staff Software Engineers with deep expertise in .NET Core to lead the architecture and development of complex applications.</p>
+  <p>This role emphasizes technical excellence and offers the opportunity to work on cutting-edge solutions such as 3D Reconstruction, 2D Image Background Removal, and complex ERP systems for file transfer. Additionally, you will contribute to the development of an app designed to serve over one million users, playing a key role in driving the company’s growth and innovation.</p>
+    <h3>Position Overview: </h3>
+     <p>The Staff Software Engineer will be responsible for designing and implementing scalable architectures using ASP.NET Core, C#, and cloud technologies like Azure or AWS. This is a hands-on technical role where you will collaborate directly with cross-functional teams to develop world-class software products.</p>
+  <p>You will play a key role in building distributed systems and working with databases (SQL and NoSQL) to deliver high-performance solutions for applications used by millions. Additionally, you will work on both monolithic and microservices-based architectures, depending on project needs, and ensure seamless integration of components through reporting modules and message brokers where required.</p>
+   <h3>Key Responsibilities:</h3>
+  <ul>
+        <li>Lead the design and development of scalable applications using ASP.NET Core, C#, and Blazor Server, employing both microservices and monolithic architectures where appropriate.</li>
+        <li>Architect and implement cloud-native applications on Azure or other cloud platforms, leveraging cloud services effectively</li>
+        <li>Develop and integrate RESTful APIs to ensure seamless interaction with other systems.</li>
+        <li>Design and optimize distributed databases (SQL or NoSQL) for performance, reliability, and scalability, ensuring they can handle high user volume.</li>
+        <li>Develop reporting modules and implement message brokers (such as RabbitMQ, Kafka) where necessary for efficient data processing and communication between systems.</li>
+        <li>Ensure best practices in security, data protection, and application performance.</li>
+        <li>Establish and maintain CI/CD pipelines using tools like Azure DevOps or Jenkins for automated testing and smooth deployments.</li>
+        <li>Collaborate with product owners and other teams using JIRA to plan, prioritize, and deliver key projects.</li>
+        <li>Use Docker and Kubernetes to containerize and orchestrate services, ensuring efficient deployment and management.</li>
+        <li>Troubleshoot and resolve complex technical issues, providing leadership in problem-solving efforts.</li> 
+    </ul>
+   <h3>Required Skills and Qualifications:</h3>
+  <ul>
+        <li> 7+ years of professional experience in software development, with expertise in ASP.NET Core, C#, .NET Framework, MVC, and Blazor Server.</li>
+        <li> Proven experience designing and implementing scalable architectures, including microservices, monolithic, and cloud solutions.</li>
+        <li> Strong understanding of RESTful API development and integration.</li>
+        <li> Experience with Azure or other cloud platforms, including cloud-native applications.</li>
+        <li> Proficient in database technologies, particularly SQL Server, NoSQL solutions, and Entity Framework, with a focus on performance optimization and scalability for high-traffic applications.</li>
+        <li> Strong understanding of security best practices in software development.</li>
+        <li> Experience with reporting modules and message brokers for efficient communication in distributed systems.</li>
+        <li> Excellent problem-solving skills with the ability to troubleshoot complex technical issues.</li>
+        <li> Persuasive communication and collaboration skills, with the ability to work effectively in cross-functional teams.</li>
+
+    </ul>
+    <h3>Optional Certifications (Added advantage if any):</h3>
+  <ul>
+      <li> Microsoft Certified: Azure Developer Associate</li>
+      <li> Microsoft Certified: .NET Developer</li>
+      <li> AWS Certified Developer – Associate</li>
+      <li> SQL & NoSQL Database Certifications</li>
+      <li> DevOps with Azure or Jenkins Certification</li>
+
+
+    </ul>
+   
+    <h3>Fringe benefits: </h3>
+    <ol>
+      <li>🎁 Festival Bonuses: Enjoy 2 Festival Bonuses as per company policy.</li>
+      <li>🍽️ Meal Facility: Fully subsidized meal facility to keep you fueled throughout the day.</li>
+      <li>📈 Profit Sharing: Annually or quarterly as per company policy.</li>
+      <li>🌿 Healthy Work Environment: Work in a supportive and positive atmosphere.</li>
+      <li>🎄 Christmas Leave: Celebrate the holidays with a special leave.</li>
+      <li>🚀 Career Advancement: Opportunities for growth and professional development.</li>
+      <li>🏝️ Yearly Office Retreat: Relax and recharge with your colleagues.</li>
+      <li>🎉 Events Celebration: Enjoy various events celebrated at our office premises.</li>
+      <li>🏏 Annual Tournaments: Participate in our Annual Cricket and Football Tournament.</li>
+      <li>🎲 Indoor Games: Have fun with Carrom and Table Tennis during breaks.</li>
+        
+       
+    </ol>
+
+    <p><strong>Salary:</strong> Negotiable based on experience and qualifications.</p>
+    <p><strong>How to Apply:</strong> Please submit your updated CV and cover letter to <span class="email-address">career@thekowcompany.com</span> by the deadline. Mention the position title in the subject line of your email.</p>
+    <p><strong>Location: </strong>Plot:06, 2nd Floor, Navana, D. H. Tower, Panthapath, Dhaka 1215</p>
+</div>`,
+      date: "25 Noverber, 2024",
+    },
   ]);
   const [isOpen, setIsOpen] = useState(false);
   const [cvData, setCvData] = useState({});
@@ -359,9 +433,12 @@ const Career = () => {
     <>
       <HeadProvider>
         <Title>Career | The KOW Company</Title>
-        <Meta name="description" content="Please select a position and submit your curriculum vitae at your earliest convenience." />
+        <Meta
+          name="description"
+          content="Please select a position and submit your curriculum vitae at your earliest convenience."
+        />
       </HeadProvider>
-      
+
       {/* <div className="career-bg h-[100vh]"> */}
       <div className="bg-gradient-to-t from-[#ebebeb] to-[#cdcbcc] ">
         <div className="container mx-auto relative min-h-screen">

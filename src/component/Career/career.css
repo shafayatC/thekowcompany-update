@@ -17,7 +17,7 @@
     background-repeat: no-repeat; 
 }
 .job-des p{ 
-    padding-bottom: 20px;
+    padding-bottom: 10px;
 }
 
 .job-des h1 {
@@ -80,3 +80,15 @@
   background: #7C9C30;
   border-radius: 10px;
 }
+
+
+.deadline{
+    font-weight: bold;
+    color: red;
+}
+
+.email-address{
+    font-weight: bold;
+    color: green;
+}
+
