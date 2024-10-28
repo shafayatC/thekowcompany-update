@@ -39,6 +39,7 @@ import Career from './component/Career/Career'
 import CareerThankYou from './component/Career/CareerThankYou'
 import Onboarding from './pages/Onboarding'
 import Microsite2D from './pages/Microsite2D'
+import Microsite2DTest from './pages/Microsite2D/MicrositeTest'
 
 function App() {
 
@@ -58,7 +59,7 @@ function App() {
       <Route path="/integrations" element={<Partnership />} />
       <Route path="/2d" element={<Container2D/>} />
       <Route path="/3d" element={<Container3D/>} />
-      <Route path="/microsite-2d" element={<Microsite2D/>} />
+      <Route path="/microsite-2d" element={<Microsite2DTest/>} />
 
       <Route path="/3d/creative-showcase" element ={<PDFViewer />}/>
       <Route path='/3d/industry-trends-details/:id' element={<Blog3D/>} />
