@@ -25,6 +25,7 @@ const ScrollChild = ({ slideContent, callBackChild, style,  isWheel }) => {
                         } else if (currentIndex === slideContent.slideImages.length - 1) {
                             callBackChild(Math.floor(Math.random() * 1000));
                         }
+                        stickyElement.parentElement.scrollIntoView({ behavior: 'smooth' });
 
                         // setCurrentIndex((prevIndex) => (prevIndex < slideContent.length - 1 ? prevIndex + 1 : 0));
                     } else if (event.deltaY < 0) {
