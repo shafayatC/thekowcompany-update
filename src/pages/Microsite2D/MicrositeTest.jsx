@@ -144,7 +144,7 @@ const Microsite2DTest = () => {
     }, [currentIndex])
 
     const callBackChild = (index) => {
-        // console.log("currentIndex : " + currentIndex + " length : " + sliderParent.current.children.length);
+        console.log("currentIndex : " + currentIndex + " length : " + sliderParent.current.children.length);
 
         index > -1 ?
             currentIndex < (sliderParent.current.children.length - 1) && setCurrentIndex(prev => prev + 1)
@@ -159,6 +159,9 @@ const Microsite2DTest = () => {
             console.log("scrollHeight : ", document.body.scrollHeight, " scrollY : ", window.scrollY);
         }
 
+        // if(index < 0 &&  currentIndex + 1 === (sliderParent.current.children.length) ){
+        //     sliderParent.current.scrollIntoView({ behavior: 'smooth' });
+        // }
         if (index < 0 && currentIndex === 0) {
             setIsWheel(true);
             window.scrollTo({ top: window.scrollY - 200, behavior: 'smooth' });
