@@ -1,6 +1,6 @@
 import { useEffect, useRef, useState } from "react";
 import { useInView } from "react-intersection-observer";
-import Navbar2dMicrosite from "../component2dMicrosite/Navbar2DMicrosite/Navbar2dMicrosite";
+import Navbar2dMicrosite from "../../component2dMicrosite/Navbar2DMicrosite/Navbar2dMicrosite";
 import "./Microsite2D.css";
 
 const Microsite2D = () => {
