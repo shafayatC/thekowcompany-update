@@ -154,6 +154,7 @@ const Microsite2DTest = () => {
             setIsScrollComplete(true);
             setIsWheel(true);
             setTimeout(() => {
+                document.body.style.touchAction = 'auto'; // Enable scrolling on the body
                 afterElement.current.scrollIntoView({ behavior: 'smooth' });
             }, 600);
             console.log("scrollHeight : ", document.body.scrollHeight, " scrollY : ", window.scrollY);
@@ -161,6 +162,7 @@ const Microsite2DTest = () => {
 
         if (index < 0 && currentIndex === 0) {
             setIsWheel(true);
+            document.body.style.touchAction = 'auto'; // Enable scrolling on the body
             window.scrollTo({ top: window.scrollY - 200, behavior: 'smooth' });
         }
 
