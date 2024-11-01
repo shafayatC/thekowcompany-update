@@ -44,9 +44,9 @@ const BlogPage2D = () => {
                                 blogData2d && blogData2d.map((item, index) =>
                                     index < 3 &&
                                     <Link to={"/2d/industry-trends-details/" + item.id + ""} key={index} className='' aria-label="industry trends details">
-                                        <div className="md:h-[180px] lg:h-[230px] xl:h-[260px] flex flex-col justify-center overflow-hidden">
+                                        <div className="md:h-[180px] lg:h-[230px] xl:h-[300px] flex flex-col justify-center overflow-hidden">
                                             <img
-                                                className="w-full h-[230px]"
+                                                className="w-full h-[230px]  xl:h-[300px] "
                                                 loading="lazy"
                                                 src={item.thumb}
                                                 width={350}
