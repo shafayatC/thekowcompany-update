@@ -13,15 +13,24 @@ const Microsite2DTest = () => {
     const [activeButton, setActiveButton] = useState(null);
 
     const handleButtonClick = (button) => {
-      setActiveButton(button);
+        setActiveButton(button);
     };
-  
+
     const buttonData = [
-      'Model',
-      'Shoes',
-      'Ghost Mannequin',
-      'Jewelry',
-      'Ambience',
+        {
+            id: 1,
+            title: 'Model',
+        }, {
+            id: 2,
+            title: 'Shoes',
+        }, {
+            id: 3,
+            title: 'Ghost Mannequin',
+        }, {
+            id: 4,
+            title: 'Jewelry',
+        }
+
     ];
 
     const slideContent = [
@@ -33,12 +42,12 @@ const Microsite2DTest = () => {
                     after: "./img/2D-Microsite/Model/before-model-3.webp",
                     before: "./img/2D-Microsite/Model/after-model-3.webp"
                 },
-                
+
                 {
                     after: "./img/2D-Microsite/Mannequin/before-Mq-1.webp",
                     before: "./img/2D-Microsite/Mannequin/after-Mq-1.webp"
                 },
-                
+
                 {
                     after: "./img/2D-Microsite/Model/before-model-2.webp",
                     before: "./img/2D-Microsite/Model/after-model-2.webp"
@@ -115,7 +124,7 @@ const Microsite2DTest = () => {
                     // Determine if the scroll is up or down
                     if (currentScrollY > prevScrollY.current) {
                         console.log("Scrolling down");
-                    } else if(currentScrollY < prevScrollY.current) {
+                    } else if (currentScrollY < prevScrollY.current) {
                         if (sliderParent.current) {
                             sliderParent.current.scrollIntoView({ behavior: 'smooth' });
                             setTimeout(() => {
@@ -181,7 +190,7 @@ const Microsite2DTest = () => {
         }
 
 
- 
+
 
 
     }
@@ -190,20 +199,20 @@ const Microsite2DTest = () => {
     return (
         <div className='flex flex-col bg-[#FFFBE6] relative'>
 
-            <div className="fixed right-0 top-[200px] z-[999]">
-            <div className='flex flex-col'>
-      {buttonData.map((buttonLabel) => (
-        <button
-          key={buttonLabel}
-          onClick={() => handleButtonClick(buttonLabel)}
-          className={`p-3 text-white rounded-l-xl microsite-button 
-            ${activeButton === buttonLabel ? 'bg-[#AADE8A] scale-105 -ml-2' : 'bg-[#53C292]'}`}
-        >
-          {buttonLabel}
-        </button>
-      ))}
-    </div>
-               
+            <div className="fixed right-0 top-[200px] z-[999] w-[92px] md:w-auto">
+                <div className='flex flex-col'>
+                    {buttonData.map((buttonLabel) => (
+                        <button
+                            key={buttonLabel?.id}
+                            onClick={() => handleButtonClick(buttonLabel?.id)}
+                            className={`p-3 text-white rounded-l-xl microsite-button transition-all duration-150
+            ${activeButton === buttonLabel.id ? 'bg-[#AADE8A] scale-105 -ml-2' : 'bg-[#53C292]'}`}
+                        >
+                            {buttonLabel?.title}
+                        </button>
+                    ))}
+                </div>
+
             </div>
 
             <Navbar2dMicrosite />

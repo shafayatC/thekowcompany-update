@@ -147,13 +147,13 @@ const ScrollChild = ({ slideContent, callBackChild, style, isWheel }) => {
                                 ))}
                             </div>
                         </div>
-                        <div className='w-full md:w-1/2 h-full flex justify-center items-center'>
+                        <div className='w-full md:w-1/2 h-auto md:h-full pt-3 md:p-0 flex justify-center items-center'>
                             <h2 className='text-black'>{slideContent?.title}</h2>
                         </div>
                     </div>
-                    <div className='h-1/2 flex flex-col md:flex-row'>
-                        <div className='w-full md:w-1/2 h-full flex justify-center items-center'>
-                            <p className='text-black text-lg font-bold w-[80%]'>{slideContent?.content}</p>
+                    <div className='h-1/2 flex flex-col-reverse md:flex-row'>
+                        <div className='w-full md:w-1/2 h-auto md:h-full flex justify-center items-center pb-7 md:pb-0'>
+                            <p className='text-black text-base md:text-lg font-bold w-[80%]'>{slideContent?.content}</p>
                         </div>
                         <div className='w-full md:w-1/2 h-full'>
                             <div className='slider-wheel-container w-full h-full relative overflow-hidden'>
