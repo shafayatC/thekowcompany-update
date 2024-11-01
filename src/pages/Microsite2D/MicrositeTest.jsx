@@ -173,7 +173,7 @@ const Microsite2DTest = () => {
         <div className='flex flex-col bg-[#FFFBE6]'>
 
             <Navbar2dMicrosite />
-            <div className="container mx-auto">
+            <div className="container mx-auto overflow-hidden">
                 {/* -----------1st section------------ */}
                 <div className="h-screen">
                     <h1
@@ -204,7 +204,7 @@ const Microsite2DTest = () => {
               `}
                         >
                             <h1 className="text-[50px] font-semibold">About Us</h1>
-                            <p className="text-[17px] w-[800px]">
+                            <p className="text-[17px] w-full lg:w-[800px]">
                                 At The KOW Company, we excel in Ecommerce and Studio Image
                                 Post-Production, transforming visual concepts into captivating
                                 realities. With a keen eye for detail and creativity, our
@@ -245,7 +245,7 @@ const Microsite2DTest = () => {
                                 }`}
                         >
                             <h1 className="text-[50px] font-semibold">Retouching</h1>
-                            <p className="text-[17px] w-[800px]">
+                            <p className="text-[17px] w-full lg:w-[800px]">
                                 Enhance and perfect images for a professional finish.
                             </p>
                         </div>

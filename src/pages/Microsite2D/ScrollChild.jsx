@@ -133,8 +133,8 @@ const ScrollChild = ({ slideContent, callBackChild, style, isWheel }) => {
             {/* {console.log("slideContent : ", slideContent.slideImages)} */}
             <div className='h-screen bg-[#FFFBE6] text-white font-bold text-[40px] flex flex-col justify-center items-center'>
                 <div className='h-full w-full'>
-                    <div className='h-1/2 flex'>
-                        <div className=' w-1/2 h-full'>
+                    <div className='h-1/2 flex flex-col-reverse md:flex-row'>
+                        <div className=' w-full md:w-1/2 h-full'>
                             <div className='slider-wheel-container w-full h-full relative overflow-hidden'>
                                 {slideContent && slideContent.slideImages.map((item, index) => (
                                     <div
@@ -147,15 +147,15 @@ const ScrollChild = ({ slideContent, callBackChild, style, isWheel }) => {
                                 ))}
                             </div>
                         </div>
-                        <div className='w-1/2 h-full flex justify-center items-center'>
+                        <div className='w-full md:w-1/2 h-full flex justify-center items-center'>
                             <h2 className='text-black'>{slideContent?.title}</h2>
                         </div>
                     </div>
-                    <div className='h-1/2 flex'>
-                        <div className='w-1/2 h-full flex justify-center items-center'>
+                    <div className='h-1/2 flex flex-col md:flex-row'>
+                        <div className='w-full md:w-1/2 h-full flex justify-center items-center'>
                             <p className='text-black text-lg font-bold w-[80%]'>{slideContent?.content}</p>
                         </div>
-                        <div className='w-1/2 h-full'>
+                        <div className='w-full md:w-1/2 h-full'>
                             <div className='slider-wheel-container w-full h-full relative overflow-hidden'>
                                 {slideContent && slideContent.slideImages.map((item, index) => (
                                     <div
