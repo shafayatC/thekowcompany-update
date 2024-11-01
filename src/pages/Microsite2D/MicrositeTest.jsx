@@ -10,6 +10,20 @@ const Microsite2DTest = () => {
     const [isScrollComplete, setIsScrollComplete] = useState(false);
     const [isWheel, setIsWheel] = useState(false);
 
+    const [activeButton, setActiveButton] = useState(null);
+
+    const handleButtonClick = (button) => {
+      setActiveButton(button);
+    };
+  
+    const buttonData = [
+      'Model',
+      'Shoes',
+      'Ghost Mannequin',
+      'Jewelry',
+      'Ambience',
+    ];
+
     const slideContent = [
         {
             title: "On Model",
@@ -166,11 +180,31 @@ const Microsite2DTest = () => {
             window.scrollTo({ top: window.scrollY - 200, behavior: 'smooth' });
         }
 
+
+ 
+
+
     }
 
 
     return (
-        <div className='flex flex-col bg-[#FFFBE6]'>
+        <div className='flex flex-col bg-[#FFFBE6] relative'>
+
+            <div className="fixed right-0 top-[200px] z-[999]">
+            <div className='flex flex-col'>
+      {buttonData.map((buttonLabel) => (
+        <button
+          key={buttonLabel}
+          onClick={() => handleButtonClick(buttonLabel)}
+          className={`p-3 text-white rounded-l-xl microsite-button 
+            ${activeButton === buttonLabel ? 'bg-[#AADE8A] scale-105 -ml-2' : 'bg-[#53C292]'}`}
+        >
+          {buttonLabel}
+        </button>
+      ))}
+    </div>
+               
+            </div>
 
             <Navbar2dMicrosite />
             <div className="container mx-auto overflow-hidden">
