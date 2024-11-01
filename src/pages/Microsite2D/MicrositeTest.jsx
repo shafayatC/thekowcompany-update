@@ -209,10 +209,10 @@ const Microsite2DTest = () => {
             <Navbar2dMicrosite />
             <div className="container mx-auto overflow-hidden">
                 {/* -----------1st section------------ */}
-                <div className="h-screen">
+                <div className="h-[40vh] md:h-screen">
                     <h1
                         // ref={headerRef}
-                        className="font-bold h-full text-[160px] flex justify-center items-center header-text-background"
+                        className="font-bold  h-full text-[68px] md:text-[160px] flex justify-center items-center header-text-background"
                     // style={{
                     //   transform: `scale(${scale})`, // Apply zoom effect
                     //   transition: "transform 0.3s ease-out", // Smooth transition
@@ -237,8 +237,8 @@ const Microsite2DTest = () => {
                                 }
               `}
                         >
-                            <h1 className="text-[50px] font-semibold">About Us</h1>
-                            <p className="text-[17px] w-full lg:w-[800px]">
+                            <h1 className="text-[30px] md:text-[50px] font-semibold">About Us</h1>
+                            <p className="text-[12px] md:text-[17px] w-full lg:w-[800px]">
                                 At The KOW Company, we excel in Ecommerce and Studio Image
                                 Post-Production, transforming visual concepts into captivating
                                 realities. With a keen eye for detail and creativity, our
@@ -255,14 +255,14 @@ const Microsite2DTest = () => {
                         <div className="w-full">
                             <div
                                 // ref={ref2}
-                                className={`flex justify-end items-end gap-5 mr-12 transition-all duration-1000  ${null
+                                className={`flex justify-end items-end gap-5 md:mr-12 transition-all duration-1000  ${null
                                     //   inView2
                                     //     ? "opacity-100 translate-x-0"
                                     //     : "opacity-0 translate-x-20"
                                     }`}
                             >
-                                <h1 className="text-[50px] font-semibold -mb-3">SERVICES</h1>
-                                <p className="text-[17px] w-[200px]">
+                                <h1 className="text-[30px] md:text-[50px] font-semibold -mb-3">SERVICES</h1>
+                                <p className="text-[12px] md:text-[17px] w-[120px] md:w-[200px]">
                                     Model Retouch Background Removal Image Enhancement Ghost
                                     Mannequin Clipping Path
                                 </p>
@@ -278,8 +278,8 @@ const Microsite2DTest = () => {
                                 //   : "opacity-0 -translate-x-20"
                                 }`}
                         >
-                            <h1 className="text-[50px] font-semibold">Retouching</h1>
-                            <p className="text-[17px] w-full lg:w-[800px]">
+                            <h1 className="text-[30px] md:text-[50px] font-semibold">Retouching</h1>
+                            <p className=" text-[12px] md:text-[17px] w-full lg:w-[800px]">
                                 Enhance and perfect images for a professional finish.
                             </p>
                         </div>
@@ -287,7 +287,7 @@ const Microsite2DTest = () => {
                 </div>
 
                 {/* ----------------3rd Section: Details-----------------*/}
-                <div className="py-20">
+                <div className="py-20 hidden md:block">
                     <h1 className="text-[36px] font-semibold text-center">Details</h1>
                 </div>
 
