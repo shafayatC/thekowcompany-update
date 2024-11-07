@@ -1,6 +1,6 @@
 import React, { useEffect, useRef, useState } from 'react';
 
-const ScrollChild = ({ slideContent, callBackChild, style, isWheel }) => {
+const ScrollChild = ({ slideContent, callBackChild, style, isWheel, resetChildIndex }) => {
     const [isSticky, setIsSticky] = useState(false);
     const [currentIndex, setCurrentIndex] = useState(0); // Use state for currentIndex
     const debounceTimeout = useRef(null); // Ref to store the debounce timeout
@@ -123,7 +123,7 @@ const ScrollChild = ({ slideContent, callBackChild, style, isWheel }) => {
         };
     }, [currentIndex, slideContent.slideImages.length, isWheel]);
 
-
+    // useEffect(()=>{},[resetChildIndex])
 
     return (
         <div ref={boxRef}
