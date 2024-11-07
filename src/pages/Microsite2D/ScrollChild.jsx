@@ -123,7 +123,11 @@ const ScrollChild = ({ slideContent, callBackChild, style, isWheel, resetChildIn
         };
     }, [currentIndex, slideContent.slideImages.length, isWheel]);
 
-    // useEffect(()=>{},[resetChildIndex])
+    useEffect(()=>{
+        const stickyElement = boxRef.current;
+        // console.log("last child : " , stickyElement.parentElement.lastElementChild);
+       boxRef.current !== stickyElement.parentElement.lastElementChild && resetChildIndex ? setCurrentIndex(slideContent.slideImages.length - 1) : setCurrentIndex(0);
+    },[resetChildIndex])
 
     return (
         <div ref={boxRef}

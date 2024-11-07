@@ -9,35 +9,71 @@ const Microsite2DTest = () => {
     const [prevIndex, setPrevIndex] = useState(0);
     const [isScrollComplete, setIsScrollComplete] = useState(false);
     const [isWheel, setIsWheel] = useState(false);
-
+    const [resetChildIndex, setResetChildIndex] = useState(false);
     const [activeButton, setActiveButton] = useState(null);
 
+    // const handleButtonClick = (index) => {
+    //     const parrentSlide = sliderParent.current;
+    //     const prevIndex = currentIndex;
+
+    //     // previndex = 2
+    //     // parrentLength = 3
+    //     // index = 3
+
+
+    //     const currentIndexChange = (changeIndex) => {
+    //         setTimeout(() => {
+
+    //             setCurrentIndex(changeIndex);
+    //             console.log("changeIndex ", changeIndex , " index: ",index, " currentIndex : " + currentIndex + " length : " + parrentSlide.children.length);
+    //         }, 1000);
+    //     }
+
+    //     for (let i = 0; i < parrentSlide.children.length; i++) {
+    //         if(prevIndex > index && i >= 0){
+    //             currentIndexChange(prevIndex - i)
+    //         }else if(prevIndex < index && i >= parrentSlide.children.length - 1){
+    //             currentIndexChange(prevIndex + i)
+    //         }
+    //     }
+    // };
+
+
+
     const handleButtonClick = (index) => {
-        const parrentSlide = sliderParent.current;
+        const parentSlide = sliderParent.current;
         const prevIndex = currentIndex;
 
-        // previndex = 2
-        // parrentLength = 3
-        // index = 3
-
-
-        const currentIndexChange = (index) => {
+        // Check if prevIndex is greater than index and update setResetChildIndex
+        if (prevIndex < index) {
+            setResetChildIndex(true);
+        } else {
+            setResetChildIndex(false);
+        }
+        // Helper function to update currentIndex safely
+        const currentIndexChange = (changeIndex, delay) => {
+            
             setTimeout(() => {
+                setCurrentIndex((prev) => {
+                    console.log("Updated to changeIndex:", changeIndex, "index:", index, "previous:", prev);
+                    return changeIndex;
+                });
 
-                setCurrentIndex(index);
-    
-            }, 500);
+            }, delay);
+        };
+
+        if (prevIndex !== index) {
+            let step = prevIndex < index ? 1 : -1; // Determine direction
+            let delay = 0; // Initial delay set to 0
+
+            for (let i = prevIndex; i !== index; i += step) {
+                currentIndexChange(i, delay);
+                delay += 700; // Increment delay by 1 second for each loop iteration
+            }
+
+            // Ensure the final index is set after the loop completes
+            currentIndexChange(index, delay);
         }
-
-        for (let i = 0; i < parrentSlide.children.length; i++) {
-            prevIndex > index ? (prevIndex - i) > (index-1)   &&
-             currentIndexChange(prevIndex - i) 
-            :
-            (prevIndex + 1) <  (index+1)   && currentIndexChange(prevIndex + i) 
-
-        }
-
-
     };
 
     const buttonData = [
@@ -51,7 +87,7 @@ const Microsite2DTest = () => {
             id: 2,
             title: 'Ghost Mannequin',
         },
-         {
+        {
             id: 3,
             title: 'Jewelry',
         }
@@ -97,7 +133,6 @@ const Microsite2DTest = () => {
                 }
             ]
         },
-        
         {
             title: "Ghost Mannequin",
             content: "Mannequin Services: From seamless mannequin removal and sleeve preservation to flawless dust and scratch removal and wrinkle-free magic, we perfect every detail to showcase your products at their best.",
@@ -245,22 +280,7 @@ const Microsite2DTest = () => {
     return (
         <div className='flex flex-col bg-[#FFFBE6] relative'>
 
-            <div className="fixed right-0 top-[10px] z-[999] w-[92px] md:w-auto">
 
-                <div className='flex flex-col'>
-                    {buttonData.map((buttonLabel) => (
-                        <button
-                            key={buttonLabel?.id}
-                            onClick={() => handleButtonClick(buttonLabel?.id)}
-
-                            className={`px-3 py-2 text-xs text-white rounded-l-xl microsite-button transition-all duration-150
-            ${currentIndex === buttonLabel.id ? 'bg-[#AADE8A] scale-105 -ml-2' : 'bg-[#53C292]'}`} >
-                            {buttonLabel?.title}
-                        </button>
-                    ))}
-                </div>
-
-            </div>
 
             <Navbar2dMicrosite />
             <div className="container mx-auto overflow-hidden">
@@ -356,34 +376,55 @@ const Microsite2DTest = () => {
             <div className='h-screen bg-green-600 text-white font-bold text-[40px] flex flex-col justify-center items-center'>
                 <span>2</span>
             </div> */}
-            <div ref={sliderParent} className='relative h-screen overflow-hidden'>
+            <div className='relative overflow-hidden'>
 
-                {
-                    slideContent.map((item, index) =>
-                        <>
-                            {index == 0 ?
-                                <ScrollChild
-                                    key={index}
-                                    style={{ transform: `translateY(0px)` }}
-                                    slideContent={item}
-                                    isWheel={isWheel}
-                                    callBackChild={callBackChild} />
-                                :
-                                <ScrollChild
-                                    key={index}
-                                    style={{ transform: `translateY(${window.innerHeight}px)` }} // Use window.innerHeight for visible height
-                                    slideContent={item}
-                                    isWheel={isWheel}
-                                    callBackChild={callBackChild} />
-                            }
-                        </>
+                <div ref={sliderParent} className='relative h-screen overflow-hidden'>
 
-                    )
-                }
+                    {
+                        slideContent.map((item, index) =>
+                            <>
+                                {index == 0 ?
+                                    <ScrollChild
+                                        key={index}
+                                        style={{ transform: `translateY(0px)` }}
+                                        slideContent={item}
+                                        isWheel={isWheel}
+                                        resetChildIndex={resetChildIndex}
+                                        callBackChild={callBackChild} />
+                                    :
+                                    <ScrollChild
+                                        key={index}
+                                        style={{ transform: `translateY(${window.innerHeight}px)` }} // Use window.innerHeight for visible height
+                                        slideContent={item}
+                                        isWheel={isWheel}
+                                        resetChildIndex={resetChildIndex}
+                                        callBackChild={callBackChild} />
+                                }
+                            </>
+
+                        )
+                    }
 
 
+                </div>
+
+                <div className="absolute right-0 top-[10px] z-[999] w-[92px] md:w-auto">
+
+                    <div className='flex flex-col'>
+                        {buttonData.map((buttonLabel) => (
+                            <button
+                                key={buttonLabel?.id}
+                                onClick={() => handleButtonClick(buttonLabel?.id)}
+
+                                className={`px-3 py-2 text-xs text-white rounded-l-xl microsite-button transition-all duration-150
+${currentIndex === buttonLabel.id ? 'bg-[#AADE8A] scale-105 -ml-2' : 'bg-[#53C292]'}`} >
+                                {buttonLabel?.title}
+                            </button>
+                        ))}
+                    </div>
+
+                </div>
             </div>
-
             {
                 isScrollComplete &&
                 <div ref={afterElement} className="pb-10 h-screen">
