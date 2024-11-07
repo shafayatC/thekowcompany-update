@@ -12,22 +12,47 @@ const Microsite2DTest = () => {
 
     const [activeButton, setActiveButton] = useState(null);
 
-    const handleButtonClick = (button) => {
-        setActiveButton(button);
+    const handleButtonClick = (index) => {
+        const parrentSlide = sliderParent.current;
+        const prevIndex = currentIndex;
+
+        // previndex = 2
+        // parrentLength = 3
+        // index = 3
+
+
+        const currentIndexChange = (index) => {
+            setTimeout(() => {
+
+                setCurrentIndex(index);
+    
+            }, 500);
+        }
+
+        for (let i = 0; i < parrentSlide.children.length; i++) {
+            prevIndex > index ? (prevIndex - i) > (index-1)   &&
+             currentIndexChange(prevIndex - i) 
+            :
+            (prevIndex + 1) <  (index+1)   && currentIndexChange(prevIndex + i) 
+
+        }
+
+
     };
 
     const buttonData = [
         {
-            id: 1,
+            id: 0,
             title: 'Model',
         }, {
-            id: 2,
+            id: 1,
             title: 'Shoes',
         }, {
-            id: 3,
+            id: 2,
             title: 'Ghost Mannequin',
-        }, {
-            id: 4,
+        },
+         {
+            id: 3,
             title: 'Jewelry',
         }
 
@@ -55,6 +80,25 @@ const Microsite2DTest = () => {
             ]
         },
         {
+            title: "Shoe Retouching",
+            content: "Shoe Retouching to Perfection: From enhancing shape with precise image manipulation to adding natural shadows, removing imperfections, and perfecting the background, we ensure every pair stands out in flawless detail.",
+            slideImages: [
+                {
+                    after: "./img/2D-Microsite/Shoe/before-shoe-1.webp",
+                    before: "./img/2D-Microsite/Shoe/after-shoe-1.webp"
+                },
+                {
+                    after: "./img/2D-Microsite/Shoe/before-shoe-2.webp",
+                    before: "./img/2D-Microsite/Shoe/after-shoe-2.webp"
+                },
+                {
+                    after: "./img/2D-Microsite/Shoe/before-shoe-3.webp",
+                    before: "./img/2D-Microsite/Shoe/after-shoe-3.webp"
+                }
+            ]
+        },
+        
+        {
             title: "Ghost Mannequin",
             content: "Mannequin Services: From seamless mannequin removal and sleeve preservation to flawless dust and scratch removal and wrinkle-free magic, we perfect every detail to showcase your products at their best.",
             slideImages: [
@@ -73,20 +117,20 @@ const Microsite2DTest = () => {
             ]
         },
         {
-            title: "Shoe Retouching",
-            content: "Shoe Retouching to Perfection: From enhancing shape with precise image manipulation to adding natural shadows, removing imperfections, and perfecting the background, we ensure every pair stands out in flawless detail.",
+            title: "Jewelry",
+            content: "Mannequin Services: From seamless mannequin removal and sleeve preservation to flawless dust and scratch removal and wrinkle-free magic, we perfect every detail to showcase your products at their best.",
             slideImages: [
                 {
-                    after: "./img/2D-Microsite/Shoe/before-shoe-1.webp",
-                    before: "./img/2D-Microsite/Shoe/after-shoe-1.webp"
+                    after: "./img/2D-Microsite/Mannequin/before-Mq-1.webp",
+                    before: "./img/2D-Microsite/Mannequin/after-Mq-1.webp"
                 },
                 {
-                    after: "./img/2D-Microsite/Shoe/before-shoe-2.webp",
-                    before: "./img/2D-Microsite/Shoe/after-shoe-2.webp"
+                    after: "./img/2D-Microsite/Mannequin/before-Mq-2.webp",
+                    before: "./img/2D-Microsite/Mannequin/after-Mq-2.webp"
                 },
                 {
-                    after: "./img/2D-Microsite/Shoe/before-shoe-3.webp",
-                    before: "./img/2D-Microsite/Shoe/after-shoe-3.webp"
+                    after: "./img/2D-Microsite/Mannequin/before-Mq-3.webp",
+                    before: "./img/2D-Microsite/Mannequin/after-Mq-3.webp"
                 }
             ]
         }
@@ -157,9 +201,11 @@ const Microsite2DTest = () => {
         if (parrentSlide) {
             if (prevIndex < currentIndex && currentIndex < parrentSlide.children.length) {
                 setPrevIndex(currentIndex);
+
                 parrentSlide.children[currentIndex].style.transform = `translateY(0px)`;
             } else if (prevIndex !== 0 && prevIndex > currentIndex && currentIndex < parrentSlide.children.length) {
                 // parrentSlide.children[prevIndex].style.transform = `translateX(100%)`;
+
                 parrentSlide.children[prevIndex].style.transform = `translateY(${parrentSlide.children[prevIndex].clientHeight + "px"})`;
                 setPrevIndex(currentIndex);
             }
@@ -200,14 +246,15 @@ const Microsite2DTest = () => {
         <div className='flex flex-col bg-[#FFFBE6] relative'>
 
             <div className="fixed right-0 top-[10px] z-[999] w-[92px] md:w-auto">
+
                 <div className='flex flex-col'>
                     {buttonData.map((buttonLabel) => (
                         <button
                             key={buttonLabel?.id}
                             onClick={() => handleButtonClick(buttonLabel?.id)}
-                            className={`px-3 py-2 text-xs text-white rounded-l-lg microsite-button transition-all duration-150
-            ${activeButton === buttonLabel.id ? 'bg-[#AADE8A] scale-105 -ml-2' : 'bg-[#53C292]'}`}
-                        >
+
+                            className={`px-3 py-2 text-xs text-white rounded-l-xl microsite-button transition-all duration-150
+            ${currentIndex === buttonLabel.id ? 'bg-[#AADE8A] scale-105 -ml-2' : 'bg-[#53C292]'}`} >
                             {buttonLabel?.title}
                         </button>
                     ))}
