@@ -245,15 +245,16 @@ const Microsite2DTest = () => {
     return (
         <div className='flex flex-col bg-[#FFFBE6] relative'>
 
-            <div className="fixed right-0 top-[200px] z-[9999] w-[92px] md:w-auto">
+            <div className="fixed right-0 top-[10px] z-[999] w-[92px] md:w-auto">
+
                 <div className='flex flex-col'>
                     {buttonData.map((buttonLabel) => (
                         <button
                             key={buttonLabel?.id}
                             onClick={() => handleButtonClick(buttonLabel?.id)}
-                            className={`p-3 text-white rounded-l-xl microsite-button transition-all duration-150
-            ${currentIndex === buttonLabel.id ? 'bg-[#AADE8A] scale-105 -ml-2' : 'bg-[#53C292]'}`}
-                        >
+
+                            className={`px-3 py-2 text-xs text-white rounded-l-xl microsite-button transition-all duration-150
+            ${currentIndex === buttonLabel.id ? 'bg-[#AADE8A] scale-105 -ml-2' : 'bg-[#53C292]'}`} >
                             {buttonLabel?.title}
                         </button>
                     ))}
