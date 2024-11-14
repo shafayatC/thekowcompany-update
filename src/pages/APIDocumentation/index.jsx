@@ -74,7 +74,7 @@ const APIDocs = () => {
                                 </ul>
                             </div>
 
-                            <div className="w-[750px] ml-[52px] mt-[39px]">
+                            <div className="w-[750px] ml-[52px] mt-[39px] flex flex-col gap-[28px]">
                                <div className="flex flex-col gap-[6px]">
                                <HeaderOne>Retouched.ai</HeaderOne>
                                <ParagraphOne className={'leading-7'}>Retouched.ai is an API-driven platform offering professional image editing services designed to integrate easily into various applications. Its primary functionalities include background removal, color correction, and image retouching. Users can submit images for processing, which allows them to streamline editing workflows, especially valuable for industries like e-commerce and digital marketing where high-quality images are crucial.</ParagraphOne>
