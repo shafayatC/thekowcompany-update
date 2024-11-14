@@ -40,7 +40,8 @@ import CareerThankYou from './component/Career/CareerThankYou'
 import Onboarding from './pages/Onboarding'
 import Microsite2D from './pages/Microsite2D'
 import Microsite2DTest from './pages/Microsite2D/MicrositeTest'
-import APIDocs from './pages/API Documentation/APIDocs'
+import APIDocs from './pages/APIDocumentation'
+import APIDocsText from './pages/APIDocumentation/test'
 
 function App() {
 
@@ -86,7 +87,9 @@ function App() {
       <Route path="/career" element={<Career/>} />
       <Route path="/career-thank-you" element={<CareerThankYou/>} />
       <Route path="/onboarding" element={<Onboarding/>} />
-      <Route path="/api-documentation" element={<APIDocs/>} />
+      {/* <Route path="/api-documentation" element={<APIDocs/>} /> */}
+      <Route path="/api-documentation" element={<APIDocsText/>} />
+
       </Routes>
     </>
   )
