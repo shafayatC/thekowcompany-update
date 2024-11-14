@@ -3,16 +3,57 @@ import HeaderOne from "../../componentAPI/microComponent/HeaderOne";
 import ParagraphOne from "../../componentAPI/microComponent/ParagraphOne";
 import NavbarAPI from "../../componentAPI/NavbarAPI";
 import './style.css'
+import { useEffect, useRef, useState } from "react";
 
 const APIDocsText = () => {
+    const [isSticky, setIsSticky] = useState(false); 
+    const boxRef = useRef(null);
+
+    const scrollAction = () => {
+        const box_one_par = boxRef.current;
+        if (!box_one_par) return; // Check if the box is defined
+
+        // const box_one_par = document.querySelector(`#box_two`);
+        const windowHeight = window.innerHeight;
+        const elementTop = box_one_par.getBoundingClientRect().top;
+
+        console.log(
+            "window hegith ", windowHeight,
+            "visible", elementTop
+        );
+
+        // if (elementTop < windowHeight - offset) {
+        if (elementTop < 0) {
+            console.log("Testing iiii :")
+            setIsSticky(true); 
+        }else {
+            setIsSticky(false); 
+        }
+
+    }
+
+    useEffect(() => {
+
+        window.addEventListener('scroll', scrollAction);
+
+        // Cleanup function to remove the event listener when the component unmounts
+        return () => {
+            window.removeEventListener('scroll', scrollAction);
+            // document.body.style.overflow = 'auto';
+        };
+    }, []);
+
+
+
+
     return (
-        <>
+        <div className="overflow-hidden">
             <NavbarAPI />
 
-            <div className="sticky top-0 h-screen">
-                <div className="flex h-full">
+            <div ref={boxRef} className="min-h-screen">
+                <div className="flex h-full relative">
                     {/* sidebar */}
-                    <div className="pl-[120px] pr-[33px] pt-[75px] border-r-[1px] border-[#1E1E1E]">
+                    <div style={{position : isSticky ? 'fixed' : 'absolute'}} className="absolute z-20 h-full left-0 top-0 pl-[120px] pr-[33px] pt-[75px] border-r-[1px] border-[#1E1E1E]">
                         <div className="w-[308px] flex flex-col gap-[42px]">
                             <ParagraphOne>In this section, you will find the following detailed information</ParagraphOne>
                             <div className="flex flex-col gap-[33px]">
@@ -66,7 +107,7 @@ const APIDocsText = () => {
                     {/* main content*/}
                     <div className="w-full">
                         <div className="flex flex-col">
-                            <div className="border-b-[1px] border-black">
+                            <div style={{position : isSticky ? 'fixed' : 'absolute'}}  className="absolute top-0 bg-white left-[462px] border-b-[1px] border-black w-full">
                                 <ul className="anek-latin-font flex gap-14 pl-[52px] py-3">
                                     <li><Link to="#" className="text-[#009665] text-xl font-[700]">API</Link></li>
                                     <li><Link to="#" className="text-xl font-[400]">SDK</Link></li>
@@ -74,18 +115,21 @@ const APIDocsText = () => {
                                 </ul>
                             </div>
 
-                            <div className="w-[750px] ml-[52px] mt-[39px]">
-                               <div className="flex flex-col gap-[6px]">
-                               <HeaderOne>Retouched.ai</HeaderOne>
-                               <ParagraphOne className={'leading-7'}>Retouched.ai is an API-driven platform offering professional image editing services designed to integrate easily into various applications. Its primary functionalities include background removal, color correction, and image retouching. Users can submit images for processing, which allows them to streamline editing workflows, especially valuable for industries like e-commerce and digital marketing where high-quality images are crucial.</ParagraphOne>
-                               </div>
+                            <div className="w-[750px] ml-[462px] mt-[70px] pl-[52px]">
+                                <div className="flex flex-col gap-[6px]">
+                                    <HeaderOne>Retouched.ai</HeaderOne>
+                                    <ParagraphOne className={'leading-7'}>Retouched.ai is an API-driven platform offering professional image editing services designed to integrate easily into various applications. Its primary functionalities include background removal, color correction, and image retouching. Users can submit images for processing, which allows them to streamline editing workflows, especially valuable for industries like e-commerce and digital marketing where high-quality images are crucial.</ParagraphOne>
+                                </div>
+                                <div className="h-screen bg-slate-300"></div>
+                                <div className="h-screen bg-slate-300"></div>
+                                <div className="h-screen bg-slate-300"></div>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
 
-        </>
+        </div>
     );
 };
 
