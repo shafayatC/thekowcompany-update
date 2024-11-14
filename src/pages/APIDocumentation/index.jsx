@@ -5,11 +5,15 @@ import NavbarAPI from "../../componentAPI/NavbarAPI";
 import './style.css'
 
 const APIDocs = () => {
+
+ 
+
+
     return (
         <>
             <NavbarAPI />
 
-            <div className="sticky top-0 h-screen">
+            <div ref={boxRef} className="h-screen">
                 <div className="flex h-full">
                     {/* sidebar */}
                     <div className="pl-[120px] pr-[33px] pt-[75px] border-r-[1px] border-[#1E1E1E]">
@@ -75,10 +79,11 @@ const APIDocs = () => {
                             </div>
 
                             <div className="w-[750px] ml-[52px] mt-[39px] flex flex-col gap-[28px]">
-                               <div className="flex flex-col gap-[6px]">
-                               <HeaderOne>Retouched.ai</HeaderOne>
-                               <ParagraphOne className={'leading-7'}>Retouched.ai is an API-driven platform offering professional image editing services designed to integrate easily into various applications. Its primary functionalities include background removal, color correction, and image retouching. Users can submit images for processing, which allows them to streamline editing workflows, especially valuable for industries like e-commerce and digital marketing where high-quality images are crucial.</ParagraphOne>
-                               </div>
+                                <div className="flex flex-col gap-[6px]">
+                                    <HeaderOne>Retouched.ai</HeaderOne>
+                                    <ParagraphOne className={'leading-7'}>Retouched.ai is an API-driven platform offering professional image editing services designed to integrate easily into various applications. Its primary functionalities include background removal, color correction, and image retouching. Users can submit images for processing, which allows them to streamline editing workflows, especially valuable for industries like e-commerce and digital marketing where high-quality images are crucial.</ParagraphOne>
+                                </div>
+                                {/* <div className="h-screen bg-slate-400">sdfs</div> */}
                             </div>
                         </div>
                     </div>
