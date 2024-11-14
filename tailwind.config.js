@@ -6,7 +6,9 @@ export default {
   ],
   theme: {
     fontFamily: {
-      'tag-font' : ['Rubik Doodle Shadow', 'system-ui']
+      'tag-font' : ['Rubik Doodle Shadow', 'system-ui'],
+      'anek-latin' : [ 'Anek Latin', 'sans-serif'],
+      'ibm-plex' : [ 'IBM Plex Sans', 'sans-serif']
     },
     container: {
       screens: {

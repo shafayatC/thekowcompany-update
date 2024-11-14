@@ -38,9 +38,10 @@ import PortfolioTab from './component3d/Portfolio3D/PortfolioTab'
 import Career from './component/Career/Career'
 import CareerThankYou from './component/Career/CareerThankYou'
 import Onboarding from './pages/Onboarding'
-import Microsite2D from './pages/Microsite2D'
+// import Microsite2D from './pages/Microsite2D'
 import Microsite2DTest from './pages/Microsite2D/MicrositeTest'
-import APIDocs from './pages/API Documentation/APIDocs'
+import APIDocs from './pages/APIDocumentation'
+
 
 function App() {
 
