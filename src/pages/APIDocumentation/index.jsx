@@ -121,10 +121,11 @@ const APIDocs = () => {
                             <div className="w-[750px] ml-[462px] mt-[70px] pl-[52px] pb-[47px]">
                              <div className="flex flex-col gap-[28px]">
                                 <SectionOne />
-                                <hr className="w-[766px] ml-[52px]"></hr>
+                                <hr className="w-[766px] "></hr>
                                 <SectionTwo />
-                                <hr className="w-[766px] ml-[52px]"></hr>
+                                <hr className="w-[766px] "></hr>
                                 <SectionThree />
+                                <hr className="w-[766px] "></hr>
                                 </div>       
 
                             </div>

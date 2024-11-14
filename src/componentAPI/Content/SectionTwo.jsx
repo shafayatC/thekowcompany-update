@@ -4,7 +4,7 @@ import ParagraphOne from "../microComponent/ParagraphOne";
 
 const SectionTwo = () => {
   return (
-    <div className="w-[671px] ml-[52px]  flex flex-col ">
+    <div className=" flex flex-col ">
       <HeaderOne>1. Retouched.ai API Resources</HeaderOne>
       <ParagraphOne>
         Welcome to the Retouched.AI API documentation. Through this set of APIs,
