@@ -4,9 +4,12 @@ import ParagraphOne from "../../componentAPI/microComponent/ParagraphOne";
 import NavbarAPI from "../../componentAPI/NavbarAPI";
 import './style.css'
 import { useEffect, useRef, useState } from "react";
+import SectionOne from "../../componentAPI/Content/SectionOne";
+import SectionTwo from "../../componentAPI/Content/SectionTwo";
+import SectionThree from "../../componentAPI/Content/SectionThree";
 
 const APIDocsText = () => {
-    const [isSticky, setIsSticky] = useState(false); 
+    const [isSticky, setIsSticky] = useState(false);
     const boxRef = useRef(null);
 
     const scrollAction = () => {
@@ -25,9 +28,9 @@ const APIDocsText = () => {
         // if (elementTop < windowHeight - offset) {
         if (elementTop < 0) {
             console.log("Testing iiii :")
-            setIsSticky(true); 
-        }else {
-            setIsSticky(false); 
+            setIsSticky(true);
+        } else {
+            setIsSticky(false);
         }
 
     }
@@ -53,7 +56,7 @@ const APIDocsText = () => {
             <div ref={boxRef} className="min-h-screen">
                 <div className="flex h-full relative">
                     {/* sidebar */}
-                    <div style={{position : isSticky ? 'fixed' : 'absolute'}} className="absolute z-20 h-full left-0 top-0 pl-[120px] pr-[33px] pt-[75px] border-r-[1px] border-[#1E1E1E]">
+                    <div style={{ position: isSticky ? 'fixed' : 'absolute' }} className="absolute z-20 h-full left-0 top-0 pl-[120px] pr-[33px] pt-[75px] border-r-[1px] border-[#1E1E1E]">
                         <div className="w-[308px] flex flex-col gap-[42px]">
                             <ParagraphOne>In this section, you will find the following detailed information</ParagraphOne>
                             <div className="flex flex-col gap-[33px]">
@@ -107,7 +110,7 @@ const APIDocsText = () => {
                     {/* main content*/}
                     <div className="w-full">
                         <div className="flex flex-col">
-                            <div style={{position : isSticky ? 'fixed' : 'absolute'}}  className="absolute top-0 bg-white left-[462px] border-b-[1px] border-black w-full">
+                            <div style={{ position: isSticky ? 'fixed' : 'absolute' }} className="absolute top-0 bg-white left-[462px] border-b-[1px] border-black w-full">
                                 <ul className="anek-latin-font flex gap-14 pl-[52px] py-3">
                                     <li><Link to="#" className="text-[#009665] text-xl font-[700]">API</Link></li>
                                     <li><Link to="#" className="text-xl font-[400]">SDK</Link></li>
@@ -115,14 +118,15 @@ const APIDocsText = () => {
                                 </ul>
                             </div>
 
-                            <div className="w-[750px] ml-[462px] mt-[70px] pl-[52px]">
-                                <div className="flex flex-col gap-[6px]">
-                                    <HeaderOne>Retouched.ai</HeaderOne>
-                                    <ParagraphOne className={'leading-7'}>Retouched.ai is an API-driven platform offering professional image editing services designed to integrate easily into various applications. Its primary functionalities include background removal, color correction, and image retouching. Users can submit images for processing, which allows them to streamline editing workflows, especially valuable for industries like e-commerce and digital marketing where high-quality images are crucial.</ParagraphOne>
-                                </div>
-                                <div className="h-screen bg-slate-300"></div>
-                                <div className="h-screen bg-slate-300"></div>
-                                <div className="h-screen bg-slate-300"></div>
+                            <div className="w-[750px] ml-[462px] mt-[70px] pl-[52px] pb-[47px]">
+                             <div className="flex flex-col gap-[28px]">
+                                <SectionOne />
+                                <hr className="w-[766px] ml-[52px]"></hr>
+                                <SectionTwo />
+                                <hr className="w-[766px] ml-[52px]"></hr>
+                                <SectionThree />
+                                </div>       
+
                             </div>
                         </div>
                     </div>

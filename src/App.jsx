@@ -88,8 +88,8 @@ function App() {
       <Route path="/career" element={<Career/>} />
       <Route path="/career-thank-you" element={<CareerThankYou/>} />
       <Route path="/onboarding" element={<Onboarding/>} />
-      {/* <Route path="/api-documentation" element={<APIDocs/>} /> */}
-      <Route path="/api-documentation" element={<APIDocsText/>} />
+      <Route path="/api-documentation" element={<APIDocs/>} />
+      {/* <Route path="/api-documentation" element={<APIDocsText/>} /> */}
       </Routes>
     </>
   )

@@ -6,10 +6,9 @@ import { Link } from 'react-router-dom';
 
 const SectionOne = () => {
     return (
-        <div className="w-[750px] ml-[52px] mt-[39px] flex flex-col ">
+        <div className="flex flex-col ">
                 <div className="flex flex-col gap-[28px]">
-                  <div>
-                    {" "}
+                  <div className='flex flex-col gap-[6px]'>
                     <HeaderOne>Retouched.ai</HeaderOne>
                     <ParagraphOne className={"leading-7"}>
                       Retouched.ai is an API-driven platform offering
