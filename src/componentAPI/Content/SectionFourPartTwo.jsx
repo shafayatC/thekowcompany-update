@@ -29,7 +29,7 @@ const SectionFourPartTwo = () => {
       </ParagraphOne>
 
       {/* Code Snippet */}
-      <div className="bg-[#F2F2EA] p-4 shadow-md font-anek-latin w-[767px] mx-auto relative">
+      <div className="bg-[#F2F2EA] p-4 shadow-md font-anek-latin w-full mx-auto relative">
         <pre className="text-sm text-gray-800 whitespace-pre-wrap">
           POST /api/<span className="text-[#0000FF]">2023-02</span>
           /system-sign-up
