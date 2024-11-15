@@ -66,8 +66,8 @@ const SectionOne = () => {
                     </ParagraphOne>
                   </div>
                   <div>
-                    <Link
-                      to={"/https://retouched.ai/"}
+                    <a href='https://retouched.ai/'
+                      target="_blank"
                       className="flex items-center justify-center gap-2 font-anek-latin text-base leading-7 px-3 py-2 bg-[#00AC74] w-[170px] rounded-lg hover:bg-[#00D690]"
                     >
                       <p>Try Retouched.Ai</p>
@@ -95,7 +95,7 @@ const SectionOne = () => {
                           stroke-linejoin="round"
                         />
                       </svg>
-                    </Link>
+                    </a>
                   </div>
                 </div>
               </div>
