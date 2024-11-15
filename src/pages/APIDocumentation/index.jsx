@@ -7,10 +7,17 @@ import { useEffect, useRef, useState } from "react";
 import SectionOne from "../../componentAPI/Content/SectionOne";
 import SectionTwo from "../../componentAPI/Content/SectionTwo";
 import SectionThree from "../../componentAPI/Content/SectionThree";
+import SectionFourPartOne from "../../componentAPI/Content/SectionFourPartOne";
+import SectionFourPartTwo from "../../componentAPI/Content/SectionFourPartTwo";
+import SectionFourPartThree from "../../componentAPI/Content/SectionFourPartThree";
+import SectionFourPartFour from "../../componentAPI/Content/SectionFourPartFour";
+import SectionFourPartFive from "../../componentAPI/Content/SectionFourPartFive";
+import SectionFive from "../../componentAPI/Content/SectionFive";
 
 const APIDocs = () => {
     const [isSticky, setIsSticky] = useState(false);
     const boxRef = useRef(null);
+    const [showButton, setShowButton] = useState(false);
 
     const scrollAction = () => {
         const box_one_par = boxRef.current;
@@ -28,12 +35,17 @@ const APIDocs = () => {
         // if (elementTop < windowHeight - offset) {
         if (elementTop < 0) {
             console.log("Testing iiii :")
+            setShowButton(window.scrollY > 600);
             setIsSticky(true);
         } else {
             setIsSticky(false);
         }
 
     }
+
+    const scrollToTop = () => {
+        window.scrollTo({ top: 0, behavior: "smooth" });
+    };
 
     useEffect(() => {
 
@@ -126,13 +138,38 @@ const APIDocs = () => {
                                 <hr className="w-[766px] "></hr>
                                 <SectionThree />
                                 <hr className="w-[766px] "></hr>
-                                </div>       
+                                <SectionFourPartOne/>
+                                <hr className="w-[766px] "></hr>
+                                <SectionFourPartTwo/>
+                                <hr className="w-[766px] "></hr>
+                                <SectionFourPartThree/>
+                                <hr className="w-[766px] "></hr>
+                                <SectionFourPartFour/>
+                                <hr className="w-[766px] "></hr>
+                                <SectionFourPartFive/>
+                                <hr className="w-[766px] "></hr>
+                                <SectionFive/>
+                                </div>   
+                                    
 
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
+
+             {/* Up Arrow Button */}
+             {showButton && (
+                <button
+                    onClick={scrollToTop}
+                    className="fixed bottom-4 right-4  bg-[#00AC74] text-white rounded-full shadow-xl  hover:bg-[#00D690] focus:outline-none"
+                >
+                    <svg className="group-hover:fill-[#00D690]" xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 48 48" fill="none">
+<path d="M24 44C35.0457 44 44 35.0457 44 24C44 12.9543 35.0457 4 24 4C12.9543 4 4 12.9543 4 24C4 35.0457 12.9543 44 24 44Z" fill=""/>
+<path d="M31.0599 21.94L25.0599 15.94C24.4799 15.36 23.5199 15.36 22.9399 15.94L16.9399 21.94C16.3599 22.52 16.3599 23.48 16.9399 24.06C17.5199 24.64 18.4799 24.64 19.0599 24.06L22.4999 20.62V31C22.4999 31.82 23.1799 32.5 23.9999 32.5C24.8199 32.5 25.4999 31.82 25.4999 31V20.62L28.9399 24.06C29.2399 24.36 29.6199 24.5 29.9999 24.5C30.3799 24.5 30.7599 24.36 31.0599 24.06C31.6399 23.48 31.6399 22.52 31.0599 21.94Z" fill="#292D32"/>
+</svg>
+                </button>
+            )}
 
         </div>
     );
