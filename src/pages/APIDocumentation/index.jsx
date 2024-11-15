@@ -65,7 +65,7 @@ const APIDocs = () => {
         const targetElement = document.getElementById(id);
 
         window.scrollTo({
-            top: targetElement.offsetTop, // Adjust the offset value to match your fixed element's height
+            top: targetElement.offsetTop + 30, // Adjust the offset value to match your fixed element's height
             behavior: 'smooth'
         });
     }
