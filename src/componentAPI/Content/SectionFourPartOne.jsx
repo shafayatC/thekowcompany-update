@@ -34,8 +34,8 @@ const SectionFourPartOne = () => {
       </ParagraphOne>
 
       {/* Code Snippet */}
-      <div className="bg-[#F2F2EA] p-4 shadow-md font-anek-latin w-full mx-auto relative overflow-x-auto overflow-y-hidden">
-        <pre className="text-sm text-gray-800 ">
+      <div className="bg-[#F2F2EA] p-4 shadow-md font-anek-latin w-full mx-auto relative ">
+        <pre className="text-sm text-gray-800 overflow-x-auto overflow-y-hidden">
           POST /api/<span className="text-[#0000FF]">2023-02</span>
           /system-sign-up
           <br />
