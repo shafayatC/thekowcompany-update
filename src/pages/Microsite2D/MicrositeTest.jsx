@@ -1,7 +1,7 @@
 import React, { useState, useEffect, useRef } from "react";
 import ScrollChild from "./ScrollChild";
 import Navbar2dMicrosite from "../../component2dMicrosite/Navbar2DMicrosite/Navbar2dMicrosite";
-import "./microsite2D.css";
+import "./microsite2d.css";
 import { useInView } from "react-intersection-observer";
 
 const Microsite2DTest = () => {
