@@ -29,8 +29,8 @@ const SectionFourPartTwo = () => {
       </ParagraphOne>
 
       {/* Code Snippet */}
-      <div className="bg-[#F2F2EA] p-4 shadow-md font-anek-latin w-full mx-auto relative">
-        <pre className="text-sm text-gray-800 whitespace-pre-wrap">
+      <div className="bg-[#F2F2EA] p-4 shadow-md font-anek-latin w-full mx-auto relative overflow-x-auto overflow-y-hidden">
+        <pre className="text-sm text-gray-800 ">
           POST /api/<span className="text-[#0000FF]">2023-02</span>
           /system-sign-up
           <br />
@@ -72,7 +72,7 @@ const SectionFourPartTwo = () => {
           {"}"}
         </pre>
 
-        <div className="flex justify-end mt-4">
+        <div className="absolute flex gap-2 items-end right-3 bottom-3">
           <div className="relative flex items-center">
             <svg
               onClick={handleCopy}
@@ -101,12 +101,7 @@ const SectionFourPartTwo = () => {
               </g>
             </svg>
 
-            {/* <img
-              src="/img/API-Docx/copy-icon.svg"
-              onClick={handleCopy}
-              className="h-6 w-6 text-blue-500 cursor-pointer hover:text-blue-600"
-              alt="Copy icon"
-            /> */}
+          
             {copied && (
               <span className="absolute -top-8 right-0 bg-black text-white text-xs rounded px-2 py-1">
                 Copied!

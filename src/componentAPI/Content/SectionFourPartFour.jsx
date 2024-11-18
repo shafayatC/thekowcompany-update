@@ -27,8 +27,8 @@ const SectionFourPartFour = () => {
             </ParagraphOne>
 
             {/* Code Snippet */}
-            <div className="bg-[#F2F2EA] p-4 shadow-md font-anek-latin w-full mx-auto relative">
-                <pre className="text-sm text-gray-800 whitespace-pre-wrap">
+            <div className="bg-[#F2F2EA] p-4 shadow-md font-anek-latin w-full mx-auto relative overflow-x-auto overflow-y-hidden">
+                <pre className="text-sm text-gray-800 ">
                     POST /v.<span className="text-[#0000FF]">03.13.23</span>/upload - image
                     <br />
                     Request (form-data):
@@ -59,7 +59,7 @@ const SectionFourPartFour = () => {
                     {"}"}
                 </pre>
 
-                <div className="flex justify-end mt-4">
+                <div className="absolute flex gap-2 items-end right-3 bottom-3">
                     <div className="relative flex items-center">
                         <svg
                             onClick={handleCopy}

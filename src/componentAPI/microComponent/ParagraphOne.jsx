@@ -2,7 +2,7 @@
 
 const ParagraphOne = ({children, className}) => {
     return (
-        <p className={`anek-latin-font text-base  ${className}`}>{children}</p>
+        <p className={`anek-latin-font text-[14px] lg:text-base  ${className}`}>{children}</p>
     );
 };
 
