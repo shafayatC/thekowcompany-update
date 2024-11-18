@@ -77,7 +77,7 @@ const APIDocs = () => {
             <div ref={boxRef} className="min-h-screen">
                 <div className="flex h-full relative">
                     {/* sidebar */}
-                    <div style={{ position: isSticky ? 'fixed' : 'absolute' }} className="absolute z-40 h-full left-0 top-0 pl-[120px] pr-[33px] pt-[75px] border-r-[1px] border-[#1E1E1E]">
+                    <div style={{ position: isSticky ? 'fixed' : 'absolute' }} className="absolute hidden lg:block z-40 h-full left-0 top-0 pl-[120px] pr-[33px] pt-[75px] border-r-[1px] border-[#1E1E1E]">
                         <div className="w-[308px] flex flex-col gap-[42px]">
                             <ParagraphOne>In this section, you will find the following detailed information</ParagraphOne>
                             <div className="flex flex-col gap-[33px]">
@@ -129,7 +129,7 @@ const APIDocs = () => {
                     {/* main content*/}
                     <div className="w-full">
                         <div className="flex flex-col">
-                            <div style={{ position: isSticky ? 'fixed' : 'absolute' }} className="z-30 absolute top-0 bg-white left-[462px] border-b-[1px] border-black w-full">
+                            <div style={{ position: isSticky ? 'fixed' : 'absolute' }} className="z-30 absolute hidden lg:block top-0 bg-white left-[462px] border-b-[1px] border-black w-full">
                                 <ul className="anek-latin-font flex gap-14 pl-[52px] py-3">
                                     <li><Link to="#" className="text-[#009665] text-xl font-[700]">API</Link></li>
                                     <li><Link to="#" className="text-xl font-[400]">SDK</Link></li>
@@ -137,7 +137,7 @@ const APIDocs = () => {
                                 </ul>
                             </div>
 
-                            <div className="w-[750px] ml-[514px] mt-[70px] pb-[47px]">
+                            <div className="w-full lg:w-[750px] px-6 lg:ml-[514px] mt-[31px] lg:mt-[70px] pb-[47px]">
                                 <div className="flex flex-col gap-[28px]">
                                     <SectionOne />
                                     <hr className="w-full"></hr>

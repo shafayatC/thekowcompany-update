@@ -9,8 +9,8 @@ const SectionOne = () => {
         <div className="flex flex-col ">
                 <div className="flex flex-col gap-[28px]">
                   <div className='flex flex-col gap-[6px]'>
-                    <HeaderOne>Retouched.ai</HeaderOne>
-                    <ParagraphOne className={"leading-7"}>
+                    <HeaderOne className="">Retouched.ai</HeaderOne>
+                    <ParagraphOne className={"leading-7 "}>
                       Retouched.ai is an API-driven platform offering
                       professional image editing services designed to integrate
                       easily into various applications. Its primary
@@ -27,7 +27,7 @@ const SectionOne = () => {
                       How and Why It’s Used:
                     </HeaderFive>
                     <ul className="list-disc pl-7">
-                      <li className="font-anek-latin text-base font-normal">
+                      <li className="font-anek-latin text-[14px] lg:text-base font-normal">
                         {" "}
                         <span className="font-bold"> Purpose:</span>{" "}
                         Retouched.ai enables companies to automate and enhance
@@ -37,7 +37,7 @@ const SectionOne = () => {
                         it allows for efficient, consistent, and high-quality
                         outputs.
                       </li>
-                      <li className="font-anek-latin text-base font-normal">
+                      <li className="font-anek-latin text-[14px] lg:text-base font-normal">
                         {" "}
                         <span className="font-bold"> Usage Process:</span>{" "}
                         Through Retouched.ai’s API endpoints, users can:
@@ -68,7 +68,7 @@ const SectionOne = () => {
                   <div>
                     <a href='https://retouched.ai/'
                       target="_blank"
-                      className="flex items-center justify-center gap-2 font-anek-latin text-base leading-7 px-3 py-2 bg-[#00AC74] w-[170px] rounded-lg hover:bg-[#00D690]"
+                      className="flex items-center justify-between lg:justify-center gap-2 font-anek-latin text-base leading-7 px-3 py-2 bg-[#00AC74] w-full lg:w-[170px] rounded-lg hover:bg-[#00D690]"
                     >
                       <p>Try Retouched.Ai</p>
                       <svg

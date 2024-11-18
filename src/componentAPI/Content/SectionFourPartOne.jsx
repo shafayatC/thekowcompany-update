@@ -21,7 +21,12 @@ const SectionFourPartOne = () => {
   };
   return (
     <div className=" flex flex-col ">
-      <HeaderOne>3. Detailed Endpoint Descriptions</HeaderOne>
+      <HeaderOne className={"flex justify-start items-center gap-2 text-[16px] lg:text-[24px]"}><span className="hidden lg:block">3. </span><span className="block lg:hidden"><svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 22 22" fill="none">
+  <path d="M7.79183 17.3891H7.3335C3.66683 17.3891 1.8335 16.4725 1.8335 11.8891V7.30581C1.8335 3.63914 3.66683 1.80581 7.3335 1.80581H14.6668C18.3335 1.80581 20.1668 3.63914 20.1668 7.30581V11.8891C20.1668 15.5558 18.3335 17.3891 14.6668 17.3891H14.2085C13.9243 17.3891 13.6493 17.5267 13.4752 17.7558L12.1002 19.5892C11.4952 20.3958 10.5052 20.3958 9.90015 19.5892L8.52515 17.7558C8.37849 17.5542 8.0485 17.3891 7.79183 17.3891Z" stroke="#292D32" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+  <path d="M7.33333 7.97501L5.5 9.80835L7.33333 11.6417" stroke="#292D32" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+  <path d="M14.6665 7.97501L16.4998 9.80835L14.6665 11.6417" stroke="#292D32" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+  <path d="M11.9168 7.67249L10.0835 11.9442" stroke="#292D32" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+</svg></span> Detailed Endpoint Descriptions</HeaderOne>
       <HeaderFive className="ml-2 mb-2 mt-2">3.1 Sign-Up</HeaderFive>
       <ParagraphOne className="mb-[28px]">
         <span className="font-semibold ml-2 ">Listing 1:</span> System Sign-Up
@@ -29,8 +34,8 @@ const SectionFourPartOne = () => {
       </ParagraphOne>
 
       {/* Code Snippet */}
-      <div className="bg-[#F2F2EA] p-4 shadow-md font-anek-latin w-full mx-auto relative">
-        <pre className="text-sm text-gray-800 whitespace-pre-wrap">
+      <div className="bg-[#F2F2EA] p-4 shadow-md font-anek-latin w-full mx-auto relative overflow-x-auto overflow-y-hidden">
+        <pre className="text-sm text-gray-800 ">
           POST /api/<span className="text-[#0000FF]">2023-02</span>
           /system-sign-up
           <br />
@@ -62,7 +67,7 @@ const SectionFourPartOne = () => {
           {"}"}
         </pre>
 
-        <div className="flex justify-end mt-4">
+        <div className="absolute flex gap-2 items-end right-3 bottom-3">
           <div className="relative flex items-center">
             <svg
               onClick={handleCopy}
