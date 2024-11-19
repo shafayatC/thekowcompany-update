@@ -15,7 +15,7 @@ const NavbarAPI = () => {
 
                         {/* Search Bar */}
                         <div className="mt-[21px]">
-                            <ul className="flex justify-center items-center gap-[56px] text-[20px] leading-[24px] h-[24px] font-ibm-plex  font-normal   text-[#000]">
+                            <ul className="flex justify-center items-center gap-[56px] text-[20px] leading-[24px] h-[24px] lg:pl-10 font-ibm-plex  font-normal   text-[#000]">
                                 <Link to={"/api-documentation/retouched"} className="cursor-pointer text-[#009665] font-semibold hover:text-[#009665] hover:font-semibold">Retouched.ai</Link>
                                 <Link to={"#"} className="cursor-pointer hover:text-[#009665] hover:font-semibold">KowToMate</Link>
                                 <Link to={"#"} className="cursor-pointer hover:text-[#009665] hover:font-semibold">Holosnap</Link>
