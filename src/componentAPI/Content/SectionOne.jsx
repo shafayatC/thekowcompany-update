@@ -2,7 +2,7 @@
 import HeaderOne from '../microComponent/HeaderOne';
 import ParagraphOne from '../microComponent/ParagraphOne';
 import HeaderFive from '../microComponent/HeaderFive';
-import { Link } from 'react-router-dom';
+
 
 const SectionOne = () => {
     return (
@@ -67,7 +67,7 @@ const SectionOne = () => {
                   </div>
                   <div>
                     <a href='https://retouched.ai/'
-                      target="_blank"
+                      target="_blank" rel="noreferrer"
                       className="flex items-center justify-between lg:justify-center gap-2 font-anek-latin text-base leading-7 px-3 py-2 bg-[#00AC74] w-full lg:w-[170px] rounded-lg hover:bg-[#00D690]"
                     >
                       <p>Try Retouched.Ai</p>
@@ -81,18 +81,18 @@ const SectionOne = () => {
                         <path
                           d="M14.4299 5.93005L20.4999 12.0001L14.4299 18.0701"
                           stroke="black"
-                          stroke-width="1.5"
-                          stroke-miterlimit="10"
-                          stroke-linecap="round"
-                          stroke-linejoin="round"
+                          strokeWidth="1.5"
+                          strokeMiterlimit="10"
+                          strokeLinecap="round"
+                          strokeLinejoin="round"
                         />
                         <path
                           d="M3.5 12H20.33"
                           stroke="black"
-                          stroke-width="1.5"
-                          stroke-miterlimit="10"
-                          stroke-linecap="round"
-                          stroke-linejoin="round"
+                          strokeWidth="1.5"
+                          strokeMiterlimit="10"
+                          strokeLinecap="round"
+                          strokeLinejoin="round"
                         />
                       </svg>
                     </a>
