@@ -13,6 +13,7 @@ import SectionFourPartThree from "../../componentAPI/Content/SectionFourPartThre
 import SectionFourPartFour from "../../componentAPI/Content/SectionFourPartFour";
 import SectionFourPartFive from "../../componentAPI/Content/SectionFourPartFive";
 import SectionFive from "../../componentAPI/Content/SectionFive";
+import ScrolTop from "../../component/ScrolTop/ScrolTop";
 
 const APIDocs = () => {
     const [isSticky, setIsSticky] = useState(false);
@@ -176,7 +177,7 @@ const APIDocs = () => {
                     </svg>
                 </button>
             )}
-
+            <ScrolTop/>
         </div>
     );
 };
