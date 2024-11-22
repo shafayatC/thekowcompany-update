@@ -82,6 +82,7 @@ const Footer = () => {
                         <HashLink to="/#integration" className="text-sm" aria-label='Integrations'>Integrations</HashLink>
                         <HashLink className="text-sm" aria-label='Blueprint'>Blueprint</HashLink>
                         <HashLink to="/#trends" className="text-sm" aria-label='Industry Trends'>Industry Trends</HashLink>
+                        <HashLink to="/api-resources/retouched" target='_blank' className="text-sm" aria-label='Industry Trends'>Resources</HashLink>
 
 
                     </div>
