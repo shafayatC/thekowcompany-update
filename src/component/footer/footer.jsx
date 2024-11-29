@@ -82,7 +82,7 @@ const Footer = () => {
                         <HashLink to="/#integration" className="text-sm" aria-label='Integrations'>Integrations</HashLink>
                         <HashLink className="text-sm" aria-label='Blueprint'>Blueprint</HashLink>
                         <HashLink to="/#trends" className="text-sm" aria-label='Industry Trends'>Industry Trends</HashLink>
-                        <HashLink to="/api-resources/retouched" target='_blank' className="text-sm" aria-label='Industry Trends'>Resources</HashLink>
+                        
 
 
                     </div>
@@ -103,6 +103,7 @@ const Footer = () => {
                         <Link to="/privacy-policy" className=" text-sm" aria-label='Privacy'>Privacy Policy</Link>
                         <Link to="/terms-condition" className=" text-sm" aria-label='Terms'>Terms & Conditions</Link>
                         <Link to="/contact-us" className="link link-hover text-sm" aria-label='Contact'>Contact us</Link>
+                        <Link to="/api-resources/retouched" target='_blank' className="text-sm" aria-label='Industry Trends'>Resources</Link>
                         <a href="https://app.cutoutwiz.com/Identity/Account/Login?ReturnUrl=%2F" target="_blank" rel="noreferrer" className='text-sm cursor-pointer' aria-label='Sign Up' >Sign Up</a>
                     </div>
                     <div className="text-center flex flex-col items-center  md:ml-0 lg:ml-0">
