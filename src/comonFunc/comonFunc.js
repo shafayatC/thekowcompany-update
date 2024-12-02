@@ -3,6 +3,12 @@ export function validateEmail(email) {
     return re.test(email);
   }
 
+  export function year(givenDate= new Date()){
+  
+    const d = new Date(givenDate);
+    return d.getFullYear();
+  }
+
 export function month(givenDate){
   const month = ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"];
 
