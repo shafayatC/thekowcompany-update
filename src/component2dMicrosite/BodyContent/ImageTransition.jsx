@@ -19,9 +19,11 @@ const ImageTransition = ({afterimg, beforeimg}) => {
     return (
         <div
             className='flex flex-col justify-center items-center relative w-full'
-            onMouseDown={handleOnmouseDown}
-            onMouseUp={handleOnmouseUp}
         >
+            <div className='absolute top-0 left-0 w-full h-full z-50'
+                        onMouseDown={handleOnmouseDown}
+                        onMouseUp={handleOnmouseUp}
+            ></div>
             <img className='transition-all duration-500 w-full' ref={firstImageRef} src={afterimg} />
             <img className='absolute transition-all duration-500 w-full opacity-0 z-30' ref={secondImageRef} src={beforeimg} />
         </div>
