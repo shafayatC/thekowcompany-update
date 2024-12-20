@@ -1,9 +1,10 @@
 import React from 'react';
 import TopPart2dPortfolio from './TopPart2dPortfolio';
 import AboutUs from './AboutUs';
-import RetouchingServices from '../Navbar2DMicrosite/RetouchingServices';
+
 import OurService2DPortfolio from './OurService2DPortfolio';
 import ImageTransition from './ImageTransition';
+import RetouchingService from './RetouchingService';
 
 
 const BodyContent = () => {
@@ -12,7 +13,7 @@ const BodyContent = () => {
             <TopPart2dPortfolio />
             <OurService2DPortfolio />
             <AboutUs/>
-            <RetouchingServices/>
+            <RetouchingService/>
             {/*start === for testing after before testing */}
             <div className="py-[60px] px-32">
                 <ImageTransition 

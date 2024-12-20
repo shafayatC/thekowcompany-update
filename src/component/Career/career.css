@@ -33,7 +33,7 @@
 }
 
 .job-des h3 {
-    font-size: 20px;
+    font-size: 24px;
     font-weight: bold;
     padding-bottom: 10px;
 }
@@ -45,7 +45,7 @@
 .job-des ul {
     list-style: unset;
     margin-left: 40px;
-    padding-bottom: 20px;
+    padding-bottom: 10px;
 }
 .job-des ol {
     list-style: none;
@@ -57,6 +57,7 @@
     padding-bottom: 0 !important;
     color: white;
     text-align: center;
+    padding-top: 5px ;
     
 }
 .normal-p{
