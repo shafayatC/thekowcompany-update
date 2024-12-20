@@ -266,7 +266,9 @@ const Career = () => {
       title: "Junior Executive, Client & Project Management",
       description: `  <div class="job-des">
  <h1>Junior Executive, Client & Project Management</h1>
- <h1>Vacancy (01)</h1>
+ <p><strong>Employment Type: </strong> Full Time</p>
+ <p><strong>Open Position: </strong> 02 </p>
+ <p><strong>Deadline: </strong> Priority will be given to applications submitted before <span class="deadline">December 20, 2024</span>, with the final deadline being <span class="deadline">December 31, 2024</span> by 11:59 PM (GMT+6) </p>
     <p>We are seeking a dynamic and detail-oriented “Junior Executive, Client & Project Management” to manage various image and video post-production projects for our organization.</p>
     <h3>Role Requirements:</h3>
     <ul>
@@ -279,7 +281,7 @@ const Career = () => {
     </ul>
     <h3>Competencies: </h3>
     <ul>
-        <li>Bachelor's degree in Business, Management, or any related field. Proven working experience in project management or related field.</li>
+        <li>Bachelor's degree in Business, Management, or any related field. Proven working experience in project management or related field is a bonus.</li>
         <li>Freshers are also encouraged to apply.</li>
         <li>Experience in image & video post-production processes (editing, color grading, masking etc.) is a plus.</li>
         <li>Excellent client-oriented & internal communication skills.</li>
@@ -302,14 +304,15 @@ const Career = () => {
         
        
     </ol>
-
-    <p class="normal-p"><b>Application Deadline:</b> 28 September 2024.(Interested candidates are encouraged to apply promptly, as we aim to fill this position as soon as possible.)</p>
-    <p class="normal-p">Remember to highlight your experience and any relevant projects you’ve worked on. </p>
-    <p class="normal-p">Most importantly, mention in the Subject Line: Applying as a “Junior Executive, Client & Project Management”.</p>
+     <p><strong>Salary:</strong> Negotiable based on experience and qualifications.</p>
+      <p><strong>How to Apply:</strong> Please submit your updated CV and cover letter to <span class="email-address">career@thekowcompany.com</span> by the deadline. Mention in the Subject Line: Applying as a <b>“Junior Executive, Client & Project Management”</b>.</p>
+      <p></p>
+   
+   
     <p class="normal-p">Don't miss out on this fantastic opportunity to advance your career and become a part of the TKCL family! Apply now and take the next step in your professional journey.</p>
-    <p><strong>Email at:</strong> <a href="mailto:career@thekowcompany.com">career@thekowcompany.com</a></p>
+    
 </div>`,
-      date: "28 September, 2024",
+      date: "31 December, 2024",
     },
     {
       id: 7,
@@ -383,7 +386,7 @@ const Career = () => {
     <p><strong>How to Apply:</strong> Please submit your updated CV and cover letter to <span class="email-address">career@thekowcompany.com</span> by the deadline. Mention the position title in the subject line of your email.</p>
     <p><strong>Location: </strong>Plot:06, 2nd Floor, Navana, D. H. Tower, Panthapath, Dhaka 1215</p>
 </div>`,
-      date: "25 Noverber, 2024",
+      date: "1 December, 2024",
     },
   ]);
   const [isOpen, setIsOpen] = useState(false);
@@ -588,9 +591,9 @@ const Career = () => {
               </div>
 
               <div className="mt-4">
-                <h2 className="text-lg leading-6 font-medium text-gray-900">
+                {/* <h2 className="text-lg leading-6 font-medium text-gray-900">
                   {cvData.title}
-                </h2>
+                </h2> */}
 
                 <div
                   dangerouslySetInnerHTML={{
