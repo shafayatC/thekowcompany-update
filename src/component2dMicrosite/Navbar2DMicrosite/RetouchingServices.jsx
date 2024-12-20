@@ -14,10 +14,10 @@ const RetouchingServices = () => {
                 <div>
                 <div className="flex flex-col items-center space-y-4 p-8">
       {/* Toggle Buttons */}
-      <div className="flex space-x-4">
+      <div className="flex justify-center gap-[18px] bg-[#EDF5F3] px-6 py-2">
         <button
-          className={`px-4 py-2 rounded ${
-            activeDiv === 1 ? "bg-blue-500 text-white" : "bg-gray-200"
+          className={`px-4 py-2 rounded-xl border border-[#FFF] shadow-xl ${
+            activeDiv === 1 ? "bg-[#F5F7F7] text-[30px] text-[#0B2B23] px-9 font-medium leading-9 " : "text-[#9EA1A1] text-[30px] px-9 font-medium leading-9"
           }`}
           onClick={() => setActiveDiv(1)}
         >
