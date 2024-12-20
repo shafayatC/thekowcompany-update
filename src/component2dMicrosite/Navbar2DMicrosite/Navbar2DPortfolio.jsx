@@ -2,8 +2,8 @@ import React from 'react';
 
 const Navbar2DPortfolio = () => {
     return (
-        <div className='2xl:container 2xl:mx-auto'>
-            <div className='bg-[#155331] py-4 px-6 rounded-b-[12px]'>
+        <div className='bg-[#155331] py-4 px-6 rounded-b-[12px]'>
+            <div className='container mx-auto'>
                 <div className='flex justify-between text-white'>
                     <h3 className='text-2xl font-bold'>TKCL</h3>
                     <h3 className='text-xl font-medium'>The KOW Company</h3>
