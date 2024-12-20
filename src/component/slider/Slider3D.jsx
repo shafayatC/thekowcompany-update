@@ -63,8 +63,8 @@ const Slider3D = () => {
               }
             >
               {sliderList.map((item, index) => (
-            <div>
-                <Link to={item.link} key={index} className='relative flex flex-col md:block mx-2 cursor-pointer'>
+            <div key={index}>
+                <Link to={item.link} className='relative flex flex-col md:block mx-2 cursor-pointer'>
               
               <div>
                   <LazyLoadImage

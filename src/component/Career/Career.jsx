@@ -3,6 +3,7 @@ import { SlCalender } from "react-icons/sl";
 import { MdOutlineEmail } from "react-icons/md";
 import { useEffect, useState } from "react";
 import CareerMail from "./CareerMail";
+import { HeadProvider, Meta, Title } from "react-head";
 
 const Career = () => {
   const [jobCircular] = useState([
@@ -206,15 +207,179 @@ const Career = () => {
       date: "31 July, 2024",
     },
     {
-      id: 5,
-      title: "Project Management Executive",
+      id: 6,
+      title: "SEO Expert",
       description: `  <div class="job-des">
- <h1>Project Management Executive</h1>
- <h1>Vacancy (03)</h1>
-	
+ <h1>SEO Expert</h1>
+ <p><strong>Employment Type: </strong> Full Time</p>
+ <p><strong>Open Position: </strong> 01 </p>
+ <p><strong>Experience Level: </strong> Active Practitioner, 1-2 Years experience Preferred   </p>
+ <p><strong>Deadline: </strong> Priority will be given to applications submitted before <span class="deadline">January 10, 2025</span>, with the final deadline being <span class="deadline">January 20, 2025</span> by 11:59 PM (GMT+6) </p>
 
-    <p>We are seeking a dynamic and detail-oriented Project Management Executive to manage various image and video post-production projects for our organization.</p>
-    <h3>Job Responsibilities:</h3>
+ <h3>About The KOW Company:</h3>
+ <p>The KOW Company is a forward-thinking organization dedicated to enhancing our digital presence and driving organic growth. We are looking for an enthusiastic SEO expert to join our team and contribute to optimizing our online footprint. </p>
+    
+ <h3>Key Responsibilities: </h3>
+ <ul>
+ <li>
+      <h4>Technical SEO Management: </h3>
+    <ul>
+        <li>Ensure website crawlability and indexation.</li>
+        <li>Manage sitemaps, robots.txt files, and address technical SEO issues like site speed optimization.</li>      
+    </ul>
+  </li>
+ <li>
+      <h4>SEO Tools Expertise: </h3>
+    <ul>
+        <li>Utilize tools such as Google Analytics, Google Search Console, SEMrush, Ahrefs, Moz, Screaming Frog, Rank Math, or Yoast to monitor and improve SEO performance.</li>
+        <li>Skills and expertise in different engines are added advantage.</li>      
+    </ul>
+  </li>
+ <li>
+      <h4>Website Optimization: </h3>
+    <ul>
+        <li>Conduct keyword research, on-page optimization, and competitor analysis to improve organic rankings.</li>
+        <li>Collaborate with the development team to address technical SEO needs, ensuring proper HTML, CSS, and JavaScript implementation.</li>      
+    </ul>
+  </li>
+ <li>
+      <h4>CMS and Platform Management: </h3>
+    <ul>
+        <li>Work with platforms like WordPress, Shopify, or other similar CMS platforms to optimize content and improve site performance. </li>
+            
+    </ul>
+  </li>
+ <li>
+      <h4>Analytics and Reporting: </h3>
+    <ul>
+        <li>Track and analyze website performance using website analytics tools.</li>
+        <li>Create regular reports and actionable insights to guide content and technical strategies. </li>      
+    </ul>
+  </li>
+ <li>
+      <h4>Cross-Functional Collaboration: </h3>
+    <ul>
+        <li>Collaborate with the marketing team to align SEO strategies with CRM tools like HubSpot or Salesforce. </li>
+        <li>Assist in integrating SEO efforts with email marketing, social media campaigns, and content marketing strategies. </li>      
+    </ul>
+  </li>
+ <li>
+      <h4>Communication and Tools: </h3>
+    <ul>
+        <li>Use platforms such as LinkedIn, Slack, Skype, Google Meet, Zoom, and Microsoft Teams for communication and collaboration. </li>
+           
+    </ul>
+  </li>
+ <li>
+      <h4>Proficiency in Productivity Tools: </h3>
+    <ul>
+        <li>Effectively use Microsoft Office tools (Word, Excel, PowerPoint) and Google Workspace tools (Docs, Sheets) for planning and reporting. </li>
+       
+    </ul>
+  </li>
+    </ul>
+    <h3>Qualifications and Skills: </h3>
+    <ul>
+
+        <li>
+        <h4>Technical Knowledge: </h3>
+        <ul>
+          <li>Strong understanding of crawlability, indexation, and site architecture. </li>
+          <li>Knowledge of technical aspects like sitemaps, robots.txt, and resolving site speed issues. </li>
+
+        </ul>
+
+        </li>
+        <li>
+        <h4>SEO Tools Proficiency: </h3>
+        <ul>
+          <li>Experience with industry-standard tools like SEMrush, Ahrefs, Moz, and others. </li>
+       
+
+        </ul>
+
+        </li>
+        <li>
+        <h4>Web Development Skills: </h3>
+        <ul>
+          <li>Basic knowledge of HTML, CSS, JavaScript, and their impact on SEO. </li>
+          
+        </ul>
+
+        </li>
+        <li>
+        <h4>CMS Experience: </h3>
+        <ul>
+          <li>Hands-on experience with WordPress, Shopify, or similar platforms. </li>
+         
+
+        </ul>
+
+        </li>
+        <li>
+        <h4>Analytical Skills: </h3>
+        <ul>
+          <li>Ability to analyze data from tools like Google Analytics and Google Search Console to derive insights. </li>
+         
+        </ul>
+
+        </li>
+        <li>
+        <h4>Soft Skills: </h3>
+        <ul>
+          <li>Strong communication skills, a collaborative mindset, and attention to detail, Team work.</li>
+        
+
+        </ul>
+
+        </li>
+        
+    </ul>
+  
+    <h3>Fringe benefits: </h3>
+    <ol>
+        <li>🎁 Festival Bonuses: Enjoy 2 Festival Bonuses as per company policy.</li>
+        <li>🍽️ Meal Facility: Fully subsidized meal facility to keep you fueled throughout the day.</li>
+        <li>📈 Profit Sharing: Annually or quarterly as per company policy.</li>
+        <li>🌿 Healthy Work Environment: Work in a supportive and positive atmosphere.</li>
+        <li>🎄 Christmas Leave: Celebrate the holidays with a special leave.</li>
+        <li>🚀 Career Advancement: Opportunities for growth and professional development.</li>
+        <li>🏝️ Yearly Office Retreat: Relax and recharge with your colleagues.</li>
+        <li>🎉 Events Celebration: Enjoy various events celebrated at our office premises.</li>
+        <li>🏏 Annual Tournaments: Participate in our Annual Cricket and Football Tournament.</li>
+        <li>🎲 Indoor Games: Have fun with Carrom and Table Tennis during breaks.</li>
+        
+    </ol>
+
+    <h3>Why Join The KOW Company? </h3>
+    <ul>
+        <li>Be part of a growing team focused on innovation and results. </li>
+        <li>Opportunity to learn and grow in a collaborative environment. </li>
+        <li>Exposure to a variety of tools, platforms, and hands-on projects.</li>
+        
+        
+       
+    </ul>
+     <p><strong>Salary Range:</strong> BDT 25,000 - BDT 35,000 per month</p>
+      <p><strong>How to Apply:</strong> If you are passionate about SEO and ready to make an impact, send your resume to <span class="email-address">career@thekowcompany.com</span> by the deadline. Mention in the Subject Line: Applying as a <b>“SEO Expert Application”</b>.</p>
+      <p></p>
+   
+   
+    <p class="normal-p">Don't miss out on this fantastic opportunity to advance your career and become a part of the TKCL family! Apply now and take the next step in your professional journey.</p>
+    
+</div>`,
+      date: "20 January, 2025",
+    },
+    {
+      id: 6,
+      title: "Junior Executive, Client & Project Management",
+      description: `  <div class="job-des">
+ <h1>Junior Executive, Client & Project Management</h1>
+ <p><strong>Employment Type: </strong> Full Time</p>
+ <p><strong>Open Position: </strong> 02 </p>
+ <p><strong>Deadline: </strong> Priority will be given to applications submitted before <span class="deadline">December 20, 2024</span>, with the final deadline being <span class="deadline">December 31, 2024</span> by 11:59 PM (GMT+6) </p>
+    <p>We are seeking a dynamic and detail-oriented “Junior Executive, Client & Project Management” to manage various image and video post-production projects for our organization.</p>
+    <h3>Role Requirements:</h3>
     <ul>
         <li>Oversee & manage end-to-end project lifecycle for all post-production projects.</li>
         <li>Coordinate with clients to define project scope, goals, deliverables, required resources, budget & timing.</li>
@@ -223,20 +388,21 @@ const Career = () => {
         <li>Manage client relationships, ensure client satisfaction & manage client expectations in terms of project deliverables.</li>
         
     </ul>
-    <h3>Qualifications:</h3>
+    <h3>Competencies: </h3>
     <ul>
-        <li>Bachelor's degree in Business, Management, or any related field. Proven working experience in project management or related field.</li>
+        <li>Bachelor's degree in Business, Management, or any related field. Proven working experience in project management or related field is a bonus.</li>
         <li>Freshers are also encouraged to apply.</li>
         <li>Experience in image & video post-production processes (editing, color grading, masking etc.) is a plus.</li>
         <li>Excellent client-oriented & internal communication skills.</li>
         <li>Proficiency with project management software tools, MS Office Suites, methodologies & best practices.</li>
         
     </ul>
-   
-    <h3>Benefits:</h3>
+   <p class ="shift-p"><b>Shift:</b> Morning and Night Shifts (on a monthly rotating roster basis)<p>
+    <h3>Fringe benefits: </h3>
     <ol>
         <li>🎁 Festival Bonuses: Enjoy 2 Festival Bonuses as per company policy.</li>
         <li>🍽️ Meal Facility: Fully subsidized meal facility to keep you fueled throughout the day.</li>
+        <li>📈Profit Sharing: Annually or quarterly as per company policy.</li>
         <li>🌿 Healthy Work Environment: Work in a supportive and positive atmosphere.</li>
         <li>🎄 Christmas Leave: Celebrate the holidays with a special leave.</li>
         <li>🚀 Career Advancement: Opportunities for growth and professional development.</li>
@@ -247,18 +413,89 @@ const Career = () => {
         
        
     </ol>
-    <h3>Office Hours:</h3>
-    <p> Rooster Basis (Night Shift)</p>
+     <p><strong>Salary:</strong> Negotiable based on experience and qualifications.</p>
+      <p><strong>How to Apply:</strong> Please submit your updated CV and cover letter to <span class="email-address">career@thekowcompany.com</span> by the deadline. Mention in the Subject Line: Applying as a <b>“Junior Executive, Client & Project Management”</b>.</p>
+      <p></p>
+   
+   
+    <p class="normal-p">Don't miss out on this fantastic opportunity to advance your career and become a part of the TKCL family! Apply now and take the next step in your professional journey.</p>
     
-    <h3>Job Location</h3>
-    <p>Dhaka</p>
-    <h3>Salary</h3>
-    <p>Negotiable</p>
-    <p><strong>Email at:</strong> <a href="mailto:career@thekowcompany.com">career@thekowcompany.com</a></p>
-    <p><strong>Email Before:</strong> 21 July 2024</p>
-    <p>• Most importantly mentioning in the Subject Line: Applying as a "Project Management Executive"</p>
 </div>`,
-      date: "21 July, 2024",
+      date: "31 December, 2024",
+    },
+    {
+      id: 7,
+      title: "Staff Software Engineer – .NET Core ",
+      description: `  <div class="job-des">
+ <h1><b>Position Title:</b> Staff Software Engineer – .NET Core </h1>
+ <p><strong>Employment Type: </strong> Full Time</p>
+ <p><strong>Open Position: </strong> 02 </p>
+ <p><strong>Deadline: </strong> Priority will be given to applications submitted before <span class="deadline">November 05, 2024</span>, with the final deadline being <span class="deadline">November 25, 2024</span> by 11:59 PM (GMT+6) </p>
+
+    <h3>About Us:</h3>
+  <p>At The KOW Company Ltd., we are committed to delivering scalable, secure, and high performance software solutions that empower businesses. As a leading innovator in the tech industry, we are seeking Staff Software Engineers with deep expertise in .NET Core to lead the architecture and development of complex applications.</p>
+  <p>This role emphasizes technical excellence and offers the opportunity to work on cutting-edge solutions such as 3D Reconstruction, 2D Image Background Removal, and complex ERP systems for file transfer. Additionally, you will contribute to the development of an app designed to serve over one million users, playing a key role in driving the company’s growth and innovation.</p>
+    <h3>Position Overview: </h3>
+     <p>The Staff Software Engineer will be responsible for designing and implementing scalable architectures using ASP.NET Core, C#, and cloud technologies like Azure or AWS. This is a hands-on technical role where you will collaborate directly with cross-functional teams to develop world-class software products.</p>
+  <p>You will play a key role in building distributed systems and working with databases (SQL and NoSQL) to deliver high-performance solutions for applications used by millions. Additionally, you will work on both monolithic and microservices-based architectures, depending on project needs, and ensure seamless integration of components through reporting modules and message brokers where required.</p>
+   <h3>Key Responsibilities:</h3>
+  <ul>
+        <li>Lead the design and development of scalable applications using ASP.NET Core, C#, and Blazor Server, employing both microservices and monolithic architectures where appropriate.</li>
+        <li>Architect and implement cloud-native applications on Azure or other cloud platforms, leveraging cloud services effectively</li>
+        <li>Develop and integrate RESTful APIs to ensure seamless interaction with other systems.</li>
+        <li>Design and optimize distributed databases (SQL or NoSQL) for performance, reliability, and scalability, ensuring they can handle high user volume.</li>
+        <li>Develop reporting modules and implement message brokers (such as RabbitMQ, Kafka) where necessary for efficient data processing and communication between systems.</li>
+        <li>Ensure best practices in security, data protection, and application performance.</li>
+        <li>Establish and maintain CI/CD pipelines using tools like Azure DevOps or Jenkins for automated testing and smooth deployments.</li>
+        <li>Collaborate with product owners and other teams using JIRA to plan, prioritize, and deliver key projects.</li>
+        <li>Use Docker and Kubernetes to containerize and orchestrate services, ensuring efficient deployment and management.</li>
+        <li>Troubleshoot and resolve complex technical issues, providing leadership in problem-solving efforts.</li> 
+    </ul>
+   <h3>Required Skills and Qualifications:</h3>
+  <ul>
+        <li> 7+ years of professional experience in software development, with expertise in ASP.NET Core, C#, .NET Framework, MVC, and Blazor Server.</li>
+        <li> Proven experience designing and implementing scalable architectures, including microservices, monolithic, and cloud solutions.</li>
+        <li> Strong understanding of RESTful API development and integration.</li>
+        <li> Experience with Azure or other cloud platforms, including cloud-native applications.</li>
+        <li> Proficient in database technologies, particularly SQL Server, NoSQL solutions, and Entity Framework, with a focus on performance optimization and scalability for high-traffic applications.</li>
+        <li> Strong understanding of security best practices in software development.</li>
+        <li> Experience with reporting modules and message brokers for efficient communication in distributed systems.</li>
+        <li> Excellent problem-solving skills with the ability to troubleshoot complex technical issues.</li>
+        <li> Persuasive communication and collaboration skills, with the ability to work effectively in cross-functional teams.</li>
+
+    </ul>
+    <h3>Optional Certifications (Added advantage if any):</h3>
+  <ul>
+      <li> Microsoft Certified: Azure Developer Associate</li>
+      <li> Microsoft Certified: .NET Developer</li>
+      <li> AWS Certified Developer – Associate</li>
+      <li> SQL & NoSQL Database Certifications</li>
+      <li> DevOps with Azure or Jenkins Certification</li>
+
+
+    </ul>
+   
+    <h3>Fringe benefits: </h3>
+    <ol>
+      <li>🎁 Festival Bonuses: Enjoy 2 Festival Bonuses as per company policy.</li>
+      <li>🍽️ Meal Facility: Fully subsidized meal facility to keep you fueled throughout the day.</li>
+      <li>📈 Profit Sharing: Annually or quarterly as per company policy.</li>
+      <li>🌿 Healthy Work Environment: Work in a supportive and positive atmosphere.</li>
+      <li>🎄 Christmas Leave: Celebrate the holidays with a special leave.</li>
+      <li>🚀 Career Advancement: Opportunities for growth and professional development.</li>
+      <li>🏝️ Yearly Office Retreat: Relax and recharge with your colleagues.</li>
+      <li>🎉 Events Celebration: Enjoy various events celebrated at our office premises.</li>
+      <li>🏏 Annual Tournaments: Participate in our Annual Cricket and Football Tournament.</li>
+      <li>🎲 Indoor Games: Have fun with Carrom and Table Tennis during breaks.</li>
+        
+       
+    </ol>
+
+    <p><strong>Salary:</strong> Negotiable based on experience and qualifications.</p>
+    <p><strong>How to Apply:</strong> Please submit your updated CV and cover letter to <span class="email-address">career@thekowcompany.com</span> by the deadline. Mention the position title in the subject line of your email.</p>
+    <p><strong>Location: </strong>Plot:06, 2nd Floor, Navana, D. H. Tower, Panthapath, Dhaka 1215</p>
+</div>`,
+      date: "1 December, 2024",
     },
   ]);
   const [isOpen, setIsOpen] = useState(false);
@@ -291,7 +528,6 @@ const Career = () => {
     return currentDate.getTime() < selectedDate.getTime();
   };
 
-
   const checkJobAvaialble = (jobList) => {
     let count = 0;
     jobList.map((job) => {
@@ -302,12 +538,19 @@ const Career = () => {
     setJobAvaialbleCount(count);
   };
 
-
   useEffect(() => {
     checkJobAvaialble(jobCircular);
-  }, [])
+  }, []);
   return (
     <>
+      <HeadProvider>
+        <Title>Career | The KOW Company</Title>
+        <Meta
+          name="description"
+          content="Please select a position and submit your curriculum vitae at your earliest convenience."
+        />
+      </HeadProvider>
+
       {/* <div className="career-bg h-[100vh]"> */}
       <div className="bg-gradient-to-t from-[#ebebeb] to-[#cdcbcc] ">
         <div className="container mx-auto relative min-h-screen">
@@ -315,7 +558,9 @@ const Career = () => {
 
           <div className="flex flex-col items-center ">
             <div className="w-full md:w-[450px] mt-[140px] md:mt-[120px]  text-center md:text-left">
-              <h1 className="text-[18px] md:text-[24px] 2xl:text-[40px] font-bold text-[#57524B]">WE ARE</h1>
+              <h1 className="text-[18px] md:text-[24px] 2xl:text-[40px] font-bold text-[#57524B]">
+                WE ARE
+              </h1>
               <h1 className="text-[60px]  md:text-[120px] 2xl:text-[150px] font-bold leading-[80px] md:leading-[100px] text-[#57524B] -ml-2">
                 HIRING
               </h1>
@@ -332,7 +577,7 @@ const Career = () => {
           </div>
 
           <div className="flex flex-col items-center">
-            <div className=" md:w-[450px] mt-5 border-black border-l-2 pl-3">
+            <div className=" md:w-[450px] 2xl:w-[465px] mt-5 border-black border-l-2 pl-3">
               {jobCircular.map((item, index) => (
                 <>
                   {compareCurrentDate(item.date) && (
@@ -341,16 +586,14 @@ const Career = () => {
                         onClick={() => openModal(item)}
                         // className="buttonAnim  hover:bg-green-600 hover:text-white "
                         // role="buttonAnim"
-                        className="bg-gray-300 font-semibold border-green-700 px-2 hover:bg-green-600  hover:text-white py-1 mb-2 text-left text-[12px] 2xl:text-[16px] shadow-md rounded-md w-[165px] 2xl:w-[230px]"
+                        className="bg-gray-300 font-semibold border-green-700 px-2 hover:bg-green-600  hover:text-white py-1 mb-2 text-left text-[12px] 2xl:text-[16px] shadow-md rounded-md w-[241px] 2xl:w-[450px]"
                       >
                         <span> {item.title}</span>
                       </button>
                       <div>
                         <h1 className="text-xs 2xl:text-[14px]">
                           Deadline :{" "}
-                          <span className="text-red-700 ">
-                            {item.date}
-                          </span>
+                          <span className="text-red-700 ">{item.date}</span>
                         </h1>
                       </div>
                     </div>
@@ -358,16 +601,18 @@ const Career = () => {
                 </>
               ))}
             </div>
- 
           </div>
-                         
-          {
-                getJobAvaialbeCount == 0 && 
-                <div className="flex flex-col items-center">
-            <div className=" md:w-[450px]">
-                <h1 className="w-[400px] text-2xl text-red-700 font-semibold">We are not accepting new applications for now. Please check back later.</h1>
-         </div></div>
-          }
+
+          {getJobAvaialbeCount == 0 && (
+            <div className="flex flex-col items-center">
+              <div className=" md:w-[450px]">
+                <h1 className="w-[400px] text-2xl text-red-700 font-semibold">
+                  We are not accepting new applications for now. Please check
+                  back later.
+                </h1>
+              </div>
+            </div>
+          )}
           <div className="flex justify-center mt-2">
             <div className="md:w-[450px]">
               <div className="flex flex-col justify-center items-center md:items-start ">
@@ -404,21 +649,23 @@ const Career = () => {
                         </div>
                     </div> */}
 
-
           <div className="career-top-bg absolute top-0 left-[50%] 2xl:left-[39%] -translate-x-[50%] xl:left-[38%] lg:left-[35%] md:left-[30%] 2xl:-translate-x-[37%] w-20 h-32">
             <div>
-              <img src="/img/Light1.png" className=" max-w-[300px] h-[300px] pt-[81px] ml-[-63px]" />
+              <img
+                src="/img/Light1.png"
+                className=" max-w-[300px] h-[300px] pt-[81px] ml-[-63px]"
+              />
             </div>
           </div>
-
 
           <div className="w-full flex justify-center">
             <div className="flex justify-center  md:justify-end w-full md:w-[900px] 2xl:w-[1100px] ">
-
-              <img src="/img/chair-shadow.png" className=" max-w-[230px]   md:max-w-[300px] md:max-h-[270px] md:-mt-[180px]  " />
+              <img
+                src="/img/chair-shadow.png"
+                className=" max-w-[230px]   md:max-w-[300px] md:max-h-[270px] md:-mt-[90px]  "
+              />
             </div>
           </div>
-
         </div>
 
         {/* ------------------------------------main modal ----------------------------------- */}
@@ -429,7 +676,7 @@ const Career = () => {
               className="absolute bg-gray-800 bg-opacity-50 inset-0"
               onClick={closeModal}
             ></div>
-            <div className="bg-white rounded-lg mx-2 md:mx-0  h-[500px] overflow-y-auto shadow-xl transform transition-all w-full md:w-[700px] p-6">
+            <div className="bg-white rounded-lg mx-2 md:mx-0  h-[500px] overflow-y-auto shadow-xl transform transition-all w-full md:w-[800px] p-6">
               <div className="flex justify-end">
                 <button
                   onClick={closeModal}
@@ -453,9 +700,9 @@ const Career = () => {
               </div>
 
               <div className="mt-4">
-                <h2 className="text-lg leading-6 font-medium text-gray-900">
+                {/* <h2 className="text-lg leading-6 font-medium text-gray-900">
                   {cvData.title}
-                </h2>
+                </h2> */}
 
                 <div
                   dangerouslySetInnerHTML={{

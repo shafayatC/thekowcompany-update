@@ -1,0 +1,22 @@
+@import url('https://api.fontshare.com/v2/css?f[]=satoshi@300,301,400,401,500,501,700,701,900,901,1,2&display=swap');
+
+#font-satoshi{
+    font-family: 'Satoshi', sans-serif;
+}
+
+.header-text-background {
+    background-image: url("/img/2D-Microsite/text-bg.jpg");
+    background-size: 80% 100%;
+    background-position: center;
+    /* background-attachment: fixed; Keeps the background image fixed when scrolling */
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+    -webkit-text-fill-color: transparent;
+    transition: transform 0.2s ease-out; /* Smooth zoom transition */
+}
+
+
+.microsite-button {
+    box-shadow: rgba(204, 209, 207, 0.5) 0px 2px 4px, rgba(177, 184, 181, 0.3) 0px 7px 13px -3px, rgba(105, 101, 101, 0.2) 0px -3px 0px inset;
+}

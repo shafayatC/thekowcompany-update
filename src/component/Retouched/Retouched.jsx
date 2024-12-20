@@ -17,7 +17,7 @@ const Retouched = () => {
                     </div>
 
                     <div className="px-3 lg:px-0 text-center lg:text-left ">
-                        <h1 className="text-[28px] md:text-[44px]  font-bold border-b-2 leading-[50px] border-[#7C9C30]">retouched.ai</h1>
+                        <h1 className="text-[28px] md:text-[44px]  font-bold border-b-2 leading-[50px] border-[#7C9C30]">Retouched.ai</h1>
                         <div className="">
                             <p className="text-sm  text-center lg:text-justify pt-7"> Your go-to AI tool for seamlessly removing backgrounds from
                                 images. Our cutting-edge solution combines the power of artificial
