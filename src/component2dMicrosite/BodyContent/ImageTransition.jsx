@@ -23,6 +23,8 @@ const ImageTransition = ({afterimg, beforeimg}) => {
             <div className='absolute top-0 left-0 w-full h-full z-50'
                         onMouseDown={handleOnmouseDown}
                         onMouseUp={handleOnmouseUp}
+                        onTouchStart={handleOnmouseDown}
+                        onTouchEnd={handleOnmouseUp}
             ></div>
             <img className='transition-all duration-500 w-full' ref={firstImageRef} src={afterimg} />
             <img className='absolute transition-all duration-500 w-full opacity-0 z-30' ref={secondImageRef} src={beforeimg} />

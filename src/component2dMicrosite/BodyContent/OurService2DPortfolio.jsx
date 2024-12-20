@@ -8,19 +8,19 @@ const OurService2DPortfolio = () => {
                 <div className='grid grid-cols-3 gap-[38px]'>
                     <a href='#' className='group relative flex justify-center items-center'>
                         <img src="./img/2D-Microsite/ourservices/ourservices.webp"/>
-                        <div className='transition-all duration-500 bg-white opacity-0 group-hover:opacity-55 absolute w-full h-full'></div>
+                        <div className='transition-all duration-500 bg-white opacity-0 group-hover:opacity-50 absolute w-full h-full'></div>
                         <h3 className='transition-all duration-500 absolute text-6xl font-bold text-white group-hover:text-black w-full text-center'>Retouching Services</h3>
                     </a>
                 
                     <a href='#' className='group relative flex justify-center items-center'>
                         <img src="./img/2D-Microsite/ourservices/ourservices2.webp"/>
-                        <div className='transition-all duration-500 bg-white opacity-0 group-hover:opacity-55 absolute w-full h-full'></div>
+                        <div className='transition-all duration-500 bg-white opacity-0 group-hover:opacity-50 absolute w-full h-full'></div>
                         <h3 className='transition-all duration-500 absolute text-6xl font-bold text-white group-hover:text-black w-full text-center'>Retouching Services</h3>
                     </a>
                     
                     <a href='#' className='group relative flex justify-center items-center'>
                         <img src="./img/2D-Microsite/ourservices/ourservices3.webp"/>
-                        <div className='transition-all duration-500 bg-white opacity-0 group-hover:opacity-55 absolute w-full h-full'></div>
+                        <div className='transition-all duration-500 bg-white opacity-0 group-hover:opacity-50 absolute w-full h-full'></div>
                         <h3 className='transition-all duration-500 absolute text-6xl font-bold text-white group-hover:text-black w-full text-center'>Retouching Services</h3>
                     </a>
                 </div>
