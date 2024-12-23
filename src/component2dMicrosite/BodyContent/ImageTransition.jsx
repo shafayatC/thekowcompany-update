@@ -1,63 +1,51 @@
 import React, { useRef } from 'react';
-import PropTypes from 'prop-types';
 
-const ImageTransition = ({ afterImg, beforeImg, width, height }) => {
+const ImageTransition = ({ afterimg, beforeimg }) => {
     const firstImageRef = useRef(null);
     const secondImageRef = useRef(null);
 
     const handleMouseDown = () => {
-        const secondImage = secondImageRef.current;
-        if (secondImage) {
-            secondImage.style.opacity = '1';
+        if (secondImageRef.current) {
+            secondImageRef.current.style.opacity = '1';
         }
     };
 
     const handleMouseUp = () => {
-        const secondImage = secondImageRef.current;
-        if (secondImage) {
-            secondImage.style.opacity = '0';
+        if (secondImageRef.current) {
+            secondImageRef.current.style.opacity = '0';
         }
     };
 
     return (
         <div
-            className="relative flex flex-col justify-center items-center"
-            style={{ width: width || '100%', height: height || 'auto' }}
+            className="flex flex-col justify-center items-center relative w-full"
         >
+            {/* Overlay div to capture mouse events */}
             <div
-                className="absolute top-0 left-0 w-full h-full z-50 cursor-pointer"
+                className="absolute top-0 left-0 w-full h-full z-50"
                 onMouseDown={handleMouseDown}
                 onMouseUp={handleMouseUp}
+                onTouchStart={handleMouseDown} // Add touch support for mobile
+                onTouchEnd={handleMouseUp} // Add touch support for mobile
             ></div>
+
+            {/* After Image */}
             <img
-                className="transition-all rounded-xl duration-500 w-full h-full object-cover"
+                className="transition-all rounded-xl duration-500 w-full"
                 ref={firstImageRef}
-                src={afterImg}
+                src={afterimg}
                 alt="After"
-                style={{ position: 'relative' }}
             />
+
+            {/* Before Image */}
             <img
-                className="absolute rounded-xl transition-all duration-500 w-full h-full opacity-0 z-30 object-cover"
+                className="absolute rounded-xl transition-all duration-500 w-full opacity-0 z-30"
                 ref={secondImageRef}
-                src={beforeImg}
+                src={beforeimg}
                 alt="Before"
             />
         </div>
     );
-};
-
-// PropTypes for validation
-ImageTransition.propTypes = {
-    afterImg: PropTypes.string.isRequired,
-    beforeImg: PropTypes.string.isRequired,
-    width: PropTypes.string,
-    height: PropTypes.string,
-};
-
-// Default Props
-ImageTransition.defaultProps = {
-    width: '100%',
-    height: 'auto',
 };
 
 export default ImageTransition;
