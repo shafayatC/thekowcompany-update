@@ -3,8 +3,8 @@ import { useState } from "react";
 const RetouchingService = () => {
   const [activeDiv, setActiveDiv] = useState(1); // Default to the first div
   return (
-    <div className="container mx-auto my-[36px]">
-      <div className="flex justify-center items-center  bg-white rounded-lg border-2 border-[#155331] mb-9">
+    <div id="retouching" className="container mx-auto ">
+      <div className="flex justify-center items-center  bg-white rounded-lg border-2 border-[#155331] my-9">
         <h1 className="w-[440px] text-[36px] font-bold leading-10 text-[#737373] py-[23px]">
           Retouching Services
         </h1>
