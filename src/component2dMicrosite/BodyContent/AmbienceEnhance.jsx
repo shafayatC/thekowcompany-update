@@ -5,11 +5,11 @@ const AmbienceEnhance = () => {
     const [activeDivSection, setActiveDivSection] = useState(1); // Default to the first div
     return (
         <div id='ambience' className="container mx-auto ">
-             <div className="flex justify-center items-center  bg-white rounded-lg border-2 border-[#155331] my-9">
-        <h1 className="w-[440px] text-[36px] font-bold leading-10 text-[#737373] py-[23px]">
+            <div className="flex flex-col lg:flex-row justify-center items-center  bg-white rounded-lg border-2 border-[#155331]  mt-9 lg:mb-9  py-[23px]">
+            <h1 className="lg:w-[440px] text-[22px] lg:text-[36px] font-bold leading-10 text-[#737373] ">
         Ambience Enhance
         </h1>
-        <p className="w-[730px] text-[24px] font-medium leading-8 text-[#737373] py-[23px]">
+        <p className="w-full lg:w-[730px] text-[16px] lg:text-[24px] text-center lg:text-left font-medium lg:leading-8 text-[#737373] px-2 lg:px-0 ">
         Through seamless background plate addition, soft shadow enhancement, and meticulous tag number and imperfection removal, we create an inviting atmosphere that enhances every detail beautifully
         </p>
       </div>
@@ -85,7 +85,7 @@ const AmbienceEnhance = () => {
                
               </button>
             </div>
-            <h1 className="text-center text-[20px] font-medium leading-9 pt-4 text-[#afacac] italic">*Press & Hold to compare</h1>
+            <h1 className="text-center text-[16px] lg:text-[20px] font-medium leading-9 pt-4 text-[#afacac] italic">*Press & Hold to compare</h1>
         </div>
       </div>
         </div>

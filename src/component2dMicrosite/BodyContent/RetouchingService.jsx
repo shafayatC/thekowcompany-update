@@ -40,12 +40,12 @@ const RetouchingService = () => {
         <h1 className="lg:w-[440px] text-[22px] lg:text-[36px] font-bold leading-10 text-[#737373] ">
           Retouching Services
         </h1>
-        <h1 className="w-full lg:w-[730px] text-[16px] lg:text-[24px] text-center font-medium lg:leading-8 text-[#737373] px-2 lg:px-0 ">
+        <h1 className="w-full lg:w-[730px] text-[16px] lg:text-[24px] text-center lg:text-left font-medium lg:leading-8 text-[#737373] px-2 lg:px-0 ">
           Enhance and perfect images for a professional finish.
         </h1>
       </div>
 
-      <div className="bg-white">
+      <div className="bg-white rounded-xl">
         <div>
           <div className="flex flex-col items-center  p-8">
             {/* Toggle Buttons */}
@@ -108,7 +108,7 @@ const RetouchingService = () => {
                       >
                         <img
                           className="w-[200px] md:w-full"
-                          src="/img/2D-Microsite/images/modelB.png"
+                          src="/img/2D-Microsite/images/modelB.webp"
                         />
                       </div>
 
@@ -124,7 +124,7 @@ const RetouchingService = () => {
                       >
                         <img
                           className="w-[200px] md:w-full"
-                          src="/img/2D-Microsite/images/modelA.png"
+                          src="/img/2D-Microsite/images/modelA.webp"
                         />
                       </div>
                     </div>
@@ -164,7 +164,7 @@ const RetouchingService = () => {
                     >
                       <img
                         className="w-[200px] md:w-full"
-                        src="/img/2D-Microsite/images/ringB.png"
+                        src="/img/2D-Microsite/images/ringB.webp"
                       />
                     </div>
 
@@ -180,7 +180,7 @@ const RetouchingService = () => {
                     >
                       <img
                         className="w-[200px] md:w-full"
-                        src="/img/2D-Microsite/images/ringA.png"
+                        src="/img/2D-Microsite/images/ringA.webp"
                       />
                     </div>
                   </div>
@@ -220,7 +220,7 @@ const RetouchingService = () => {
                    >
                      <img
                        className="w-[200px] md:w-full"
-                       src="/img/2D-Microsite/images/shoeB.png"
+                       src="/img/2D-Microsite/images/shoeB.webp"
                      />
                    </div>
 
@@ -236,7 +236,7 @@ const RetouchingService = () => {
                    >
                      <img
                        className="w-[200px] md:w-full"
-                       src="/img/2D-Microsite/images/shoeA.png"
+                       src="/img/2D-Microsite/images/shoeA.webp"
                      />
                    </div>
                  </div>

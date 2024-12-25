@@ -6,7 +6,7 @@ const Footer2DPortfolio = () => {
         <div className='bg-[#4AD991] px-16 py-[26px] rounded-t-[12px]'>
             <div className='2xl:container 2xl:mx-auto'>
                 <div className='flex justify-between items-center'>
-                    <Link to={'/contact-us'} className='text-4xl font-bold text-black'>Contact Us</Link>
+                    <Link to={'/contact-us'} className='text-2xl lg:text-4xl font-bold text-black'>Contact Us</Link>
                     <div className='flex justify-center items-center gap-6'>
  <a href='https://bd.linkedin.com/company/retouched-ai' target='_blank' className='cursor-pointer'>
  <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 28 28" fill="none">
