@@ -16,11 +16,22 @@ const BodyContent = () => {
             <TopPart2dPortfolio />
             <OurService2DPortfolio />
             <AboutUs/>
+
             <RetouchingService/>
             <AmbienceEnhance/>
             <GhostMannequin/>
             <Retouched/>
            
+
+           
+            {/*start === for testing after before testing */}
+            <div className="lg:py-[60px] lg:px-32">
+                <ImageTransition 
+                    afterimg={"./img/2D-Microsite/transitionImage/after-BB480LBB_260.webp"} 
+                    beforeimg={"./img/2D-Microsite/transitionImage/before-BB480LBB_260.webp"} />
+            </div>
+            {/* end === for testing after before testing*/}
+
 
         </div>
     );
