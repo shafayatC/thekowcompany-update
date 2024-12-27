@@ -2,7 +2,7 @@ import React from 'react';
 
 const Navbar2DPortfolio = () => {
     return (
-        <div className='bg-[#155331] py-4 px-6 lg:rounded-b-[12px]'>
+        <div className='bg-[#155331] py-4 px-6 '>
             <div className='container mx-auto'>
                 <div className='flex justify-between text-white'>
                     <h3 className='text-[16px] lg:text-2xl font-bold'>TKCL</h3>
