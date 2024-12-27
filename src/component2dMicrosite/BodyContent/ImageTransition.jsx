@@ -20,13 +20,13 @@ const ImageTransition = ({ afterimg, beforeimg }) => {
         <div
             className="flex flex-col justify-center items-center relative w-full"
         >
-            {/* Overlay div to capture mouse events */}
-            <div
-                className="absolute top-0 left-0 w-full h-full z-50"
-                onMouseDown={handleMouseDown}
-                onMouseUp={handleMouseUp}
-                onTouchStart={handleMouseDown} // Add touch support for mobile
-                onTouchEnd={handleMouseUp} // Add touch support for mobile
+
+            <div className='absolute top-0 left-0 w-full h-full z-50'
+                        onMouseDown={handleOnmouseDown}
+                        onMouseUp={handleOnmouseUp}
+                        onTouchStart={handleOnmouseDown}
+                        onTouchEnd={handleOnmouseUp}
+
             ></div>
 
             {/* After Image */}
