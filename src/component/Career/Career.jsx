@@ -208,61 +208,6 @@ const Career = () => {
     },
     {
       id: 5,
-      title: "Project Management Executive",
-      description: `  <div class="job-des">
- <h1>Project Management Executive</h1>
- <h1>Vacancy (03)</h1>
-	
-
-    <p>We are seeking a dynamic and detail-oriented Project Management Executive to manage various image and video post-production projects for our organization.</p>
-    <h3>Job Responsibilities:</h3>
-    <ul>
-        <li>Oversee & manage end-to-end project lifecycle for all post-production projects.</li>
-        <li>Coordinate with clients to define project scope, goals, deliverables, required resources, budget & timing.</li>
-        <li>Develop detailed project plans.</li>
-        <li>Communicate and collaborate with production & editing teams to align objectives.</li>
-        <li>Manage client relationships, ensure client satisfaction & manage client expectations in terms of project deliverables.</li>
-        
-    </ul>
-    <h3>Qualifications:</h3>
-    <ul>
-        <li>Bachelor's degree in Business, Management, or any related field. Proven working experience in project management or related field.</li>
-        <li>Freshers are also encouraged to apply.</li>
-        <li>Experience in image & video post-production processes (editing, color grading, masking etc.) is a plus.</li>
-        <li>Excellent client-oriented & internal communication skills.</li>
-        <li>Proficiency with project management software tools, MS Office Suites, methodologies & best practices.</li>
-        
-    </ul>
-   
-    <h3>Benefits:</h3>
-    <ol>
-        <li>🎁 Festival Bonuses: Enjoy 2 Festival Bonuses as per company policy.</li>
-        <li>🍽️ Meal Facility: Fully subsidized meal facility to keep you fueled throughout the day.</li>
-        <li>🌿 Healthy Work Environment: Work in a supportive and positive atmosphere.</li>
-        <li>🎄 Christmas Leave: Celebrate the holidays with a special leave.</li>
-        <li>🚀 Career Advancement: Opportunities for growth and professional development.</li>
-        <li>🏝️ Yearly Office Retreat: Relax and recharge with your colleagues.</li>
-        <li>🎉 Events Celebration: Enjoy various events celebrated at our office premises.</li>
-        <li>🏏 Annual Tournaments: Participate in our Annual Cricket and Football Tournament.</li>
-        <li>🎲 Indoor Games: Have fun with Carrom and Table Tennis during breaks.</li>
-        
-       
-    </ol>
-    <h3>Office Hours:</h3>
-    <p> Rooster Basis (Night Shift)</p>
-    
-    <h3>Job Location</h3>
-    <p>Dhaka</p>
-    <h3>Salary</h3>
-    <p>Negotiable</p>
-    <p><strong>Email at:</strong> <a href="mailto:career@thekowcompany.com">career@thekowcompany.com</a></p>
-    <p><strong>Email Before:</strong> 21 July 2024</p>
-    <p>• Most importantly mentioning in the Subject Line: Applying as a "Project Management Executive"</p>
-</div>`,
-      date: "21 July, 2024",
-    },
-    {
-      id: 6,
       title: "Junior Executive, Client & Project Management",
       description: `  <div class="job-des">
  <h1>Junior Executive, Client & Project Management</h1>
@@ -314,6 +259,171 @@ const Career = () => {
 </div>`,
       date: "31 December, 2024",
     },
+    {
+      id: 6,
+      title: "SEO Expert",
+      description: `  <div class="job-des">
+ <h1>SEO Expert</h1>
+ <p><strong>Employment Type: </strong> Full Time</p>
+ <p><strong>Open Position: </strong> 01 </p>
+ <p><strong>Experience Level: </strong> Active Practitioner, 1-2 Years experience Preferred   </p>
+ <p><strong>Deadline: </strong> Priority will be given to applications submitted before <span class="deadline">January 10, 2025</span>, with the final deadline being <span class="deadline">January 20, 2025</span> by 11:59 PM (GMT+6) </p>
+
+ <h3>About The KOW Company:</h3>
+ <p>The KOW Company is a forward-thinking organization dedicated to enhancing our digital presence and driving organic growth. We are looking for an enthusiastic SEO expert to join our team and contribute to optimizing our online footprint. </p>
+    
+ <h3>Key Responsibilities: </h3>
+ <ul>
+ <li>
+      <h4>Technical SEO Management: </h3>
+    <ul>
+        <li>Ensure website crawlability and indexation.</li>
+        <li>Manage sitemaps, robots.txt files, and address technical SEO issues like site speed optimization.</li>      
+    </ul>
+  </li>
+ <li>
+      <h4>SEO Tools Expertise: </h3>
+    <ul>
+        <li>Utilize tools such as Google Analytics, Google Search Console, SEMrush, Ahrefs, Moz, Screaming Frog, Rank Math, or Yoast to monitor and improve SEO performance.</li>
+        <li>Skills and expertise in different engines are added advantage.</li>      
+    </ul>
+  </li>
+ <li>
+      <h4>Website Optimization: </h3>
+    <ul>
+        <li>Conduct keyword research, on-page optimization, and competitor analysis to improve organic rankings.</li>
+        <li>Collaborate with the development team to address technical SEO needs, ensuring proper HTML, CSS, and JavaScript implementation.</li>      
+    </ul>
+  </li>
+ <li>
+      <h4>CMS and Platform Management: </h3>
+    <ul>
+        <li>Work with platforms like WordPress, Shopify, or other similar CMS platforms to optimize content and improve site performance. </li>
+            
+    </ul>
+  </li>
+ <li>
+      <h4>Analytics and Reporting: </h3>
+    <ul>
+        <li>Track and analyze website performance using website analytics tools.</li>
+        <li>Create regular reports and actionable insights to guide content and technical strategies. </li>      
+    </ul>
+  </li>
+ <li>
+      <h4>Cross-Functional Collaboration: </h3>
+    <ul>
+        <li>Collaborate with the marketing team to align SEO strategies with CRM tools like HubSpot or Salesforce. </li>
+        <li>Assist in integrating SEO efforts with email marketing, social media campaigns, and content marketing strategies. </li>      
+    </ul>
+  </li>
+ <li>
+      <h4>Communication and Tools: </h3>
+    <ul>
+        <li>Use platforms such as LinkedIn, Slack, Skype, Google Meet, Zoom, and Microsoft Teams for communication and collaboration. </li>
+           
+    </ul>
+  </li>
+ <li>
+      <h4>Proficiency in Productivity Tools: </h3>
+    <ul>
+        <li>Effectively use Microsoft Office tools (Word, Excel, PowerPoint) and Google Workspace tools (Docs, Sheets) for planning and reporting. </li>
+       
+    </ul>
+  </li>
+    </ul>
+    <h3>Qualifications and Skills: </h3>
+    <ul>
+
+        <li>
+        <h4>Technical Knowledge: </h3>
+        <ul>
+          <li>Strong understanding of crawlability, indexation, and site architecture. </li>
+          <li>Knowledge of technical aspects like sitemaps, robots.txt, and resolving site speed issues. </li>
+
+        </ul>
+
+        </li>
+        <li>
+        <h4>SEO Tools Proficiency: </h3>
+        <ul>
+          <li>Experience with industry-standard tools like SEMrush, Ahrefs, Moz, and others. </li>
+       
+
+        </ul>
+
+        </li>
+        <li>
+        <h4>Web Development Skills: </h3>
+        <ul>
+          <li>Basic knowledge of HTML, CSS, JavaScript, and their impact on SEO. </li>
+          
+        </ul>
+
+        </li>
+        <li>
+        <h4>CMS Experience: </h3>
+        <ul>
+          <li>Hands-on experience with WordPress, Shopify, or similar platforms. </li>
+         
+
+        </ul>
+
+        </li>
+        <li>
+        <h4>Analytical Skills: </h3>
+        <ul>
+          <li>Ability to analyze data from tools like Google Analytics and Google Search Console to derive insights. </li>
+         
+        </ul>
+
+        </li>
+        <li>
+        <h4>Soft Skills: </h3>
+        <ul>
+          <li>Strong communication skills, a collaborative mindset, and attention to detail, Team work.</li>
+        
+
+        </ul>
+
+        </li>
+        
+    </ul>
+  
+    <h3>Fringe benefits: </h3>
+    <ol>
+        <li>🎁 Festival Bonuses: Enjoy 2 Festival Bonuses as per company policy.</li>
+        <li>🍽️ Meal Facility: Fully subsidized meal facility to keep you fueled throughout the day.</li>
+        <li>📈 Profit Sharing: Annually or quarterly as per company policy.</li>
+        <li>🌿 Healthy Work Environment: Work in a supportive and positive atmosphere.</li>
+        <li>🎄 Christmas Leave: Celebrate the holidays with a special leave.</li>
+        <li>🚀 Career Advancement: Opportunities for growth and professional development.</li>
+        <li>🏝️ Yearly Office Retreat: Relax and recharge with your colleagues.</li>
+        <li>🎉 Events Celebration: Enjoy various events celebrated at our office premises.</li>
+        <li>🏏 Annual Tournaments: Participate in our Annual Cricket and Football Tournament.</li>
+        <li>🎲 Indoor Games: Have fun with Carrom and Table Tennis during breaks.</li>
+        
+    </ol>
+
+    <h3>Why Join The KOW Company? </h3>
+    <ul>
+        <li>Be part of a growing team focused on innovation and results. </li>
+        <li>Opportunity to learn and grow in a collaborative environment. </li>
+        <li>Exposure to a variety of tools, platforms, and hands-on projects.</li>
+        
+        
+       
+    </ul>
+     <p><strong>Salary Range:</strong> BDT 25,000 - BDT 35,000 per month</p>
+      <p><strong>How to Apply:</strong> If you are passionate about SEO and ready to make an impact, send your resume to <span class="email-address">career@thekowcompany.com</span> by the deadline. Mention in the Subject Line: Applying as a <b>“SEO Expert Application – [Your Name]”</b>.</p>
+      <p></p>
+   
+   
+    <p class="normal-p">Don't miss out on this fantastic opportunity to advance your career and become a part of the TKCL family! Apply now and take the next step in your professional journey.</p>
+    
+</div>`,
+      date: "20 January, 2025",
+    },
+  
     {
       id: 7,
       title: "Staff Software Engineer – .NET Core ",
@@ -467,8 +577,8 @@ const Career = () => {
             </div>
           </div>
 
-          <div className="flex flex-col items-center">
-            <div className=" md:w-[450px] 2xl:w-[465px] mt-5 border-black border-l-2 pl-3">
+          <div className="flex flex-col items-center 2xl:pl-44">
+            <div className=" md:w-[450px] 2xl:w-[650px] mt-5 border-black border-l-2 pl-3 ">
               {jobCircular.map((item, index) => (
                 <>
                   {compareCurrentDate(item.date) && (
@@ -481,7 +591,7 @@ const Career = () => {
                       >
                         <span> {item.title}</span>
                       </button>
-                      <div>
+                      <div >
                         <h1 className="text-xs 2xl:text-[14px]">
                           Deadline :{" "}
                           <span className="text-red-700 ">{item.date}</span>
@@ -553,7 +663,7 @@ const Career = () => {
             <div className="flex justify-center  md:justify-end w-full md:w-[900px] 2xl:w-[1100px] ">
               <img
                 src="/img/chair-shadow.png"
-                className=" max-w-[230px]   md:max-w-[300px] md:max-h-[270px] md:-mt-[90px]  "
+                className=" max-w-[230px]   md:max-w-[300px] md:max-h-[270px] md:-mt-[90px] 2xl:-mt-[50px]   "
               />
             </div>
           </div>
@@ -567,7 +677,7 @@ const Career = () => {
               className="absolute bg-gray-800 bg-opacity-50 inset-0"
               onClick={closeModal}
             ></div>
-            <div className="bg-white rounded-lg mx-2 md:mx-0  h-[500px] overflow-y-auto shadow-xl transform transition-all w-full md:w-[700px] p-6">
+            <div className="bg-white rounded-lg mx-2 md:mx-0  h-[500px] overflow-y-auto shadow-xl transform transition-all w-full md:w-[800px] p-6">
               <div className="flex justify-end">
                 <button
                   onClick={closeModal}
