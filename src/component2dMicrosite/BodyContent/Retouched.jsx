@@ -15,7 +15,7 @@ const Retouched = () => {
           
           <div className="w-full flex justify-center items-center ">
             <iframe
-              className="bg-white 2xl:h-[720px] h-[700px]  w-full lg:w-[90%] border-[3px] lg:border-4 border-[#255646] rounded-xl"
+              className="bg-white h-[500px]  2xl:h-[720px] md:h-[700px]  w-full lg:w-[90%] border-[3px] lg:border-4 border-[#255646] rounded-xl"
               src="https://www.retouched.ai"
               title="Embedded Website"
               frameBorder="0"

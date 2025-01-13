@@ -5,24 +5,24 @@ const OurService2DPortfolio = () => {
         <div className='container mx-auto mt-5 lg:mt-9'>
             <div className='bg-white px-12 py-9 flex flex-col gap-8 items-center rounded-xl'>
                 <h2 className='text-4xl lg:text-5xl font-bold text-[#737373]'>Our Services</h2>
-                <div className='grid lg:grid-cols-3 gap-[38px]'>
-                    <a href='#retouching' className='group relative flex justify-center items-center'>
+                <div className='flex flex-col md:grid md:grid-cols-3 gap-1 md:gap-[38px]'>
+                    <a href='#retouching' className='group relative flex justify-center items-center h-[115px]  overflow-hidden  md:h-auto'>
                         <img src="./img/2D-Microsite/ourservices/ourservices.webp"/>
                         <div className='transition-all duration-500 bg-white opacity-0 group-hover:opacity-50 absolute w-full h-full'></div>
-                        <h3 className='transition-all duration-500 absolute text-4xl lg:text-6xl font-bold text-white group-hover:text-black w-full text-center'>Retouching Services</h3>
+                        <h3 className='transition-all duration-500 absolute text-[24px] lg:text-6xl font-bold text-white group-hover:text-black w-[180px]  lg:w-full text-center'>Retouching Services</h3>
                     </a>
                 
-                    <a href='#ambience' className='group relative flex justify-center items-center'>
+                    <a href='#ambience' className='group relative flex justify-center items-center h-[115px]  overflow-hidden  md:h-auto'>
                         <img src="./img/2D-Microsite/ourservices/ourservices2.webp"/>
                         <div className='transition-all duration-500 bg-white opacity-0 group-hover:opacity-50 absolute w-full h-full'></div>
-                        <h3 className='transition-all duration-500 absolute text-4xl lg:text-6xl font-bold text-white group-hover:text-black w-full text-center'>Ambience
+                        <h3 className='transition-all duration-500 absolute text-[24px] lg:text-6xl font-bold text-white group-hover:text-black w-[180px] lg:w-full text-center'>Ambience
                         Enhance</h3>
                     </a>
                     
-                    <a href='#mannequin' className='group relative flex justify-center items-center'>
+                    <a href='#mannequin' className='group relative flex justify-center items-center h-[115px]  overflow-hidden  md:h-auto'>
                         <img src="./img/2D-Microsite/ourservices/ourservices3.webp"/>
                         <div className='transition-all duration-500 bg-white opacity-0 group-hover:opacity-50 absolute w-full h-full'></div>
-                        <h3 className='transition-all duration-500 absolute text-4xl lg:text-6xl font-bold text-white group-hover:text-black w-full text-center'>Ghost
+                        <h3 className='transition-all duration-500 absolute text-[24px] lg:text-6xl font-bold text-white group-hover:text-black w-[180px] lg:w-full text-center'>Ghost
                         Mannequin</h3>
                     </a>
                 </div>
