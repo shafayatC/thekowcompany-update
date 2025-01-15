@@ -1,4 +1,3 @@
-
 import { useEffect, useState } from "react";
 
 const RetouchingService = () => {
@@ -49,38 +48,43 @@ const RetouchingService = () => {
         <div>
           <div className="flex flex-col items-center  p-8">
             {/* Toggle Buttons */}
-            <div className="flex justify-center  lg:gap-[18px] back lg:px-6 py-2">
-              <button
-                className={`px-4 py-2   ${
-                  activeDiv === 1
-                    ? "bg-[#F5F7F7] lg:text-[30px] text-[#0B2B23] px-9  rounded-xl border border-[#FFF] shadow-xl font-medium leading-9 "
-                    : "text-[#9EA1A1] lg:text-[30px] px-9 font-medium leading-9"
-                }`}
-                onClick={() => setActiveDiv(1)}
-              >
-                Models
-              </button>
-              <button
-                className={`px-4 py-2 rounded ${
-                  activeDiv === 2
-                    ? "bg-[#F5F7F7] lg:text-[30px] text-[#0B2B23] px-9 rounded-xl border border-[#FFF] shadow-xl font-medium leading-9 "
-                    : "text-[#9EA1A1] lg:text-[30px] px-9 font-medium leading-9"
-                }`}
-                onClick={() => setActiveDiv(2)}
-              >
-                Shoes
-              </button>
-              <button
-                className={`px-4 py-2 rounded ${
-                  activeDiv === 3
-                    ? "bg-[#F5F7F7] lg:text-[30px] text-[#0B2B23] px-9 rounded-xl border border-[#FFF] shadow-xl font-medium leading-9 "
-                    : "text-[#9EA1A1] lg:text-[30px] px-9 font-medium leading-9"
-                }`}
-                onClick={() => setActiveDiv(3)}
-              >
-                Jewelries
-              </button>
-            </div>
+            <div className="flex justify-center lg:gap-[18px] back lg:px-6 py-2 relative">
+  <div
+    className="absolute  duration-300 ease-in-out bg-[#F5F7F7] rounded-xl shadow-xl border border-[#FFF] w-[calc(39.3333%-24px)]  md:w-[calc(33.3333%-10px)] lg:w-[calc(33.3333%-24px)] h-[calc(100%-18px)] transition-transform"
+
+    style={{
+      transform: activeDiv === 1 
+        ? 'translateX(calc(-108%))' 
+        : `translateX(calc(${(activeDiv - 2) * 100}%))`,
+    }}
+  ></div>
+  <button
+    className={`px-4 py-2 z-10 lg:text-[30px] font-medium ${
+      activeDiv === 1 ? "text-[#0B2B23]" : "text-[#9EA1A1]"
+    }`}
+    onClick={() => setActiveDiv(1)}
+  >
+    Models
+  </button>
+  <button
+    className={`px-4 py-2 z-10 lg:text-[30px] font-medium ${
+      activeDiv === 2 ? "text-[#0B2B23]" : "text-[#9EA1A1]"
+    }`}
+    onClick={() => setActiveDiv(2)}
+  >
+    Shoes
+  </button>
+  <button
+    className={`px-4 py-2 z-10 lg:text-[30px] font-medium ${
+      activeDiv === 3 ? "text-[#0B2B23]" : "text-[#9EA1A1]"
+    }`}
+    onClick={() => setActiveDiv(3)}
+  >
+    Jewelries
+  </button>
+</div>
+
+
 
             {/* Div Sections */}
             <div className="w-full pt-8">
@@ -142,115 +146,115 @@ const RetouchingService = () => {
               )}
               {activeDiv === 2 && (
                 <div className=" bg-white rounded  w-full  h-full">
-                <div className="flex flex-col-reverse lg:flex-row justify-center items-center gap-8 lg:gap-20 p-2 lg:p-10 lg:border-2 lg:border-gray-200 rounded-xl lg:border-dashed">
-                  <div className="w-full lg:w-[620px]">
-                    <p className="text-[16px] lg:text-[30px] text-[#737373] font-normal w-full lg:leading-9">
-                      From enhancing shape with precise image manipulation to
-                      adding natural shadows, removing imperfections, and
-                      perfecting the background, we ensure every pair stands
-                      out in flawless detail.
-                    </p>
-                  </div>
-                  <div className="group relative h-[250px] w-[305px] sm:h-[385px] sm:w-[380px] md:h-[660px] md:w-[600px] lg:h-[700px] lg:w-[1350px] xl:h-[660px] xl:w-[700px] 2xl:h-[660px] 2xl:w-[622px]">
-                    {/* Upper Image */}
-                    <div
-                      className={`transition-all duration-500 border border-gray-300 rounded-xl absolute left-0 top-0 ${
-                        isMobile
-                          ? ""
-                          : "group-hover:opacity-100 group-hover:z-50"
-                      } z-0 opacity-25 upper-image`}
-                      onClick={() => handleImageClick("upper")}
-                      onTouchStart={() => handleImageClick("upper")}
-                    >
-                      <img
-                        className="w-[200px] md:w-full"
-                        src="/img/2D-Microsite/images/ringB.webp"
-                      />
+                  <div className="flex flex-col-reverse lg:flex-row justify-center items-center gap-8 lg:gap-20 p-2 lg:p-10 lg:border-2 lg:border-gray-200 rounded-xl lg:border-dashed">
+                    <div className="w-full lg:w-[620px]">
+                      <p className="text-[16px] lg:text-[30px] text-[#737373] font-normal w-full lg:leading-9">
+                        From enhancing shape with precise image manipulation to
+                        adding natural shadows, removing imperfections, and
+                        perfecting the background, we ensure every pair stands
+                        out in flawless detail.
+                      </p>
                     </div>
+                    <div className="group relative h-[250px] w-[305px] sm:h-[385px] sm:w-[380px] md:h-[660px] md:w-[600px] lg:h-[700px] lg:w-[1350px] xl:h-[660px] xl:w-[700px] 2xl:h-[660px] 2xl:w-[622px]">
+                      {/* Upper Image */}
+                      <div
+                        className={`transition-all duration-500 border border-gray-300 rounded-xl absolute left-0 top-0 ${
+                          isMobile
+                            ? ""
+                            : "group-hover:opacity-100 group-hover:z-50"
+                        } z-0 opacity-25 upper-image`}
+                        onClick={() => handleImageClick("upper")}
+                        onTouchStart={() => handleImageClick("upper")}
+                      >
+                        <img
+                          className="w-[200px] md:w-full"
+                          src="/img/2D-Microsite/images/shoeB.webp"
+                        />
+                      </div>
 
-                    {/* Lower Image */}
-                    <div
-                      className={`transition-all duration-500 border border-gray-300 rounded-xl absolute right-0 bottom-0 ${
-                        isMobile
-                          ? ""
-                          : "group-hover:opacity-25 group-hover:z-0"
-                      } z-50 opacity-100 lower-image`}
-                      onClick={() => handleImageClick("lower")}
-                      onTouchStart={() => handleImageClick("lower")}
-                    >
-                      <img
-                        className="w-[200px] md:w-full"
-                        src="/img/2D-Microsite/images/ringA.webp"
-                      />
+                      {/* Lower Image */}
+                      <div
+                        className={`transition-all duration-500 border border-gray-300 rounded-xl absolute right-0 bottom-0 ${
+                          isMobile
+                            ? ""
+                            : "group-hover:opacity-25 group-hover:z-0"
+                        } z-50 opacity-100 lower-image`}
+                        onClick={() => handleImageClick("lower")}
+                        onTouchStart={() => handleImageClick("lower")}
+                      >
+                        <img
+                          className="w-[200px] md:w-full"
+                          src="/img/2D-Microsite/images/shoeA.webp"
+                        />
+                      </div>
                     </div>
                   </div>
+                  {isMobile ? (
+                    <h1 className="text-right text-[16px] font-medium pt-5 text-[#afacac] italic">
+                      *click to change
+                    </h1>
+                  ) : (
+                    <h1 className="text-right text-[20px] font-medium leading-9 pt-10 text-[#afacac] italic">
+                      *Hover to change
+                    </h1>
+                  )}
                 </div>
-                {isMobile ? (
-                  <h1 className="text-right text-[16px] font-medium pt-5 text-[#afacac] italic">
-                    *click to change
-                  </h1>
-                ) : (
-                  <h1 className="text-right text-[20px] font-medium leading-9 pt-10 text-[#afacac] italic">
-                    *Hover to change
-                  </h1>
-                )}
-              </div>
               )}
               {activeDiv === 3 && (
-               <div className=" bg-white rounded  w-full  h-full">
-               <div className="flex flex-col-reverse lg:flex-row justify-center items-center gap-8 lg:gap-20 p-2 lg:p-10 lg:border-2 lg:border-gray-200 rounded-xl lg:border-dashed">
-                 <div className="w-full lg:w-[620px]">
-                   <p className="text-[16px] lg:text-[30px] text-[#737373] font-normal w-full lg:leading-9">
-                     From enhancing shape with precise image manipulation to
-                     adding natural shadows, removing imperfections, and
-                     perfecting the background, we ensure every pair stands
-                     out in flawless detail.
-                   </p>
-                 </div>
-                 <div className="group relative h-[250px] w-[305px] sm:h-[385px] sm:w-[380px] md:h-[660px] md:w-[600px] lg:h-[700px] lg:w-[1350px] xl:h-[660px] xl:w-[700px] 2xl:h-[660px] 2xl:w-[622px]">
-                   {/* Upper Image */}
-                   <div
-                     className={`transition-all duration-500 border border-gray-300 rounded-xl absolute left-0 top-0 ${
-                       isMobile
-                         ? ""
-                         : "group-hover:opacity-100 group-hover:z-50"
-                     } z-0 opacity-25 upper-image`}
-                     onClick={() => handleImageClick("upper")}
-                     onTouchStart={() => handleImageClick("upper")}
-                   >
-                     <img
-                       className="w-[200px] md:w-full"
-                       src="/img/2D-Microsite/images/shoeB.webp"
-                     />
-                   </div>
+                <div className=" bg-white rounded  w-full  h-full">
+                  <div className="flex flex-col-reverse lg:flex-row justify-center items-center gap-8 lg:gap-20 p-2 lg:p-10 lg:border-2 lg:border-gray-200 rounded-xl lg:border-dashed">
+                    <div className="w-full lg:w-[620px]">
+                      <p className="text-[16px] lg:text-[30px] text-[#737373] font-normal w-full lg:leading-9">
+                        From enhancing shape with precise image manipulation to
+                        adding natural shadows, removing imperfections, and
+                        perfecting the background, we ensure every pair stands
+                        out in flawless detail.
+                      </p>
+                    </div>
+                    <div className="group relative h-[250px] w-[305px] sm:h-[385px] sm:w-[380px] md:h-[660px] md:w-[600px] lg:h-[700px] lg:w-[1350px] xl:h-[660px] xl:w-[700px] 2xl:h-[660px] 2xl:w-[622px]">
+                      {/* Upper Image */}
+                      <div
+                        className={`transition-all duration-500 border border-gray-300 rounded-xl absolute left-0 top-0 ${
+                          isMobile
+                            ? ""
+                            : "group-hover:opacity-100 group-hover:z-50"
+                        } z-0 opacity-25 upper-image`}
+                        onClick={() => handleImageClick("upper")}
+                        onTouchStart={() => handleImageClick("upper")}
+                      >
+                        <img
+                          className="w-[200px] md:w-full"
+                          src="/img/2D-Microsite/images/ringB.webp"
+                        />
+                      </div>
 
-                   {/* Lower Image */}
-                   <div
-                     className={`transition-all duration-500 border border-gray-300 rounded-xl absolute right-0 bottom-0 ${
-                       isMobile
-                         ? ""
-                         : "group-hover:opacity-25 group-hover:z-0"
-                     } z-50 opacity-100 lower-image`}
-                     onClick={() => handleImageClick("lower")}
-                     onTouchStart={() => handleImageClick("lower")}
-                   >
-                     <img
-                       className="w-[200px] md:w-full"
-                       src="/img/2D-Microsite/images/shoeA.webp"
-                     />
-                   </div>
-                 </div>
-               </div>
-               {isMobile ? (
-                 <h1 className="text-right text-[16px] font-medium pt-5 text-[#afacac] italic">
-                   *click to change
-                 </h1>
-               ) : (
-                 <h1 className="text-right text-[20px] font-medium leading-9 pt-10 text-[#afacac] italic">
-                   *Hover to change
-                 </h1>
-               )}
-             </div>
+                      {/* Lower Image */}
+                      <div
+                        className={`transition-all duration-500 border border-gray-300 rounded-xl absolute right-0 bottom-0 ${
+                          isMobile
+                            ? ""
+                            : "group-hover:opacity-25 group-hover:z-0"
+                        } z-50 opacity-100 lower-image`}
+                        onClick={() => handleImageClick("lower")}
+                        onTouchStart={() => handleImageClick("lower")}
+                      >
+                        <img
+                          className="w-[200px] md:w-full"
+                          src="/img/2D-Microsite/images/ringA.webp"
+                        />
+                      </div>
+                    </div>
+                  </div>
+                  {isMobile ? (
+                    <h1 className="text-right text-[16px] font-medium pt-5 text-[#afacac] italic">
+                      *click to change
+                    </h1>
+                  ) : (
+                    <h1 className="text-right text-[20px] font-medium leading-9 pt-10 text-[#afacac] italic">
+                      *Hover to change
+                    </h1>
+                  )}
+                </div>
               )}
             </div>
           </div>
