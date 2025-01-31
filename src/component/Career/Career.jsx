@@ -503,7 +503,7 @@ const Career = () => {
       id: 8,
       title: "Senior Front-End Developer",
       description: `  <div class="job-des">
- <h1>Experience Required</h1>
+ <h1>Senior Front-End Developer</h1>
  <p><strong>Employment Type: </strong> Full Time</p>
  <p><strong>Open Position: </strong> 01 </p>
  <p><strong>Experience Required: </strong> Minimum 2 years</p>
