@@ -8,6 +8,7 @@ import RetouchingService from './RetouchingService';
 import AmbienceEnhance from './AmbienceEnhance';
 import GhostMannequin from './GhostMannequin';
 import Retouched from './Retouched';
+import RetouchingTest from './RetouchingTest';
 
 
 const BodyContent = () => {
@@ -17,6 +18,7 @@ const BodyContent = () => {
             <OurService2DPortfolio />
             <AboutUs/>
             <RetouchingService/>
+            {/* <RetouchingTest/> */}
             <AmbienceEnhance/>
             <GhostMannequin/>
             <Retouched/>

@@ -10,7 +10,7 @@ const VideoSliderNew = () => {
     },
     {
       video: "/video/video_2d/subtitle.mp4",
-      label: "Subtitile Addition Service",
+      label: "Subtitle Addition Service",
     },
     {
       video: "/video/video_2d/title.mp4",

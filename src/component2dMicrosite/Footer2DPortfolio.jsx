@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom';
 
 const Footer2DPortfolio = () => {
     return (
-        <div className='bg-[#4AD991] px-16 py-[26px] '>
+        <div className='bg-[#4AD991] px-16 py-[26px] rounded-t-xl'>
             <div className='2xl:container 2xl:mx-auto'>
                 <div className='flex justify-between items-center'>
                     <Link to={'/contact-us'} className='text-xl lg:text-4xl font-bold text-black'>Contact Us</Link>
