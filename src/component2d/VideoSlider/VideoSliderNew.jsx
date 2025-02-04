@@ -5,19 +5,19 @@ import { useEffect } from "react";
 const VideoSliderNew = () => {
   const sliderList = [
     {
-      video: "/video/video_2d/audio level.mp4",
+      video: "./video/video_2d/audio level.mp4",
       label: "Audio Editing Service",
     },
     {
-      video: "/video/video_2d/subtitle.mp4",
+      video: "./video/video_2d/subtitle.mp4",
       label: "Subtitle Addition Service",
     },
     {
-      video: "/video/video_2d/title.mp4",
+      video: "./video/video_2d/title.mp4",
       label: "Title Addition Service",
     },
     {
-      video: "/video/video_2d/crop.mp4",
+      video: "./video/video_2d/crop.mp4",
       label: "Video Cropping Service",
     },
   ];
