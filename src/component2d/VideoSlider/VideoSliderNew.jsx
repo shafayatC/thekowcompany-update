@@ -1,5 +1,6 @@
 import { Carousel } from "react-div-carousel";
 import Heading2D from "../../component3d/Heading/Heading2D";
+import { useEffect } from "react";
 
 const VideoSliderNew = () => {
   const sliderList = [
@@ -20,6 +21,15 @@ const VideoSliderNew = () => {
       label: "Video Cropping Service",
     },
   ];
+
+  useEffect(() => {
+    const videos = document.querySelectorAll('video');
+    videos.forEach(video => {
+      video.play().catch(error => {
+        console.error("Video playback failed:", error);
+      });
+    });
+  }, []);
 
   return (
     <div className="pb-4 pt-10">
@@ -51,6 +61,7 @@ const VideoSliderNew = () => {
                     autoPlay
                     muted
                     loop
+                    preload="auto"
                   >
                     <source src={item.video} type="video/mp4" />
                   </video>
