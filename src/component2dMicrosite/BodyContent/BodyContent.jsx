@@ -9,14 +9,16 @@ import AmbienceEnhance from './AmbienceEnhance';
 import GhostMannequin from './GhostMannequin';
 import Retouched from './Retouched';
 import RetouchingTest from './RetouchingTest';
+import GhostTest from './GhostMannequinOld';
 
 
 const BodyContent = () => {
     return (
         <div className="flex flex-col ">
             <TopPart2dPortfolio />
-            <OurService2DPortfolio />
             <AboutUs/>
+            <OurService2DPortfolio />
+            
             <RetouchingService/>
             {/* <RetouchingTest/> */}
             <AmbienceEnhance/>

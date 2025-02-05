@@ -1,8 +1,27 @@
-import React, { useState } from "react";
-
+import { useState } from "react";
+import { Carousel } from "react-responsive-carousel";
+import "react-responsive-carousel/lib/styles/carousel.min.css"; 
 
 const GhostMannequin = () => {
-     const [activeGMDivSection, setActiveGMDivSection] = useState(1); // Default to the first div
+  const [activeGMDivSection, setActiveGMDivSection] = useState(0);
+
+  const sliderList = [
+    {
+      after: "./img/2D-Microsite/images/gm11A.webp",
+      before: "./img/2D-Microsite/images/gm11B.webp",
+    },
+    {
+      after: "./img/2D-Microsite/images/gm22A.webp",
+      before: "./img/2D-Microsite/images/gm22B.webp",
+      
+    },
+    {
+      after: "./img/2D-Microsite/images/gm33A.webp",
+      before: "./img/2D-Microsite/images/gm33B.webp",
+    
+    },
+  ];
+
   return (
     <div id="mannequin" className="container mx-auto ">
       <div className="flex flex-col lg:flex-row justify-center items-center  bg-white rounded-lg border-2 border-[#155331]  mt-9 lg:mb-9  py-[23px]">
@@ -15,82 +34,48 @@ const GhostMannequin = () => {
           detail to showcase your products at their best.
         </p>
       </div>
-      <div className="">
-        <div className="bg-white rounded-xl">
-          <div className="flex flex-col items-center  p-8">
-            {/* Toggle Buttons */}
-           
-
-            {/* Div Sections */}
-            <div className="w-full pt-8 ">
-              {activeGMDivSection === 1 && (
-                <div className="flex justify-center items-center gap-10 lg:gap-[160px]">
-                  <div>
-                    <img className="w-full  h-[200px]  sm:h-[600px]" src="./img/2D-Microsite/images/gm11B.webp"/>
-                  </div>
-                  <div>
-                    <img className="w-full  h-[200px] sm:h-[600px]"  src="./img/2D-Microsite/images/gm11A.webp"/>
-                  </div>
-                </div>
-              )}
-              {activeGMDivSection === 2 && (
-                <div className="flex justify-center items-center  lg:gap-[160px]">
-                <div>
-                  <img className="w-full h-[200px] sm:h-[600px]"  src="./img/2D-Microsite/images/gm22B.webp"/>
-                </div>
-                <div>
-                  <img className="w-full h-[200px] sm:h-[600px]"  src="./img/2D-Microsite/images/gm22A.webp"/>
-                </div>
+      {/* Image Carousel */}
+      <Carousel
+        showThumbs={false}
+        showStatus={false}
+        infiniteLoop
+        autoPlay
+        interval={3000}
+        transitionTime={1000}
+        showArrows={false}
+        stopOnHover={false}
+        emulateTouch
+        selectedItem={activeGMDivSection}
+        onChange={(index) => setActiveGMDivSection(index)} // Sync active section with carousel
+        className="carousel-container"
+      >
+        {sliderList.map((item, index) => (
+          <div key={index} className="carousel-item flex flex-col mx-4 md:mx-1 gap-2">
+            <div className="flex justify-center items-center bg-white gap-10 lg:gap-[160px] py-10 md:py-20 rounded-lg">
+              <div>
+                <img className="w-full h-[180px] sm:h-[600px]" src={item.before} alt="Before" />
               </div>
-              )}
-              {activeGMDivSection === 3 && (
-                <div className="flex justify-center items-center gap-10 lg:gap-[160px]">
-                <div>
-                  <img className="w-full  h-[200px] sm:h-[600px]"  src="./img/2D-Microsite/images/gm33B.webp"/>
-                </div>
-                <div>
-                  <img className="w-full  h-[200px] sm:h-[600px]"  src="./img/2D-Microsite/images/gm33A.webp"/>
-                </div>
+              <div>
+                <img className="w-full h-[180px] sm:h-[600px]" src={item.after} alt="After" />
               </div>
-              )}
             </div>
           </div>
+        ))}
+      </Carousel>
 
-         
-          
-        </div>
-        <div className="flex justify-center items-center gap-[18px]  px-6  my-[36px]">
-              <button
-                className={` rounded-2xl   ${
-                    activeGMDivSection === 1
-                    ? "  bg-[#15803D] h-[6px] w-[40px]"
-                    : " bg-[#9EA1A1] h-[6px] w-[20px]"
-                }`}
-                onClick={() => setActiveGMDivSection(1)}
-              >
-                
-              </button>
-              <button
-               className={` rounded-2xl   ${
-                activeGMDivSection === 2
-                ? "  bg-[#15803D] h-[6px] w-[40px]"
-                : " bg-[#9EA1A1] h-[6px] w-[20px]"
+      {/* Manual Control Buttons */}
+      <div className="flex justify-center items-center gap-[18px] px-6 my-[36px]">
+        {sliderList.map((_, index) => (
+          <button
+            key={index}
+            className={`rounded-2xl transition-all duration-300 ${
+              activeGMDivSection === index
+                ? "bg-[#15803D] h-[6px] w-[40px]"
+                : "bg-[#9EA1A1] h-[6px] w-[20px]"
             }`}
-                onClick={() => setActiveGMDivSection(2)}
-              >
-                
-              </button>
-              <button
-               className={` rounded-2xl   ${
-                activeGMDivSection === 3
-                ? "  bg-[#15803D] h-[6px] w-[40px]"
-                : " bg-[#9EA1A1] h-[6px] w-[20px]"
-            }`}
-                onClick={() => setActiveGMDivSection(3)}
-              >
-               
-              </button>
-            </div>
+            onClick={() => setActiveGMDivSection(index)}
+          ></button>
+        ))}
       </div>
     </div>
   );

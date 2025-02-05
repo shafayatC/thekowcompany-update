@@ -2,8 +2,8 @@ import React from 'react';
 
 const Retouched = () => {
     return (
-        <div className='container mx-auto bg-white mt-9 '>
-             <div className="  bg-white py-[36px]  ">
+        <div className='container mx-auto bg-white mt-9 rounded-xl'>
+             <div className="  bg-white py-[36px]  rounded-t-xl">
         <h1 className="w-full text-center text-[20px] lg:text-[36px] font-bold lg:leading-10 text-[#000] py-[23px] ">
         Try the Ai powered background replacement solution with Retouched.ai
         </h1>
