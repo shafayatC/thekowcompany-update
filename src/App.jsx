@@ -30,7 +30,7 @@ import ContactUsLanding2 from './component/ContactUsLanding2/ContactUsLanding2'
 import ContactUsLanding3 from './component/ContactUsLanding3/ContactUsLanding3'
 import ContactUsLanding4 from './component/ContactUsLanding4/ContactUsLanding4'
 // import PDFViewerPage from './component3d/PDFViewerPage/PDFViewerPage'
-import PDFViewer from './component3d/PDFViewer/PDFViewer'
+// import PDFViewer from './component3d/PDFViewer/PDFViewer'
 import Portfolio3D from './component3d/Portfolio3D/Portfolio3D'
 import Portfolio3DTest from './component3d/Portfolio3D/Portfolio3DTest'
 import PortfolioFor3D from './component3d/Portfolio3D/PortfolioFor3D'
@@ -65,7 +65,7 @@ function App() {
       <Route path="/3d" element={<Container3D/>} />
       {/* <Route path="/microsite-2d" element={<Microsite2DTest/>} /> */}
       <Route path='/2D-service-portfolio' element={<Microsite2DFinal/>} />
-      <Route path="/3d/creative-showcase" element ={<PDFViewer />}/>
+      {/* <Route path="/3d/creative-showcase" element ={<PDFViewer />}/> */}
       <Route path='/3d/industry-trends-details/:id' element={<Blog3D/>} />
       <Route path="/2d/industry-trends-details/:id" element={<BlogDetails/>} />
       <Route path="/3d/industry-trends-details" element={<TrendsDetails/>} />
