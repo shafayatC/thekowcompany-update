@@ -3,7 +3,7 @@ import React from 'react';
 const AboutUs = () => {
     return (
       <div className='container mx-auto mt-9 '>
-          <div className='bg-white pb-9 pt-[72px] rounded-xl'>
+          <div className='bg-white pb-9 pt-12 md:pt-[72px] rounded-xl'>
             <div className='flex flex-row justify-center items-end gap-2 md:gap-4 lg:gap-7  px-2 lg:px-0'>
                 <div>
                     <img src='/img/2D-Microsite/images/Image 1.webp'/>

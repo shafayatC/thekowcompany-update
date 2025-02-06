@@ -34,6 +34,10 @@ const GhostMannequin = () => {
           detail to showcase your products at their best.
         </p>
       </div>
+      <h1 className="text-right text-[12px] lg:text-[20px] font-medium leading-9 pt-5 md:pt-2 pb-8 text-[#afacac] italic">
+      *Slide to change
+                </h1>
+
       {/* Image Carousel */}
       <Carousel
         showThumbs={false}
@@ -64,7 +68,7 @@ const GhostMannequin = () => {
       </Carousel>
 
       {/* Manual Control Buttons */}
-      <div className="flex justify-center items-center gap-[18px] px-6 my-[36px]">
+      <div className="flex justify-center items-center gap-[18px] px-6 mb-9 mt-12">
         {sliderList.map((_, index) => (
           <button
             key={index}
@@ -77,6 +81,12 @@ const GhostMannequin = () => {
           ></button>
         ))}
       </div>
+
+      <div className='w-full pr-2 md:pr-0'>
+            <a href='https://thekowcompany.com/2D_Portfolio.pdf' target='_blank' className="flex justify-end text-[12px] lg:text-[20px] font-medium leading-9 cursor-pointer underline ">
+                    Download for more
+                </a>
+            </div>
     </div>
   );
 };

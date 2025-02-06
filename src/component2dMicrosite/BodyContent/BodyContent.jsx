@@ -10,6 +10,7 @@ import GhostMannequin from './GhostMannequin';
 import Retouched from './Retouched';
 import RetouchingTest from './RetouchingTest';
 import GhostTest from './GhostMannequinOld';
+import VideoSection from './VideoSection';
 
 
 const BodyContent = () => {
@@ -23,6 +24,7 @@ const BodyContent = () => {
             {/* <RetouchingTest/> */}
             <AmbienceEnhance/>
             <GhostMannequin/>
+            <VideoSection/>
             <Retouched/>
            
 

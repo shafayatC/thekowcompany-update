@@ -64,7 +64,7 @@ function App() {
       <Route path="/2d" element={<Container2D/>} />
       <Route path="/3d" element={<Container3D/>} />
       {/* <Route path="/microsite-2d" element={<Microsite2DTest/>} /> */}
-      <Route path='/microsite-2d' element={<Microsite2DFinal/>} />
+      <Route path='/2D-service-portfolio' element={<Microsite2DFinal/>} />
       <Route path="/3d/creative-showcase" element ={<PDFViewer />}/>
       <Route path='/3d/industry-trends-details/:id' element={<Blog3D/>} />
       <Route path="/2d/industry-trends-details/:id" element={<BlogDetails/>} />
