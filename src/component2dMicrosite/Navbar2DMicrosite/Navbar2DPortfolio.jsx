@@ -7,7 +7,7 @@ const Navbar2DPortfolio = () => {
         <div className='bg-[#155331] py-4 px-6 rounded-b-xl'>
             <div className='container mx-auto'>
                 <div className='flex justify-between items-center text-white'>
-                    <img className='w-[65px] h-[30px] md:w-full md:h-full' src='/img/2D-Microsite/logo_kow_white.png'/>
+                    <img className='w-[65px] h-[30px] md:w-[109px] md:h-[51px]' src='/img/2D-Microsite/logo_kow_white.png'/>
                     <a href='https://thekowcompany.com' target='_blank'>
                     <h3 className='text-[16px] lg:text-[30px]  font-medium hidden md:block'>The KOW Company</h3>
                     </a>
