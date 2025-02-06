@@ -4,7 +4,7 @@ const TopPart2dPortfolio = () => {
   return (
     <div className="container mx-auto ">
       <div className="bg-white py-8 px-9 rounded-xl">
-        <div className="flex flex-col gap-[100px] lg:gap-[260px] 2xl:gap-[360px]">
+        <div className="flex flex-col gap-[100px] lg:gap-[220px] 2xl:gap-[300px]">
           <div>
             <div className="text-left text-[48px] md:text-[50px] lg:text-[100px] 2xl:text-[160px] text-[#737373] leading-[52px] lg:leading-[100px] 2xl:leading-[176px] font-bold">
               <h1>Portfolio of</h1>
