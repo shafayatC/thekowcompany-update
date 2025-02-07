@@ -7,8 +7,8 @@ const TopPart2dPortfolio = () => {
         <div className="flex flex-col gap-[100px] lg:gap-[220px] 2xl:gap-[300px]">
           <div>
             <div className="text-left text-[48px] md:text-[50px] lg:text-[100px] 2xl:text-[160px] text-[#737373] leading-[52px] lg:leading-[100px] 2xl:leading-[176px] font-bold">
-              <h1>Portfolio of</h1>
               <h1>2D Services</h1>
+              <h1>Portfolio</h1>
             </div>
             <div className="flex flex-col items-start gap-5 md:gap-10 pt-5">
               <h1 className="text-[12px] md:text-[20px] 2xl:text-[36px] font-bold leading-[111%] text-[#155331]">

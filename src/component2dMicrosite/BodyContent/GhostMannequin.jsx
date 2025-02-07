@@ -54,8 +54,8 @@ const GhostMannequin = () => {
         className="carousel-container"
       >
         {sliderList.map((item, index) => (
-          <div key={index} className="carousel-item flex flex-col mx-4 md:mx-1 gap-2">
-            <div className="flex justify-center items-center bg-white gap-10 lg:gap-[160px] py-10 md:py-20 rounded-lg">
+          <div key={index} className="carousel-item flex flex-col mx-1  gap-2">
+            <div className="flex justify-center items-center bg-white  gap-10 lg:gap-[160px] py-10 md:py-20 rounded-lg">
               <div>
                 <img className="w-full h-[180px] sm:h-[600px]" src={item.before} alt="Before" />
               </div>
