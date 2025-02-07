@@ -20,8 +20,8 @@ const VideoSection = () => {
               preload="auto"
             >
               <source
-                src="./video/2d_portfolio/audio-level.mp4"
-                type="video/mp4"
+                src="./video/2d_portfolio/audio-level.webm"
+                type="video/webm"
               />
               Your browser does not support the video tag.
             </video>
@@ -43,8 +43,8 @@ const VideoSection = () => {
               preload="auto"
             >
               <source
-                src="./video/2d_portfolio/subtitle.mp4"
-                type="video/mp4"
+                src="./video/2d_portfolio/subtitle.webm"
+                 type="video/webm"
               />
               Your browser does not support the video tag.
             </video>
@@ -68,7 +68,7 @@ const VideoSection = () => {
             loop
             preload="auto"
           >
-            <source src="./video/2d_portfolio/crop.mp4" type="video/mp4" />
+            <source src="./video/2d_portfolio/crop.webm"  type="video/webm" />
             Your browser does not support the video tag.
           </video>
           <h1
@@ -87,7 +87,7 @@ const VideoSection = () => {
             loop
             preload="auto"
           >
-            <source src="./video/2d_portfolio/title.mp4" type="video/mp4" />
+            <source src="./video/2d_portfolio/title.webm"  type="video/webm" />
             Your browser does not support the video tag.
           </video>
           <h1

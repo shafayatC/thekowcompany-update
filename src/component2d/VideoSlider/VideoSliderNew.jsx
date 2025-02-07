@@ -5,19 +5,19 @@ import { useEffect } from "react";
 const VideoSliderNew = () => {
   const sliderList = [
     {
-      video: "./video/video_2d/audio level.mp4",
+      video: "./video/video_2d/audio-level.webm",
       label: "Audio Editing Service",
     },
     {
-      video: "./video/video_2d/subtitle.mp4",
+      video: "./video/video_2d/subtitle.webm",
       label: "Subtitle Addition Service",
     },
     {
-      video: "./video/video_2d/title.mp4",
+      video: "./video/video_2d/title.webm",
       label: "Title Addition Service",
     },
     {
-      video: "./video/video_2d/crop.mp4",
+      video: "./video/video_2d/crop.webm",
       label: "Video Cropping Service",
     },
   ];
@@ -63,7 +63,7 @@ const VideoSliderNew = () => {
                     loop
                     preload="auto"
                   >
-                    <source src={item.video} type="video/mp4" />
+                    <source src={item.video} type="video/webm" />
                   </video>
                 </div>
                 <div className="w-full flex gap-3 py-4 justify-center">
