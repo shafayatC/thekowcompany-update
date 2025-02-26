@@ -423,26 +423,25 @@ const Career = () => {
 </div>`,
       date: "20 January, 2025",
     },
-  
+
     {
       id: 7,
-      title: "Staff Software Engineer – .NET Core ",
+      title: "Senior Software Engineer - .NET Core",
       description: `  <div class="job-des">
- <h1><b>Position Title:</b> Staff Software Engineer – .NET Core </h1>
+ <h1>Senior Software Engineer - .NET Core</h1>
  <p><strong>Employment Type: </strong> Full Time</p>
- <p><strong>Open Position: </strong> 02 </p>
- <p><strong>Deadline: </strong> Priority will be given to applications submitted before <span class="deadline">November 05, 2024</span>, with the final deadline being <span class="deadline">November 25, 2024</span> by 11:59 PM (GMT+6) </p>
+ <p><strong>Number of Open Positions: </strong> 01 </p>
+ <p><strong>Deadline: </strong> <span class="deadline">12th March, 2025</span> </p>
 
     <h3>About Us:</h3>
-  <p>At The KOW Company Ltd., we are committed to delivering scalable, secure, and high performance software solutions that empower businesses. As a leading innovator in the tech industry, we are seeking Staff Software Engineers with deep expertise in .NET Core to lead the architecture and development of complex applications.</p>
-  <p>This role emphasizes technical excellence and offers the opportunity to work on cutting-edge solutions such as 3D Reconstruction, 2D Image Background Removal, and complex ERP systems for file transfer. Additionally, you will contribute to the development of an app designed to serve over one million users, playing a key role in driving the company’s growth and innovation.</p>
+  <p>At The KOW Company Ltd., we are committed to delivering scalable, secure, and high-performance software solutions that empower businesses. As a leading innovator in the tech industry, we are seeking Senior Software Engineer with deep expertise in.NET Core and the development of complex applications. This role focuses on technical excellence, providing you with the opportunity to work on cutting-edge solutions like 3D reconstruction, 2D image background removal, and complex ERP systems for file transfer. Additionally, you will help build an app designed to serve users, contributing directly to the company’s growth and innovation.</p>
+  
     <h3>Position Overview: </h3>
-     <p>The Staff Software Engineer will be responsible for designing and implementing scalable architectures using ASP.NET Core, C#, and cloud technologies like Azure or AWS. This is a hands-on technical role where you will collaborate directly with cross-functional teams to develop world-class software products.</p>
-  <p>You will play a key role in building distributed systems and working with databases (SQL and NoSQL) to deliver high-performance solutions for applications used by millions. Additionally, you will work on both monolithic and microservices-based architectures, depending on project needs, and ensure seamless integration of components through reporting modules and message brokers where required.</p>
+     <p>The Senior Software Engineer will be responsible for developing using ASP.NET Core, C#, and SQL. This is a hands-on, technical role where you will work directly with cross-functional teams to develop world-class software products. You will play a key role in building distributed systems and databases (SQL and NoSQL) and ensuring high-performance solutions for apps that would be used by millions. Additionally, you'll work on both monolithic and microservices-based architectures, depending on project needs, and ensure efficient integration of components through reporting modules and message brokers where necessary. </p>
+ 
    <h3>Key Responsibilities:</h3>
   <ul>
-        <li>Lead the design and development of scalable applications using ASP.NET Core, C#, and Blazor Server, employing both microservices and monolithic architectures where appropriate.</li>
-        <li>Architect and implement cloud-native applications on Azure or other cloud platforms, leveraging cloud services effectively</li>
+        <li>Analysis business requirement and Development of scalable applications using ASP.NET Core, C#, and Blazor Server, employing both microservices and monolithic architectures where appropriate.</li>
         <li>Develop and integrate RESTful APIs to ensure seamless interaction with other systems.</li>
         <li>Design and optimize distributed databases (SQL or NoSQL) for performance, reliability, and scalability, ensuring they can handle high user volume.</li>
         <li>Develop reporting modules and implement message brokers (such as RabbitMQ, Kafka) where necessary for efficient data processing and communication between systems.</li>
@@ -454,7 +453,7 @@ const Career = () => {
     </ul>
    <h3>Required Skills and Qualifications:</h3>
   <ul>
-        <li> 7+ years of professional experience in software development, with expertise in ASP.NET Core, C#, .NET Framework, MVC, and Blazor Server.</li>
+        <li> 4+ years of professional experience in software development, with expertise in ASP.NET Core, C#, .NET Framework, MVC, and Blazor Server.</li>
         <li> Proven experience designing and implementing scalable architectures, including microservices, monolithic, and cloud solutions.</li>
         <li> Strong understanding of RESTful API development and integration.</li>
         <li> Experience with Azure or other cloud platforms, including cloud-native applications.</li>
@@ -496,9 +495,9 @@ const Career = () => {
     <p><strong>How to Apply:</strong> Please submit your updated CV and cover letter to <span class="email-address">career@thekowcompany.com</span> by the deadline. Mention the position title in the subject line of your email.</p>
     <p><strong>Location: </strong>Plot:06, 2nd Floor, Navana, D. H. Tower, Panthapath, Dhaka 1215</p>
 </div>`,
-      date: "1 December, 2024",
+      date: "12 March, 2025",
     },
-    
+
     {
       id: 8,
       title: "Senior Front-End Developer",
@@ -573,7 +572,7 @@ const Career = () => {
 
 `,
       date: "13 February, 2025",
-    }
+    },
   ]);
   const [isOpen, setIsOpen] = useState(false);
   const [cvData, setCvData] = useState({});
@@ -667,7 +666,7 @@ const Career = () => {
                       >
                         <span> {item.title}</span>
                       </button>
-                      <div >
+                      <div>
                         <h1 className="text-xs 2xl:text-[14px]">
                           Deadline :{" "}
                           <span className="text-red-700 ">{item.date}</span>
