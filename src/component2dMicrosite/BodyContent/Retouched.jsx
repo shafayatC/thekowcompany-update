@@ -2,10 +2,10 @@ import React from 'react';
 
 const Retouched = () => {
   return (
-    <div className='container mx-auto bg-white mt-9 '>
-      <div className="  bg-white py-[36px]  ">
-        <h1 className="w-full text-center text-[20px] lg:text-[36px] font-bold lg:leading-10 text-[#000] py-[23px] ">
-          Try the Ai powered background replacement solution with Retouched.ai
+    <div className='container mx-auto bg-white mt-9 rounded-xl'>
+      <div className="  bg-white py-[20px] md:py-[36px]  rounded-t-xl">
+        <h1 className="w-full text-center text-[16px] lg:text-[36px] font-bold lg:leading-10 text-[#000] py-[23px] ">
+          Your one stop Ai-powered image editing solution is here with <a href='https://retouched.ai/' target='_blank' className='cursor-pointer hover:text-gray-400'>Retouched.ai</a>. Try it now!
         </h1>
 
       </div>

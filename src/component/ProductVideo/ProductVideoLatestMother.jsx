@@ -9,7 +9,7 @@ import VideoPlayerLatest from "./VideoPlayerLatest.jsx";
 // const VideoPlay = lazy(() => import('./VideoPlay.jsx'));
 const VideoPlay = lazy(() => import('./VideoPlay.jsx'));
 
-export default function ProductVideoLatestMother({ videoUrl, loadingImg, tagList = [] }) {
+export default function ProductVideoLatestMother({ videoUrl, loadingImg, tagList = [], videoType }) {
 
     const [playBool, setPlayBool] = useState(false);
 
@@ -36,7 +36,7 @@ export default function ProductVideoLatestMother({ videoUrl, loadingImg, tagList
                             <img loading="lazy" className="object-cover w-full" src={loadingImg} alt="loading" />
                         </div>
                     }>
-                        <VideoPlayerLatest videoName="home-video" loadingImg={loadingImg} videoUrl={videoUrl}/>
+                        <VideoPlayerLatest videoName="home-video" loadingImg={loadingImg} videoType={videoType} videoUrl={videoUrl}/>
                         {/* <VideoPlayer loadingImg={loadingImg} videoUrl={videoUrl} /> */}
                         {/* <VideoPlay /> */}
                         {/* tag line */}

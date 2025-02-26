@@ -30,7 +30,7 @@ const OrderGuide = () => {
             height="auto"
             playsinline autoPlay muted loop
           >
-            <source src="/video/A4Tech_Headphone_Animation_3.webm" type="video/mp4" />
+            <source src="/video/A4Tech_Headphone_Animation_3.webm" type="video/webm" />
           </video>
         </div>
       </div>

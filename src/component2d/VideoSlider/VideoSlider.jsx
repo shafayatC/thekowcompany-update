@@ -12,22 +12,22 @@ const VideoSlider = () => {
     const sliderList = [
         {
             "thumb": "/img/video_slider/video-slider-1.jpg",
-            "video": "/video/video_2d/Audio_Editing_Service_1.mp4",
+            "video": "/video/video_2d/audio level.mp4",
             "label": "AUDIO ADDITION"
         },
         {
             "thumb": "/img/video_slider/video-slider-2.jpg",
-            "video": "/video/video_2d/Subtitile_Addition_Service_1.mp4",
+            "video": "/video/video_2d/subtitle.mp4",
             "label": "SUBTITLE ADDITION"
         },
         {
             "thumb": "/img/video_slider/video-slider-3.jpg",
-            "video": "/video/video_2d/Title_Addition_Service_1.mp4",
+            "video": "/video/video_2d/title.mp4",
             "label": "TITLE EDITING"
         },
         {
             "thumb": "/img/video_slider/video-slider-1.jpg",
-            "video": "/video/video_2d/Video_Cropping_Service_1.mp4",
+            "video": "/video/video_2d/crop.mp4",
             "label": "VIDEO CROPPING"
         }
       
@@ -61,7 +61,7 @@ const VideoSlider = () => {
                         ]}
                     >
                         {sliderList.map((item, index) => (
-                            <VideoWithThumb index={index} video={item.video} thumb={item.thumb} label={item.label} />
+                            <VideoWithThumb index={index} video={item.video}  label={item.label} />
                         ))}
                     </Carousel>
                 </div>
