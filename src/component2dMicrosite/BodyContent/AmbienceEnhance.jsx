@@ -11,9 +11,13 @@ const AmbienceEnhance = () => {
                     Ambience Enhance
                 </h1>
                 <p className="w-full lg:w-[730px] text-[16px] lg:text-[24px] text-center lg:text-left font-medium lg:leading-8 text-[#737373] px-2 lg:px-0">
-                    Through seamless background plate addition, soft shadow enhancement, and meticulous tag number and imperfection removal, we create an inviting atmosphere that enhances every detail beautifully
+                    Through seamless background plate addition, soft shadow enhancement, and meticulous tag number and imperfection removal, we create an inviting atmosphere that enhances every detail beautifully.
                 </p>
             </div>
+
+            <h1 className="text-right text-[12px] lg:text-[20px]  font-medium leading-9 mt-5 md:pt-2 md:pb-4 text-[#afacac] italic">
+                    *Press & Hold to compare
+                </h1>
 
             <div>
                 <div className="overflow-hidden relative w-full h-full pt-5">
@@ -44,7 +48,7 @@ const AmbienceEnhance = () => {
                     </div>
                 </div>
 
-                <div className="flex justify-center items-center gap-[18px] px-6 pt-10">
+                <div className="flex justify-center items-center gap-[18px] px-6 pt-10 pb-5">
                     <button
                         className={`rounded-2xl transition-all duration-300 ${
                             activeDivSection === 1
@@ -70,9 +74,13 @@ const AmbienceEnhance = () => {
                         onClick={() => setActiveDivSection(3)}
                     ></button>
                 </div>
-                <h1 className="text-center text-[16px] lg:text-[20px] font-medium leading-9 pt-4 text-[#afacac] italic">
-                    *Press & Hold to compare
-                </h1>
+               
+            </div>
+
+            <div className='w-full pr-2 md:pr-0'>
+            <a href='https://thekowcompany.com/2D_Portfolio.pdf' target='_blank' className="flex justify-end text-[12px] lg:text-[20px] font-medium leading-9 cursor-pointer underline ">
+                    Download for more
+                </a>
             </div>
         </div>
     );

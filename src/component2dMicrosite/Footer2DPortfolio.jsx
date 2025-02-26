@@ -1,30 +1,57 @@
-import React from 'react';
-import { Link } from 'react-router-dom';
+import React from "react";
+import { Link } from "react-router-dom";
 
 const Footer2DPortfolio = () => {
-    return (
-        <div className='bg-[#4AD991] px-16 py-[26px] '>
-            <div className='2xl:container 2xl:mx-auto'>
-                <div className='flex justify-between items-center'>
-                    <Link to={'/contact-us'} className='text-2xl lg:text-4xl font-bold text-black'>Contact Us</Link>
-                    <div className='flex justify-center items-center gap-6'>
- <a href='https://bd.linkedin.com/company/retouched-ai' target='_blank' className='cursor-pointer'>
- <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 28 28" fill="none">
-  <path d="M8.09672 5.83352C8.09641 6.45236 7.85028 7.04573 7.41248 7.4831C6.97467 7.92046 6.38106 8.166 5.76222 8.16569C5.14338 8.16538 4.55001 7.91925 4.11265 7.48145C3.67528 7.04364 3.42974 6.45003 3.43005 5.83119C3.43036 5.21235 3.67649 4.61898 4.1143 4.18162C4.5521 3.74425 5.14572 3.49871 5.76455 3.49902C6.38339 3.49933 6.97676 3.74546 7.41413 4.18327C7.85149 4.62107 8.09703 5.21469 8.09672 5.83352ZM8.16672 9.89352H3.50005V24.5002H8.16672V9.89352ZM15.5401 9.89352H10.8967V24.5002H15.4934V16.8352C15.4934 12.5652 21.0584 12.1685 21.0584 16.8352V24.5002H25.6667V15.2485C25.6667 8.05019 17.4301 8.31852 15.4934 11.8535L15.5401 9.89352Z" fill="black"/>
-</svg>
- </a>
-<a href='https://www.facebook.com/people/Retouchedai/61559124830396/' target='_blank' className='cursor-pointer'>
-<svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 28 28" fill="none">
-  <path d="M24.3834 2.3335H3.61671C3.27635 2.3335 2.94993 2.4687 2.70925 2.70938C2.46858 2.95005 2.33337 3.27647 2.33337 3.61683V24.3835C2.33337 24.7239 2.46858 25.0503 2.70925 25.291C2.94993 25.5316 3.27635 25.6668 3.61671 25.6668H14.7934V16.6252H11.76V13.1252H14.7934V10.5002C14.7305 9.88388 14.8033 9.26131 15.0065 8.67612C15.2098 8.09094 15.5386 7.5573 15.9699 7.11264C16.4012 6.66799 16.9246 6.32308 17.5033 6.10211C18.0821 5.88114 18.7021 5.78946 19.32 5.8335C20.2281 5.82723 21.1358 5.87397 22.0384 5.9735V9.1235H20.1834C18.7134 9.1235 18.4334 9.8235 18.4334 10.8385V13.0902H21.9334L21.4784 16.5902H18.4334V25.6668H24.3834C24.5519 25.6668 24.7188 25.6336 24.8745 25.5691C25.0302 25.5047 25.1717 25.4101 25.2908 25.291C25.41 25.1718 25.5045 25.0303 25.569 24.8746C25.6335 24.7189 25.6667 24.552 25.6667 24.3835V3.61683C25.6667 3.4483 25.6335 3.28142 25.569 3.12572C25.5045 2.97002 25.41 2.82854 25.2908 2.70938C25.1717 2.59021 25.0302 2.49568 24.8745 2.43118C24.7188 2.36669 24.5519 2.3335 24.3834 2.3335Z" fill="black"/>
-</svg>
-</a>
-
-                    </div>
-                </div>
-            </div>
+  return (
+    <div className="bg-[#4AD991] px-16 py-[26px] rounded-t-xl">
+      <div className="2xl:container 2xl:mx-auto">
+        <div className="flex justify-between items-center">
+          <Link
+            to={"/contact-us"}
+            className="text-xl lg:text-4xl font-bold text-black"
+          >
+            Contact Us
+          </Link>
+          <div className="flex justify-center items-center gap-3 md:gap-7">
+            <a
+              href="https://www.linkedin.com/company/the-kow-company/"
+              target="_blank"
+              className="cursor-pointer group"
+            >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+               
+                viewBox="0 0 33 33"
+                fill="none"
+                className="fill-black group-hover:fill-white w-[20px] h-[20px] md:w-[35px] md:h-[35px]  transition-colors duration-300"
+              >
+                <path
+                  d="M9.75338 7.16702C9.75302 7.87427 9.47173 8.5524 8.97139 9.05225C8.47104 9.5521 7.79262 9.83271 7.08538 9.83236C6.37813 9.832 5.7 9.55071 5.20015 9.05037C4.7003 8.55002 4.41969 7.8716 4.42004 7.16436C4.4204 6.45711 4.70169 5.77898 5.20204 5.27913C5.70238 4.77928 6.3808 4.49867 7.08804 4.49902C7.79529 4.49938 8.47342 4.78067 8.97327 5.28102C9.47312 5.78136 9.75373 6.45978 9.75338 7.16702ZM9.83338 11.807H4.50004V28.5004H9.83338V11.807ZM18.26 11.807H12.9534V28.5004H18.2067V19.7404C18.2067 14.8604 24.5667 14.407 24.5667 19.7404V28.5004H29.8334V17.927C29.8334 9.70036 20.42 10.007 18.2067 14.047L18.26 11.807Z"
+                />
+              </svg>
+            </a>
+            <a
+              href="https://thekowcompany.com/book-a-call"
+              target="_blank"
+              className="cursor-pointer group"
+            >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+              
+                viewBox="0 0 22 21"
+                fill="none"
+                className="fill-black group-hover:fill-white w-[14px] mt-[2px] md:mt-0 h-[14px] md:w-[25px] md:h-[25px] transition-colors duration-300"
+              >
+                <path
+                  d="M20.345 14.4433C18.91 14.4433 17.5217 14.21 16.2267 13.79C16.0237 13.7216 15.8057 13.7117 15.5974 13.7612C15.3891 13.8107 15.1988 13.9177 15.0483 14.07L13.2167 16.3683C9.915 14.7933 6.82333 11.8183 5.17833 8.4L7.45333 6.46333C7.76833 6.13667 7.86167 5.68167 7.73333 5.27333C7.30167 3.97833 7.08 2.59 7.08 1.155C7.08 0.525 6.555 0 5.925 0H1.88833C1.25833 0 0.5 0.28 0.5 1.155C0.5 11.9933 9.51833 21 20.345 21C21.1733 21 21.5 20.265 21.5 19.6233V15.5983C21.5 14.9683 20.975 14.4433 20.345 14.4433Z"
+                />
+              </svg>
+            </a>
+          </div>
         </div>
-
-    );
+      </div>
+    </div>
+  );
 };
 
 export default Footer2DPortfolio;

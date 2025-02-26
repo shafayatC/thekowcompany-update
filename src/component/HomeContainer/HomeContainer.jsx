@@ -30,9 +30,12 @@ function HomeContainer() {
             <NavbarHome />
             <div className="bg-[#DEE2E2] bgImage pb-3 flex flex-col relative">
                 <ProductVideoLatestMother
-                    videoUrl="/video/The Kow Company_video2.webm"
+                    videoUrl="/video/main_video.webm"
                     loadingImg="/video/loading-image.webp"
-                    tagList={tagList} />
+                    tagList={tagList} 
+                    videoType="video/webm"  />
+
+
                 <ScrollEffect offset={100}>
                     <WelcomePage />
                 </ScrollEffect>

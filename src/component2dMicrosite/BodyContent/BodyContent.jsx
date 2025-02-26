@@ -8,17 +8,23 @@ import RetouchingService from './RetouchingService';
 import AmbienceEnhance from './AmbienceEnhance';
 import GhostMannequin from './GhostMannequin';
 import Retouched from './Retouched';
+import RetouchingTest from './RetouchingTest';
+import GhostTest from './GhostMannequinOld';
+import VideoSection from './VideoSection';
 
 
 const BodyContent = () => {
     return (
         <div className="flex flex-col ">
             <TopPart2dPortfolio />
-            <OurService2DPortfolio />
             <AboutUs/>
+            <OurService2DPortfolio />
+            
             <RetouchingService/>
+            {/* <RetouchingTest/> */}
             <AmbienceEnhance/>
             <GhostMannequin/>
+            <VideoSection/>
             <Retouched/>
            
 

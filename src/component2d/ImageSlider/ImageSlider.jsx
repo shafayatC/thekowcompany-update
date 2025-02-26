@@ -54,7 +54,8 @@ const ImageSlider = () => {
             <div className='2xl:container 2xl:mx-auto '>
                 <div className='relative w-full h-[400px]'>
                     <Carousel uniqueId="id_1011"
-                        delay={5000}
+                        delay={3000}
+                        speed={1}
                         indicators={false}
                         item={2}
                         responsive={[
