@@ -7,5 +7,18 @@
 background: linear-gradient(90deg, #F5F2ED 0.11%, #F4F5F0 52.04%, #EDF5F3 99.82%, #EDF5F3 99.82%);
 }
 
+/* carousel for mannequin section */
 
+.carousel .slide {
+    transition: transform 0.5s ease-in-out !important;
+  }
+  
+  .carousel .control-dots {
+    display: none; /* Hide default dots */
+  }
+  
+  .carousel .thumbs-wrapper {
+    display: none; /* Hide thumbnails */
+  }
+  
 

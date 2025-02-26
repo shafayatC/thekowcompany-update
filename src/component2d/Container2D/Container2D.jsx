@@ -11,6 +11,7 @@ import OrderGuide from "../OrderGuide/OrderGuide";
 import Record2d from "../Record/Record2d";
 import StartPage from "../StartPage/StartPage";
 import VideoSliderNew from "../VideoSlider/VideoSliderNew";
+import VideoSlider from "../VideoSlider/VideoSlider";
 
 
 const Container2D = () => {

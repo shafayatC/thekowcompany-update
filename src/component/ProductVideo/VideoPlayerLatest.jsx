@@ -1,6 +1,6 @@
 import React, { useState, useMemo } from 'react';
 
-const VideoPlayerLatest = ({ videoUrl, loadingImg, videoName }) => {
+const VideoPlayerLatest = ({ videoUrl, loadingImg, videoName, videoType }) => {
     const [isLoading, setIsLoading] = useState(true);
 
     const handleLoadStart = () => {
@@ -24,7 +24,7 @@ const VideoPlayerLatest = ({ videoUrl, loadingImg, videoName }) => {
                     muted
                     loop
                 >
-                    <source src={videoUrl} type="video/mp4" />
+                    <source src={videoUrl} type={videoType} />
                 </video>
             </div>
 
