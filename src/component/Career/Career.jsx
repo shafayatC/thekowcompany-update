@@ -573,6 +573,61 @@ const Career = () => {
 `,
       date: "13 February, 2025",
     },
+    {
+      id: 9,
+      title: "HR & Admin Intern",
+      description: `  <div class="job-des">
+ <h1>HR & Admin Intern</h1>
+ <p><strong>Department: </strong> Human Resources & Administration</p>
+ <p><strong>Job Type: </strong> Internship (3–6 months)</p>
+ <p><strong>Reports To: </strong> HR & Admin Manager </p>
+ <br>
+ <h3>Job Summary:</h3>
+<p>The KOW Company Ltd. is looking for a proactive and detail-oriented <strong>HR & Admin Intern</strong> to support our Human Resources and Administration team. This internship is an excellent opportunity to gain hands-on experience in HR operations, employee engagement, and office administration within a dynamic and creative work environment.</p>    
+ 
+<br>
+  <h3>Key Responsibilities:</h3>
+  <h4>Human Resources:</h4>
+  <ul>
+        <li>Assist in the recruitment process, including job postings, CV screening, and interview scheduling.</li>
+        <li>Maintain and update employee records and HR databases.</li>
+        <li>Support onboarding and orientation for new hires.</li>
+        <li>Assist in organizing employee engagement activities and training sessions.</li>
+        <li>Help with performance appraisal documentation and feedback collection.</li>
+        <li>Research and suggest improvements in HR policies and processes.</li>
+    </ul>
+   <h4>Administration:</h4>
+  <ul>
+    <li>Provide general administrative support, including documentation, filing, and data entry.</li>
+		<li>Assist in maintaining office supplies and equipment.</li>
+		<li>Coordinate with vendors and service providers as needed.</li>
+		<li>Support in organizing meetings, events, and office maintenance tasks.</li>
+	
+    </ul>
+    <h4>Requirements:</h4>
+  <ul>
+    <li>Bachelor’s/Master’s degree (or final-year student) in HR, Business Administration, or a related field.</li>
+    <li>Strong organizational and multitasking skills.</li>
+	  <li>Excellent communication skills in both Bengali and English.</li>
+	  <li>Proficiency in MS Office (Word, Excel, PowerPoint).</li>
+	  <li>Ability to work in a fast-paced environment and maintain confidentiality.</li>
+	  <li>A positive attitude and eagerness to learn.</li>
+    </ul>
+   
+    <h4>What We Offer:</h4>
+    <ul>
+      <li>A hands-on learning experience in HR & Administration.</li>
+      <li>A collaborative and supportive work environment.</li>
+      <li>Networking opportunities with industry professionals.</li>
+      <li>A certificate of completion and potential for a full-time opportunity.</li>  
+    </ul>
+</br>
+	<h4>How to Apply:</h4>
+	<p>Interested candidates can send their CVs to <strong>“career@thekowcompany.com”</strong> with the subject line <strong>“Application for HR & Admin Intern”</strong> by <strong>18 March, 2025</strong>.</p>
+	
+`,
+      date: "18 March, 2025",
+    },
   ]);
   const [isOpen, setIsOpen] = useState(false);
   const [cvData, setCvData] = useState({});
