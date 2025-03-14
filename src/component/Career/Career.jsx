@@ -623,10 +623,10 @@ const Career = () => {
     </ul>
 </br>
 	<h4>How to Apply:</h4>
-	<p>Interested candidates can send their CVs to <strong>“career@thekowcompany.com”</strong> with the subject line <strong>“Application for HR & Admin Intern”</strong> by <strong>18 March, 2025</strong>.</p>
+	<p>Interested candidates can send their CVs to <strong>“career@thekowcompany.com”</strong> with the subject line <strong>“Application for HR & Admin Intern”</strong> by <strong>25 March, 2025</strong>.</p>
 	
 `,
-      date: "18 March, 2025",
+      date: "25 March, 2025",
     },
   ]);
   const [isOpen, setIsOpen] = useState(false);
