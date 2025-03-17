@@ -5,6 +5,12 @@
   # Redirect from /2d to /2d-photo-editing with a 301 permanent redirect
   RewriteRule ^2d$ /2d-photo-editing [R=301,L]
 
+  # Redirect from /3d to /3d-modeling-and-rendering with a 301 permanent redirect
+  RewriteRule ^3d$ /3d-modeling-and-rendering [R=301,L]
+
+  # Redirect from /integrations to /integrations-and-partnership with a 301 permanent redirect
+  RewriteRule ^integrations$ /integrations-and-partnership [R=301,L]
+
   # Prevent redirecting index.html
   RewriteRule ^index\.html$ - [L]
 
@@ -14,3 +20,4 @@
   RewriteCond %{REQUEST_FILENAME} !-l
   RewriteRule . /index.html [L]
 </IfModule>
+

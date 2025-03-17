@@ -62,7 +62,7 @@ function App() {
       <Route path="/3d/industry-trends" element={<BlogPage3D />} />
       <Route path="/integrations" element={<Navigate to="/integrations-and-partnership" replace />} />
       <Route path="/integrations-and-partnership" element={<Partnership />} />
-      {/* <Route path="/2d" element={<Navigate to="/2d-photo-editing" replace />} /> */}
+      <Route path="/2d" element={<Navigate to="/2d-photo-editing" replace />} />
       <Route path="/2d-photo-editing" element={<Container2D />} />
       <Route path="/3d" element={<Navigate to="/3d-modeling-and-rendering" replace />} />
       <Route path="/3d-modeling-and-rendering" element={<Container3D/>} />
