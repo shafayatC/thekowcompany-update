@@ -1,9 +1,16 @@
 <IfModule mod_rewrite.c>
-RewriteEngine On
-RewriteBase /subdirectory
-RewriteRule ^index\.html$ - [L]
-RewriteCond %{REQUEST_FILENAME} !-f
-RewriteCond %{REQUEST_FILENAME} !-d
-RewriteCond %{REQUEST_FILENAME} !-l
-RewriteRule . /index.html [L]
+  RewriteEngine On
+  RewriteBase /subdirectory
+
+  # Redirect from /2d to /2d-photo-editing with a 301 permanent redirect
+  RewriteRule ^2d$ /2d-photo-editing [R=301,L]
+
+  # Prevent redirecting index.html
+  RewriteRule ^index\.html$ - [L]
+
+  # Ensure all other routes are handled by the React app (SPA routing)
+  RewriteCond %{REQUEST_FILENAME} !-f
+  RewriteCond %{REQUEST_FILENAME} !-d
+  RewriteCond %{REQUEST_FILENAME} !-l
+  RewriteRule . /index.html [L]
 </IfModule>
