@@ -1,6 +1,6 @@
 
 import './App.css'
-import { Route, Routes } from 'react-router-dom'
+import { Navigate, Route, Routes } from 'react-router-dom'
 import HomeContainer from './component/HomeContainer/HomeContainer'
 import Partnership from './component/Partnership/Partnership'
 import Container2D from './component2d/Container2D/Container2D'
@@ -60,9 +60,12 @@ function App() {
     
       <Route path="/2d/industry-trends" element={<BlogPage2D />} />
       <Route path="/3d/industry-trends" element={<BlogPage3D />} />
-      <Route path="/integrations" element={<Partnership />} />
-      <Route path="/2d" element={<Container2D/>} />
-      <Route path="/3d" element={<Container3D/>} />
+      <Route path="/integrations" element={<Navigate to="/integrations-and-partnership" replace />} />
+      <Route path="/integrations-and-partnership" element={<Partnership />} />
+      <Route path="/2d" element={<Navigate to="/2d-photo-editing" replace />} />
+      <Route path="/2d-photo-editing" element={<Container2D />} />
+      <Route path="/3d" element={<Navigate to="/3d-modeling-and-rendering" replace />} />
+      <Route path="/3d-modeling-and-rendering" element={<Container3D/>} />
       {/* <Route path="/microsite-2d" element={<Microsite2DTest/>} /> */}
       <Route path='/2D-service-portfolio' element={<Microsite2DFinal/>} />
       {/* <Route path="/3d/creative-showcase" element ={<PDFViewer />}/> */}

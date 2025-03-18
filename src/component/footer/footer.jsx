@@ -80,7 +80,7 @@ const Footer = () => {
                         <HashLink to="/#3d" className="text-sm" aria-label='3D'>3D</HashLink>
                         <HashLink to="/#ai" className="text-sm" aria-label='AI'>AI</HashLink>
                         <HashLink to="/#integration" className="text-sm" aria-label='Integrations'>Integrations</HashLink>
-                        <HashLink className="text-sm" aria-label='Blueprint'>Blueprint</HashLink>
+                        < HashLink to="/book-a-call" className="text-sm" aria-label='Book A Call'>Book A Call</HashLink>
                         <HashLink to="/#trends" className="text-sm" aria-label='Industry Trends'>Industry Trends</HashLink>
                         
 

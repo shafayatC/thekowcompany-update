@@ -34,26 +34,24 @@ const Footer3D = () => {
                             <b>The KOW Company</b> is one of the leading image, video, 3D & CGI content production companies for businesses all over the world.
                         </p>
                         <div className="flex text-[#003333] justify-center md:justify-start gap-1 mb-2">
-                            <a aria-label="Facebook" href="https://www.facebook.com/cutoutwiz" target="_blank" rel="noreferrer">
+                        <a aria-label='facebook' href="https://www.facebook.com/KOWCompany" target="_blank" rel="noreferrer">
                                 <FaFacebook className="h-4 w-4 mr-2 text-[#333333] cursor-pointer"></FaFacebook>
                             </a>
-                            <a
-                                aria-label="Youtube"
-                                href="https://www.youtube.com/channel/UClIkCcEBksZigP56p593fDQ"
+                            <a aria-label='youtube'
+                                href="https://www.youtube.com/channel/UCCXAA-Q_f0uuvG8RqW0HRYQ"
                                 target="_blank" rel="noreferrer"
                             >
                                 <FaYoutube className="h-4 w-4 mr-2 text-[#333333] cursor-pointer"></FaYoutube>
                             </a>
-                            <a
-                                aria-label="Linkedin"
-                                href="https://www.linkedin.com/company/cutoutwiz-ltd/"
+                            <a aria-label='linkedin'
+                                href="https://www.linkedin.com/company/the-kow-company/"
                                 target="_blank" rel="noreferrer"
                             >
                                 <FaLinkedinIn className="h-4 w-4 mr-2 text-[#333333] cursor-pointer"></FaLinkedinIn>
                             </a>
                             <a
-                                aria-label="Twitter"
-                                href="https://twitter.com/cut_wiz?s=09" target="_blank" rel="noreferrer">
+                               aria-label='twitter'
+                               href="https://twitter.com/the_kow_company" target="_blank" rel="noreferrer">
                                 <BsTwitterX className="h-4 w-4 mr-2 text-[#333333] cursor-pointer"></BsTwitterX>
                             </a>
                             {/* <a

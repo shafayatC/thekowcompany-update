@@ -4,6 +4,8 @@ import { MdOutlineEmail } from "react-icons/md";
 import { useEffect, useState } from "react";
 import CareerMail from "./CareerMail";
 import { HeadProvider, Meta, Title } from "react-head";
+import NavbarPolicy from "../navber/NavbarPolicy";
+import Footer from "../footer/footer";
 
 const Career = () => {
   const [jobCircular] = useState([
@@ -674,6 +676,7 @@ const Career = () => {
   }, []);
   return (
     <>
+    <NavbarPolicy/>
       <HeadProvider>
         <Title>Career | The KOW Company</Title>
         <Meta
@@ -684,10 +687,10 @@ const Career = () => {
 
       {/* <div className="career-bg h-[100vh]"> */}
       <div className="bg-gradient-to-t from-[#ebebeb] to-[#cdcbcc] ">
-        <div className="container mx-auto relative min-h-screen">
+        <div className="container mx-auto relative  pb-20">
           {/* <div dangerouslySetInnerHTML={{ __html: jobCircular[0].description }} /> */}
 
-          <div className="flex flex-col items-center ">
+          <div className="flex flex-col items-center mt-10 ">
             <div className="w-full md:w-[450px] mt-[140px] md:mt-[120px]  text-center md:text-left">
               <h1 className="text-[18px] md:text-[24px] 2xl:text-[40px] font-bold text-[#57524B]">
                 WE ARE
@@ -856,6 +859,7 @@ const Career = () => {
       </div>
 
       <CareerMail cvData={cvData} isOpen={isOpen} onClose={onClose} />
+      <Footer/>
     </>
   );
 };
