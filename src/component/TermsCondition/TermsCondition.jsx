@@ -3,16 +3,20 @@ import React, { Component } from "react";
 import { Link } from "react-router-dom";
 import terms from "/img/terms-banner.webp";
 import ScrolTop from "../ScrolTop/ScrolTop";
+import NavbarHome from "../navber/navbarHome";
+import NavbarPolicy from "../navber/NavbarPolicy";
+import Footer from "../footer/footer";
 
 function TermsCondition(props) {
   return (
     <>
     <ScrolTop/>
+    <NavbarPolicy/>
     <div className="terms container mx-auto ">
       <div className="container">
-        <div className="row mt-5 mb-5">
+        <div className="row  mt-16 mb-5">
           <img loading="lazy" src={terms} width="100%" height="100%" alt="termcondition" />
-          <h1 className="text-center text-4xl font-semibold mt-3">
+          <h1 className="text-center text-2xl md:text-4xl font-semibold mt-3">
             Terms & Conditions
           </h1>
           <br />
@@ -212,6 +216,7 @@ function TermsCondition(props) {
         </div>
       </div>
     </div>
+    <Footer/>
     </>
   );
 }

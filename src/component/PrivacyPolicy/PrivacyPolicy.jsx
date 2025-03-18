@@ -1,15 +1,18 @@
 import React, { Component } from "react";
 import privacy from "/img/privacy.webp";
 import ScrolTop from "../ScrolTop/ScrolTop";
+import NavbarPolicy from "../navber/NavbarPolicy";
+import Footer from "../footer/footer";
 
 function PrivacyPolicy(props) {
   return (
    <>
    <ScrolTop/>
+   <NavbarPolicy/>
     <div className="container mx-auto ">
       <div className="privacy">
         <div className="container">
-          <div className="row mt-5">
+          <div className="row mt-16">
             <img loading="lazy" src={privacy} width="100%" height="100%" alt="privacy" />
 
             <h1 className="text-center mt-5 text-4xl font-semibold">
@@ -173,6 +176,7 @@ function PrivacyPolicy(props) {
         </div>
       </div>
     </div>
+    <Footer/>
    </>
   );
 }
